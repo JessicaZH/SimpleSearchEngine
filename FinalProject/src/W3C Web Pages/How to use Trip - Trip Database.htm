@@ -1,0 +1,418 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <title>How to use Trip - Trip Database</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Helping you find trustworthy answers | Latest evidence made easy">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="google-signin-client_id" content="1024898893353-9jvljcc18g4njasopvom9d8jjqlmm3iu.apps.googleusercontent.com">
+    <link href='https://fonts.googleapis.com/css?family=Asap:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/hopscotch.min.css">
+    
+    <link rel="canonical" href="https://www.tripdatabase.com/how-to-use-trip" >
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js"></script>
+    
+    <script src="/bundles/js?v=ujTPav9dxR_fyLE3I2r2BgIdHxb729BEECoFKqpcmw81"></script>
+
+    <link href="/bundles/css?v=YwD3mxxWQpXJvgsX364o3W06PRlEJBNRf4DmX45-k441" rel="stylesheet"/>
+
+    
+    
+    <script>var UserId=0</script> 
+    <script>var UserAdmin=false</script>
+    <script>var UserIsLoggedIn = false;</script>
+    <style>
+        .useronly { display:none }
+    </style>
+    
+    <script>var UserIsPro = false;</script>
+    <style>
+        .ispro { display:none }
+        .proonly::after { margin-left:5px; top:-5px; position:relative; background-image: url(/static/img/pro.png); background-size: 29px 8px; display: inline-block; width: 29px; height: 8px; content:""; }
+    </style>
+
+    
+
+  </head>
+
+  <body>
+
+      
+      <section class="ads">
+          
+<div id="trip-tripdatabase-0">
+<script type="text/javascript">
+var ehs_screenwidth=((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) ? screen.width : window.innerWidth;
+if (ehs_screenwidth>800) {
+(function() {
+var a="",b=[
+"adid=trip-tripdatabase-0",
+"site=ehs.pro.trip.tripdatabase",
+"size=728x90",
+"vpos=t",
+"hpos=l",
+"zone=",
+"iprof=md",
+];
+for (var c=0;c<b.length;++c){a+=b[c]+"&";}a+="r="+Math.random()*1e16+"&url="+encodeURIComponent(window.location.href);
+var x="https://ads.ehealthcaresolutions.com/a/?"+a;
+var y=document.createElement("script");y.type="text/javascript";y.async=true;y.src=x;
+var z=document.getElementsByTagName("script")[0];
+z.parentNode.insertBefore(y, z);
+})();
+}
+else {
+(function() {
+var a="",b=[
+"adid=trip-tripdatabase-0",
+"site=ehs.pro.trip.tripdatabase",
+"size=320x50",
+"vpos=t",
+"hpos=l",
+"zone=",
+"iprof=md",
+];
+for (var c=0;c<b.length;++c){a+=b[c]+"&";}a+="r="+Math.random()*1e16+"&url="+encodeURIComponent(window.location.href);
+var x="https://ads.ehealthcaresolutions.com/a/?"+a;
+var y=document.createElement("script");y.type="text/javascript";y.async=true;y.src=x;
+var z=document.getElementsByTagName("script")[0];
+z.parentNode.insertBefore(y, z);
+})();
+}
+</script>
+</div>
+<!-- END ASYNC UAT M - 728x90/320x50(t,l) -->
+
+
+ 
+      </section>
+    
+    <nav>
+      <div class="logo">
+         <a href="/" ><img alt="Trip Logo" src="/static/img/trip-logo.png"/></a>
+      </div>  
+      <a id="left-nav-show" onclick="toggleLeftNav()"><i class="fa fa-bars"></i></a>
+      <a id="right-nav-show" onclick="toggleRightNav()"><i class="fa fa-user"></i></a>
+      <ul id="left-nav" class="left-nav dropdown-menu">
+        <li id="nav-home"><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li id="nav-how-to-use"><a href="/how-to-use-trip">How To Use</a></li>
+        <li id="nav-contact-us"><a href="/contact">Contact us</a></li>
+        <li id="nav-blog"><a href="http://blog.tripdatabase.com">Blog</a></li>
+        <li id="nav-tour"><a href="javascript:starttutorial()">Tour</a></li>
+        <li id="nav-top"><a href="/top">Latest &amp; greatest</a></li>
+        <li id="nav-rr"><a href="/evidencemaps/search">Evidence Maps <span style="background-color:yellow">(NEW!)</span></a></li>
+      </ul>
+      <ul id="right-nav" class="right-nav dropdown-menu">
+        
+        <li id="nav-signup"><a href="/account/register"><i class="fa fa-pencil mobilehide"></i> Sign Up</a></li>
+        <li class="nolink">or use your</li>
+        <li><a href="/fb" onclick="return loginfb()"><i class="fa fa-facebook-square mobilehide"></i><span class="mobileonly"> Facebook</span></a></li>
+        <li><a href="/twitter" onclick="return logintwitter()"><i class="fa fa-twitter mobilehide"></i><span class="mobileonly"> Twitter</span></a></li>
+        <li><span class="a" id="google-plus"><i class="fa fa-google-plus mobilehide"></i><span class="mobileonly"> Google+</span></span></li>
+        <li class="nolink">account</li>
+        <li id="nav-login"><a href="/account/login"><i class="fa fa-lock mobilehide"></i> Log In</a></li>
+        
+        
+      </ul>
+    </nav>
+    <header>
+      <div class="logo">
+         <a href="/"><img alt="Trip Logo" src="/static/img/trip-logo.png"/></a>
+         <span class="strapline">Turning Research Into Practice</span>
+      </div>
+      
+      <div class="search">
+        <ul class="search-nav">
+            <li><a href="#" id="selectbasic" onclick="selectSearchForm('basic')">Search</a></li>
+            <li><a href="#pico" id="selectpico" onclick="selectSearchForm('pico')">Pico</a></li>
+            <li><a href="#advanced" id="selectadvanced" onclick="selectSearchForm('advanced', true)" class="proonly">Advanced</a></li>
+            <li><a href="#recent" id="selectrecent" onclick="selectSearchForm('recent', true)" class="proonly">Recent</a></li>
+        </ul>
+        
+<div id="searchformbasic" class="searchform">
+    <form id="searchForm" method="get" action="/search">
+	    <input type="hidden" name="sa" id="searchsa" value="" />
+        <input autocomplete="off" type="text" value=""  name="criteria" id="simple-search" class="criteria" placeholder="search terms">
+	    <span class="icon icon-search"></span> 
+	    <button class="search" onclick="return submitSearchForm()" type="submit" id="simple-search-submit"><i class="fa fa-search"></i></button>
+        <ul id="searchSuggest" class="dropdown-menu"></ul>
+        <input type="submit" value="Search" class="hiddensubmit" onclick="submitSearchForm()"/>	
+        <div class="search-help">
+            <a href="#" onclick="queryLangVisible()">Language Settings</a><br/>
+        </div>
+        <div class="querylangholder">
+            <span class="querylang" >
+                <span>My query is: </span>
+                <label><input type="radio" name="lang" value="en" checked="checked" id="searcheng"/> English</label>
+                <label title="French"><input type="radio" name="lang" value="fr" /> Français</label>
+                <label title="German"><input type="radio" name="lang" value="de" /> Deutsch </label>
+                <label title="Czech"><input type="radio" name="lang" value="cs" /> Čeština</label>
+                <label title="Spanish"><input type="radio" name="lang" value="es" /> Español </label>
+                <label title="Hungarian"><input type="radio" name="lang" value="hu" /> Magyar</label>
+                <label title="Swedish"><input type="radio" name="lang" value="sv" /> Svenska</label>
+            </span>
+        </div>
+    </form>
+</div>
+
+
+
+
+<div id="searchformadvanced" class="searchform">
+
+	<form method="post" action="/search/advanced" onsubmit="return submitAdvanced()">
+        
+		<div class="advancedrow">
+            <label class="text"><span>ALL of these words:</span>
+			    <input type="text" class="type" name="All">
+            </label>
+            <span class="options">
+				<label class="small"><input type="radio" name="AllSearchType" value="t"/>Title only</label>
+				<label class="small"><input type="radio" name="AllSearchType" value="b" checked="checked"/>Anywhere in the document</label>
+				<select name="Proximity"><option value="">Proximity</option><option value="10">Up to 10 words apart</option><option value="5">Up to 5 words apart</option><option value="3">Up to 3 words apart</option><option value="2">Up to 2 words apart</option></select>
+			</span>
+        </div>
+		<div class="advancedrow">
+			<label class="text"><span>ANY of these words:</span>
+			    <input type="text" class="type" name="Any">
+            </label>
+            <span class="options">
+				<label class="small"><input type="radio" name="AnySearchType" value="t"/>Title only</label>
+				<label class="small"><input type="radio" name="AnySearchType" value="b" checked="checked"/>Anywhere in the document</label>
+			</span>
+		</div>
+        <div class="advancedrow">
+			<label class="text"><span>This EXACT phrase:</span>
+			    <input type="text" class="type" name="Phrase">
+            </label>
+            <span class="options">
+				<label class="small"><input type="radio" name="PhraseSearchType" value="t"/>Title only</label>
+				<label class="small"><input type="radio" name="PhraseSearchType" value="b" checked="checked" />Anywhere in the document</label>
+			</span>
+        </div>
+		<div class="advancedrow">
+			<label class="text"><span>EXCLUDING words:</span>
+			    <input type="text" class="type" name="Not">
+            </label>
+            <span class="options">
+				<label class="small"><input type="radio" name="NotSearchType" value="t" />Title only</label>
+				<label class="small"><input type="radio" name="PhraseSearchType" value="b" checked="checked"/>Anywhere in the document</label>
+			</span>
+		</div>
+		<div class="advancedrow splitrow">
+			<label class="text"><span>Timeframe:</span>
+			    <input type="text" class="type" placeholder="2000" name="FromDate" />
+			</label>
+			<label class="text cropped"><span>to:</span>
+			    <input type="text" class="type" placeholder="2018" name="ToDate" />
+			</label>
+		</div>
+		<button class="topright" type="submit"><i class="fa fa-search"></i></button>
+
+	</form>
+</div>
+
+<div id="searchformrecent" class="searchform">
+    <form method="get" action="/search#recent" onsubmit="return submitRecent()">
+        <input autocomplete="off" type="text" value=""  name="criteria" id="recent-search" class="criteria" placeholder="#1 or #2">
+	    <span class="icon icon-search"></span> 
+	    <button class="search" onclick="return submitRecent()" type="submit"><i class="fa fa-search"></i></button>
+        <ul id="searchSuggest" class="dropdown-menu"></ul>
+        <input type="submit" value="Search" class="hiddensubmit" onclick="submitRecent()"/>
+        
+    </form>
+    <div class="search-help">
+        <p>Combine searches by placing the search numbers in the top search box and pressing the search button.<br> An example search might look like <code>(#1 or #2) and (#3 or #4)</code></p>
+        <div id="recentitems">Loading history...</div>
+       
+    </div>	
+
+</div>
+
+
+
+
+
+<div id="searchformpico" class="searchform">
+
+	<form action="/search/wizard" method="post">
+		<div class="advancedrow">
+            <label class="text"><span>Population:</span>
+			    <input name="Population" type="text" class="type" placeholder="Type of patient eg. diabetics" />
+			</label>
+        </div>
+		<div class="advancedrow">
+            <label class="text"><span>Intervention:</span>
+			<input name="Intervention" type="text" class="type" placeholder="Any intervention eg. treatment, diagnostic test" />
+			</label>
+		</div>
+	    <div class="advancedrow">
+            <label class="text"><span>Comparison:</span>
+			<input name="Comparison" type="text" class="type" placeholder="Comparing your intervention with another treatment or test?" />
+			</label>
+		</div>
+	    <div class="advancedrow">
+            <label class="text"><span>Outcome:</span>
+			<input name="Outcome" type="text" class="type" placeholder="Outcome interest eg. reduced mortality, fewer exacerbations" />
+			</label>
+		</div>
+
+		<button class="topright" type="submit"><i class="fa fa-search"></i></button>
+
+	</form>
+
+</div>
+
+
+<div id="searchformsa" class="searchform">
+
+	<form action="/sa/wizard" method="post">
+		<div class="advancedrow">
+			<label class="text"><span>Population:</span>
+			    <input name="Population" type="text" class="type" placeholder="Type of patient eg. diabetics">
+            </label>
+		</div>
+		<div class="advancedrow">
+			<label class="text"><span>Intervention:</span>
+			    <input name="Intervention" type="text" class="type" placeholder="Any intervention eg. treatment, diagnostic test">
+			</label>
+		</div>
+        <button class="topright" type="submit"><i class="fa fa-search"></i></button>
+	</form>
+</div>
+  
+       </div>
+
+       <div id="alert" ></div>
+
+       <!--<div id="tilts">
+           <img id="tiltlogo" title="Today I Learnt That" src="http://tilt.tripdatabase.com/content/images/ntilt_signup_03.jpg" width="61" height="75" onclick="toggleTilt()"/>
+           <div id="tiltcapture">
+               
+               <label>I searched for:</label>
+               <input type="text" name="tiltkeywords" id="tiltkeywords"  onchange="storeTilt()" />
+               <label>I looked at:</label>
+               <ul id="tiltviews">
+               </ul>
+               <label>I learnt that:</label>
+               <textarea name="tiltlearning" id="tiltlearning" onkeyup="storeTilt()" rows="1"></textarea>
+               <label>My reflections:</label>
+               <textarea name="tiltreflect" id="tiltreflect" onkeyup="storeTilt()" rows="1"></textarea>
+               <div id="tiltactions">
+                <button type="button" id="tiltsubmit" onclick="submitTilt()">Save learning</button>  
+                <a id="tiltclear" onclick="clearTilt(); return false" href="#">Clear</a>
+                <a href="/about-tilt" id="tilt-about" title="About TILT..."><i class="fa fa-question-circle"></i></a>
+               </div>              
+           </div>
+       </div>-->
+    </header>
+     
+    <main class="margins">
+        
+	
+<nav class="lhs">
+	<ul id="subnav">
+	</ul>
+</nav>
+	
+<section>
+<div class=h2s>
+						<div class="colsl2">
+<h3>Most of our users tell us that Trip is the easiest search tool they&#8217;ve used</h3>
+<p>But we offer further support: check out our tutorial videos below, <strong><a href="javascript:starttutorial()">use our &#8216;tour&#8217;</a></strong> to get in-context tips on what each area of Trip does or view our <a href="https://blog.tripdatabase.com/2017/10/13/boolean-truncation-and-other-such-things/" target="_blank" rel="noopener"><strong>page of tips</strong></a> on functions such as Boolean searching, truncation and other more advanced functions.</p>
+<p>If you&#8217;re still in need of help, you can find us on <a href="https://twitter.com/tripdatabase">Twitter</a>, <a href="https://www.facebook.com/tripdatabase">Facebook</a> or <a href="mailto:support@tripdatabase.com">drop us an email</a> &#8211; we love to hear from our users</p>
+</div>
+</div><div class=h2><h2>6 Questions with Jon Brassey, Founder of the Trip Database</h2>
+<p><span class="embed-youtube" style="text-align:center; display: block;"><iframe class='youtube-player' type='text/html'  height='360' src='https://www.youtube.com/embed/1woKKNPn-Ss?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe></span></p>
+</div><div class=h2><h2>Refining your search &amp; filters</h2>
+<p><span class="embed-youtube" style="text-align:center; display: block;"><iframe class='youtube-player' type='text/html'  height='360' src='https://www.youtube.com/embed/E5Fdit9OsME?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe></span></p>
+</div><div class=h2><h2>Signing up with Trip</h2>
+<p><span class="embed-youtube" style="text-align:center; display: block;"><iframe class='youtube-player' type='text/html'  height='360' src='https://www.youtube.com/embed/aiKyZPcX6XM?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe></span></p>
+</div><div class=h2><h2>Logging In to Trip</h2>
+<p><span class="embed-youtube" style="text-align:center; display: block;"><iframe class='youtube-player' type='text/html'  height='360' src='https://www.youtube.com/embed/tmWFQTQul2s?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe></span></p>
+</div><div class=h2><h2>Saving your results with &#8216;Starring&#8217;</h2>
+<p><span class="embed-youtube" style="text-align:center; display: block;"><iframe class='youtube-player' type='text/html'  height='360' src='https://www.youtube.com/embed/cDMsPuWhNwc?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe></span></p>
+</div><div class=h2><h2>Browsing your history on Trip</h2>
+<p><span class="embed-youtube" style="text-align:center; display: block;"><iframe class='youtube-player' type='text/html'  height='360' src='https://www.youtube.com/embed/6thUngf7A5U?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe></span></p>
+</div><div class=h2><h2>PICO Search</h2>
+<p><span class="embed-youtube" style="text-align:center; display: block;"><iframe class='youtube-player' type='text/html'  height='360' src='https://www.youtube.com/embed/eBPdHKmT2FA?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe></span></p>
+</div><div class=h2><h2>Using Advanced Search</h2>
+<p><span class="embed-youtube" style="text-align:center; display: block;"><iframe class='youtube-player' type='text/html'  height='360' src='https://www.youtube.com/embed/iiIvpRj19oY?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe></span></p>
+</div><div class=h2><h2>Image &amp; video search on Trip</h2>
+<p><span class="embed-youtube" style="text-align:center; display: block;"><iframe class='youtube-player' type='text/html'  height='360' src='https://www.youtube.com/embed/JiW3mtn0VSQ?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe></span></p>
+</div><div class=h2><h2>Using Trip in other languages</h2>
+<p><span class="embed-youtube" style="text-align:center; display: block;"><iframe class='youtube-player' type='text/html'  height='360' src='https://www.youtube.com/embed/Gn3ODaZI9lg?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe></span></p>
+																	</div>
+</section>
+	
+<script>
+    $().ready(function () { createSections("How to use Trip") });
+</script>	
+
+ 
+    </main>
+    <footer>
+      <div class="footer-logo">
+        <img alt="Trip Logo"  src="/static/img/trip-logo-footer.png"/>
+      </div>
+      <ul class="footer-nav-left">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/how-to-use-trip">How To Use</a></li>
+        <li><a href="/contact">Contact us</a></li>
+        <li><a href="http://blog.tripdatabase.com">Blog</a></li>
+        <li><a href="/account/upgrade">Get Trip Pro</a></li>
+      </ul>
+      <ul class="footer-nav-right">
+        <li class="text">Follow us:</li>
+        <li id="nav-facebook"><a href="https://www.facebook.com/tripdatabase"><i class="fa fa-facebook-square"></i></a></li>
+        <li id="nav-twitter"><a href="https://twitter.com/tripdatabase"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+          
+        <li><a href="http://blog.tripdatabase.com"><img alt="Trip blog" src="/static/img/social-blog.png"/></a></li>
+      </ul>
+      <div class="footer-bottom">
+        <hr/>
+        <ul class="footer-nav-bottom">
+          <li><a href="/terms">Terms of use</a></li>
+          <li><a href="/privacy">Privacy</a></li>
+          <li><a href="/acceptableuse">Acceptable usage</a></li>
+          <li><a href="/addtrip">Add Trip to your site</a></li>
+          <li><a href="/leaflets">Leaflets</a></li>
+          <li><a href="#sa" id="selectsa" onclick="selectSearchForm('sa', false, true)">Rapid Review</a></li>
+          <li><a href="https://www.curefacts.com/?referer=TripDatabase" target="_blank" title="Working in collaboration with CureFacts">CureFacts</a></li>
+
+        </ul>
+        <div class="footer-bottom-right">
+          &copy; 2018 Trip Database Ltd. company number 04316414. Trip is proud to be made in the UK.
+        </div>
+      </div>
+    </footer>
+      
+      
+      
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1443241-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+      
+  </body>
+  <script src="/static/js/hopscotch.min.js"></script>
+</html>

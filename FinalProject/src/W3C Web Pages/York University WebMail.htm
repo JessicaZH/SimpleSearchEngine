@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" />
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<title>York University WebMail</title>
+	<link rel="stylesheet" href="skins/York Red/styles.css?v=660" type="text/css" id="skin" />
+	
+	<script type="text/javascript">
+		var ActionUrl = "processing.php";
+		var EmptyHtmlUrl = "empty.html";
+		var LanguageUrl = "langs.js.php";
+		var LoginUrl = "index.php";
+		var WebMailUrl = "webmail.php";
+
+		var DefLang = "English";
+		var LoginFormType = 3;
+		var DisableIos = true;
+		var IsLite = false;
+		var NeedToSubmit = false;
+		var RTL = false;
+		var UseDb = true;
+		var WmVersion = "660";
+	</script>
+	<script type="text/javascript" src="langs.js.php?v=660&lang=English"></script>
+<script type="text/javascript" src="cache-loader.php?v=660&t=jquery"></script><script type="text/javascript" src="cache-loader.php?v=660&t=def"></script><script type="text/javascript" src="cache-loader.php?v=660&t=login"></script>	<script type="text/javascript">
+		WebMailScripts = ['cache-loader.php?v=660&t=wm', 'cache-loader.php?v=660&t=cont'];
+	</script>
+	<script type="text/javascript">
+		function ChangeLang(object) {
+			if (object && object.name && object.name.length > 4 && object.name.substr(0, 4) == 'lng_') {
+				document.location = LoginUrl + '?lang=' + object.name.substr(4);
+			}
+		}
+	</script>
+</head>
+<body onload="Init();" id="mbody">
+<div class="wm_content">
+	<div id="content">
+		<div class="wm_logo" id="logo" tabindex="-1" onfocus="this.blur();"></div>
+	</div>
+	<table class="wm_hide" style="position:static;" id="info">
+	<tr style="position:relative;z-index:20">
+		<td class="wm_shadow" style="width:2px;font-size:1px;"></td>
+		<td>
+			<div id="info_message" class="wm_info_message">
+				<span class="wm_info_image"></span><span class="wm_info_text"></span>
+			</div>
+			<div class="a">&nbsp;</div>
+			<div class="b">&nbsp;</div>
+		</td>
+		<td class="wm_shadow" style="width:2px;font-size:1px;"></td>
+	</tr>
+	<tr>
+		<td colspan="3" class="wm_shadow" style="height:2px;background:none;">
+			<div class="a">&nbsp;</div>
+			<div class="b">&nbsp;</div>
+		</td>
+	</tr>
+	<tr style="position:relative;z-index:19">
+		<td colspan="3" style="height:2px;">
+			<div class="a wm_shadow" style="margin:0px 2px;height:2px; top:-4px; position:relative; border:0px;background:#555;">&nbsp;</div>
+		</td>
+	</tr>
+</table>	<div id="login_screen">
+		<form action="index.php?mode=submit" method="post" id="login_form" name="login_form" onsubmit="NeedToSubmit = true; return false;" autocomplete="on">
+			<input type="hidden" name="advanced_login" value="" />
+			<div class="wm_login" >
+				<div class="a top"></div>
+				<div class="b top"></div>
+				<div class="login_table">
+					<div id="lang_LoginInfo" class="wm_login_header">Login Information</div>
+					<div class="wm_login_content">
+						<table id="login_table" class="login_table_block" border="0" cellspacing="0" cellpadding="10">
+							<tr id="email_cont">
+								<td class="wm_title" style="font-size:12px; width: 70px;" id="lang_Email">Email:</td>
+								<td colspan="4">
+									<nobr>
+										<input style="width: 224px; font-size:16px;"
+											   class="wm_input" type="text" value=""
+											   id="email" name="email" maxlength="255"
+											   onfocus="this.className = 'wm_input_focus';"
+											   onblur="this.className = 'wm_input';" tabindex="1" />
+										<span id="domain_cont"><input type="hidden" name="sDomainValue" id="sDomainValue" value="" /></span>
+									</nobr>
+								</td>
+							</tr>
+							<tr id="login_cont" class="wm_hide">
+								<td class="wm_title" style="font-size:12px; width: 70px;" id="lang_Login">Login:</td>
+								<td colspan="4">
+									<input tabindex="3" style="width:224px; font-size:16px;" class="wm_input" type="text" value="" id="inc_login" name="inc_login" maxlength="255"
+										onfocus="this.className = 'wm_input_focus';" onblur="this.className = 'wm_input';" />
+								</td>
+							</tr>
+							<tr>
+								<td class="wm_title" style="font-size:12px; width: 70px;" id="lang_Password">Password:</td>
+								<td colspan="4">
+									<input tabindex="3" style="width:224px; font-size:16px;" class="wm_input wm_password_input" type="password" value="" id="password" name="password" maxlength="255"
+										onfocus="this.className = 'wm_input_focus wm_password_input';" onblur="this.className = 'wm_input wm_password_input';" />
+								</td>
+							</tr>
+						</table>
+
+
+						<div class="login_table_block">
+							<input tabindex="12" class="wm_checkbox" type="checkbox" value="1" id="sign_me" name="sign_me" />
+							<label for="sign_me" id="lang_SignMe" style="font-size: 12px;">Sign me in automatically</label>
+						</div>
+						<div class="login_table_block wm_login_button">
+							<input tabindex="14" class="wm_button" type="submit" id="submit" name="submit" value="Enter" />
+							<span class="wm_language_place">
+<a id="langs_selected" href="#" class="wm_reg" onclick="return false;" style="padding-right: 0px;"><span>English</span><font>&nbsp;</font><span class="wm_login_lang_switcher">&nbsp;</span></a>
+<input type="hidden" value="" id="language" name="language">
+<br /><div id="langs_collection"><a href="#" name="lng_English" onclick="ChangeLang(this); return false;">English</a><a href="#" name="lng_Spanish" onclick="ChangeLang(this); return false;">Español</a><a href="#" name="lng_Lithuanian" onclick="ChangeLang(this); return false;">Lithuanian</a><a href="#" name="lng_Italian" onclick="ChangeLang(this); return false;">Italiano</a><a href="#" name="lng_Portuguese-Brazil" onclick="ChangeLang(this); return false;">Portuguese-Brazil</a><a href="#" name="lng_Ukrainian" onclick="ChangeLang(this); return false;">Українська</a><a href="#" name="lng_Estonian" onclick="ChangeLang(this); return false;">Estonian</a><a href="#" name="lng_Bulgarian" onclick="ChangeLang(this); return false;">Български</a><a href="#" name="lng_Romanian" onclick="ChangeLang(this); return false;">Romanian</a><a href="#" name="lng_German" onclick="ChangeLang(this); return false;">Deutsch</a><a href="#" name="lng_Turkish" onclick="ChangeLang(this); return false;">Türkçe</a><a href="#" name="lng_Swedish" onclick="ChangeLang(this); return false;">Svenska</a><a href="#" name="lng_Russian" onclick="ChangeLang(this); return false;">Русский</a><a href="#" name="lng_French" onclick="ChangeLang(this); return false;">Français</a><a href="#" name="lng_Greek" onclick="ChangeLang(this); return false;">Ελληνικά</a><a href="#" name="lng_Chinese-Traditional" onclick="ChangeLang(this); return false;">Chinese-Traditional</a><a href="#" name="lng_Czech" onclick="ChangeLang(this); return false;">Čeština</a><a href="#" name="lng_Arabic" onclick="ChangeLang(this); return false;">العربية</a><a href="#" name="lng_Japanese" onclick="ChangeLang(this); return false;">日本語</a><a href="#" name="lng_Norwegian" onclick="ChangeLang(this); return false;">Norsk</a><a href="#" name="lng_Finnish" onclick="ChangeLang(this); return false;">Finnish</a><a href="#" name="lng_Korean" onclick="ChangeLang(this); return false;">한국어</a><a href="#" name="lng_Hungarian" onclick="ChangeLang(this); return false;">Magyar</a><a href="#" name="lng_Danish" onclick="ChangeLang(this); return false;">Dansk</a><a href="#" name="lng_Persian" onclick="ChangeLang(this); return false;">Persian</a><a href="#" name="lng_Hebrew" onclick="ChangeLang(this); return false;">עברית</a><a href="#" name="lng_Dutch" onclick="ChangeLang(this); return false;">Nederlands</a><a href="#" name="lng_Latvian" onclick="ChangeLang(this); return false;">Latvian</a><a href="#" name="lng_Polish" onclick="ChangeLang(this); return false;">Polski</a><a href="#" name="lng_Chinese-Simplified" onclick="ChangeLang(this); return false;">Chinese-Simplified</a><a href="#" name="lng_Thai" onclick="ChangeLang(this); return false;">ภาษาไทย</a></div></span>						</div>
+					</div>
+				</div>
+				<div class="b"></div>
+				<div class="a"></div>
+			</div>
+		</form>
+	</div>
+	<div class="info" id="demo_info" dir="ltr">
+	</div>
+
+	<div id="dummy"></div>
+</div>
+<div class="wm_copyright" id="copyright">
+<font size="3"><b><span style="color:#000000">
+<a style="color:#DF0101" href="http://google.info.yorku.ca/" target="_blank"><font size="3"><b>York U undergrads have gone Google</font></b></a>
+<br>
+<br>
+Welcome to MyMail
+<br>
+<br>
+<a style="color:#DF0101" href="https://oldmymail.yorku.ca" target="_blank"><font size="3"><b>To set up Out of Office or Forwarding, or Check Quota</font></b></a>
+<br>
+<br>
+We appreciate and look forward to your valuable 
+<a style="color:#DF0101" href="https://itsdforms.yorku.ca/yuservicerequest/Forms.aspx?FID=1315" target="_blank"><font size="3"><b>feedback.</font></b></a>
+<br>
+<br>
+If you are experiencing login issues at this time, please visit old mymail.
+Old MyMail is still available at: 
+<a style="color:#DF0101" href="https://oldmymail.yorku.ca" target="_blank"><font size="3"><b>oldmymail.yorku.ca</font></b></a>
+<br>
+<br>
+Go to <a style="color:#DF0101" href="http://mms.yorku.ca" target="_blank"><font size="3"><b>Manage My Services</font></b></a>
+to activate your York Email Service or manage your account (change/lost passwords...)
+<br><br><br><br><br><br><br><br><br><br>
+Copyright &copy; 2012 <a href="http://www.afterlogic.com" target="_blank">AfterLogic</a>
+</div>
+</body>
+</html>
+<!-- 6.6.0 -->

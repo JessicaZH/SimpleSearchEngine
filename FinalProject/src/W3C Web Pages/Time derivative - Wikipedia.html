@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Time derivative - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Time_derivative","wgTitle":"Time derivative","wgCurRevisionId":868534034,"wgRevisionId":868534034,"wgArticleId":1783069,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Differential calculus"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Time_derivative","wgRelevantArticleId":1783069,"wgRequestId":"W-1j9ApAMFoAALKgzv0AAABK","wgCSPNonce":false,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikiEditorEnabledModules":[],"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsShouldSendModuleToUser":true,"wgPopupsConflictsWithNavPopupGadget":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":true,"usePageDescriptions":true},"wgMFExpandAllSectionsUserOption":true,"wgMFEnableFontChanger":true,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgWMESchemaEditAttemptStepOversample":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgWikibaseItemId":"Q6960532","wgScoreNoteLanguages":{"arabic":"العربية","catalan":"català","deutsch":"Deutsch","english":"English","espanol":"español","italiano":"italiano","nederlands":"Nederlands","norsk":"norsk","portugues":"português","suomi":"suomi","svenska":"svenska","vlaams":"West-Vlams"},"wgScoreDefaultNoteLanguage":"nederlands","wgCentralAuthMobileDomain":false,"wgCodeMirrorEnabled":true,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":true});mw.loader.state({"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});RLPAGEMODULES=["ext.cite.a11y","ext.math.scripts","site","mediawiki.page.startup","mediawiki.user","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.compactlinks","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"];mw.loader.load(RLPAGEMODULES);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.3d.styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.33.0-wmf.4"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Time_derivative"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Time_derivative&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Time_derivative&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Time_derivative"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Time_derivative rootpage-Time_derivative skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div><div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">Time derivative</h1>			<div id="bodyContent" class="mw-body-content">
+				<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>				<div id="contentSub"></div>
+				<div id="jump-to-nav"></div>				<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+				<a class="mw-jump-link" href="#p-search">Jump to search</a>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>A <b>time derivative</b> is a <a href="/wiki/Derivative" title="Derivative">derivative</a> of a function with respect to <a href="/wiki/Time" title="Time">time</a>, usually interpreted as the <a href="/wiki/Derivative" title="Derivative">rate of change</a> of the value of the function.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup> The variable denoting time is usually written as <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle t\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>t</mi>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle t\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/946383a7c6d1876177c662a95b369ced2ad99cd9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.227ex; height:2.009ex;" alt="t\,"/></span>.
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Notation"><span class="tocnumber">1</span> <span class="toctext">Notation</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Use_in_physics"><span class="tocnumber">2</span> <span class="toctext">Use in physics</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Example:_circular_motion"><span class="tocnumber">2.1</span> <span class="toctext">Example: circular motion</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#In_differential_geometry"><span class="tocnumber">3</span> <span class="toctext">In differential geometry</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Use_in_economics"><span class="tocnumber">4</span> <span class="toctext">Use in economics</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Notation">Notation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Time_derivative&amp;action=edit&amp;section=1" title="Edit section: Notation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A variety of notations are used to denote the time derivative. In addition to the normal (<a href="/wiki/Leibniz%27s_notation" title="Leibniz&#39;s notation">Leibniz's</a>) notation,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {dx}{dt}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>d</mi>
+              <mi>x</mi>
+            </mrow>
+            <mrow>
+              <mi>d</mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {dx}{dt}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5cd8f4577337ea1e3aa08b83b86f156fc04aff2c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:3.382ex; height:5.509ex;" alt="\frac {dx} {dt}"/></span></dd></dl>
+<p>A very common short-hand notation used, especially in physics, is the 'over-dot'. I.E.
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\dot {x}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>x</mi>
+              <mo>&#x02D9;<!-- ˙ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\dot {x}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a82c85f33714da82ab42d6b69eae07ab7e5e234b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.33ex; height:2.176ex;" alt="{\dot {x}}"/></span></dd></dl>
+<p>(This is called <a href="/wiki/Newton%27s_notation" class="mw-redirect" title="Newton&#39;s notation">Newton's notation</a>)
+</p><p>Higher time derivatives are also used: the <a href="/wiki/Second_derivative" title="Second derivative">second derivative</a> with respect to time is written as
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {d^{2}x}{dt^{2}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msup>
+                <mi>d</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mi>x</mi>
+            </mrow>
+            <mrow>
+              <mi>d</mi>
+              <msup>
+                <mi>t</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {d^{2}x}{dt^{2}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ea37779ec9019a8946c99c4c49767f90a7442399" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:4.438ex; height:6.009ex;" alt="\frac {d^2x} {dt^2}"/></span></dd></dl>
+<p>with the corresponding shorthand of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\ddot {x}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>x</mi>
+              <mo>&#x00A8;<!-- ¨ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\ddot {x}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/06e0e705ddda28c6cd06cdc6e18be9abf88bb395" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.33ex; height:2.176ex;" alt="{\ddot {x}}"/></span>.
+</p><p>As a generalization, the time derivative of a vector, say:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\vec {V}}=\left[v_{1},\ v_{2},\ v_{3},\cdots \right]\ ,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>V</mi>
+              <mo stretchy="false">&#x2192;<!-- → --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>[</mo>
+          <mrow>
+            <msub>
+              <mi>v</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+            <mo>,</mo>
+            <mtext>&#xA0;</mtext>
+            <msub>
+              <mi>v</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+            <mo>,</mo>
+            <mtext>&#xA0;</mtext>
+            <msub>
+              <mi>v</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>3</mn>
+              </mrow>
+            </msub>
+            <mo>,</mo>
+            <mo>&#x22EF;<!-- ⋯ --></mo>
+          </mrow>
+          <mo>]</mo>
+        </mrow>
+        <mtext>&#xA0;</mtext>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\vec {V}}=\left[v_{1},\ v_{2},\ v_{3},\cdots \right]\ ,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b0d8a63b811c22f02fb829f5d4fec93c6b242bc6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:21.326ex; height:3.343ex;" alt=" \vec V = \left[ v_1,\ v_2,\ v_3, \cdots \right] \ , "/></span></dd></dl>
+<p>is defined as the vector whose components are the derivatives of the components of the original vector. That is,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {d{\vec {V}}}{dt}}=\left[{\frac {dv_{1}}{dt}},{\frac {dv_{2}}{dt}},{\frac {dv_{3}}{dt}},\cdots \right]\ .}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>d</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mover>
+                    <mi>V</mi>
+                    <mo stretchy="false">&#x2192;<!-- → --></mo>
+                  </mover>
+                </mrow>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mi>d</mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>[</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi>d</mi>
+                  <msub>
+                    <mi>v</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </mrow>
+                <mrow>
+                  <mi>d</mi>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+            </mrow>
+            <mo>,</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi>d</mi>
+                  <msub>
+                    <mi>v</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                </mrow>
+                <mrow>
+                  <mi>d</mi>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+            </mrow>
+            <mo>,</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi>d</mi>
+                  <msub>
+                    <mi>v</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>3</mn>
+                    </mrow>
+                  </msub>
+                </mrow>
+                <mrow>
+                  <mi>d</mi>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+            </mrow>
+            <mo>,</mo>
+            <mo>&#x22EF;<!-- ⋯ --></mo>
+          </mrow>
+          <mo>]</mo>
+        </mrow>
+        <mtext>&#xA0;</mtext>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {d{\vec {V}}}{dt}}=\left[{\frac {dv_{1}}{dt}},{\frac {dv_{2}}{dt}},{\frac {dv_{3}}{dt}},\cdots \right]\ .}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9434b63a61960a5d4e052da3299b38422cd755b0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:29.534ex; height:6.676ex;" alt=" \frac {d \vec V } {dt} = \left[ \frac{ d v_1 }{dt},\frac {d  v_2 }{dt},\frac {d  v_3 }{dt}, \cdots \right] \ . "/></span></dd></dl>
+<h2><span class="mw-headline" id="Use_in_physics">Use in physics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Time_derivative&amp;action=edit&amp;section=2" title="Edit section: Use in physics">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Time derivatives are a key concept in <a href="/wiki/Physics" title="Physics">physics</a>. For example, for a changing <a href="/wiki/Position_(vector)" title="Position (vector)">position</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle x\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ab34739435d9d9d99cddf4041740b107343b1398" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.717ex; height:1.676ex;" alt="x\,"/></span>, its time derivative <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\dot {x}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>x</mi>
+              <mo>&#x02D9;<!-- ˙ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\dot {x}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a82c85f33714da82ab42d6b69eae07ab7e5e234b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.33ex; height:2.176ex;" alt="{\dot {x}}"/></span> is its <a href="/wiki/Velocity" title="Velocity">velocity</a>, and its second derivative with respect to time, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\ddot {x}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>x</mi>
+              <mo>&#x00A8;<!-- ¨ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\ddot {x}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/06e0e705ddda28c6cd06cdc6e18be9abf88bb395" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.33ex; height:2.176ex;" alt="{\ddot {x}}"/></span>, is its <a href="/wiki/Acceleration" title="Acceleration">acceleration</a>. Even higher derivatives are sometimes also used: the third derivative of position with respect to time is known as the <a href="/wiki/Jerk_(physics)" title="Jerk (physics)">jerk</a>. See <a href="/wiki/Motion_graphs_and_derivatives" title="Motion graphs and derivatives">motion graphs and derivatives</a>.
+</p><p>A large number of fundamental equations in physics involve first or second time derivatives of quantities. Many other fundamental quantities in science are time derivatives of one another:
+</p>
+<ul><li><a href="/wiki/Force" title="Force">force</a> is the time derivative of <a href="/wiki/Momentum" title="Momentum">momentum</a></li>
+<li><a href="/wiki/Power_(physics)" title="Power (physics)">power</a> is the time derivative of <a href="/wiki/Energy" title="Energy">energy</a></li>
+<li><a href="/wiki/Electric_current" title="Electric current">electric current</a> is the time derivative of <a href="/wiki/Electric_charge" title="Electric charge">electric charge</a></li></ul>
+<p>and so on.
+</p><p>A common occurrence in physics is the time derivative of a <a href="/wiki/Vector_(geometric)" class="mw-redirect" title="Vector (geometric)">vector</a>, such as velocity or displacement. In dealing with such a derivative, both magnitude and orientation may depend upon time.
+</p>
+<h3><span class="mw-headline" id="Example:_circular_motion">Example: circular motion</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Time_derivative&amp;action=edit&amp;section=3" title="Edit section: Example: circular motion">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">See also: <a href="/wiki/Uniform_circular_motion" class="mw-redirect" title="Uniform circular motion">Uniform circular motion</a> and <a href="/wiki/Centripetal_force" title="Centripetal force">Centripetal force</a></div>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/File:Polar_rectangular.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/93/Polar_rectangular.svg/300px-Polar_rectangular.svg.png" width="300" height="214" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/93/Polar_rectangular.svg/450px-Polar_rectangular.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/93/Polar_rectangular.svg/600px-Polar_rectangular.svg.png 2x" data-file-width="512" data-file-height="366" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Polar_rectangular.svg" class="internal" title="Enlarge"></a></div>Relation between Cartesian coordinates (<i>x</i>,<i>y</i>) and <a href="/wiki/Polar_coordinates" class="mw-redirect" title="Polar coordinates">polar coordinates</a> (<i>r</i>,<i>θ</i>).</div></div></div>
+<p>For example, consider a particle moving in a circular path. Its position is given by the displacement vector <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle r=x{\hat {\imath }}+y{\hat {\jmath }}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>r</mi>
+        <mo>=</mo>
+        <mi>x</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>&#x0131;<!-- ı --></mi>
+              <mo stretchy="false">&#x005E;<!-- ^ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mo>+</mo>
+        <mi>y</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>&#x0237;<!-- ȷ --></mi>
+              <mo stretchy="false">&#x005E;<!-- ^ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle r=x{\hat {\imath }}+y{\hat {\jmath }}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/95eb819fc3b57015f436010b9b483c9bec39dd8b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:11.849ex; height:2.509ex;" alt="{\displaystyle r=x{\hat {\imath }}+y{\hat {\jmath }}}"/></span>, related to the angle, <i>θ</i>, and radial distance, <i>r</i>, as defined in the figure:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}x&amp;=r\cos \theta \\y&amp;=r\sin \theta \end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mi>x</mi>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi>r</mi>
+                <mi>cos</mi>
+                <mo>&#x2061;<!-- ⁡ --></mo>
+                <mi>&#x03B8;<!-- θ --></mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mi>y</mi>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi>r</mi>
+                <mi>sin</mi>
+                <mo>&#x2061;<!-- ⁡ --></mo>
+                <mi>&#x03B8;<!-- θ --></mi>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}x&amp;=r\cos \theta \\y&amp;=r\sin \theta \end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a1a8f6e36d83e182f27782fe74202cbd6cc7f3b5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:11.204ex; height:5.843ex;" alt="\begin{align}&#10;x &amp;= r  \cos\theta \\&#10;y &amp;= r \sin\theta &#10;\end{align}"/></span></dd></dl>
+<p>For purposes of this example, set <span class="nowrap"><i>θ</i> = <i>t</i></span>. The displacement (position) at any time <i>t</i> is then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {r} (t)=r\cos(t){\hat {\imath }}+r\sin(t){\hat {\jmath }}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>r</mi>
+        <mi>cos</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>&#x0131;<!-- ı --></mi>
+              <mo stretchy="false">&#x005E;<!-- ^ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mo>+</mo>
+        <mi>r</mi>
+        <mi>sin</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>&#x0237;<!-- ȷ --></mi>
+              <mo stretchy="false">&#x005E;<!-- ^ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {r} (t)=r\cos(t){\hat {\imath }}+r\sin(t){\hat {\jmath }}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ebcc8dc6e13ff48932c63e4de72f9e9c0a3c5752" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:26.202ex; height:2.843ex;" alt="{\displaystyle \mathbf {r} (t)=r\cos(t){\hat {\imath }}+r\sin(t){\hat {\jmath }}}"/></span></dd></dl>
+<p>This form shows the motion described by <i><b>r</b></i>(<i>t</i>) is in a circle of radius <i>r</i> because the <i>magnitude</i> of <i><b>r</b></i>(<i>t</i>) is given by
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle |\mathbf {r} (t)|={\sqrt {\mathbf {r} (t)\cdot \mathbf {r} (t)}}={\sqrt {x(t)^{2}+y(t)^{2}}}=r\,{\sqrt {\cos ^{2}(t)+\sin ^{2}(t)}}=r}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="bold">r</mi>
+            </mrow>
+            <mo stretchy="false">(</mo>
+            <mi>t</mi>
+            <mo stretchy="false">)</mo>
+            <mo>&#x22C5;<!-- ⋅ --></mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="bold">r</mi>
+            </mrow>
+            <mo stretchy="false">(</mo>
+            <mi>t</mi>
+            <mo stretchy="false">)</mo>
+          </msqrt>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mi>x</mi>
+            <mo stretchy="false">(</mo>
+            <mi>t</mi>
+            <msup>
+              <mo stretchy="false">)</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+            <mo>+</mo>
+            <mi>y</mi>
+            <mo stretchy="false">(</mo>
+            <mi>t</mi>
+            <msup>
+              <mo stretchy="false">)</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+          </msqrt>
+        </mrow>
+        <mo>=</mo>
+        <mi>r</mi>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <msup>
+              <mi>cos</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+            <mo>&#x2061;<!-- ⁡ --></mo>
+            <mo stretchy="false">(</mo>
+            <mi>t</mi>
+            <mo stretchy="false">)</mo>
+            <mo>+</mo>
+            <msup>
+              <mi>sin</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+            <mo>&#x2061;<!-- ⁡ --></mo>
+            <mo stretchy="false">(</mo>
+            <mi>t</mi>
+            <mo stretchy="false">)</mo>
+          </msqrt>
+        </mrow>
+        <mo>=</mo>
+        <mi>r</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |\mathbf {r} (t)|={\sqrt {\mathbf {r} (t)\cdot \mathbf {r} (t)}}={\sqrt {x(t)^{2}+y(t)^{2}}}=r\,{\sqrt {\cos ^{2}(t)+\sin ^{2}(t)}}=r}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/53536686718734797966e31566ebc4bffe1402e4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:65.021ex; height:5.009ex;" alt="|\mathbf{r}(t)| = \sqrt{\mathbf{r}(t) \cdot \mathbf{r}(t)}=\sqrt {x(t)^2 + y(t)^2 } = r\, \sqrt{\cos^2(t) + \sin^2(t)} = r"/></span></dd></dl>
+<p>using the <a href="/wiki/Trigonometric_identity" class="mw-redirect" title="Trigonometric identity">trigonometric identity</a> <span class="nowrap">sin<sup>2</sup>(<i>t</i>) + cos<sup>2</sup>(<i>t</i>) = 1</span> and where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \cdot }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \cdot }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ba2c023bad1bd39ed49080f729cbf26bc448c9ba" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: 0.439ex; margin-bottom: -0.61ex; width:0.647ex; height:1.176ex;" alt="\cdot "/></span> is the usual euclidean dot product.
+</p><p>With this form for the displacement, the velocity now is found. The time derivative of the displacement vector is the velocity vector. In general, the derivative of a vector is a vector made up of components each of which is the derivative of the corresponding component of the original vector. Thus, in this case, the velocity vector is:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}\mathbf {v} (t)={\frac {d\,\mathbf {r} (t)}{dt}}&amp;=r\left[{\frac {d\,\cos(t)}{dt}},{\frac {d\,\sin(t)}{dt}}\right]\\&amp;=r\ [-\sin(t),\ \cos(t)]\\&amp;=[-y(t),x(t)].\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="bold">v</mi>
+                </mrow>
+                <mo stretchy="false">(</mo>
+                <mi>t</mi>
+                <mo stretchy="false">)</mo>
+                <mo>=</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi>d</mi>
+                      <mspace width="thinmathspace" />
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi mathvariant="bold">r</mi>
+                      </mrow>
+                      <mo stretchy="false">(</mo>
+                      <mi>t</mi>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                    <mrow>
+                      <mi>d</mi>
+                      <mi>t</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi>r</mi>
+                <mrow>
+                  <mo>[</mo>
+                  <mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mrow>
+                          <mi>d</mi>
+                          <mspace width="thinmathspace" />
+                          <mi>cos</mi>
+                          <mo>&#x2061;<!-- ⁡ --></mo>
+                          <mo stretchy="false">(</mo>
+                          <mi>t</mi>
+                          <mo stretchy="false">)</mo>
+                        </mrow>
+                        <mrow>
+                          <mi>d</mi>
+                          <mi>t</mi>
+                        </mrow>
+                      </mfrac>
+                    </mrow>
+                    <mo>,</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mrow>
+                          <mi>d</mi>
+                          <mspace width="thinmathspace" />
+                          <mi>sin</mi>
+                          <mo>&#x2061;<!-- ⁡ --></mo>
+                          <mo stretchy="false">(</mo>
+                          <mi>t</mi>
+                          <mo stretchy="false">)</mo>
+                        </mrow>
+                        <mrow>
+                          <mi>d</mi>
+                          <mi>t</mi>
+                        </mrow>
+                      </mfrac>
+                    </mrow>
+                  </mrow>
+                  <mo>]</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi>r</mi>
+                <mtext>&#xA0;</mtext>
+                <mo stretchy="false">[</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mi>sin</mi>
+                <mo>&#x2061;<!-- ⁡ --></mo>
+                <mo stretchy="false">(</mo>
+                <mi>t</mi>
+                <mo stretchy="false">)</mo>
+                <mo>,</mo>
+                <mtext>&#xA0;</mtext>
+                <mi>cos</mi>
+                <mo>&#x2061;<!-- ⁡ --></mo>
+                <mo stretchy="false">(</mo>
+                <mi>t</mi>
+                <mo stretchy="false">)</mo>
+                <mo stretchy="false">]</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mo stretchy="false">[</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mi>y</mi>
+                <mo stretchy="false">(</mo>
+                <mi>t</mi>
+                <mo stretchy="false">)</mo>
+                <mo>,</mo>
+                <mi>x</mi>
+                <mo stretchy="false">(</mo>
+                <mi>t</mi>
+                <mo stretchy="false">)</mo>
+                <mo stretchy="false">]</mo>
+                <mo>.</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}\mathbf {v} (t)={\frac {d\,\mathbf {r} (t)}{dt}}&amp;=r\left[{\frac {d\,\cos(t)}{dt}},{\frac {d\,\sin(t)}{dt}}\right]\\&amp;=r\ [-\sin(t),\ \cos(t)]\\&amp;=[-y(t),x(t)].\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2430c683f9ec15ff667b1689397d12fb54568fca" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -5.671ex; width:39.04ex; height:12.509ex;" alt="&#10;\begin{align}&#10;\mathbf{v}(t) = \frac {d\,\mathbf{r}(t) }{dt} &amp;= r \left[\frac{d\, \cos(t)}{dt}, \frac{d\, \sin(t)}{dt} \right] \\&#10; &amp;= r\ [ -\sin(t),\  \cos(t)] \\&#10; &amp;= [-y (t), x(t)].&#10;\end{align}"/></span></dd></dl>
+<p>Thus the velocity of the particle is nonzero even though the magnitude of the position (that is, the radius of the path) is constant. The velocity is directed perpendicular to the displacement, as can be established using the <a href="/wiki/Dot_product" title="Dot product">dot product</a>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {v} \cdot \mathbf {r} =[-y,x]\cdot [x,y]=-yx+xy=0\,.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">v</mi>
+        </mrow>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo>=</mo>
+        <mo stretchy="false">[</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>y</mi>
+        <mo>,</mo>
+        <mi>x</mi>
+        <mo stretchy="false">]</mo>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mo stretchy="false">[</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">]</mo>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>y</mi>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi>x</mi>
+        <mi>y</mi>
+        <mo>=</mo>
+        <mn>0</mn>
+        <mspace width="thinmathspace" />
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {v} \cdot \mathbf {r} =[-y,x]\cdot [x,y]=-yx+xy=0\,.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fb7ed48b27b1ee26f840146fcc93fc1e6f08186e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:38.416ex; height:2.843ex;" alt="\mathbf{v} \cdot \mathbf{r} = [-y, x] \cdot [x, y] = -yx + xy = 0\, . "/></span></dd></dl>
+<p>Acceleration is then the time-derivative of velocity:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {a} (t)={\frac {d\,\mathbf {v} (t)}{dt}}=[-x(t),-y(t)]=-\mathbf {r} (t)\,.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">a</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>d</mi>
+              <mspace width="thinmathspace" />
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">v</mi>
+              </mrow>
+              <mo stretchy="false">(</mo>
+              <mi>t</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mi>d</mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mo stretchy="false">[</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>x</mi>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>y</mi>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">]</mo>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {a} (t)={\frac {d\,\mathbf {v} (t)}{dt}}=[-x(t),-y(t)]=-\mathbf {r} (t)\,.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d393d537ee16a061158073b64746fcc022b4a1b6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:40.063ex; height:5.843ex;" alt="\mathbf{a}(t) = \frac {d\, \mathbf{v}(t)}{dt} = [-x(t), -y(t)] = -\mathbf{r}(t)\, ."/></span></dd></dl>
+<p>The acceleration is directed inward, toward the axis of rotation. It points opposite to the position vector and perpendicular to the velocity vector. This inward-directed acceleration is called <a href="/wiki/Centripetal_force" title="Centripetal force">centripetal acceleration</a>.
+</p>
+<h2><span class="mw-headline" id="In_differential_geometry">In differential geometry</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Time_derivative&amp;action=edit&amp;section=4" title="Edit section: In differential geometry">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In <a href="/wiki/Differential_geometry" title="Differential geometry">differential geometry</a>, quantities are often expressed with respect to the local <a href="/wiki/Curvilinear_coordinates#Covariant_and_contravariant_bases" title="Curvilinear coordinates"> covariant basis</a>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {e} _{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">e</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {e} _{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ba77c5a75ef9e230d1a36183785477a2eb3c5c1e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.025ex; height:2.009ex;" alt="{\displaystyle \mathbf {e} _{i}}"/></span>, where <i>i</i> ranges over the number of dimensions. The components of a vector <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {U} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">U</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {U} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b2141bec2344e3dc5241ff50b0fd366755e00223" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.057ex; height:2.176ex;" alt="{\displaystyle \mathbf {U} }"/></span> expressed this way transform as a contravariant <a href="/wiki/Tensor_field" title="Tensor field">tensor</a>, as shown in the expression <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {U} =U^{i}\mathbf {e} _{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">U</mi>
+        </mrow>
+        <mo>=</mo>
+        <msup>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msup>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">e</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {U} =U^{i}\mathbf {e} _{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fc53ab01268219d68222c38ec849911e047d1a7e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:9.821ex; height:3.009ex;" alt="{\displaystyle \mathbf {U} =U^{i}\mathbf {e} _{i}}"/></span>, invoking <a href="/wiki/Einstein_summation_convention" class="mw-redirect" title="Einstein summation convention">Einstein summation convention</a>. If we want to calculate the time derivates of these components along a trajectory, so that we have <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {U} (t)=U^{i}(t)\mathbf {e} _{i}(t)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">U</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msup>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">e</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {U} (t)=U^{i}(t)\mathbf {e} _{i}(t)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f6ec7dd0cd19d5159c6b180b44d02202a15004c7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:17.768ex; height:3.176ex;" alt="{\displaystyle \mathbf {U} (t)=U^{i}(t)\mathbf {e} _{i}(t)}"/></span>, we can define a new operator, the invariant derivative <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \delta }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B4;<!-- δ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \delta }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c5321cfa797202b3e1f8620663ff43c4660ea03a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.049ex; height:2.343ex;" alt="\delta "/></span>, which will continue to return contravariant tensors<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}{\frac {\delta U^{i}}{\delta t}}={\frac {dU^{i}}{dt}}+V^{j}\Gamma _{jk}^{i}U^{k}\\\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi>&#x03B4;<!-- δ --></mi>
+                      <msup>
+                        <mi>U</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>i</mi>
+                        </mrow>
+                      </msup>
+                    </mrow>
+                    <mrow>
+                      <mi>&#x03B4;<!-- δ --></mi>
+                      <mi>t</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mo>=</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi>d</mi>
+                      <msup>
+                        <mi>U</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>i</mi>
+                        </mrow>
+                      </msup>
+                    </mrow>
+                    <mrow>
+                      <mi>d</mi>
+                      <mi>t</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mo>+</mo>
+                <msup>
+                  <mi>V</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>j</mi>
+                  </mrow>
+                </msup>
+                <msubsup>
+                  <mi mathvariant="normal">&#x0393;<!-- Γ --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>j</mi>
+                    <mi>k</mi>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>i</mi>
+                  </mrow>
+                </msubsup>
+                <msup>
+                  <mi>U</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </msup>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}{\frac {\delta U^{i}}{\delta t}}={\frac {dU^{i}}{dt}}+V^{j}\Gamma _{jk}^{i}U^{k}\\\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/325bdc4bbced0407c6ee2477d36496ba18741074" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:24.885ex; height:5.843ex;" alt="{\displaystyle {\begin{aligned}{\frac {\delta U^{i}}{\delta t}}={\frac {dU^{i}}{dt}}+V^{j}\Gamma _{jk}^{i}U^{k}\\\end{aligned}}}"/></span></dd></dl>
+<p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle V^{j}={\frac {dx^{j}}{dt}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>V</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>d</mi>
+              <msup>
+                <mi>x</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>j</mi>
+                </mrow>
+              </msup>
+            </mrow>
+            <mrow>
+              <mi>d</mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle V^{j}={\frac {dx^{j}}{dt}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/26afe1cc2789de3107530c71328893cb821eadf7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:10.217ex; height:5.843ex;" alt="{\displaystyle V^{j}={\frac {dx^{j}}{dt}}}"/></span> (with <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle x^{j}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x^{j}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/720ef99822043e29664d4eccb8f866c897fcab09" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.239ex; height:2.676ex;" alt="x^{j}"/></span> being the <i>j</i>th coordinate) captures the components of the velocity in the local covariant basis, and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \Gamma _{jk}^{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mi mathvariant="normal">&#x0393;<!-- Γ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+            <mi>k</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Gamma _{jk}^{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4738f0f3db1071df585ecf33486ea86614e2b885" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.338ex; width:3.219ex; height:3.509ex;" alt="{\displaystyle \Gamma _{jk}^{i}}"/></span> are the <a href="/wiki/Christoffel_symbols" title="Christoffel symbols">Christoffel symbols</a> for the coordinate system. Note that explicit dependence on <i>t</i> has been repressed in the notation. We can then write:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}{\frac {d\mathbf {U} }{dt}}={\frac {\delta U^{i}}{\delta t}}\mathbf {e} _{i}\\\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi>d</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi mathvariant="bold">U</mi>
+                      </mrow>
+                    </mrow>
+                    <mrow>
+                      <mi>d</mi>
+                      <mi>t</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mo>=</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi>&#x03B4;<!-- δ --></mi>
+                      <msup>
+                        <mi>U</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>i</mi>
+                        </mrow>
+                      </msup>
+                    </mrow>
+                    <mrow>
+                      <mi>&#x03B4;<!-- δ --></mi>
+                      <mi>t</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <msub>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="bold">e</mi>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>i</mi>
+                  </mrow>
+                </msub>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}{\frac {d\mathbf {U} }{dt}}={\frac {\delta U^{i}}{\delta t}}\mathbf {e} _{i}\\\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8ed78b3b9a06108dea318ec96cf250204be7703e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:14.509ex; height:5.843ex;" alt="{\displaystyle {\begin{aligned}{\frac {d\mathbf {U} }{dt}}={\frac {\delta U^{i}}{\delta t}}\mathbf {e} _{i}\\\end{aligned}}}"/></span></dd></dl>
+<p>as well as:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}{\frac {d^{2}\mathbf {U} }{dt^{2}}}={\frac {\delta ^{2}U^{i}}{\delta t^{2}}}\mathbf {e} _{i}\\\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <msup>
+                        <mi>d</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>2</mn>
+                        </mrow>
+                      </msup>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi mathvariant="bold">U</mi>
+                      </mrow>
+                    </mrow>
+                    <mrow>
+                      <mi>d</mi>
+                      <msup>
+                        <mi>t</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>2</mn>
+                        </mrow>
+                      </msup>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mo>=</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <msup>
+                        <mi>&#x03B4;<!-- δ --></mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>2</mn>
+                        </mrow>
+                      </msup>
+                      <msup>
+                        <mi>U</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>i</mi>
+                        </mrow>
+                      </msup>
+                    </mrow>
+                    <mrow>
+                      <mi>&#x03B4;<!-- δ --></mi>
+                      <msup>
+                        <mi>t</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>2</mn>
+                        </mrow>
+                      </msup>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <msub>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="bold">e</mi>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>i</mi>
+                  </mrow>
+                </msub>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}{\frac {d^{2}\mathbf {U} }{dt^{2}}}={\frac {\delta ^{2}U^{i}}{\delta t^{2}}}\mathbf {e} _{i}\\\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9b949cce7a650f19604b8fd38dfb10636890b9c4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:16.625ex; height:5.843ex;" alt="{\displaystyle {\begin{aligned}{\frac {d^{2}\mathbf {U} }{dt^{2}}}={\frac {\delta ^{2}U^{i}}{\delta t^{2}}}\mathbf {e} _{i}\\\end{aligned}}}"/></span></dd></dl>
+<p>In terms of the <a href="/wiki/Covariant_derivative" title="Covariant derivative">covariant derivative</a>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \nabla _{j}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \nabla _{j}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a9e252d1dd7ab8513a5f83b0d03380d8ee63d64d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.846ex; height:2.843ex;" alt="{\displaystyle \nabla _{j}}"/></span>, we have:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}{\frac {\delta U^{i}}{\delta t}}=V^{j}\nabla _{j}U^{i}\\\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi>&#x03B4;<!-- δ --></mi>
+                      <msup>
+                        <mi>U</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>i</mi>
+                        </mrow>
+                      </msup>
+                    </mrow>
+                    <mrow>
+                      <mi>&#x03B4;<!-- δ --></mi>
+                      <mi>t</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mo>=</mo>
+                <msup>
+                  <mi>V</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>j</mi>
+                  </mrow>
+                </msup>
+                <msub>
+                  <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>j</mi>
+                  </mrow>
+                </msub>
+                <msup>
+                  <mi>U</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>i</mi>
+                  </mrow>
+                </msup>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}{\frac {\delta U^{i}}{\delta t}}=V^{j}\nabla _{j}U^{i}\\\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0f19a250f263237685182e2dcd2d7087ffe6a734" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:16.689ex; height:5.843ex;" alt="{\displaystyle {\begin{aligned}{\frac {\delta U^{i}}{\delta t}}=V^{j}\nabla _{j}U^{i}\\\end{aligned}}}"/></span></dd></dl>
+<h2><span class="mw-headline" id="Use_in_economics">Use in economics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Time_derivative&amp;action=edit&amp;section=5" title="Edit section: Use in economics">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In <a href="/wiki/Economics" title="Economics">economics</a>, many theoretical models of the evolution of various economic variables are constructed in <a href="/wiki/Continuous_time" class="mw-redirect" title="Continuous time">continuous time</a> and therefore employ time derivatives. See for example <a href="/wiki/Exogenous_growth_model" class="mw-redirect" title="Exogenous growth model">exogenous growth model</a> and <sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup><sup>ch. 1-3</sup>.  One situation involves a <a href="/wiki/Stocks_and_flows" class="mw-redirect" title="Stocks and flows">stock variable</a> and its time derivative, a <a href="/wiki/Stocks_and_flows" class="mw-redirect" title="Stocks and flows">flow variable</a>.  Examples include: 
+</p>
+<ul><li>The flow of net <a href="/wiki/Fixed_investment" title="Fixed investment">fixed investment</a> is the time derivative of the <a href="/wiki/Capital_stock" class="mw-redirect" title="Capital stock">capital stock</a>.</li>
+<li>The flow of <a href="/wiki/Inventory_investment" title="Inventory investment">inventory investment</a> is the time derivative of the stock of <a href="/wiki/Inventories" class="mw-redirect" title="Inventories">inventories</a>.</li>
+<li>The growth rate of the <a href="/wiki/Money_supply" title="Money supply">money supply</a> is the time derivative of the money supply divided by the money supply itself.</li></ul>
+<p>Sometimes the time derivative of a flow variable can appear in a model:
+</p>
+<ul><li>The growth rate of <a href="/wiki/Output_(economics)" title="Output (economics)">output</a> is the time derivative of the flow of output divided by output itself.</li>
+<li>The growth rate of the <a href="/wiki/Labor_force" class="mw-redirect" title="Labor force">labor force</a> is the time derivative of the labor force divided by the labor force itself.</li></ul>
+<p>And sometimes there appears a time derivative of a variable which, unlike the examples above, is not measured in units of currency:
+</p>
+<ul><li>The time derivative of a key <a href="/wiki/Interest_rate" title="Interest rate">interest rate</a> can appear.</li>
+<li>The <a href="/wiki/Inflation_rate" class="mw-redirect" title="Inflation rate">inflation rate</a> is the growth rate of the <a href="/wiki/Price_level" title="Price level">price level</a>&#8212;that is, the time derivative of the price level divided by the price level itself.</li></ul>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Time_derivative&amp;action=edit&amp;section=6" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Differential_calculus" title="Differential calculus">Differential calculus</a></li>
+<li><a href="/wiki/Notation_for_differentiation" title="Notation for differentiation">Notation for differentiation</a></li>
+<li><a href="/wiki/Circular_motion" title="Circular motion">Circular motion</a></li>
+<li><a href="/wiki/Centripetal_force" title="Centripetal force">Centripetal force</a></li>
+<li><a href="/wiki/Spatial_derivative" class="mw-redirect" title="Spatial derivative">Spatial derivative</a></li>
+<li><a href="/wiki/Temporal_rate" class="mw-redirect" title="Temporal rate">Temporal rate</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Time_derivative&amp;action=edit&amp;section=7" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><a href="/wiki/Alpha_Chiang" title="Alpha Chiang">Chiang, Alpha C.</a>, <i>Fundamental Methods of Mathematical Economics</i>, McGraw-Hill, third edition, 1984, ch. 14, 15, 18.</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web">Grinfeld, Pavel. <a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=yx0oql3LIiU&amp;list=PLlXfTHzgMRULkodlIEqfgTS-H1AY_bNtq&amp;index=19">"Tensor Calculus 6d: Velocity, Acceleration, Jolt and the New δ/δt-derivative"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Tensor+Calculus+6d%3A+Velocity%2C+Acceleration%2C+Jolt+and+the+New+%CE%B4%2F%CE%B4t-derivative&amp;rft.aulast=Grinfeld&amp;rft.aufirst=Pavel&amp;rft_id=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dyx0oql3LIiU%26list%3DPLlXfTHzgMRULkodlIEqfgTS-H1AY_bNtq%26index%3D19&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATime+derivative" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r861714446">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output q{quotes:"\"""\"""'""'"}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-lock-limited a,.mw-parser-output .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text">Romer, David, <i>Advanced Macroeconomics</i>, McGraw-Hill, 1996.</span>
+</li>
+</ol></div></div>
+
+<!-- 
+NewPP limit report
+Parsed by mw1267
+Cached time: 20181127151957
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.168 seconds
+Real time usage: 0.303 seconds
+Preprocessor visited node count: 366/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 2128/2097152 bytes
+Template argument size: 144/2097152 bytes
+Highest expansion depth: 7/40
+Expensive parser function count: 0/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 4372/5000000 bytes
+Number of Wikibase entities loaded: 0/400
+Lua time usage: 0.065/10.000 seconds
+Lua memory usage: 1.31 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  127.319      1 -total
+ 76.88%   97.877      1 Template:Reflist
+ 65.47%   83.350      1 Template:Cite_web
+ 19.27%   24.539      1 Template:See_also
+  2.48%    3.155      1 Template:Main_other
+  1.77%    2.251      2 Template:Nowrap
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:1783069-0!canonical!math=5 and timestamp 20181127151957 and revision id 868534034
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Time_derivative&amp;oldid=868534034">https://en.wikipedia.org/w/index.php?title=Time_derivative&amp;oldid=868534034</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Differential_calculus" title="Category:Differential calculus">Differential calculus</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Time+derivative" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Time+derivative" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Time_derivative" title="View the content page [c]" accesskey="c">Article</a></span></li><li id="ca-talk"><span><a href="/wiki/Talk:Time_derivative" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Time_derivative">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Time_derivative&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Time_derivative&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Time_derivative" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Time_derivative" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Time_derivative&amp;oldid=868534034" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Time_derivative&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q6960532" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Time_derivative&amp;id=868534034" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Time+derivative">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Time+derivative&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Time_derivative&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">Languages</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Derivada_respecte_del_temps" title="Derivada respecte del temps – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Zeitableitung" title="Zeitableitung – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Derivada_temporal" title="Derivada temporal – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D9%85%D8%B4%D8%AA%D9%82_%D8%B2%D9%85%D8%A7%D9%86%DB%8C" title="مشتق زمانی – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Vitesse_d%27%C3%A9volution" title="Vitesse d&#039;évolution – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-id"><a href="https://id.wikipedia.org/wiki/Turunan_waktu" title="Turunan waktu – Indonesian" lang="id" hreflang="id" class="interlanguage-link-target">Bahasa Indonesia</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E6%99%82%E9%96%93%E5%BE%AE%E5%88%86" title="時間微分 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F_%D0%BF%D0%BE_%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%B8" title="Производная по времени – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sl"><a href="https://sl.wikipedia.org/wiki/%C4%8Casovni_odvod" title="Časovni odvod – Slovenian" lang="sl" hreflang="sl" class="interlanguage-link-target">Slovenščina</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E6%97%B6%E9%97%B4%E5%AF%BC%E6%95%B0" title="时间导数 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q6960532#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 12 November 2018, at 20:24<span class="anonymous-show">&#160;(UTC)</span>.</li>
+								<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Time_derivative&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.168","walltime":"0.303","ppvisitednodes":{"value":366,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":2128,"limit":2097152},"templateargumentsize":{"value":144,"limit":2097152},"expansiondepth":{"value":7,"limit":40},"expensivefunctioncount":{"value":0,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":4372,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  127.319      1 -total"," 76.88%   97.877      1 Template:Reflist"," 65.47%   83.350      1 Template:Cite_web"," 19.27%   24.539      1 Template:See_also","  2.48%    3.155      1 Template:Main_other","  1.77%    2.251      2 Template:Nowrap"]},"scribunto":{"limitreport-timeusage":{"value":"0.065","limit":"10.000"},"limitreport-memusage":{"value":1374846,"limit":52428800}},"cachereport":{"origin":"mw1267","timestamp":"20181127151957","ttl":1900800,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Time derivative","url":"https:\/\/en.wikipedia.org\/wiki\/Time_derivative","sameAs":"http:\/\/www.wikidata.org\/entity\/Q6960532","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q6960532","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2005-04-23T02:41:58Z","dateModified":"2018-11-12T20:24:21Z"}</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":106,"wgHostname":"mw1255"});});</script>
+	</body>
+</html>

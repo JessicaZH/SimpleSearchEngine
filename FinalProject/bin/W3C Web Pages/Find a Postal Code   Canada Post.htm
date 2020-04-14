@@ -1,0 +1,793 @@
+<!DOCTYPE html >
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>  	
+    
+    		<meta name="msvalidate.01" content="1AC9A4E083D8F5E10E160861745E4E0F" />
+		<meta name="y_key" content="36a5b4f0d2c3995c" />
+		<meta http-equiv="Content-Type" content="application/xhtml+xml, text/xml, text/html; charset=utf-8" />
+		<meta http-equiv="content-language" content="en-CA" />
+		<title>Find a Postal Code | Canada Post</title>
+		<meta http-equiv="keywords" content="postal codes, postal code, find a postal code, postal code lookup, postal code look up, find postal code, postal code search, postal code finder, post code, find postal codes, zip codes, zip code, look up postal code, postal code directory, post codes, look-up, lookup, finder, 411, by city, by address, in Canada" />
+	   	<meta http-equiv="description" content="Find a postal code for an address in Canada. Look up postal codes online." /><meta name="categories" content="Canada Post" />
+       	<meta name="pta" content="Postal code lookup for Canadian addresses" />
+		
+        <meta content="minimum-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" name="viewport" />
+		
+        <!--c:if test="false">
+			<meta content="user-scalable=no, width=device-width" name="viewport" />
+	    	<meta content="yes" name="apple-mobile-web-app-capable" />
+            <meta name="apple-itunes-app" content="app-id=394391577" />
+		</c:if-->
+      	<meta name="robots" content="index, follow" />
+        <link rel="canonical" href="/cpo/mc/personal/postalcode/fpc.jsf" />
+		
+		<link rel="shortcut icon" type="image/x-icon" href="/cpo/mc/assets/images/structure/cpo.ico" />
+			<script src="//assets.adobedtm.com/8555ef77443acd85ab4eb6b187cf7ed7fe0f79eb/satelliteLib-f2fc6f00da802a0747b6ffed3c12e3931bfca496.js"><!--
+
+//--></script>
+            <script><!--
+
+			digitalData={
+  page:{
+         pageInfo:{
+			 audience: ("personal" == 'business' ? "business" : "common"),
+			 language: "en",
+			 domain: document.location.host,
+			 destinationURL: document.location.href,
+			 destinationQueryString: document.location.search
+		 },
+         category:{},
+         attributes: {
+			channel:{ 
+				site: document.location.host
+			},
+			externalCampaignID: "", 
+			internalCampaignID: "",
+		    language: "en", 
+			internalSearch: {
+				term: ""
+			}
+		},
+  },
+  event:[{
+         eventInfo:{}
+  }],
+  product:[{
+         productInfo:{}
+  }],
+  cart:{},
+  transaction:{
+         item:[{
+               productInfo:{},
+               price:{}
+         }],
+         profile:{
+               address:{}
+         },
+         total:{},
+         attributes:{}
+  },
+  user:[{
+         profile:[{
+               profileInfo:{},
+               attributes:{
+                      profileFAN:{}
+               }
+         }]
+  }]    
+};
+
+//--></script>
+
+		<link href="/web/assets/css/foundation5/normalize.css" rel="stylesheet" />
+		<link href="/web/assets/css/foundation5/foundation.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+		<link type="text/css" href="/web/assets/css/responsive.css" rel="stylesheet" />
+		<link type="text/css" href="/web/assets/css/vpo.css" rel="stylesheet" />
+			<link type="text/css" href="/cwc/components/assets/styles/cwc.css" rel="stylesheet" />
+		
+		<link type="text/css" href="/web/assets/css/slick_slider.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="/cpo/mc/ui/css/extendstyles.css" />
+		<link rel="stylesheet" type="text/css" href="/cpo/mc/ui/css/tony.css" />
+		<link rel="stylesheet" type="text/css" href="/cpo/mc/ui/css/aaron.css" />
+		<link rel="stylesheet" type="text/css" href="/cpo/mc/ui/css/kirk.css" />
+		<link rel="stylesheet" type="text/css" href="/cpo/mc/ui/css/donald.css" />
+		<link rel="stylesheet" type="text/css" href="/cpo/mc/ui/css/michael.css" />
+          <!-- <link rel="stylesheet" type="text/css" href="/cpo/mc/ui/css/2008_plus_styles.css" /> -->
+          <link rel="stylesheet" type="text/css" media="print" href="/cpo/mc/ui/css/cp_print.css" />
+          <link rel="stylesheet" type="text/css" href="/cpo/mc/ui/css/jquery.autocomplete.css" />
+	<link rel="stylesheet" type="text/css" href="/cpo/mc/personal/postalcode/css/Site.css" />
+	<!-- Old -->
+    <link rel="stylesheet" type="text/css" href="https://ws1.postescanada-canadapost.ca/css/addresscomplete-2.30.min.css?key=mj59-cb39-pd12-eh52" />
+    <!-- New -->
+    <!--link rel="stylesheet" type="text/css" href="https://ws1.postescanada-canadapost.ca/css/address-3.50.min.css" /-->
+    <!--[if lt IE 9]><link rel="stylesheet" href="/web/assets/css/ie8-styles.css"/><![endif]-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400|Roboto:100|Roboto:100italic|Roboto:300|Roboto:300italic|Roboto:400italic|Roboto:500|Roboto:500italic|Roboto:700|Roboto:700italic|Roboto:900|Roboto:900italic" type="text/css" /> 
+      <script language="javascript" type="text/javascript"><!--
+
+    // Global JS Vars - used in javascript functions
+    var GLOBALOBJ = new Object();
+    GLOBALOBJ.locale = "en";
+    GLOBALOBJ.style = 'STANDARD';
+    GLOBALOBJ.contextPath = "/cpo";
+    GLOBALOBJ.baseSecuredApplicationUrl = "";
+  
+//--></script> 
+      
+
+	<script src="/web/assets/js/foundation5/vendor/modernizr.js"><!--
+
+//--></script>
+	<script src="/web/assets/js/foundation5/vendor/jquery.js"><!--
+
+//--></script>
+			<script type="text/javascript" src="/cwc/components/assets/scripts/cwc.js"><!--
+
+//--></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js" type="text/javascript"><!--
+
+//--></script> 
+	<script src="/cpo/mc/ui/js/selector.js" type="text/javascript"><!--
+
+//--></script> 
+
+    
+    
+      <script src="/cpo/mc/ui/js/jquery-cookie.js" type="text/javascript"><!--
+
+//--></script> 
+      <script src="/cpo/mc/ui/js/function.js" type="text/javascript"><!--
+
+//--></script>
+      <script src="/cpo/mc/ui/js/search_autocomplete.js" type="text/javascript"><!--
+
+//--></script>
+    <script src="/web/assets/js/jCarousel.min.js" type="text/javascript"><!--
+
+//--></script>
+      <script src="/cpo/mc/ui/js/google-dfp.js" type="text/javascript"><!--
+
+//--></script>
+      <script type="text/javascript"><!--
+
+      var inDash = "fpc";
+    
+//--></script>
+    <script type="text/javascript"><!--
+
+         var adops_lang = "en";
+         var adops_switch = "fpc";    
+         var adops_test = "";
+     var adops_pageid = "";
+        
+//--></script>
+        <script type="text/javascript" src="/web/assets/js/purl.js"><!--
+
+//--></script>
+        <script src="/cpo/mc/ui/js/adops_ts.js" type="text/javascript"><!--
+
+//--></script>
+	<script src="/web/assets/js/chat-common.js" type="text/javascript"><!--
+
+//--></script>
+ 	<script src="/cpo/mc/ui/js/jquery.marquee.min.js" type="text/javascript"><!--
+
+//--></script>
+ 	<script src="/cpo/mc/personal/postalcode/js/Site.js" type="text/javascript"><!--
+
+//--></script>
+	<!-- Old -->
+    <script type="text/javascript" src="https://ws1.postescanada-canadapost.ca/js/addresscomplete-2.30.min.js?key=mj59-cb39-pd12-eh52"><!--
+
+//--></script>
+	<!-- New -->
+    <!--script type="text/javascript" src="https://ws1.postescanada-canadapost.ca/js/address-3.50.min.js"></script-->
+ 	<script><!--
+
+ 		var lang = 'en';
+ 		var uk = 'ea98-jc42-tf94-jk98';
+ 	
+//--></script>   
+ 	<script src="/cpo/mc/personal/postalcode/js/js-language.js" type="text/javascript"><!--
+
+//--></script>
+ 	<script src="/cpo/mc/personal/postalcode/js/AddressFinder.js" type="text/javascript"><!--
+
+//--></script>
+ 	<script src="/cpo/mc/personal/postalcode/js/jquery.cookie.js" type="text/javascript"><!--
+
+//--></script>
+	
+   <script><!--
+
+ 	//<![CDATA[
+        //trackPage("FPC","form");
+		// $('#findAnother').css('display', 'none');
+			
+         var fields = [{ element: "addressComplete", field: "{AddressLabel}", mode: 5 }],
+             options = {
+                 key: "ea98-jc42-tf94-jk98",
+                 countries: { codesList: "CAN" },
+                 bar: { visible: false },
+                 culture: "en",
+                 prompt: true,
+                 search: { maxSuggestions: 7, maxResults: 100 }
+             }; 
+
+         var control = new pca.Address(fields, options);
+		 
+		 /**** options introduced in addresscomplete-2.30 ****/
+		addressComplete.listen("options", function (options) {
+			options.search = {
+				maxSuggestions: 5, //the number of initial search results to return
+				maxResults: 100  //the maximum number of clickable addresses to return
+			}
+			options.minItems = 1; //the minimum size of the list
+			options.maxItems = 100; //the maximum size of the list
+		});
+		
+
+         control.listen("populate", function (address) {
+
+             var label, country;
+ 				label = address.Label;
+             country = address.CountryIso3;
+
+             
+			 if (country === 'GBR') {
+                 document.getElementById('HeaderAddressLabel').innerHTML = label.replace(/(\r\n|\n\n|\n|\r|\,)/gm, '<br />');
+             } else {
+                 document.getElementById('HeaderAddressLabel').innerHTML = label.replace(/(\r\n|\n\n|\n|\r)/gm, '<br />');
+             }
+			
+			<!-- document.getElementById('HeaderAddressLabel').innerHTML = label.replace(/(\r\n|\n\n|\n|\r)/gm, '<br />'); -->
+ 				fixLabel($('#HeaderAddressLabel').html());
+ 				// document.getElementById('finder-error').style.display = 'none';
+             //$('#addressComplete').val('');
+             $('#HeaderAddressLabel').val().toUpperCase();
+ 				 // $('#results').hide();
+             //$('#inputContainer').hide();
+             $('#addressContainer').slideDown();
+             $('#printingLinks').show();
+             // $('#find').hide();
+             // $('#findAnother').show();
+				 // $('#findAnother').css('display', 'inline-block');
+             // $('#notInList').hide();
+             // $('#noResults').hide();
+ 				//ReloadBar(true);	
+             //trackSuccess("FPC", searchedFor);
+         });	
+
+         var searchedFor = "";
+			
+			var noResultsMessage  = "<div class='pcamessage'><span>We were unable to find a postal code or address with your information.</span>";
+		 	noResultsMessage += "<ul>";
+		 	noResultsMessage += "<li>Ensure the street number is correct.</li>";
+		 	noResultsMessage += "<li>Check the spelling of the street name.</li>";
+		 	noResultsMessage += "<li><a href=\"javascript:openCC('errors');\">Report an Error</a> or <a href='javascript:O_LC();'>Submit Feedback</a></li>";
+		 	noResultsMessage += "</ul></div>";
+					
+			function _RACP(v) {
+             searchedFor = v;
+         }
+			
+         control.listen("noresults", function() {
+             //trackNotFound("FPC", searchedFor);
+ 				// var noResultsMsg = $("#noResults").html();
+ 				// $(".pcamessage").replaceWith(noResultsMsg);
+ 				$(".pcamessage").replaceWith(noResultsMessage);				
+         });
+		 
+		 /* IP Address Error messaging Start */
+		 control.listen("error", function(message) {
+			console.log(message);
+			if(message == "Request not allowed from this IP"){
+				if($('.msgWarning').is(':visible')){
+				}else{
+					$('<div class="alert-box message msgWarning" data-alert="data-alert"><code><span>×</span></code><p><a href="#" data-reveal-id="ipModal" class="button show-for-medium-up right">Learn more</a> We’re sorry, your organization’s access to Find a Postal Code has been restricted. <a href="#" data-reveal-id="ipModal" class="button show-for-small-only margintop">Learn more</a></p></div>').appendTo('#message-area');
+			}
+					$("#addressComplete").css("border-color", "#FCBF08");
+					
+					$.ipAddressError();
+			}
+		});
+		/* IP Address Error messaging END */
+			
+		
+
+         setTimeout(function () {
+             // control.setCountry("Canada");
+             pca.messages.en.NORESULTS  = "<h3>We were unable to find a Postal Code for that address.</h3>";
+				 pca.messages.en.NORESULTS += "<ul>";
+				 pca.messages.en.NORESULTS += "<li>Ensure the street number is correct.</li>";
+				 pca.messages.en.NORESULTS += "<li>Check the spelling of the street name.</li>";
+				 pca.messages.en.NORESULTS += "<li><a href='javascript:openCC('errors');'>Report an Error</a> or <a href='javascript:O_LC();'>Submit Feedback</a></li>";
+				 pca.messages.en.NORESULTS += "</ul>";
+         }, 500);
+
+
+         function ShowLogin() {
+             if (!$('#loginControls').is(":visible")) {
+                 //trackPage("FPC", "sign in");
+             }
+             if (limitTriggered) {
+                 $('#limitReachedInformation, #loginControls').toggle();
+             } else {
+                 $('#allACControls, #loginControls').toggle();
+             }
+         }
+			
+			
+			$(document).ready(function() {
+				$( window ).resize(function() {
+					resizeBox();
+				});
+				$("#addressComplete").on('input', function() {
+				  resizeBox();
+				});
+				resizeBox();
+			});
+			
+			function resizeBox(){
+				var inputboxwidth = $('#addressComplete').width();
+				$('div.pcaautocomplete').width(inputboxwidth);
+			}
+			
+			
+ 	//]]>
+     
+//--></script>
+		
+    <!-- IP Address Error Function --> 
+    <!--[if lt IE 9]>
+        <script>
+        /* IE8 Pop-up Start */		
+        $.ipAddressError = function() {
+            $('#ipModal').reveal();
+        }
+        $("#close-btn").blur(function(){
+            $('#ipModal').close();
+        });
+        /*$("#open-btn").blur(function(e){
+            e.preventDefault();
+            $('#ipModal').reveal();
+        });*/
+     
+        /* IE8 Pop-up Start Ends*/
+        </script>
+    <![endif]-->
+    
+    <!--[if gt IE 8]>
+    <!-->
+        <script><!--
+
+        /* IP Address Error Function*/
+        /* GT IE8 Pop-up Start */
+        $.ipAddressError = function() {
+            $('#ipModal').foundation('reveal', 'open');
+		}
+		$("#close-btn").blur(function(){
+			$('#ipModal').foundation('reveal', 'close');
+		});
+		/*$("#open-btn").blur(function(e){
+			e.preventDefault();
+			$('#ipModal').foundation('reveal', 'open');
+		});*/
+			
+        /* GT IE8 Pop-up Start */
+        
+//--></script>
+    <!--<![endif]-->
+    <!-- IP Address Error Function END -->
+<script type="text/javascript"><!--
+
+	$(document).ready(function(){
+		if ( $("body").hasClass("hasAlertMessaging") ){
+			$("#addressComplete").focus(function(){
+			  $("#topSiteMessageWrapper").hide();
+			  $(".off-canvas-wrap").css("margin-top","0px");
+			  $("#header").css("top","0px");
+			});
+		}
+	});
+	
+	$( window ).resize(function() {
+	  $("#topSiteMessageWrapper").show();  
+	});
+
+	$(document).ready(function(){
+			
+       $(".close-btn").click(function(e){
+	   		e.preventDefault();
+	   		$("#question").trigger("click");
+	   });
+	
+	});					
+
+//--></script>
+
+	<!-- SMART BANNERS:  -->
+    <meta name="author" content="Canada Post Corporation" />
+        <meta name="apple-itunes-app" content="app-id=394391577" />
+	    
+    
+    <meta name="google-play-app" content="app-id=com.canadapost.android" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/web/assets/css/jquery.smartbanner.css" />
+	<script src="/web/assets/js/jquery.smartbanner.js" type="text/javascript"><!--
+
+//--></script>
+
+
+	<script type="text/javascript"><!--
+
+		 $(function () {
+
+		 	var language = "en";
+
+		 	if(language == "en"){
+		 		$.smartbanner({
+		 		  title: "Canada Post Corporation", 
+		 		  author: "Canada Post", 
+		 		  price: 'FREE', 
+		 		  button: 'View',
+		 		  scale: 'auto', 
+		 		  speedIn: 300, 
+		 		  speedOut: 400,
+		 		  daysHidden: 0, 
+		 		  daysReminder: 0, 
+		 		  hideOnInstall: false, 
+		 		  layer: false, 
+		 		  force: null,
+		 		  iOSUniversalApp: true, 
+		 		  appendToSelector: 'body'
+		 		})
+		 	}else{
+		 		$.smartbanner({
+		 		  title: "Société canadienne des postes", 
+		 		  author: "Postes Canada", 
+		 		  price: 'GRATUIT', 
+		 		  button: 'Afficher',
+		 		  inAppStore: 'À partir de la boutique d\'applications', 
+		 		  inGooglePlay: 'Dans Google Play', 
+		 		  scale: 'auto', 
+		 		  speedIn: 300, 
+		 		  speedOut: 400,
+		 		  daysHidden: 0, 
+		 		  daysReminder: 0, 
+		 		  hideOnInstall: false, 
+		 		  layer: false, 
+		 		  force: null,
+		 		  iOSUniversalApp: true, 
+		 		  appendToSelector: 'body'
+		 		})				
+
+		 	}
+
+			if($("#topSiteMessageWrapper").length == 0) {
+		 		$('#header').css('top','0');
+			}
+	 });
+  	
+
+
+	
+//--></script>
+	<!-- END OF SMART BANNERS:	 -->
+	<!-- Twitter Code Start -->
+    <script type="text/javascript"><!--
+
+      !function (e, t, n, s, u, a) {
+        e.twq || (s = e.twq = function () {
+          var _s;
+
+          s.exe ? (_s = s).exe.apply(_s, arguments) : s.queue.push(arguments);
+        }, s.version = '1.1', s.queue = [], u = t.createElement(n), u.async = !0, u.src = '//static.ads-twitter.com/uwt.js', a = t.getElementsByTagName(n)[0], a.parentNode.insertBefore(u, a));
+      }(window, document, 'script', 'https://static.ads-twitter.com/uwt.js');
+      // Insert Twitter Pixel ID and Standard Event data below
+      twq('init', 'ny0qm');
+      twq('track', 'PageView');
+    
+//--></script>
+    <!-- Twitter Code End  -->
+
+  <!-- Facebook Pixel Code -->
+  <script type="text/javascript"><!--
+
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window,document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '786303741550354');
+      fbq('track', 'PageView');
+  
+//--></script>
+  <noscript>
+    <img height="1" width="1" src="https://www.facebook.com/tr?id=786303741550354&amp;ev=PageView&amp;noscript=1" />
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+
+	</head>
+            <!--[if IE 8]><body class="lt-ie9 en true wide"><![endif]-->
+            <!--[if IE 9]><body class="lt-ie10 en true wide"><![endif]-->
+            <!--[if gt IE 9]><!--><body class="en true wide"><!--<![endif]-->
+<!--BEGIN QUALTRICS SITE INTERCEPT-->
+<script type="text/javascript"><!--
+
+//<![CDATA[
+(function(){var g=function(e,h,f,g){
+this.get=function(a){for(var a=a+"=",c=document.cookie.split(";"),b=0,e=c.length;b<e;b++){for(var d=c[b];" "==d.charAt(0);)d=d.substring(1,d.length);if(0==d.indexOf(a))return d.substring(a.length,d.length)}return null};
+this.set=function(a,c){var b="",b=new Date;b.setTime(b.getTime()+6048E5);b="; expires="+b.toGMTString();document.cookie=a+"="+c+b+"; path=/; "};
+this.check=function(){var a=this.get(f);if(a)a=a.split(":");else if(100!=e)"v"==h&&(e=Math.random()>=e/100?0:100),a=[h,e,0],this.set(f,a.join(":"));else return!0;var c=a[1];if(100==c)return!0;switch(a[0]){case "v":return!1;case "r":return c=a[2]%Math.floor(100/c),a[2]++,this.set(f,a.join(":")),!c}return!0};
+this.go=function(){if(this.check()){var a=document.createElement("script");a.type="text/javascript";a.src=g+ "&t=" + (new Date()).getTime();document.body&&document.body.appendChild(a)}};
+this.start=function(){var a=this;window.addEventListener?window.addEventListener("load",function(){a.go()},!1):window.attachEvent&&window.attachEvent("onload",function(){a.go()})}};
+try{(new g(100,"r","QSI_S_ZN_0xleIR6sWSZaNY9","https://zn0xleir6swszany9-canadapostdigital.siteintercept.qualtrics.com/WRSiteInterceptEngine/?Q_ZID=ZN_0xleIR6sWSZaNY9&Q_LOC="+encodeURIComponent(window.location.href))).start()}catch(i){}})();
+//]]>
+
+//--></script><div id="ZN_0xleIR6sWSZaNY9"><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+<!--END SITE INTERCEPT-->
+      <div class="" data-offcanvas="data-offcanvas">
+        <div class="inner-wrap">
+          <div id="wrapper" class="personal">
+              <noscript>
+              <div class="alert-box message msgWarning" data-alert="data-alert"> <code><span>i</span></code>
+                <p><span class="noindex">Many features of this website require JavaScript to be enabled. Please enable JavaScript or expect some issues as you proceed.</span></p>
+              </div>
+              </noscript>
+			<cpc-skip-nav class="cpc-component" data-skip-id="main-content"></cpc-skip-nav>
+			<cpc-header class="cpc-component" data-app-id="inbox" data-suppress-product-nav="true" data-suppress-toolbar="true" data-current-page="tools"></cpc-header>
+
+	<div id="contentWrap">
+		<div id="main">
+	<div class="row">
+		<div class="large-8 medium-8 columns">
+		    <div id="find_postal_code" class="row"> 
+				 <div class="large-12 columns">
+				 	
+				 	<h1 class="left marginbottom30">Find a Postal Code</h1>
+					
+				   	<div class="clear"></div>
+				
+				 <p class="nomargintop">Look up a Canadian street address or postal code.
+                 <a href="#" id="question" data-dropdown="whatIsThis" data-options="align:right">
+                 <img border="0" src="/cpo/mc/ui/css/images/helpicon.png" alt="Opens window with more information on using Find a Postal Code and has links to help articles." /></a>
+                 </p>
+                 <ul class="marginbottom45">
+                     <li>Search street address, rural route, PO box or general delivery to get a postal code.</li>
+                     <li>Search by postal code to get a complete address.</li>
+                 </ul>
+                
+                <div id="whatIsThis" class="f-dropdown content medium paddingtop50 paddingright30 paddingbottom40 paddingleft30" data-dropdown-content="data-dropdown-content">
+                    <a class="close-btn" href="#"><img src="/cpo/mc/assets/images/business/addressComplete/close-flyout.png" alt="Closes help box window." /></a>
+                    <ol class="marginleft">
+                        <li>Start typing in the address box using either the house number and street name or the postal code. Suggested addresses will appear.</li>
+                        <li>Select your address from the list of suggestions.</li>
+                    </ol>
+                    <h3>Need more help?</h3>
+                    <ul class="noBullets nomarginleft">
+                        <li><a href="/web/en/kb/details.page?article=how_to_use_find_a_po&amp;cattype=kb&amp;cat=sending&amp;subcat=generalinformation" target="_blank" class="nopadding">How to use find a postal code</a></li>
+                       
+                    </ul>
+                </div>
+
+			 <div id="message-area"></div>
+                
+                  
+		        <div id="allACControls">
+                <div class="row">
+	                <div class="large-9 columns">
+    		            
+            	    	<label for="addressComplete" class="paddingbottom5">Type the address below <br class="show-for-small-only" />
+                        <span class="poweredby">Powered by <a href="/pca/" target="_blank"><img data-interchange="[/cpo/mc/assets/images/business/addressComplete/address-complete-en.svg, (default)], [/cpo/mc/assets/images/business/addressComplete/address-complete-en.png, (large)]" src="/cpo/mc/assets/images/business/addressComplete/address-complete-en.png" alt="Logo and link for AddressComplete service." class="paddingbottom2" /></a></span></label>
+           	    	    <input onkeyup="_RACP(this.value);" type="text" id="addressComplete" name="addressComplete" placeholder="Enter the address as a single line (for example, 1-19 Spadina Ave)" autocomplete="off" />
+       	    	    </div> 
+                    <div class="large-3 show-for-large-up columns paddingtop2">
+                    <a href="#" id="searchFpc" class="button">Search</a>
+</div>
+</div>
+			<div class="clear"></div>			
+              <div id="addressContainer" class="hidden">
+						<h3>Address found </h3>
+                        <div id="printLabel">
+                            <div id="printLabelContent">
+                                <span id="HeaderAddressLabel"></span>
+                            </div>
+                        </div>
+                        <h3 class="margintop30">Not the address you're looking for?<br /> Perhaps:</h3>
+                        <ul>
+                           
+                            <li>The building/development is new and does not have a postal code yet.</li>
+                            <li>The town's name has changed – try using the old name.</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+		        <!-- END OF AddressComplete -->
+
+
+               
+                <div class="legal">
+	                <p>Use of Find a Postal Code is only permitted for personal or limited internal business use. Canada Post may in its sole discretion limit the number of searches you make using Find a Postal Code, on a daily or other basis. You acknowledge that Canada Post is providing the Find a Postal Code Service strictly on an &quot;as is&quot; basis, and makes no representations or warranties about the accuracy of the information you obtain by using the Service.  Your Use of Find a Postal Code is subject to <a href="/web/en/kb/details.page?article=legal_terms_of_use&amp;cattype=kb&amp;cat=generalinquiries&amp;subcat=generalinformation#fpc-terms-of-use" target="_blank">additional Terms and Conditions</a>. By using Find a Postal Code, you agree to those Terms and Conditions.</p>
+                </div>
+
+				  
+				  </div>
+		    </div>
+			
+            <div id="ipModal" class="reveal-modal small" data-reveal="data-reveal">
+                <div id="ipModalModalHeader">
+                    <a class="close-reveal-modal">×</a>
+                </div>
+                <div id="ipModalModalContent">
+                    <h1>We’re sorry, your organization’s access to Find a Postal Code has been restricted.</h1>
+                    <p>Find a Postal Code is for personal and limited business use only (for more details see <a href="/web/en/kb/details.page?article=legal_terms_of_use&amp;cattype=kb&amp;cat=generalinquiries&amp;subcat=generalinformation#fpc-terms-of-use" target="_blank">Canada Post Website Terms of Use</a>. Your organization (this includes employees that use this IP address) has exceeded their limit for Find a Postal Code lookups. </p>
+                    <p>If your organization requires frequent postal code lookups, we can help. Please contact us to regain access to Find a Postal Code. </p>
+                    <p class="margin-top-30">
+                    <a class="button medium" id="close-btn" href="mailto:fpc.tcp@canadapost.ca">Contact us</a>
+                 
+                    </p>
+                </div>
+            </div>
+            <script language="javascript"><!--
+
+				//Selecting address highlighted on button click
+				document.getElementById("searchFpc").addEventListener("click", function(){
+					document.querySelector(".pcaautocomplete .pcalist .pcaitem.pcaselected").click();
+				});
+			
+//--></script>
+		</div>
+		<div class="large-4 medium-4 columns noindex takeover">
+      <div class="widget">
+          <div id="div-id-for-top-300x250-ad">
+            <script type="text/javascript"><!--
+
+            $(document).ready(function() {
+                googletag.cmd.push(function() { googletag.display('div-id-for-top-300x250-ad'); });
+            });
+            
+//--></script>
+          </div>
+      </div>
+
+
+	<div class="postal_rates widget lineheight29">
+		<div class="clearfix">
+			<div class="left">
+				<h4 class="letterspacing_halfpixel">Postal Rates</h4>
+			</div>
+			<div class="right paddingright5">
+				<a class="small letterspacing_quarterpixel" href="/web/en/pages/lettersdocs/default.page">View all</a>
+			</div>
+		</div>
+		<span class="hr margintop4 marginbottom20"></span>
+		<h5 class="can clearfix lineheightadj37"><span class="postalicon marginleft5" aria-hidden="true"></span><span class="negmarginleft6">Canada</span></h5>
+		<p class="marginleft4 negmargintop2 clear"><b>$0.85 <span class="grey marginright4">0-30g</span> | <span class="marginleft4">$1.20</span> <span class="grey marginright4">30-50g</span> | <span class="marginleft4">$1.80</span> <span class="grey">50-100g</span></b></p>
+        <p class="nomargin negmargintop1"></p>
+		<h5 class="usa clearfix lineheightadj20"><span class="postalicon marginleft4 negmarginbottom4" aria-hidden="true"></span><span class="negmarginleft5">USA</span></h5>
+		<p class="marginleft4 negmargintop8 clear"><b>$1.20 <span class="grey marginright4">0-30g</span> | <span class="marginleft4">$1.80</span> <span class="grey marginright4">30-50g</span> | <span class="marginleft4">$2.95</span> <span class="grey">50-100g</span></b></p>
+        <p class="nomargin negmargintop1"></p>
+		<span class="hr marginbottom20"></span>
+		<h5 class="int clearfix lineheightadj20 paddingtop4"><span class="postalicon marginleft8 negmargintop5" aria-hidden="true"></span><span class="negmarginleft9">International</span></h5>
+		<p class="marginleft4 negmargintop3 clear"><b>$2.50 <span class="grey marginright4">0-30g</span> | <span class="marginleft4">$3.60</span> <span class="grey marginright4">30-50g</span> | <span class="marginleft4">$5.90</span> <span class="grey">50-100g</span></b></p>
+	</div>
+	<!-- <ui:include src="../../app/common/signin/epostWidget.xhtml" /> -->
+		</div>	
+	</div>
+		</div>
+	</div>
+		<cpc-footer class="cpc-component"></cpc-footer>
+
+          </div>
+        </div>
+      </div>
+				<div class="noindex">					
+				</div>
+                
+				<!-- Begin comScore Tag -->
+				<script><!--
+
+				/* <![CDATA[ */
+				  var _comscore = _comscore || [];
+				  _comscore.push({ c1: "2", c2: "6035946" });
+				  (function() {
+					var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+					s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+					el.parentNode.insertBefore(s, el);
+				  })();
+				  /* ]]> */
+				
+//--></script>
+				<!-- End comScore Tag --> 
+			<script><!--
+
+			//<![CDATA[
+			var navIsBig = true;
+			var $nav = $('.header-container');      
+			$( ".magnify-glass" ).click(function(e) {
+			e.preventDefault();
+			$(".magnify-glass").parent("li").toggleClass("arrow_box");
+			$( ".search-container" ).slideToggle( "slow", function() {
+			$(".search-container input").focus();
+			});
+			if(true) {
+			$("body").animate({ paddingTop : ($(".magnify-glass").parent("li").hasClass("arrow_box")) ? "70px" : "-70px"}, "slow" );
+			}
+			return false;
+			});
+			$(function(){
+			$(document).scroll( function() {
+			var value = $(this).scrollTop();
+			if ( value > 5 && navIsBig){
+			$('#sitelinks').addClass('scroll');
+			$('.top-bar-section ul.right').removeClass("top-bar-section-noscroll").addClass("top-bar-section-scroll");
+			$nav.removeClass("header-container-noscroll").addClass("header-container-scroll");
+			navIsBig = false;
+			}
+			else if (value <= 5 && !navIsBig) {
+			var w = $(window).width();
+			if (w >1024)  {
+			$('#sitelinks').removeClass('scroll');
+			$('.top-bar-section ul.right').removeClass("top-bar-section-scroll").addClass("top-bar-section-noscroll");
+			$nav.removeClass("header-container-scroll").addClass("header-container-noscroll");
+			navIsBig = true;
+			}
+			}
+			});
+			});      
+			//]]>
+			
+//--></script>
+			<script src="/web/assets/js/foundation5/foundation.min.js"><!--
+
+//--></script>
+			<script src="/web/assets/js/foundation5/vendor/foundation.equalizer.js"><!--
+
+//--></script>
+			<script><!--
+
+				$(document).foundation();
+			
+//--></script>
+                  
+				  <script type="text/javascript"><!--
+
+				  //<![CDATA[
+                  <!-- DTM Data Layer BEGIN -->
+				  var on_a_tool = "tool";
+				  
+				  digitalData.page = {
+						 pageInfo:{
+							   pageName: ("".length > 0 ? "" : "cpc.ca: > " + "en" + " > " + ("personal" == 'business' ? "business" : "common") + " > " + "fpc" + " > " + ("fpc" == 'miniform' || "fpc" == 'shop' ? (window.location.pathname.split('/').pop()).split(".")[0] + " > " : '') + "" + ("".length > 0 ? " > " : '') + "" + (on_a_tool.length > 0 ? on_a_tool : ($("form").length > 0 ? 'form' : 'thank you')))
+						 },
+						 category:{
+							   primaryCategory: "fpc",
+							   pageType: (on_a_tool.length > 0 ? on_a_tool : "page") 
+						 }
+				  };
+				  
+				  _satellite.track('Data Layer Ready');
+				  <!-- DTM Data Layer END -->
+				  //]]>
+				  
+//--></script>
+                  
+					<script type="text/javascript"><!--
+_satellite.pageBottom();
+//--></script>                       
+			
+			<!-- MYFACES JAVASCRIPT -->
+
+</body>
+    
+	<!--
+	<c:catch var ="catchException">
+		<div class="serverName">a1p11d1-c1m2ms04</div>
+	</c:catch>	
+	-->
+</html>

@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<!-- Sorry no IE7 support! -->
+<!-- @see http://foundation.zurb.com/docs/index.html#basicHTMLMarkup -->
+
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" dir="ltr"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" dir="ltr"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="ImageToolbar" content="false" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortlink" href="/node/1" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="/clery-act" />
+<link rel="shortcut icon" href="https://clery.unt.edu/sites/all/themes/unt_sub/favicon.ico" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Clery Act | Clery Act</title>
+
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/sites/all/themes/unt_foundation/favicons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+  <style>
+@import url("https://clery.unt.edu/modules/system/system.base.css?pda5zf");
+@import url("https://clery.unt.edu/modules/system/system.messages.css?pda5zf");
+@import url("https://clery.unt.edu/modules/system/system.theme.css?pda5zf");
+</style>
+<style>
+@import url("https://clery.unt.edu/profiles/foundation_profile/modules/contrib/ldap/ldap_user/ldap_user.css?pda5zf");
+@import url("https://clery.unt.edu/profiles/foundation_profile/modules/contrib/date/date_api/date.css?pda5zf");
+@import url("https://clery.unt.edu/profiles/foundation_profile/modules/contrib/date/date_popup/themes/datepicker.1.7.css?pda5zf");
+@import url("https://clery.unt.edu/modules/field/theme/field.css?pda5zf");
+@import url("https://clery.unt.edu/modules/node/node.css?pda5zf");
+@import url("https://clery.unt.edu/modules/search/search.css?pda5zf");
+@import url("https://clery.unt.edu/modules/user/user.css?pda5zf");
+@import url("https://clery.unt.edu/profiles/foundation_profile/modules/contrib/views/css/views.css?pda5zf");
+@import url("https://clery.unt.edu/profiles/foundation_profile/modules/contrib/ckeditor/css/ckeditor.css?pda5zf");
+</style>
+<style>
+@import url("https://clery.unt.edu/profiles/foundation_profile/modules/contrib/ctools/css/ctools.css?pda5zf");
+@import url("https://clery.unt.edu/profiles/foundation_profile/modules/contrib/ldap/ldap_servers/ldap_servers.admin.css?pda5zf");
+</style>
+<style>
+@import url("https://clery.unt.edu/profiles/foundation_profile/themes/unt_foundation/css/unt_foundation.css?pda5zf");
+@import url("https://clery.unt.edu/sites/all/themes/unt_sub/css/unt_sub.css?pda5zf");
+</style>
+  
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  
+	<!--link rel="shortcut icon" href="https://www.unt.edu/sites/all/themes/unt_foundation/favicons/favicon.ico"-->
+
+	<style type="text/css">
+#search, #quicklinks, #search-scrolled, #quicklinks-scrolled, #menu-scrolled {
+display: none !important;
+}
+#header {
+height:100px;
+}
+div.main-menu {
+	min-height: 40px;
+    background: #fff;
+}
+h2 {
+margin-bottom:20px !important;
+}
+h2:first-of-type {
+margin:0;
+}
+.crime_class, .hate_crime_class, .clery_geography_help {
+	background: url('../sites/default/files/green-question-20.jpg') no-repeat;
+	width: 20px;
+	height: 20px;
+	display: block;
+	font-size: 0px;
+	float: left;
+	margin: 6px;
+}
+.ctas .btn {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.ctas .btn a {
+    width: 100%;
+}
+.description {
+    display: inline-block;
+}
+.footer-second h4:first-of-type {
+        display:none;
+}
+.btn.btn1.blue a {
+  color: #fff;
+  background: #4481a7;
+  border-color: #4481a7;
+}
+
+.btn.btn1.blue.altcolor a:hover {
+  background-color: #4e8fb7;
+  border-color: #4e8fb7;
+}
+
+.btn.btn1.red a {
+  color: #fff;
+  background: #7B1600;
+  border-color: #7B1600;
+}
+
+.btn.btn1.red.altcolor a:hover {
+  background-color: #971B00;
+  border-color: #971B00;
+}
+</style>
+
+  
+	<script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
+	
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write("<script src='/profiles/foundation_profile/modules/contrib/jquery_update/replace/jquery/1.10/jquery.min.js'>\x3C/script>")</script>
+<script src="https://clery.unt.edu/misc/jquery.once.js?v=1.2"></script>
+<script src="https://clery.unt.edu/misc/drupal.js?pda5zf"></script>
+<script src="https://clery.unt.edu/profiles/foundation_profile/themes/zurb_foundation/js/vendor/modernizr.js?pda5zf"></script>
+<script src="https://clery.unt.edu/profiles/foundation_profile/themes/unt_foundation/js/foundation.min.js?pda5zf"></script>
+<script src="https://clery.unt.edu/profiles/foundation_profile/themes/unt_foundation/js/libs.min.js?pda5zf"></script>
+<script src="https://clery.unt.edu/profiles/foundation_profile/themes/unt_foundation/js/urcm_analytics.js?pda5zf"></script>
+<script src="https://clery.unt.edu/profiles/foundation_profile/themes/unt_foundation/js/app.min.js?pda5zf"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"unt_sub","theme_token":"dO9jtF-97rm1vUddzSPsHGz0HXGChXrqFI4SdIZipfg","js":{"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.10.2\/jquery.min.js":1,"0":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/foundation_profile\/themes\/zurb_foundation\/js\/vendor\/modernizr.js":1,"profiles\/foundation_profile\/themes\/unt_foundation\/js\/foundation.min.js":1,"profiles\/foundation_profile\/themes\/unt_foundation\/js\/libs.min.js":1,"profiles\/foundation_profile\/themes\/unt_foundation\/js\/urcm_analytics.js":1,"profiles\/foundation_profile\/themes\/unt_foundation\/js\/app.min.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"profiles\/foundation_profile\/modules\/contrib\/ldap\/ldap_user\/ldap_user.css":1,"profiles\/foundation_profile\/modules\/contrib\/date\/date_api\/date.css":1,"profiles\/foundation_profile\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"profiles\/foundation_profile\/modules\/contrib\/views\/css\/views.css":1,"profiles\/foundation_profile\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"profiles\/foundation_profile\/modules\/contrib\/ctools\/css\/ctools.css":1,"profiles\/foundation_profile\/modules\/contrib\/ldap\/ldap_servers\/ldap_servers.admin.css":1,"profiles\/foundation_profile\/themes\/unt_foundation\/css\/normalize.css":1,"profiles\/foundation_profile\/themes\/unt_foundation\/css\/foundation.min.css":1,"profiles\/foundation_profile\/themes\/unt_foundation\/css\/unt_foundation.css":1,"sites\/all\/themes\/unt_sub\/css\/greenlight-sub-alpha-deault.css":1,"sites\/all\/themes\/unt_sub\/css\/global-sub.css":1,"sites\/all\/themes\/unt_sub\/css\/unt_sub.css":1}},"urlIsAjaxTrusted":{"\/":true}});</script>
+
+	<script type="text/javascript">
+jQuery(function($){
+
+	function crimePopupClass(){
+		var pop = window.open('','','height=800,width=400,resizable=yes,scrollbars=yes,location=no');
+		pop.document.write('<html><head><title>Crime Classifications</title></head><body>');
+		pop.document.write($('#crime_class').html());
+		pop.document.write('</body></html>');
+		return false;
+	}
+	
+	function hateCrimePopupClass(){
+		var pop = window.open('','','height=800,width=400,resizable=yes,scrollbars=yes,location=no');
+		pop.document.write('<html><head><title>Hate Crime Classifications</title></head><body>');
+		pop.document.write($('#hate_crime_class').html());
+		pop.document.write('</body></html>');
+		return false;
+	}
+
+       function cleryGeoPopupClass(){
+		var pop = window.open('','','height=800,width=400,resizable=yes,scrollbars=yes,location=no');
+		pop.document.write('<html><head><title>Clery Geography Locations</title></head><body>');
+		pop.document.write($('#clery_geography_help').html());
+		pop.document.write('</body></html>');
+		return false;
+	}
+	
+	
+	$('.crime_class').click(crimePopupClass);
+	$('.hate_crime_class').click(hateCrimePopupClass);
+        $('.clery_geography_help').click(cleryGeoPopupClass);
+});
+</script>
+
+  <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body class="html front not-logged-in no-sidebars page-node page-node- page-node-1 node-type-page clery-act" >
+  <div id="skip" class="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    
+<div role="document" class="page">
+
+  <header role="banner" class="l-header">
+
+    <!-- TOP BAR - FOR MOBILE -->
+    <div class="contain-to-grid show-for-small">
+	    <nav class="top-bar" data-topbar  data-options="mobile_show_parent_link:true">
+		    <!-- BRANDING -->
+	      <ul class="title-area">
+	        <li class="name">
+	        	<h1><a href="/">Clery Act</a></h1>
+	        </li>
+	        <li class="toggle-topbar menu-icon">
+	          <a href="#"><span></span></a>
+	        </li>
+	      </ul>
+	      <!-- /BRANDING -->
+	      
+				<!-- MOBILE MENU -->
+	      <section class="top-bar-section">
+	        	        	          	        	      </section>
+	      <!-- /MOBILE MENU  -->
+	    </nav>
+    </div>
+    <!-- /TOP BAR -->
+
+		<!-- HEADER -->
+    <section id="header" class="test row  hide-for-small">
+			
+			<div id="banner">
+				<a href="http://www.unt.edu/" title="UNT Home Site"><img src="https://webassets.unt.edu/unt-foundation/images/unt-1890-banner.svg" alt="UNT | Est. 1890" class="unt-banner"></a>
+			</div>
+			
+			<div id="lettermark">
+				<a href="http://www.unt.edu"><img src="https://webassets.unt.edu/unt-foundation/images/unt_lettermark.svg" alt="UNT"></a>
+			</div>
+			
+			<div id="site-name">
+										<span><a href="http://police.unt.edu/">UNT Police Department</a></span>
+									<h1 class="title"><a href="/" rel="home" title="Clery Act Home" class="active">Clery Act</a></h1>
+			</div>
+
+    	<div id="search">
+				<a id="searchbutton" data-dropdown="searchdrop" data-options="is_hover:true; hover_timeout:250" aria-controls="searchdrop" aria-expanded="false"><i class="fa fa-search"></i></a>
+
+				<div id="searchdrop" data-dropdown-content class="small f-dropdown" aria-hidden="true" tabindex="-1">
+				  <form action="/" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="row collapse"><div class="small-8 columns"><div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+</div><div class="small-4 columns"><button class="secondary button radius postfix expand form-submit" id="edit-submit" name="op" value="Search" type="submit">Search</button>
+</div></div><input type="hidden" name="form_build_id" value="form-yLlp_nomo9DuW279oRpgIZ9KXZtekpIA9-10CMAwsuI" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>				</div>
+    	</div>
+    	
+    	<div id="quicklinks">
+				<a id="quickbutton" data-dropdown="quickdrop" data-options="is_hover:true; hover_timeout:250" aria-controls="quickdrop" aria-expanded="false"><i class="fa fa-bookmark"></i></a>
+
+				<ul id="quickdrop" class="small f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+				  <li><a href="//my.unt.edu/" class="alt">MyUNT</a></li>
+				  <li><a href="//learn.unt.edu/" class="alt">Blackboard</a></li>
+				  <li><a href="//eagleconnect.unt.edu/" class="alt">EagleConnect</a></li>
+				  <li><a href="//www.unt.edu/find-people-departments" class="alt">UNT Directory</a></li>
+				  <li><a href="//maps.unt.edu/" class="alt">UNT Map</a></li>
+				  <li><a href="//hr.untsystem.edu/" class="alt">Jobs at UNT</a></li>
+				</ul>	
+    	</div>
+    	
+    	<div id="search-scrolled">
+				<a id="searchscrolledbutton" data-dropdown="searchdrop-scrolled" data-options="is_hover:true; hover_timeout:250" aria-controls="searchdrop-scrolled" aria-expanded="false"><i class="fa fa-search"></i></a>
+    	</div>
+    	
+    	<div id="quicklinks-scrolled">
+				<a id="quickscrolledbutton" data-dropdown="quickdrop-scrolled" data-options="is_hover:true; hover_timeout:250" aria-controls="quickdrop-scrolled" aria-expanded="false"><i class="fa fa-bookmark"></i></a>
+    	</div>
+    	
+    	<div id="menu-scrolled">
+				<a id="menuscrolledbutton" data-dropdown="menudrop-scrolled" data-options="is_hover:true; hover_timeout:250" aria-controls="menudrop-scrolled" aria-expanded="false"><i class="fa fa-reorder"></i></a>
+    	</div>
+    	
+      
+    </section>
+    <!-- /HEADER -->
+
+
+        
+    
+    
+  	<div class="main-menu">
+	      	</div>
+
+  </header>
+  <!--/.l-header -->
+  <!-- END OF "IF TOP BAR" -->
+
+	<div id="dropbar">
+		<div id="quickdrop-scrolled" class="dropbar-menu-container box mega f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+			<div class="row">
+				<ul class="links">
+					<li><a href="//my.unt.edu/" class="alt">MyUNT</a></li>
+					<li><a href="//learn.unt.edu/" class="alt">Blackboard</a></li>
+					<li><a href="//eagleconnect.unt.edu/" class="alt">EagleConnect</a></li>
+					<li><a href="//www.unt.edu/find-people-departments" class="alt">UNT Directory</a></li>
+					<li><a href="//maps.unt.edu/" class="alt">UNT Map</a></li>
+					
+					<li><a href="//hr.untsystem.edu/" class="alt">Jobs at UNT</a></li>
+				</ul>	
+			</div>
+		</div>
+		
+		<div id="searchdrop-scrolled" class="mega f-dropdown content" data-dropdown-content aria-hidden="true" tabindex="-1">
+			<div class="box">
+				<form action="/" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="row collapse"><div class="small-8 columns"><div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+</div><div class="small-4 columns"><button class="secondary button radius postfix expand form-submit" id="edit-submit" name="op" value="Search" type="submit">Search</button>
+</div></div><input type="hidden" name="form_build_id" value="form-yLlp_nomo9DuW279oRpgIZ9KXZtekpIA9-10CMAwsuI" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>			</div>
+		</div>
+	
+		<div id="menudrop-scrolled" class="dropbar-menu-container box mega f-dropdown" data-dropdown-content="" aria-hidden="true" tabindex="-1">
+			<div class="row">
+					      			</div>
+		</div>
+	</div>
+	<div id="mobile-site-name">
+					<a href="/"><h1 class="mobile-site-name">Clery Act</h1></a>
+			</div>
+	
+	
+	
+				
+  
+  
+  
+  <!--.l-main -->
+  <main role="main" class="row l-main">
+    <!-- .l-main region -->
+    <div class=" main columns">
+      
+      <a id="main-content"></a>
+
+
+      				      
+      			            
+      
+        
+      
+    <article id="node-1" class="node node-page view-mode-full">
+
+      
+  
+  <div class="body field"><div class="section section-panel">
+<div class="box">
+<div class="row">
+<div class="col large-12">
+<h2>Clery Act</h2>
+</div>
+
+<div class="col large-8">
+<p>The “Jeanne Clery Disclosure of Campus Security Policy and Campus Crime Statistics Act”, commonly referred to as the “Clery Act”, is a federal law that requires institutions of higher education in the United States to disclose campus security information including crime statistics for the campus and surrounding areas.</p>
+</div>
+
+<div class="col large-4 ctas">
+<div class="btn btn1 c1 altcolor"><a href="https://www.unt.edu/sites/default/files/2018_asfr_final.pdf">Annual Security Report</a></div>
+
+<div class="btn btn1 c1 altcolor"><a href="http://police.unt.edu/crime_alerts">Crime Alerts</a></div>
+
+<div class="btn btn1 c1 altcolor"><a href="/report-crime">Report a Crime</a></div>
+
+<div class="btn btn1 c1 altcolor"><a href="../sites/default/files/csa.pptx">CSA Training Slides</a></div>
+
+<section class="block block-block block-block-6">
+  
+      
+    <div class="btn btn1 blue altcolor"><a href="../user">UNT PD Login</a></div>  
+  </section>
+
+
+</div>
+
+<div class="col large-12">
+<h2>Campus Security Authorities</h2>
+
+<p>In order to ensure all criminal activity is disclosed, the Clery Act requires UNT to identify individuals and organizations to which crimes may be reported as a result of their position with UNT. These individuals and organizations are called Campus Security Authorities (CSAs).</p>
+
+<p>The following individuals and organizations have been identified as CSAs.</p>
+
+<ol start="1">
+	<li>Members of the UNT Police Department</li>
+	<li>Individuals who have responsibility for campus security but are not members of the UNT Police Department. An example would be an individual that monitors the entrances into buildings and property or acts as event security.</li>
+	<li>An individual or organization specified in the institution’s statement of campus security policy as an individual or organization to which students and employees should report criminal offenses. UNT has designated this to be the UNT Police Department.</li>
+	<li>An official of an institution who has significant responsibility for student and campus activities, including, but not limited to, student housing, student discipline and campus judicial proceedings. Examples include deans, directors, department heads, coaches, trainers, hall directors, resident assistants, and faculty advisors to student groups.</li>
+</ol>
+
+<p>The following individuals are not considered CSAs: A faculty member who does not have any responsibility for students and campus activity beyond the classroom; clerical or cafeteria staff; facilities or maintenance staff; any support position that does not have significant responsibility for students and campus activities.</p>
+
+<h2>Reporting a Crime</h2>
+
+<p>CSAs are required to immediately notify the UNT Police of alleged Clery crimes, which occurred on UNT’s Clery geography, that are reported to them. These reports will be used by UNT to:</p>
+
+<ol start="1">
+	<li>Fulfill its responsibility to annually disclose Clery crime statistics, and</li>
+	<li>To issue timely warnings for Clery crimes that pose a serious or continuing threat to students and employees.</li>
+</ol>
+
+<p>The following information should be obtained from anyone reporting a crime to a CSA. The answers to these questions can provide valuable information that will assist in the criminal investigation, annual reporting requirements, and the issuance of a timely warning to the UNT community if appropriate.</p>
+
+<ul>
+	<li>Who was involved</li>
+	<li>What occurred</li>
+	<li>Where did it occur</li>
+	<li>When did it occur</li>
+	<li>How did it occur</li>
+</ul>
+
+<h2>What is a Clery Crime?</h2>
+
+<p>Any Clery crime listed below that is reported to a CSA must immediately be reported to the UNT Police Department.</p>
+</div>
+
+<div class="col large-6">
+<ul>
+	<li>Murder/non-negligent manslaughter</li>
+	<li>Manslaughter by negligence</li>
+	<li>Sex Offenses:
+	<ol>
+		<li>Rape</li>
+		<li>Fondling</li>
+		<li>Incest</li>
+		<li>Statutory rape</li>
+	</ol>
+	</li>
+	<li>Robbery</li>
+	<li>Aggravated assault</li>
+	<li>Burglary</li>
+	<li>Motor vehicle theft</li>
+</ul>
+</div>
+
+<div class="col large-6">
+<ul>
+	<li>Arson</li>
+	<li>Domestic Violence</li>
+	<li>Dating Violence</li>
+	<li>Stalking</li>
+	<li>Liquor law violations</li>
+	<li>Drug abuse violations</li>
+	<li>Weapons violations</li>
+	<li>Hate crimes (includes all of the above crimes and larceny-theft, destruction/damage/vandalism of property, intimidation, and simple assault)</li>
+</ul>
+</div>
+
+<div class="col large-12">
+<p>Clery Crimes that occur in the Clery geography below are required to be reported.</p>
+
+<ul>
+	<li><strong>On Campus:</strong> Any building or property owned or controlled by an institution within the same reasonably contiguous geographic area and used by the institution in direct support of, or in a manner related to, the institution’s educational purposes, including residence halls; and Any building or property that is within or reasonably contiguous to the area identified in paragraph (1) of this definition, that is owned by the institution but controlled by another person, is frequently used by students, and supports institutional purposes (such as a food or other retail vendor). Examples include Administration Building, General Academic Building, and University Union.</li>
+	<li><strong>Public Property:</strong> All public property, including thoroughfares, streets, sidewalks, and parking facilities, that is within the campus, or immediately adjacent to and accessible from the campus. Examples include portions of Highland St., North Texas Blvd., and Welch St. that run through or adjacent to the main campus.</li>
+	<li><strong>Non-campus:</strong> Any building or property owned or controlled by a student organization that is officially recognized by the institution; or any building or property owned or controlled by an institution that is used in direct support of, or in relation to, the institution’s educational purposes, is frequently used by students, and is not within the same reasonably contiguous geographic area of the institution. Examples include the Discovery Park, Library Annex, and UNT on the square.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+  
+    
+</article>
+  
+        
+      <div class="jump-to-top"><a href="#skip"><span>Top</span></a></div>
+    </div>
+    <!--/.l-main region -->
+
+    
+      </main>
+  <!--/.l-main -->
+
+  
+
+
+
+
+
+
+<footer id="footer">
+	
+	<section class="footer-socials">
+		<div class="socials-wrapper">
+							<a href="https://www.facebook.com/northtexas" class="facebook" title"UNT on facebook" target="_blank"><img src="https://webassets.unt.edu/unt-foundation/images/social-facebook.png" alt="facebook"></a>
+						
+							<a href="https://twitter.com/UNTSocial" class="twitter" title="Twitter" target="_blank"><img src="https://webassets.unt.edu/unt-foundation/images/social-twitter.png" alt="twitter"></a>
+						
+							<a href="https://www.youtube.com/user/universitynorthtexas" class="youtube" title="YouTube" target="_blank"><img src="https://webassets.unt.edu/unt-foundation/images/social-youtube.png" alt="YouTube"></a>
+						
+						
+							<a href="https://www.instagram.com/UNT/" class="instagram" title="Instagram" target="_blank"><img src="https://webassets.unt.edu/unt-foundation/images/social-instagram.png" alt="Instagram"></a>
+						
+							<a href="https://www.flickr.com/photos/unt" class="flickr" title="flickr" target="_blank"><img src="https://webassets.unt.edu/unt-foundation/images/social-flickr.png" alt="flickr"></a>
+						
+						
+						
+			<a href="http://social.unt.edu/social-media-directory" class="directory" title="UNT Social Media Directory"><img src="https://webassets.unt.edu/unt-foundation/images/social-directory.png" alt="UNT Social Directory"></a>
+		</div>
+	</section>
+
+  <section class="footer-main">
+    <div class="wrapper row l-footer-columns">
+
+      <div class="footer-first medium-3 columns">
+        <div class="footer-brand">
+					<a href="https://www.unt.edu" class="desktop"><img src="https://webassets.unt.edu/unt-foundation/images/unt-logo-stacked-green.svg" alt="UNT | University of North Texas" /></a>
+					<a href="https://www.unt.edu" class="mobile"><img src="https://webassets.unt.edu/unt-foundation/images/unt-logo-stacked.svg" alt="UNT | University of North Texas" /></a>
+					
+				</div>
+				<!--div class="btn btn2 c1 solid">
+					<a href="#">Apply now</a>
+				</div>
+				<div class="btn btn2 c1 solid">
+					<a href="#">Schedule a tour</a>
+				</div>
+				<div class="btn btn2 c1 solid">
+					<a href="#">Get more info</a>
+				</div-->
+				
+      </div>
+
+      <div class="footer-second medium-6 mobile-0 desktop columns">
+        <h4 class="title">Main Menu</h4>
+        
+        <h4 class="title">University Links</h4>
+        <ul class="links">
+				  <li><a href="//my.unt.edu/" class="alt">MyUNT</a></li>
+				  <li><a href="//learn.unt.edu/" class="alt">Blackboard</a></li>
+				  <li><a href="//eagleconnect.unt.edu/" class="alt">EagleConnect</a></li>
+				  <li><a href="//www.unt.edu/find-people-departments" class="alt">UNT Directory</a></li>
+				  <li><a href="//maps.unt.edu/" class="alt">UNT Map</a></li>
+				  <li><a href="//hr.untsystem.edu/" class="alt">Jobs at UNT</a></li>
+        </ul>
+				
+				<h4 class="title">Email &amp; Phone</h4>
+				
+				<ul class="links">
+																		<li><i class="fa fa-envelope"></i>&nbsp;<a href="mailto:West.Gilbreath@unt.edu" class="email">West.Gilbreath@unt.edu</a></li>
+																												
+																		<li><i class="fa fa-phone"></i>&nbsp;<a href="tel:940-369-7086">940-369-7086</a></li>
+																											</ul>
+      </div>
+
+      <div class="footer-fifth medium-3 footer-contact columns">
+        
+        <p class="footer-site-name">Clery Act</p>
+				
+				<p class="address">
+					<i class="fa fa-map-marker"></i>&nbsp;&nbsp;<a href="https://www.google.com/maps/place/UNT+Police+Department/@33.206371,-97.151551,15z/data=!4m5!3m4!1s0x0:0xb123144291b9d117!8m2!3d3" target="_blank">Find UNT on Google Maps</a><br />
+					<i class="fa fa-envelope"></i>&nbsp;&nbsp;1700 Wilshire Street<br />
+										Denton, Texas 76201<br />
+					<i class="fa fa-car"></i>&nbsp;&nbsp;<a href="https://www.unt.edu/community">Visitor Information</a></p>
+				
+				<div class="mobile-ctas">
+											<a class="call-us" href="tel:940-369-7086"><i class="fa fa-phone" title="Call us"></i><br />Call us</a>
+						
+											<a class="email-us" href="mailto:West.Gilbreath@unt.edu"><i class="fa fa-envelope" title="Email us"></i><br />Email Us</a>
+						
+					<a class="unt-map" href="https://goo.gl/maps/gmkVRXCJqCq" title="UNT Map"><i class="fa fa-map-marker"></i><br />UNT Map</a>
+				</div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="mobile-socials">
+					<a href="https://www.facebook.com/northtexas" id="tab1" class="tab facebook" title="facebook"><i class="fa fa-facebook"></i></a>
+		
+					<a href="https://twitter.com/UNTSocial" id="tab2" class="tab twitter" title="twitter"><i class="fa fa-twitter"></i></a>
+		
+					<a href="https://www.instagram.com/UNT/" id="tab3" class="tab instagram" title="Instagram"><i class="fa fa-instagram"></i></a>
+		
+		
+		
+					<a href="https://www.youtube.com/user/universitynorthtexas" id="tab6" class="tab youtube" title="YouTube"><i class="fa fa-youtube"></i></a>
+		
+		
+		
+			<a href="http://social.unt.edu/social-media-directory" id="tab9" class="tab directory" title="UNT Social Media Directory"><i class="fa fa-list-ul"></i></a>
+  </section>
+	   
+	<section class="copyright">
+		<div class="col large-12 centered">
+			<div class="btn btn1 c2 altcolor small">
+				<a href="//admissions.unt.edu">Apply now</a>
+				<a href="//tours.unt.edu">Schedule a tour</a>
+				<a href="//admissions.unt.edu/requestinfo">Get more info</a>
+			</div>
+		</div>
+		
+		<p class="footer-copylinks"><a href="//www.unt.edu/disclaimer">Disclaimer</a> | <a href="//www.unt.edu/ada">AA/EOE/ADA</a> | <a href="//www.unt.edu/privacy">Privacy</a> | <a href="//policy.unt.edu/policy/14-005">Electronic Accessibility</a> | <a href="//www.unt.edu/required-links">Required Links</a> | <a href="//www.unt.edu">UNT Home</a></p>
+		<p>&copy;2018 University of North Texas</p>
+		<p class="show-for-small-only"><a href="//www.unt.edu/required-links">Required Links</a><span></p>
+
+	</section>
+
+</footer>
+
+
+</div>
+<!--/.page -->
+    
+	
+	<script type="text/javascript">
+		jQuery(window).scroll(function() {
+			var scroll = jQuery(window).scrollTop();
+		
+			// handle header collapse
+			if (scroll >= 85) {
+				jQuery("body").addClass("scrolled");
+			} else {
+				jQuery("body").removeClass("scrolled");
+			}
+		});
+		jQuery('.col').has('.col').addClass('parent');
+	</script>
+
+  <script>
+    (function ($, Drupal, window, document, undefined) {
+      $(document).foundation();
+    })(jQuery, Drupal, this, this.document);
+  </script>
+</body>
+</html>

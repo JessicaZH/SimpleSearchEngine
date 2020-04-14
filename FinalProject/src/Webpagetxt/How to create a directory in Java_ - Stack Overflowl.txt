@@ -1,0 +1,143 @@
+How to create a directory in Java? - Stack Overflow Stack Overflow Log In Sign Up current community Stack Overflow help chat Meta Stack Overflow your communities Sign up or log in to customize your list. more stack exchange communities company blog Tour Start here for a quick overview of the site Help Center Detailed answers to any questions you might have Meta Discuss the workings and policies of this site About Us Learn more about Stack Overflow the company Business Learn more about hiring developers or posting ads with us By using our site, you acknowledge that you have read and understand our Cookie Policy, Privacy Policy, and our Terms of Service. Home Public Stack Overflow Tags Users Jobs Teams+Slack Q&A for work Learn More How to create a directory in Java? Ask Question up vote 318 down vote favorite 68 How do I create Directory/folder? Once I have tested System.getProperty("user.home"); I have to create a directory (directory name "new folder" ) if and only if new folder does not exist. java directory share|improve this question edited Dec 28 '13 at 11:51 Benjamin 15.7k28119230 asked Sep 3 '10 at 10:27 jimmy 2,86592938 23 please review your selection of the correct answer. The solution proposed by JigarJoshi is misleading. It doesn't address the problem correctly (see my comment). The (simple) solution proposed by Bozho is much better. – mwhs Nov 24 '13 at 11:36 mkdir is idempotent in java. The implementation will do the check if the directory exists for you, and only create it if it does not exist. – mwhs Jul 21 '15 at 12:51 add a comment | 17 Answers 17 active oldest votes up vote 382 down vote accepted After ~7 year, I will update it to better approach which is suggested by Bozho. new File("/path/directory").mkdirs();
+ Deprecated: File theDir = new File("new folder");
+
+// if the directory does not exist, create it
+if (!theDir.exists()) {
+    System.out.println("creating directory: " + theDir.getName());
+    boolean result = false;
+
+    try{
+        theDir.mkdir();
+        result = true;
+    } 
+    catch(SecurityException se){
+        //handle it
+    }        
+    if(result) {    
+        System.out.println("DIR created");  
+    }
+}
+ share|improve this answer edited Apr 13 at 20:46 answered Sep 3 '10 at 10:34 Jigar Joshi 197k35334387 222 -1: That is actually a really bad technique to create a directory. The access to the FS is not reserved to a dedicated resource. Between if(!theDir.exists()) and theDir.mkdir() the status could have changed, as well as it could change in between not creating the directory (because of exists returning true) and needing it. The result of the method exists should never be used to decide wether to create a directory or not. Just call mkdir, no exception will be thrown if it already exists. – mwhs Nov 24 '13 at 11:26 3 @mwhs I understand that it's better to not check for the directory but I don't understand your justification (second part). Can't the status change between calling mkdir and needing the directory as well? I assume you meant that some other process deletes the directory. – Episodex Jul 17 '15 at 12:54 2 @Episodex Directories are shared resources. Just don't use the above solution, it is wrong for different reasons. Unclear how the PO could have thought this is the correct answer. If you want assertions about IO resources you need to use locks, not booleans. – mwhs Jul 20 '15 at 9:27 37 @mhws I know this post is a couple months old but if you look at the mkdirs implementation, from the source code, the very first thing that gets called is if (exists()) { return false; }. The implementation itself checks first to see if the directory already exists so the only thing this answer is at fault for, perhaps, is checking that condition 2x. Not near as bad as you're making it out to be. – Michael Hogenson Nov 12 '15 at 20:59 4 As of Java 7, you should probably use the methods in Files as in the more recent answer by Benoit Blanchon. (This answer appears to have been written before Java 7.) – Brick Sep 8 '16 at 16:58 | show 3 more comments up vote 441 down vote new File("/path/directory").mkdirs();
+ Here "directory" is the name of the directory you want to create/exist. share|improve this answer edited Sep 3 '10 at 10:37 answered Sep 3 '10 at 10:30 Bozho 479k1079371055 7 yes, in the above example directory is the name. – Bozho Sep 3 '10 at 10:36 26 Much better answer than the one selected as the correct one by the OP. Checking for existence of the directory before creating it should become a well-known anti-pattern. – mwhs Nov 24 '13 at 11:30 7 what if the directory is already exists? It would do overwriting? or skip the process. – Avinash Raj Oct 8 '15 at 5:34 3 @AvinashRaj please check docs.oracle.com/javase/7/docs/api/java/io/File.html#mkdirs() – Tascalator Oct 22 '15 at 1:12 3 it is clear: Returns: true if and only if the directory was created, along with all necessary parent directories; false otherwise – Xerus Jun 11 '17 at 15:29 | show 3 more comments up vote 114 down vote With Java 7, you can use Files.createDirectories(). For instance: Files.createDirectories(Paths.get("/path/to/directory"));
+ share|improve this answer answered Sep 8 '15 at 10:01 Benoit Blanchon 7,45423844 10 I think this option didn't exist at the time of the original Q&A, but this should be the answer going forward, I think. – Brick Sep 8 '16 at 16:56 2 It would also be good to note that: Unlike the createDirectory method, an exception is not thrown if the directory could not be created because it already exists – Keith OYS Nov 12 '17 at 11:23 Thanks for pointing the difference btw createDirectory and createDirectories. I find it a poor naming choice. – seinecle Jun 6 at 12:28 add a comment | up vote 37 down vote You can try FileUtils#forceMkdir FileUtils.forceMkdir("/path/directory");
+ This library have a lot of useful functions. share|improve this answer edited Feb 23 '17 at 13:19 Suzana 2,98711834 answered Sep 3 '10 at 11:00 ahvargas 864915 1 Much better than pure mkdirs: handles concurrency, checks if the operation succeeded, checks if the directory (not a file!) exists. – Andrey May 6 '15 at 11:26 add a comment | up vote 22 down vote mkdir vs mkdirs If you want to create a single directory use mkdir new File("/path/directory").mkdir();
+ If you want to create a hierarchy of folder structure use mkdirs  new File("/path/directory").mkdirs();
+ share|improve this answer edited Jan 17 '16 at 11:59 answered Jun 11 '15 at 8:00 Burusothman 6,07863563 add a comment | up vote 17 down vote Create a single directory. new File("C:\\Directory1").mkdir();
+ Create a directory named “Directory2 and all its sub-directories “Sub2″ and “Sub-Sub2″ together. new File("C:\\Directory2\\Sub2\\Sub-Sub2").mkdirs()
+ Source: this perfect tutorial , you find also an example of use. share|improve this answer edited May 20 at 6:45 user5377037 7,184122356 answered Jun 17 '14 at 10:10 Mouna 2,02111329 add a comment | up vote 6 down vote The following method should do what you want, just make sure you are checking the return value of mkdir() / mkdirs() private void createUserDir(final String dirName) throws IOException {
+    final File homeDir = new File(System.getProperty("user.home"));
+    final File dir = new File(homeDir, dirName);
+    if (!dir.exists() && !dir.mkdirs()) {
+        throw new IOException("Unable to create " + dir.getAbsolutePath();
+    }
+}
+ share|improve this answer answered Sep 3 '10 at 10:45 Jon Freedman 6,89132948 1 As mentioned in the comment by @mwhs on Jigar Joshi's answer, checking for existence first is not only not necessary but actually a bad idea. – Bdoserror Nov 25 '14 at 20:56 add a comment | up vote 5 down vote For java 7 and up: Path path = Paths.get("/your/path/string");
+if(!Files.exists(path)) {
+    try {
+      Files.createDirectories(path);
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+}
+ share|improve this answer answered Jan 9 '17 at 21:06 Marcos Maia 2,35352653 add a comment | up vote 4 down vote Though this question has been answered. I would like to put something extra, i.e. if there is a file exist with the directory name that you are trying to create than it should prompt an error. For future visitors. public static void makeDir()
+{
+    File directory = new File(" dirname ");
+    if (directory.exists() && directory.isFile())
+    {
+        System.out.println("The dir with name could not be" +
+        " created as it is a normal file");
+    }
+    else
+    {
+        try
+        {
+            if (!directory.exists())
+            {
+                directory.mkdir();
+            }
+            String username = System.getProperty("user.name");
+            String filename = " path/" + username + ".txt"; //extension if you need one
+
+        }
+        catch (IOException e)
+        {
+            System.out.println("prompt for error");
+        }
+    }
+}
+ share|improve this answer edited Dec 6 '13 at 1:27 bdean20 557512 answered Nov 24 '13 at 11:08 score 383619 3 As mentioned in the comment by @mwhs on Jigar Joshi's answer, checking for existence first is not only not necessary but actually a bad idea. – Bdoserror Nov 25 '14 at 20:57 add a comment | up vote 3 down vote Just wanted to point out to everyone calling File.mkdir() or File.mkdirs() to be careful the File object is a directory and not a file. For example if you call mkdirs() for the path /dir1/dir2/file.txt, it will create a folder with the name file.txt which is probably not what you wanted. If you are creating a new file and also want to automatically create parent folders you can do something like this:             File file = new File(filePath);
+            if (file.getParentFile() != null) {
+                file.getParentFile().mkdirs();
+            }
+ share|improve this answer edited Apr 15 '15 at 18:55 answered Apr 15 '15 at 18:49 Matt Bonness 34338 add a comment | up vote 3 down vote Neat and clean: import java.io.File;
+
+public class RevCreateDirectory {
+
+    public void revCreateDirectory() {
+        //To create single directory/folder
+        File file = new File("D:\\Directory1");
+        if (!file.exists()) {
+            if (file.mkdir()) {
+                System.out.println("Directory is created!");
+            } else {
+                System.out.println("Failed to create directory!");
+            }
+        }
+        //To create multiple directories/folders
+        File files = new File("D:\\Directory2\\Sub2\\Sub-Sub2");
+        if (!files.exists()) {
+            if (files.mkdirs()) {
+                System.out.println("Multiple directories are created!");
+            } else {
+                System.out.println("Failed to create multiple directories!");
+            }
+        }
+
+    }
+}
+ share|improve this answer edited May 3 at 11:31 Ripon Al Wasim 25.3k30124149 answered Jul 2 '15 at 10:57 Program-Me-Rev 2,12663070 add a comment | up vote 2 down vote Well to create Directory/folder in java we have two methods Here makedirectory method creates single directory if it does not exist. File dir = new File("path name");
+boolean isCreated = dir.mkdir();
+ And File dir = new File("path name");
+boolean isCreated = dir.mkdirs();
+ Here makedirectories method will create all directories that are missing in the path which the file object represent. For example refer link below (explained very well). Hope it helps!! https://www.flowerbrackets.com/create-directory-java-program/ share|improve this answer edited Nov 2 at 13:11 answered Oct 23 '17 at 12:23 Shiva 1575 add a comment | up vote 1 down vote This the way work for me do one single directory or more or them: need to import java.io.File; /*enter the code below to add a diectory dir1 or check if exist dir1, if does not, so create it and same with dir2 and dir3 */     File filed = new File("C:\\dir1");
+    if(!filed.exists()){  if(filed.mkdir()){ System.out.println("directory is created"); }} else{ System.out.println("directory exist");  }
+
+    File filel = new File("C:\\dir1\\dir2");
+    if(!filel.exists()){  if(filel.mkdir()){ System.out.println("directory is created");   }} else{ System.out.println("directory exist");  }
+
+    File filet = new File("C:\\dir1\\dir2\\dir3");
+    if(!filet.exists()){  if(filet.mkdir()){ System.out.println("directory is  created"); }}  else{ System.out.println("directory exist");  }
+ share|improve this answer answered Jan 26 '16 at 2:55 Stefano Castagnino 392 add a comment | up vote 0 down vote This function allows you to create a directory on the user home directory. private static void createDirectory(final String directoryName) {
+    final File homeDirectory = new File(System.getProperty("user.home"));
+    final File newDirectory = new File(homeDirectory, directoryName);
+    if(!newDirectory.exists()) {
+        boolean result = newDirectory.mkdir();
+
+        if(result) {
+            System.out.println("The directory is created !");
+        }
+    } else {
+        System.out.println("The directory already exist");
+    }
+}
+ share|improve this answer answered Feb 20 '14 at 14:00 Boubakr 2,61311214 As mentioned in the comment by @mwhs on Jigar Joshi's answer, checking for existence first is not only not necessary but actually a bad idea. – Bdoserror Nov 25 '14 at 20:58 add a comment | up vote 0 down vote if you want to be sure its created then this: final String path = "target/logs/";
+final File logsDir = new File(path);
+final boolean logsDirCreated = logsDir.mkdir();
+if (!logsDirCreated) {
+    final boolean logsDirExists = logsDir.exists();
+    assertThat(logsDirExists).isTrue();
+}
+ beacuse mkDir() returns a boolean, and findbugs will cry for it if you dont use the variable. Also its not nice... mkDir() returns only true if mkDir() creates it. If the dir exists, it returns false, so to verify the dir you created, only call exists() if mkDir() return false. assertThat() will checks the result and fails if exists() returns false. ofc you can use other things to handle the uncreated directory. share|improve this answer edited Apr 4 at 9:59 Virb 1,5271922 answered Apr 4 at 8:48 l0wacska 12 add a comment | up vote -2 down vote public class Test1 {
+    public static void main(String[] args)
+    {
+       String path = System.getProperty("user.home");
+       File dir=new File(path+"/new folder");
+       if(dir.exists()){
+           System.out.println("A folder with name 'new folder' is already exist in the path "+path);
+       }else{
+           dir.mkdir();
+       }
+
+    }
+}
+ share|improve this answer answered Jun 7 '12 at 6:10 Fathah Rehman P 5,84933136 As mentioned in the comment by @mwhs on Jigar Joshi's answer, checking for existence first is not only not necessary but actually a bad idea. – Bdoserror Nov 25 '14 at 20:57 add a comment | up vote -7 down vote You can also refer makdir() function for creating a new directory in a folder where you want. share|improve this answer answered May 5 '12 at 10:53 arun 291 9 There is no method named makdir. If you meant mkdir, how does this add anything to the existing answers? – Ted Hopp Oct 21 '12 at 6:27 add a comment | Your Answer Thanks for contributing an answer to Stack Overflow! Please be sure to answer the question. Provide details and share your research! But avoid … Asking for help, clarification, or responding to other answers. Making statements based on opinion; back them up with references or personal experience. To learn more, see our tips on writing great answers. Some of your past answers have not been well-received, and you're in danger of being blocked from answering. Please pay close attention to the following guidance: Please be sure to answer the question. Provide details and share your research! But avoid … Asking for help, clarification, or responding to other answers. Making statements based on opinion; back them up with references or personal experience. To learn more, see our tips on writing great answers. draft saved draft discarded Sign up or log in Sign up using Google Sign up using Facebook Sign up using Email and Password Post as a guest Name Email Required, but never shown Post as a guest Name Email Required, but never shown Post Your Answer Discard By clicking "Post Your Answer", you acknowledge that you have read our updated terms of service, privacy policy and cookie policy, and that your continued use of the website is subject to these policies. Not the answer you're looking for? Browse other questions tagged java directory or ask your own question. asked 8 years, 3 months ago viewed 474,025 times active 28 days ago Linked -1 Create file in Directory With name -6 Make Project Directory in Java 0 Java - create new directory with mkdir()? 0 Create directory in SUSE (Linux) from Java code 97 Why java.io.File doesn't have a close() method? 41 Create intermediate folders if one doesn't exist 4 how can I create a file in the current user's home directory using Java? -3 how to create folder at perticular path using java code 1 Unable to create a file path in java 0 Java - Create an empty directory see more linked questions… Related 5595Is Java “pass-by-reference” or “pass-by-value”? 4132Getting the source directory of a Bash script from within 3609How can I add an empty directory to a Git repository? 734How do I ignore a directory with SVN? 3111Create ArrayList from array 3214How can I safely create a nested directory in Python? 3076How do I list all files of a directory? 1626Find current directory and file's directory 2775Creating a memory leak with Java 4004How do I find all files containing specific text on Linux? Hot Network Questions I lost my closet key, how to open it? Carlsen-Caruana Game 12 Planetary cave: Gravity inside a non-concentric shell Movie about a civilization with limited life span and an integrated light indicator in their hands showing when they were about to die Why is it 'expected' that software developers work on their own projects in their spare time? Why do immortals not use any neck armour in Highlander (1986)? Brushing clean a Mars lander's solar panels Alarms on Doors that have Access to a Pool Paper about to be published without my consent Why does an overridden get-only property stay null when set in base class constructor? Making a Perfect Cusp Tikz Boss wants to use my lunchtime for work Is there a term for "the user can't use anything wrong" design? Why is there a "B" in Sabrina's hand? The Dance of Love? Isn't acknowledging the existence of God, as a state, a contradiction of the separation of Church and State? Can multiple Bags of Holding banish Tiamat? What does the "DO NOT USE FOR NAVIGATION" indication mean? visualizing a normal mode vibration of a molecule in mathematica Can OWD be imported/exported as metadata? How to tell a colleague that I want to stop sharing the ride? Why can't the word "can" be used in future tense (will can)? Did the number of U.S. Food & Drug Administration food safety inspections fall from the 1972 to 2006? Was the "Earthrise" witnessed by Apollo 8 the first available "full" photo of the Earth? more hot questions question feed lang-java Stack Overflow Questions Jobs Developer Jobs Directory Salary Calculator Help Mobile Products Teams Talent Engagement Enterprise Company About Press Work Here Legal Privacy Policy Contact Us Stack Exchange Network Technology Life / Arts Culture / Recreation Science Other Stack Overflow Server Fault Super User Web Applications Ask Ubuntu Webmasters Game Development TeX - LaTeX Software Engineering Unix & Linux Ask Different (Apple) WordPress Development Geographic Information Systems Electrical Engineering Android Enthusiasts Information Security Database Administrators Drupal Answers SharePoint User Experience Mathematica Salesforce ExpressionEngine® Answers Stack Overflow em Português Blender Network Engineering Cryptography Code Review Magento Software Recommendations Signal Processing Emacs Raspberry Pi Stack Overflow на русском Programming Puzzles & Code Golf Stack Overflow en español Ethereum Data Science Arduino Bitcoin more (30) Photography Science Fiction & Fantasy Graphic Design Movies & TV Music: Practice & Theory Worldbuilding Seasoned Advice (cooking) Home Improvement Personal Finance & Money Academia Law more (15) English Language & Usage Skeptics Mi Yodeya (Judaism) Travel Christianity English Language Learners Japanese Language Arqade (gaming) Bicycles Role-playing Games Anime & Manga Puzzling Motor Vehicle Maintenance & Repair more (33) MathOverflow Mathematics Cross Validated (stats) Theoretical Computer Science Physics Chemistry Biology Computer Science Philosophy more (10) Meta Stack Exchange Stack Apps API Data Area 51 Blog Facebook Twitter LinkedIn site design / logo © 2018 Stack Exchange Inc; user contributions licensed under cc by-sa 3.0 with attribution required. rev 2018.11.30.32292 Stack Overflow works best with JavaScript enabled

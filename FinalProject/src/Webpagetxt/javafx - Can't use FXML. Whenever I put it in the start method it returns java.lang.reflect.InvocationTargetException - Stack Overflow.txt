@@ -1,0 +1,53 @@
+javafx - Can't use FXML. Whenever I put it in the start method it returns java.lang.reflect.InvocationTargetException - Stack Overflow Stack Overflow Log In Sign Up current community Stack Overflow help chat Meta Stack Overflow your communities Sign up or log in to customize your list. more stack exchange communities company blog Tour Start here for a quick overview of the site Help Center Detailed answers to any questions you might have Meta Discuss the workings and policies of this site About Us Learn more about Stack Overflow the company Business Learn more about hiring developers or posting ads with us By using our site, you acknowledge that you have read and understand our Cookie Policy, Privacy Policy, and our Terms of Service. Home Public Stack Overflow Tags Users Jobs Teams+Slack Q&A for work Learn More Can't use FXML. Whenever I put it in the start method it returns java.lang.reflect.InvocationTargetException Ask Question up vote 0 down vote favorite To begin with, I thought it was something wrong with the code I'd written but then to test I set up a default javaFX fxml application and tried to run it but it returned the exact same error: Exception in Application start method
+java.lang.reflect.InvocationTargetException
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:389)
+at com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:328)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:767)
+Caused by: java.lang.RuntimeException: Exception in Application start method
+at com.sun.javafx.application.LauncherImpl.launchApplication1(LauncherImpl.java:917)
+at com.sun.javafx.application.LauncherImpl.lambda$launchApplication$155(LauncherImpl.java:182)
+at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NullPointerException: Location is required.
+at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3207)
+at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3175)
+at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3148)
+at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3124)
+at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3104)
+at javafx.fxml.FXMLLoader.load(FXMLLoader.java:3097)
+at fxmlplayground.FxmlPlayground.start(FxmlPlayground.java:22)
+at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$162(LauncherImpl.java:863)
+at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$175(PlatformImpl.java:326)
+at com.sun.javafx.application.PlatformImpl.lambda$null$173(PlatformImpl.java:295)
+at java.security.AccessController.doPrivileged(Native Method)
+at com.sun.javafx.application.PlatformImpl.lambda$runLater$174(PlatformImpl.java:294)
+at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191)
+... 1 more
+ This is the main code: public class FxmlPlayground extends Application {
+
+@Override
+public void start(Stage stage) throws Exception {
+    Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+
+    Scene scene = new Scene(root);
+
+    stage.setScene(scene);
+    stage.show();
+}
+
+/**
+ * @param args the command line arguments
+ */
+public static void main(String[] args) {
+    launch(args);
+}
+ } Apologies if the problem is very simple but I just don't understand what's not working java javafx fxml share asked 5 mins ago Owen Cook 187 New contributor Owen Cook is a new contributor to this site. Take care in asking for clarification, commenting, and answering. Check out our Code of Conduct. add a comment | active oldest votes Know someone who can answer? Share a link to this question via email, Google+, Twitter, or Facebook. Your Answer Owen Cook is a new contributor. Be nice, and check out our Code of Conduct. Thanks for contributing an answer to Stack Overflow! Please be sure to answer the question. Provide details and share your research! But avoid … Asking for help, clarification, or responding to other answers. Making statements based on opinion; back them up with references or personal experience. To learn more, see our tips on writing great answers. Some of your past answers have not been well-received, and you're in danger of being blocked from answering. Please pay close attention to the following guidance: Please be sure to answer the question. Provide details and share your research! But avoid … Asking for help, clarification, or responding to other answers. Making statements based on opinion; back them up with references or personal experience. To learn more, see our tips on writing great answers. draft saved draft discarded Sign up or log in Sign up using Google Sign up using Facebook Sign up using Email and Password Post as a guest Name Email Required, but never shown Post as a guest Name Email Required, but never shown Post Your Answer Discard By clicking "Post Your Answer", you acknowledge that you have read our updated terms of service, privacy policy and cookie policy, and that your continued use of the website is subject to these policies. Browse other questions tagged java javafx fxml or ask your own question. asked today viewed 5 times Related 0Passing info from JavaFX to Javascript 0JavaFx Gui Exception in Application start method -1Exception in Application start method javafx gui 0Issue using couchbase lite java on Windows XP 2onAction=“#ClickedClickMe” not working in JavaFX FXML 0Exception in Application start method java.lang.reflect.InvocationTargetException JavaFX image transition 0spring with javafx application exception when load fxml after mapping 2Can't run JavaFX - Kotlin app 1Exception in Application start method java.lang.reflect.InvocationTargetException at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) 0launch javafx app in terminal in Intellij idea Hot Network Questions What is the oldest protein in a human body? Getting a tax return as a dependent student Why is it 'expected' that software developers work on their own projects in their spare time? Adobe Illustrator: put a radial gradient over solid background Carlsen-Caruana Game 12 How can I help/encourage a wizard player with their bookkeeping? Is there a constraint on the sum of the type-I & type II error probabilities? Time Warp: Modern chemist as court alchemist Abbreviating the word "Zeichen" The dreaded apocalyptic asteroid approaches Earth but lands safely on the Moon at zero relative velocity Can a creature with a climbing speed climb across ceilings without penalty? A Russian verb for finding support for one's idea or theory from a hardly-relevant source For loop within GeoGraphics What is this aircraft (Le Bourget airshow 1965) Electrical Current vs Power in layman's terms? What does the "DO NOT USE FOR NAVIGATION" indication mean? Did the number of U.S. Food & Drug Administration food safety inspections fall from the 1972 to 2006? Are there unphotographable, but scannable ID cards? Guess the puzzle Why don't commercial airplanes carry Earth observing instruments? What can I do to help the players remember the rules? Alarms on Doors that have Access to a Pool Secure way to login to a website on someone else's computer Why can't the word "can" be used in future tense (will can)? more hot questions question feed lang-java Stack Overflow Questions Jobs Developer Jobs Directory Salary Calculator Help Mobile Products Teams Talent Engagement Enterprise Company About Press Work Here Legal Privacy Policy Contact Us Stack Exchange Network Technology Life / Arts Culture / Recreation Science Other Stack Overflow Server Fault Super User Web Applications Ask Ubuntu Webmasters Game Development TeX - LaTeX Software Engineering Unix & Linux Ask Different (Apple) WordPress Development Geographic Information Systems Electrical Engineering Android Enthusiasts Information Security Database Administrators Drupal Answers SharePoint User Experience Mathematica Salesforce ExpressionEngine® Answers Stack Overflow em Português Blender Network Engineering Cryptography Code Review Magento Software Recommendations Signal Processing Emacs Raspberry Pi Stack Overflow на русском Programming Puzzles & Code Golf Stack Overflow en español Ethereum Data Science Arduino Bitcoin more (30) Photography Science Fiction & Fantasy Graphic Design Movies & TV Music: Practice & Theory Worldbuilding Seasoned Advice (cooking) Home Improvement Personal Finance & Money Academia Law more (15) English Language & Usage Skeptics Mi Yodeya (Judaism) Travel Christianity English Language Learners Japanese Language Arqade (gaming) Bicycles Role-playing Games Anime & Manga Puzzling Motor Vehicle Maintenance & Repair more (33) MathOverflow Mathematics Cross Validated (stats) Theoretical Computer Science Physics Chemistry Biology Computer Science Philosophy more (10) Meta Stack Exchange Stack Apps API Data Area 51 Blog Facebook Twitter LinkedIn site design / logo © 2018 Stack Exchange Inc; user contributions licensed under cc by-sa 3.0 with attribution required. rev 2018.11.29.32286 Stack Overflow works best with JavaScript enabled

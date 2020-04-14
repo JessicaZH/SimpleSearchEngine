@@ -1,0 +1,1217 @@
+﻿<style>
+	<!-- @media (min-width: 768px) {
+		.body-skin-css-class {
+			background-image: url('https://mediafiles.cineplex.com/Skins/2017/CD_0005_ReclinersRollout_PageSkin_Generic_EN.jpg');
+			/*Url of Skin */
+			background-repeat: no-repeat;
+			background-color: #DDDFDE;
+			/* Fallback Colour - Will be seen if user has ad blocker enabled*/
+			background-position: center 0;
+			backface-visibility: visible;
+		}
+	}
+
+	-->
+</style>
+
+
+<!DOCTYPE html>
+
+<html ng-app="cineplexApp" lang="en-us">
+<head>
+    <script type="text/javascript" src='//cdn.districtm.ca/merge/merge.v4.2.111302.js'></script>
+    <meta name="viewport" content="width=device-width" />
+    <title>Cineplex.com | Cineplex Odeon Devonshire Mall Cinemas</title>
+    <meta name="description" content="One stop for all theatre and movie information. Show times, trailers, news, movie details, and online ticketing. Cineplex.com has entertainment covered." />
+    <meta name="keywords" content="" />
+    <meta http-equiv='content-language' content='en-us' />
+        <meta name="apple-itunes-app" content="app-id=404011384" />
+        <meta name="google-play-app" content="app-id=com.fivemobile.cineplex">
+
+
+    <link href="https://mediafiles.cineplex.com/Cineplex2013/touch/apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+    <link href="https://mediafiles.cineplex.com/Cineplex2013/touch/apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+    <link href="https://mediafiles.cineplex.com/Cineplex2013/touch/apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+    <link href="https://mediafiles.cineplex.com/Cineplex2013/touch/apple-touch-icon-57x57-precomposed.png" rel="apple-touch-icon-precomposed">
+    <link href="https://mediafiles.cineplex.com/Cineplex2013/touch/apple-touch-icon.png" rel="shortcut icon">
+
+        <link href="/css/smart-app-banner.css" rel="stylesheet" />
+        <link rel="apple-touch-icon" href="/img/cineplex-mobile.png">
+        <link rel="android-touch-icon" href="/img/cineplex-mobile.png" />
+    <link href="/Styles/FFMarkWebProFontCss/FFMarkWebProFontCss.css" rel="stylesheet"/>
+
+    <link href="/Styles/selectize/selectize.css" rel="stylesheet"/>
+<link href="/Styles/ng-scrollbar/ng-scrollbar.css" rel="stylesheet"/>
+
+    <link href="/Styles/jquery-ui/jquery-ui.css" rel="stylesheet"/>
+<link href="/Styles/font-awesome/font-awesome.css" rel="stylesheet"/>
+<link href="/Styles/bootstrap-3.3.7/css/bootstrap.css" rel="stylesheet"/>
+<link href="/Styles/site/css/site.css" rel="stylesheet"/>
+
+    <link href="/Styles/brightcove/customPlayerStyles.css" rel="stylesheet"/>
+
+    <link href="https://connect.cineplex.com/Account/styles/Cineplex.Connect.css" rel="stylesheet" type="text/css" />
+
+    <!--[if lte IE 9]>
+        <link href="/Styles/site/css/ie-fixes.css" rel="stylesheet" />
+    <!--[endif] -->
+
+
+    
+
+
+<meta name="description" content="One stop for all theatre and movie information. Show times, trailers, news, movie details, and online ticketing. Cineplex.com has entertainment covered." />
+<meta http-equiv='content-language' content='en-us'/>
+<meta name="generator" content="Agility CMS" />
+<meta name="agility_timestamp" content="2018/11/29 07:07:16 PM" /><meta name="agility_attributes" content="Mode=Live, IsPreview=False, Language=en-us, Machine=WEBLIVEIIS4, CustomOutputCache=False" />
+
+
+    <script src="/Scripts/libs/jquery/jquery-3.1.1.js"></script>
+<script src="/Scripts/libs/jquery-migrate/jquery-migrate-1.4.1.js"></script>
+<script src="/Scripts/libs/jqueryui/jquery-ui.js"></script>
+<script src="/Scripts/libs/jquery/jquery.remodal.js"></script>
+
+
+
+<style>
+#quicktickets-showtime-selection-wrapper .showtime-grid ul.showtime--list>li .showtime-wrap .seatMapLink{
+height: 2.333341111137037em!important;
+padding: 9px 3px;
+}
+
+footer div.footer-divider {
+  width: 100%;
+}
+
+.call-to-action .vertical-align-middle:before {
+  height: inherit;
+}
+</style>
+
+
+
+    
+
+<script src="//assets.adobedtm.com/3d1a0ef65cd34787e0ee39f1d78accacee131fb1/satelliteLib-1f2c0417a488d512762c3bf80030758a7077cca6.js"></script>
+
+
+
+<!-- Google Tag Manager -->
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T2B87G');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+
+
+<script src="//cdn.optimizely.com/js/2534570409.js"></script>
+
+
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+<script>
+	// <![CDATA[
+var googletag = googletag || {};
+                googletag.cmd = googletag.cmd || [];
+                //replaces any characters in the query string that are not a space or a-z, A-Z, 0-9 with an underscore
+                function getGoogleAdTargetingUrl() {
+                    var path = location.pathname + location.search;
+                    var targetingUrl = path;
+
+                    //if there is a query string
+                    var index = path.indexOf('?');
+                    if (index != -1) {
+                        var prefix_path = path.substring(0, index);
+                        var suffix_path = path.substring(index, path.length).replace(/[^\w\s]/gi, '_');
+                        targetingUrl = prefix_path + suffix_path;
+                    }
+
+                    // remove .aspx from the url for targeting
+                    targetingUrl = targetingUrl.replace('.aspx', '');
+
+                    //return targeting url
+                    return targetingUrl;
+                }
+                var targetingUrl = getGoogleAdTargetingUrl();
+
+                googletag.cmd.push(function () {
+
+                    var desktopSizeMapping = googletag.sizeMapping().
+                    addSize([992, 690], [[970, 90], [728, 90]]).
+                            addSize([768, 480], [728, 90]).
+                            addSize([0, 0], []).
+                            build();
+
+                    var tabletSizeMapping = googletag.sizeMapping().
+                    addSize([768, 480], []).
+                                addSize([680, 480], [640, 100]).
+                                addSize([0, 0], []).
+                                build();
+
+                    var mobileSizeMapping = googletag.sizeMapping().
+                    addSize([680, 480], []).
+                                addSize([0, 0], [320, 50]).
+                                build();
+
+
+                    var skyscraperMapping = googletag.sizeMapping().
+                                    addSize([320, 480], [160, 600]).
+                                    addSize([0, 0], []).
+                                    build();
+
+                    var boxMapping = googletag.sizeMapping().
+                                    addSize([320, 480], [300, 250]).
+                                    addSize([0, 0], []).
+                                    build();
+                    
+                    var outOfPageSizeMapping = googletag.sizeMapping().
+                            addSize([768, 480], [1,1]).
+                            addSize([0, 0], []).
+                            build();
+
+                    googletag.defineSlot('/7226/cplx.com_Theatres_eng/970x90_top', [970, 90], 'div-gpt-ad-970x90_top').defineSizeMapping(desktopSizeMapping).addService(googletag.pubads());
+                    googletag.defineSlot('/7226/cplx.com_Theatres_eng/640x100_top', [640, 100], 'div-gpt-ad-640x100_top').defineSizeMapping(tabletSizeMapping).addService(googletag.pubads());
+                    googletag.defineSlot('/7226/cplx.com_Theatres_eng/320x50_top', [320, 50], 'div-gpt-ad-320x50_top').defineSizeMapping(mobileSizeMapping).addService(googletag.pubads());
+                    googletag.defineSlot('/7226/cplx.com_Theatres_eng/970x90_bottom', [970, 90], 'div-gpt-ad-970x90_bottom').defineSizeMapping(desktopSizeMapping).addService(googletag.pubads());
+                    googletag.defineSlot('/7226/cplx.com_Theatres_eng/640x100_bottom', [640, 100], 'div-gpt-ad-640x100_bottom').defineSizeMapping(tabletSizeMapping).addService(googletag.pubads());
+                    googletag.defineSlot('/7226/cplx.com_Theatres_eng/320x50_bottom', [320, 50], 'div-gpt-ad-320x50_bottom').defineSizeMapping(mobileSizeMapping).addService(googletag.pubads());
+					googletag.defineSlot('/7226/cplx.com_Theatres_eng/300x250', [300, 250], 'div-gpt-ad-300x250').addService(googletag.pubads());                    
+					googletag.defineSlot('/7226/cplx.com_Theatres_eng/160x600', [160, 600], 'div-gpt-ad-160x600').addService(googletag.pubads());                    
+				    googletag.defineSlot('/7226/cplx.com_Theatres_eng/1x1', [1, 1], 'div-gpt-ad-1532548724778-0').addService(googletag.pubads());      
+					googletag.defineOutOfPageSlot('/7226/cplx.com_Theatres_eng/Out-of-Page', 'div-gpt-ad-outofpage').defineSizeMapping(outOfPageSizeMapping).addService(googletag.pubads());
+                    googletag.pubads().enableSingleRequest();
+                    googletag.pubads().collapseEmptyDivs();
+                    googletag.pubads().setTargeting('Page', targetingUrl);
+                    googletag.enableServices();
+                });
+// ]]>
+</script>
+
+    
+<script type="text/javascript">(function(){ if (typeof(___zen) === "undefined") {setTimeout(arguments.callee, 50); return; }___zen.hic("__ZEHIC7906", 1543536436, 1, 0, 60); })()</script><script type="text/javascript" async="async" src="/__zenedge/assets/hic.js?v=1541158593"></script></head>
+
+<body class="body-skin-css-class">
+
+    
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2B87G"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+    <div class="top-ad-container text-center">
+<div class="visible-sm visible-md visible-lg">
+<div id="div-gpt-ad-970x90_top">
+<script>// <![CDATA[
+googletag.cmd.push(function () { googletag.display('div-gpt-ad-970x90_top'); });
+// ]]></script>
+</div>
+</div>
+<div class="max-width-fill overflow-hidden visible-xs">
+<div id="div-gpt-ad-640x100_top">
+<script>// <![CDATA[
+googletag.cmd.push(function () { googletag.display('div-gpt-ad-640x100_top'); });
+// ]]></script>
+</div>
+</div>
+<div class="visible-xs">
+<div id="div-gpt-ad-320x50_top">
+<script>// <![CDATA[
+googletag.cmd.push(function () { googletag.display('div-gpt-ad-320x50_top'); });
+// ]]></script>
+</div>
+</div>
+</div>
+
+    
+
+
+<div class="container" id="site-header-area">
+    <div class="row">
+        <div class="col-xs-12 pad-vertical-md">
+            <div class="position-relative clearfix">
+                <a class="pull-left margin-right-lg" href="/">
+                    <picture>
+                        <source srcset="/Styles/images/Cineplex_Logo.png 1x, /Styles/images/Cineplex_Logo_Retina.png 2x" />
+                        <img class="max-width-fill header-logo" src="/Styles/images/Cineplex_Logo.png" alt="Cineplex Logo Click to Navigate to Homepage" />
+                    </picture>
+                </a>
+                <ul class="navbar-nav header-nav hidden-md hidden-sm hidden-xs no-list-style pull-left">
+                        <li>
+                            <a class="pad-right-md" href="https://worldgaming.com/"><span>ESPORTS</span></a>
+                        </li>
+                        <li>
+                            <a class="pad-right-md" href="/CorporateSales?cmpid=TopNavEN_CorporateSales"><span>CORPORATE SALES</span></a>
+                        </li>
+                        <li>
+                            <a class="pad-right-md" href="/Promos/Scene?cmpid=TopNavEN_scene"><span>SCENE&#174;</span></a>
+                        </li>
+                </ul>
+                <a class="toggle-language-btn text-light-grey pull-left" href="/Layout/SwitchLanguage" hreflang="fr">Fran&#231;ais</a>
+                <menu-search-box data='{"placeholder": "Search", "btnText": "Go", "hasMobileToggle": "false", "saytArea":"ProductionTheatreWildcard","saytArea2":"ProductionStoreWildcard","autocompleteTemplate":"autocompleteTemplate","productTemplate":"productTemplate","defaultImage":"https://mediafiles.cineplex.com/Cineplex2013/postermissing_230x341.jpg", "searchUrl": "/search-2015?", "showtimesUrl" :"/Showtimes/{0}/nearby-theatres", "filmUrl": "http://www.cineplex.com/Movie/", "storeUrl": "http://store.cineplex.com/Product/", "lang": "en-us"}'></menu-search-box>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container " id="site-navbar-wrap">
+    <nav role="navigation" class="navbar navbar-inverse" aria-labelledby="main-menu-label">
+        <h2 id="main-menu-label" class="sr-only">Main Menu</h2>
+        <div class="mobile-nav navbar-collapse inline-block text-left">
+            <ul class="nav navbar-nav navbar-left">
+                        <li><a href="/Showtimes?cmpid=MainNavEN_showtimes">Showtimes</a></li>
+                        <li><a href="/Theatres/TheatreListings?cmpid=MainNavEN_theatres">Theatres</a></li>
+                        <li><a href="/videos/All-Trailers/Media/?cmpid=MainNavEN_trailers">Trailers</a></li>
+                        <li><a href="http://store.cineplex.com">Rent/Buy</a></li>
+                        <li><a href="/Events?cmpid=MainNavEN_events">Events</a></li>
+                        <li><a href="https://Cineplex.com/BuyGiftCards">Gift Cards</a></li>
+                        <li><a class="mobile-only-item" href="/Gameon">eSports</a></li>
+                        <li><a class="mobile-only-item" href="/CorporateSales?cmpid=TopNavEN_CorporateSales">Corporate Sales</a></li>
+                        <li><a class="mobile-only-item" href="/Promos/Scene?cmpid=TopNavEN_scene">SCENE&#174;</a></li>
+                <li><a class="mobile-toggle-language-btn" href="/Layout/SwitchLanguage">Fran&#231;ais</a></li>
+            </ul>
+        </div>
+        <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="mobile-nav-closed">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </span>
+            <span class="mobile-nav-open">
+                <span class="fa fa-times"></span>
+            </span>
+        </button>
+        <div class="desktop-nav inline-block">
+            <ul class="nav navbar-nav navbar-left">
+                        <li><a href="/Showtimes?cmpid=MainNavEN_showtimes">Showtimes</a></li>
+                            <li class="dropdown drop-wide ">
+                                <a class="dropdown-toggle dropdown-link" data-toggle="dropdown" aria-expanded="false" href="/Theatres/TheatreListings?cmpid=MainNavEN_theatres">Theatres <span class="fa fa-chevron-down"></span></a>
+                                <ul class="dropdown-menu">
+                                        <li>
+                                            <span class="dropdown-menu-heading pad-bot-md">Theatre and Movie Listings</span>
+                                            <ul class="dropdown-menu-submenu pad-bot-sm clearfix">
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Theatres/TheatreListings?cmpid=MainSubNavEN_find-a-theatre">Find A Theatre</a>
+                                                    </li>
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Movies/NowPlaying?cmpid=MainSubNavEN_now-playing">Now Playing</a>
+                                                    </li>
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Movies/ComingSoon?cmpid=MainSubNavEN_coming-soon">Coming Soon</a>
+                                                    </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="dropdown-menu-heading pad-bot-md">EXPERIENCE</span>
+                                            <ul class="dropdown-menu-submenu pad-bot-sm clearfix">
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Theatres/IMAX">IMAX</a>
+                                                    </li>
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/vr">Virtual Reality</a>
+                                                    </li>
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Theatres/UltraAVX">UltraAVX</a>
+                                                    </li>
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Theatres/RealD3D">RealD-3D</a>
+                                                    </li>
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Theatres/D-Box">D-BOX</a>
+                                                    </li>
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Theatres/StarsAndStrollers?cmpid=MainSubNavEN_stars-and-strollers">Stars &amp; Strollers</a>
+                                                    </li>
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Theatres/VIP">VIP</a>
+                                                    </li>
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Theatres/XSCAPE">XSCAPE</a>
+                                                    </li>
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Theatres/DolbyAtmos">Dolby Atmos</a>
+                                                    </li>
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Promos/TimePlay">TimePlay</a>
+                                                    </li>
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Theatres/SensoryFriendly">Sensory Friendly</a>
+                                                    </li>
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Theatres/PrimeSeats">Prime Seats</a>
+                                                    </li>
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Theatres/4DX">4DX</a>
+                                                    </li>
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Theatres/InternationalCinema">International Cinema</a>
+                                                    </li>
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Theatres/Clubhouse">Clubhouse</a>
+                                                    </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="dropdown-menu-heading pad-bot-md">Group Events</span>
+                                            <ul class="dropdown-menu-submenu pad-bot-sm clearfix">
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Theatres/Birthdays/PopcornParties">Popcorn Parties</a>
+                                                    </li>
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Theatres/Birthdays/XSCAPEParties">XSCAPE Parties</a>
+                                                    </li>
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Theatres/Birthdays/XBoxParties">XBox Parties</a>
+                                                    </li>
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/CorporateSales/GroupScreenings?cmpid=MainSubNavEN_group-sales">School Events &amp; Screenings</a>
+                                                    </li>
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/CorporateSales/CorporateEvents?cmpid=MainSubNavEN_corporate-sales">Corporate Meetings &amp; Screenings</a>
+                                                    </li>
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/CorporateSales/Fundraising?cmpid=MainSubNavEN_Fundraising">Fundraising</a>
+                                                    </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="dropdown-menu-heading pad-bot-md">Theatre Info</span>
+                                            <ul class="dropdown-menu-submenu pad-bot-sm clearfix">
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Theatres/AccessibilityPolicy?cmpid=MainSubNavEN_accessibility-policy">Theatre Accessibility</a>
+                                                    </li>
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Theatres/FoodAndDrink?cmpid=MainSubNavEN_food-and-drink">Food &amp; Drink</a>
+                                                    </li>
+                                            </ul>
+                                        </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle dropdown-link" data-toggle="dropdown" aria-expanded="true" aria-expanded="false" href="/videos/All-Trailers/Media/?cmpid=MainNavEN_trailers">Trailers <span class="fa fa-chevron-down"></span></a>
+                                <ul class="dropdown-menu pad-bot-sm">
+                                        <li class="pad-bot-md">
+                                            <a href="/videos/Interviews/Media/">Interviews</a>
+                                        </li>
+                                        <li class="pad-bot-md">
+                                            <a href="/videos/All-Videos/Feat/Media/">Featurettes</a>
+                                        </li>
+                                        <li class="pad-bot-md">
+                                            <a href="/videos/All-Videos/Film-Clips/Media/">Movie Clips</a>
+                                        </li>
+                                        <li class="pad-bot-md">
+                                            <a href="/videos/All-Videos/OnSet/Media/">On-Sets</a>
+                                        </li>
+                                </ul>
+                            </li>
+                        <li><a href="http://store.cineplex.com">Rent/Buy</a></li>
+                            <li class="dropdown drop-wide drop-wide-three-column">
+                                <a class="dropdown-toggle dropdown-link" data-toggle="dropdown" aria-expanded="false" href="/Events?cmpid=MainNavEN_events">Events <span class="fa fa-chevron-down"></span></a>
+                                <ul class="dropdown-menu">
+                                        <li>
+                                            <span class="dropdown-menu-heading pad-bot-md">PERFORMING ARTS</span>
+                                            <ul class="dropdown-menu-submenu pad-bot-sm clearfix">
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Events/MetOpera">Met Opera</a>
+                                                    </li>
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Events/DanceSeries">Dance</a>
+                                                    </li>
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Events/Stage">Stage</a>
+                                                    </li>
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Events/InTheGallery">Gallery</a>
+                                                    </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="dropdown-menu-heading pad-bot-md">Film Series</span>
+                                            <ul class="dropdown-menu-submenu pad-bot-sm clearfix">
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Events/ClassicFilmSeries">Classic Films</a>
+                                                    </li>
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Events/FamilyFavourites">Family Favourites</a>
+                                                    </li>
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Events/Anime">Anime</a>
+                                                    </li>
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Events/Travel">Travel</a>
+                                                    </li>
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Events/FBFF">Flashback Film Fest</a>
+                                                    </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="dropdown-menu-heading pad-bot-md">MUSIC, SPORTS AND MORE</span>
+                                            <ul class="dropdown-menu-submenu pad-bot-sm clearfix">
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Events/MusicAtTheMovies">Concert &amp; Music</a>
+                                                    </li>
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Events/EventScreen">Event Screen</a>
+                                                    </li>
+                                                    <li class="pad-bot-md pad-right-sm">
+                                                        <a href="/Events/WWE">WWE</a>
+                                                    </li>
+                                            </ul>
+                                        </li>
+                                </ul>
+                            </li>
+                        <li><a href="https://Cineplex.com/BuyGiftCards">Gift Cards</a></li>
+
+
+
+            </ul>
+        </div>
+
+        <menu-search-box data='{"placeholder": "Search", "btnText": "Go", "hasMobileToggle": "true", "saytArea":"ProductionTheatreWildcard","saytArea2":"ProductionStoreWildcard","autocompleteTemplate":"autocompleteTemplate","productTemplate":"productTemplate","defaultImage":"https://mediafiles.cineplex.com/Cineplex2013/postermissing_230x341.jpg", "searchUrl":"/search-2015?", "showtimesUrl" :"/Showtimes/{0}/nearby-theatres", "filmUrl": "http://www.cineplex.com/Movie/", "storeUrl": "http://store.cineplex.com/Product/", "lang": "en-us"}'></menu-search-box>
+
+        <div class="cineplex_connect inline-block">
+        </div>
+
+    </nav>
+</div>
+
+
+<div class="main-content container pagewidth--inner">
+
+
+<div id="theatre-details-wrap">
+    <div class="row margin-bot-lg position-relative featured-area">
+        <div class="col-xs-12 col-md-8 left-underlined-area">
+            <div >
+                <h1 class="margin-bot-md">Cineplex Odeon Devonshire Mall Cinemas</h1>
+                <div class="margin-bot-xs">
+                    <a href="http://maps.google.com/?q=3100+Howard+Avenue+Windsor%2c+ON+N8X+3Y8" target="_blank" class="margin-bot-sm">3100 Howard Avenue, Windsor, ON, N8X 3Y8</a>
+                </div>
+                <div>
+                        <a class="magin-bot-sm" href="tel:5199670197">
+                            (519) 967 - 0197
+                        </a>
+                </div>
+                <div class="margin-vertical-md">
+                    <favourite-theatre theatre-id="7257" add-to-favourites-text="Add To Favourites" added-to-favourites-text="Favourited" service-failure-message="An Unexpected Error Occured, please try again later"></favourite-theatre>
+                </div>
+                <div class="row margin-bot-sm">
+                        <div class="col-xs-12 col-sm-8 margin-bot-sm">
+                                <div class="inline-block margin-right-xs">
+                                    <a href='/Theatres/DolbyAtmos'>
+                                        <div class="sr-only">Dolby Atmos</div>
+                                        <i class='format-sprite sprite-format_atmos'></i>
+                                    </a>
+                                </div>
+                                <div class="inline-block margin-right-xs">
+                                    <a href='/Theatres/UltraAVX'>
+                                        <div class="sr-only">UltraAVX</div>
+                                        <i class='format-sprite sprite-format_ultraAVX'></i>
+                                    </a>
+                                </div>
+                                <div class="inline-block margin-right-xs">
+                                    <a href='/Theatres/D-Box'>
+                                        <div class="sr-only">D-BOX</div>
+                                        <i class='format-sprite sprite-format_dbox'></i>
+                                    </a>
+                                </div>
+                                <div class="inline-block margin-right-xs">
+                                    <a href='/Theatres/RealD3D'>
+                                        <div class="sr-only">RealD3D</div>
+                                        <i class='format-sprite sprite-format_reald3d'></i>
+                                    </a>
+                                </div>
+                                <div class="inline-block margin-right-xs">
+                                    <a href='#'>
+                                        <div class="sr-only">Recliner</div>
+                                        <i class='format-sprite sprite-format_recl'></i>
+                                    </a>
+                                </div>
+                        </div>
+                                            <div class="col-xs-12 col-sm-4 margin-bot-sm accessibility-icons font-lg vertical-align-top">
+                                <a href="#" ng-click="$event.preventDefault();" uib-popover="Wheelchair Accessibility" popover-trigger="'mouseenter focus'" class="fa fa-wheelchair text-light-grey"><span class="sr-only">Wheelchair Accessibility</span></a>
+                                <a href="#" ng-click="$event.preventDefault();" uib-popover="Fidelio described video service is available.  Look for the DS or CC/DS symbol beside the showtime for films available with this service." popover-trigger="'mouseenter focus'" class="iconV2 iconV2-descriptive-video text-light-grey"><span class="sr-only">Fidelio described video service is available.  Look for the DS or CC/DS symbol beside the showtime for films available with this service.</span></a>
+                                <a href="#" ng-click="$event.preventDefault();" uib-popover="This theatre is equipped with assistive listening devices (ALD) in its auditoriums.  ALDs are not captioning.  They merely amplify the sound for guests that are hard of hearing." popover-trigger="'mouseenter focus'" class="iconV2 iconV2-hearing-assistance text-light-grey"><span class="sr-only">This theatre is equipped with assistive listening devices (ALD) in its auditoriums.  ALDs are not captioning.  They merely amplify the sound for guests that are hard of hearing.</span></a>
+                                <a href="#" ng-click="$event.preventDefault();" uib-popover="CaptiView captioning system is available.  Look for the CC or CC/DS symbol beside the showtime for films available with this service." popover-trigger="'mouseenter focus'" class="fa fa-cc text-light-grey"><span class="sr-only">CaptiView captioning system is available.  Look for the CC or CC/DS symbol beside the showtime for films available with this service.</span></a>
+                        </div>
+                </div>
+                <div class="margin-vertical-md">
+                    <div class="fineprint">Showtimes are available for online ticket purchase starting Wednesday mornings for the upcoming week (Fri &ndash; Thurs). Theatre Box Office opens approximately 30 minutes before the first advertised performance and will close approximately 15 minutes after the last advertised performance.</div>
+                </div>
+            </div>
+        </div>
+            <quick-tickets seat-map-link="https://onlineticketing.cineplex.com/SeatMap.aspx"
+                           one-third-right="true"
+                           header-title="TICKETS"
+                           search-by-theatre-tab-text="BY THEATRE"
+                           search-by-movie-tab-text="BY MOVIE"
+                           theatre-dropdown-default-option="Search by Theatre or City"
+                           select-showtime-prompt="Select Showtime"
+                           showtime-not-available="Tickets are available in-theatre at Box Office"
+                           sold-out-text="SOLD OUT"
+                           today-text="Today"
+                           tomorrow-text="Tomorrow"
+                           recliner-text="Recliner Seats"
+                           language-code="en-us"
+                           favourite-theatres-dropdown-heading="Favourite Theatres"
+                           previously-searched-theatres-dropdown-heading="Previous Searches"
+                           local-theatres-dropdown-heading="Nearby Theatres"
+                           all-theatres-dropdown-heading="All Theatres"
+                           select-date-dropdown-heading="Available Dates"
+                           select-movie-dropdown-heading-search-by-movie="Now Playing"
+                           select-movie-dropdown-heading-search-by-theatre="Playing At This Theatre"
+                           selected-placeholder="Type here"
+                           theatre-placeholder="Search by Theatre or City"
+                           movie-placeholder="Type or Select Movie"
+                           date-placeholder="Select Date"
+                           select-all-fields-error-message="PLEASE SELECT ALL OPTIONS TO UPDATE SHOWTIMES RESULTS"
+                           search-by-theatre-theatre-not-found="Not playing in this theatre. Try searching &quot;BY THEATRE&quot;, or check spelling."
+                           search-by-theatre-movie-not-found="Not playing in this theatre. Check spelling, or try searching &quot;BY MOVIE&quot;"
+                           search-by-movie-theatre-not-found="Not playing in this theatre. Check spelling, or try searching &quot;BY MOVIE&quot;"
+                           search-by-movie-movie-not-found="This movie is not in theatres, or the movie title is misspelled."
+                           fallback-error-html="An unexpected error occurred, please &lt;a href=&quot;javascript: window.location.reload(false)&quot;&gt;refresh your page&lt;/a&gt; and try again or &lt;a href=&quot;/showtimes&quot;&gt;use the legacy showtime selector&lt;/a&gt;"
+                           series-ticketing-button-text="Series Ticketing"
+                           vip-series-ticketing-button-text="VIP Series Ticketing"
+                           agility-common-showtimes-view-seat-map="View seat map"
+                           agility-common-buy-tickets="Buy Tickets"
+                           tooltip-content="Search by theatre or movie title below for quick access to Cineplex movie tickets. *Showtimes are available for online ticket purchase starting Wednesday mornings for the upcoming week (Fri – Thurs)."
+                           fixed-theatre-name="Cineplex Odeon Devonshire Mall Cinemas"
+                           fixed-movie-name=""
+                           widget-setting="2"
+                           default-movie-id="0"
+                           default-theatre-id="7257"
+                           class="ng-isolate-scope"
+                           accessibility-hints="CineplexWebsite.Models.AgilityShared.AccessibilityHint">
+                <div class="loading-block-quick-ticket"></div>
+            </quick-tickets>
+    </div>
+
+    <div class="row margin-bot-lg">
+        <div class="col-md-8 col-xs-12">
+            <movies-grid-controls trailer-text="trailer"
+                                  showtimes-text="showtimes"
+                                  advance-tickets-text="Advance Tickets"
+                                  format-text="format"
+                                  show-more-html="Show More"
+                                  see-more-text="See More"
+                                  errormessage="AN UNEXPECTED ERROR OCCURED PLEASE TRY AGAIN LATER"
+                                  no-movies-message="No movies found"
+                                  string-limit-mobile="26"
+                                  string-limit-tablet="30"
+                                  string-limit-desktop="28"
+                                  initial-items-mobile="9999"
+                                  initial-items-tablet="9999"
+                                  initial-items-desktop="9999"
+                                  show-more-items-mobile="20"
+                                  show-more-items-tablet="12"
+                                  show-more-items-desktop="20"
+                                  items-per-row-mobile="2"
+                                  items-per-row-tablet="4"
+                                  items-per-row-desktop="4"
+                                  tabs='[{"text": "ALL MOVIES", "service": "getTheatreAllMovies", "hasFilters" : true},{"text": "NOW PLAYING", "service" : "getTheatreNowPlayingMovies", "hasFilters" : true}, {"text": "COMING SOON", "service" : "getTheatreComingSoonMovies", "hasFilters" : false}, {"text": "EVENTS CINEMA", "service" : "getTheatreEventMovies", "hasFilters" : false}]'
+                                  filters='[{"filterText":"ALL","serviceRequestString":"ALL","showtimesFilterString":null},{"filterText":"REGULAR","serviceRequestString":"REGULAR","showtimesFilterString":null},{"filterText":"3D","serviceRequestString":"3D","showtimesFilterString":"F|D|J|R|B"},{"filterText":"DBOX","serviceRequestString":"DBOX","showtimesFilterString":"dbox"},{"filterText":"PRIME","serviceRequestString":"PRIME","showtimesFilterString":null},{"filterText":"AVX","serviceRequestString":"AVX","showtimesFilterString":"X|Y|U|T|D"},{"filterText":"IMAX","serviceRequestString":"IMAX","showtimesFilterString":"imax"},{"filterText":"VIP","serviceRequestString":"VIP","showtimesFilterString":"V|W|K|L|M|P"},{"filterText":"4DX","serviceRequestString":"4DX","showtimesFilterString":null}]'
+                                  advertisement-content="Advertisement"
+                                  player-elem-id="MoviesGridTrailer"
+                                  bright-cove-account="823022174001"
+                                  player-id="0de3ded5-8290-49c7-b25d-fcddec46dfb3"
+                                  language="en-us"
+                                  compact-display="true"
+                                  theatre-id="7257"
+                                  theatre-url-name="cineplex-odeon-devonshire-mall-cinemas"
+                                  movie-link-url-parameters=""
+                                  class="ng-isolate-scope">
+                <div class="movie-grid-loading-block"></div>
+            </movies-grid-controls>
+            
+            <div class="row bg-off-white margin-vertical-lg">
+<div class="col-xs-12 col-sm-4 col-sm-offset-1 call-to-action"><a href="/corporatesales" class="rollover-image-wrap pad-horizontal-md pad-vertical-md vertical-align-middle inline-block no-text-decoration">
+<div class="rollover-image-container"><img class="initial-image" src="https://mediafiles.cineplex.com/icons/calendar.png" alt="calendar icon" /> <img class="rollover-image" src="https://mediafiles.cineplex.com/icons/calendar_hover.png" alt="calendar icon" /></div>
+<div class="inline-block text-bold margin-top-xs pad-horizontal-xs">Book Event</div>
+<i class="fa fa-chevron-right call-to-action-arrow margin-top-xs"></i> </a></div>
+<div class="col-xs-12 col-sm-4 col-sm-offset-1 call-to-action"><a href="/Theatres/Birthdays" class="rollover-image-wrap pad-horizontal-md pad-vertical-md vertical-align-middle inline-block no-text-decoration">
+<div class="rollover-image-container"><img class="initial-image" src="https://mediafiles.cineplex.com/icons/popcorn_hat.png" alt="party icon" /> <img class="rollover-image" src="https://mediafiles.cineplex.com/icons/popcorn_hat_hover.png" alt="party icon" /></div>
+<div class="inline-block text-bold margin-top-xs pad-horizontal-xs">Book Party</div>
+<i class="fa fa-chevron-right call-to-action-arrow margin-top-xs"></i> </a></div>
+</div>
+                <div class="row margin-bot-md">
+                    <div class="col-xs-12">
+                        <h2>Admission Prices</h2>
+                    </div>
+                    <div class="col-sm-7 col-xs-12 margin-bot-sm">
+                        <theatre-pricing-table today-text="Today" tomorrow-text="Tomorrow" json-data='{"message":null,"theatreAdmissionPriceDateList":[{"date":"2018-11-29T00:00:00","ageGroups":["Child","General","Senior"],"ages":["(3-13)","(14-64)","(65+)"],"formats":[{"format":"General","cssClass":null,"prices":[7.9900,12.2500,8.9900],"message":null},{"format":"3D","cssClass":null,"prices":[10.9900,15.2500,11.9900],"message":null},{"format":"UltraAVX","cssClass":null,"prices":[10.9900,15.2500,11.9900],"message":null},{"format":"UltraAVX 3D","cssClass":null,"prices":[12.9900,17.2500,13.9900],"message":null},{"format":"D-BOX UltraAVX","cssClass":null,"prices":[18.9900,23.2500,19.9900],"message":null},{"format":"D-BOX UltraAVX 3D","cssClass":null,"prices":[18.9900,23.2500,19.9900],"message":null}]},{"date":"2018-11-30T00:00:00","ageGroups":["Child","General","Senior"],"ages":["(3-13)","(14-64)","(65+)"],"formats":[{"format":"General","cssClass":null,"prices":[7.9900,12.2500,8.9900],"message":null},{"format":"3D","cssClass":null,"prices":[10.9900,15.2500,11.9900],"message":null},{"format":"UltraAVX","cssClass":null,"prices":[10.9900,15.2500,11.9900],"message":null},{"format":"UltraAVX 3D","cssClass":null,"prices":[12.9900,17.2500,13.9900],"message":null},{"format":"D-BOX UltraAVX","cssClass":null,"prices":[18.9900,23.2500,19.9900],"message":null},{"format":"D-BOX UltraAVX 3D","cssClass":null,"prices":[18.9900,23.2500,19.9900],"message":null}]},{"date":"2018-12-01T00:00:00","ageGroups":["Child","General","Senior"],"ages":["(3-13)","(14-64)","(65+)"],"formats":[{"format":"General","cssClass":null,"prices":[7.9900,12.2500,8.9900],"message":null},{"format":"3D","cssClass":null,"prices":[10.9900,15.2500,11.9900],"message":null},{"format":"UltraAVX","cssClass":null,"prices":[10.9900,15.2500,11.9900],"message":null},{"format":"UltraAVX 3D","cssClass":null,"prices":[12.9900,17.2500,13.9900],"message":null},{"format":"D-BOX UltraAVX","cssClass":null,"prices":[18.9900,23.2500,19.9900],"message":null},{"format":"D-BOX UltraAVX 3D","cssClass":null,"prices":[18.9900,23.2500,19.9900],"message":null}]},{"date":"2018-12-02T00:00:00","ageGroups":["Child","General","Senior"],"ages":["(3-13)","(14-64)","(65+)"],"formats":[{"format":"General","cssClass":null,"prices":[7.9900,12.2500,8.9900],"message":null},{"format":"3D","cssClass":null,"prices":[10.9900,15.2500,11.9900],"message":null},{"format":"UltraAVX","cssClass":null,"prices":[10.9900,15.2500,11.9900],"message":null},{"format":"UltraAVX 3D","cssClass":null,"prices":[12.9900,17.2500,13.9900],"message":null},{"format":"D-BOX UltraAVX","cssClass":null,"prices":[18.9900,23.2500,19.9900],"message":null},{"format":"D-BOX UltraAVX 3D","cssClass":null,"prices":[18.9900,23.2500,19.9900],"message":null}]},{"date":"2018-12-03T00:00:00","ageGroups":["Child","General","Senior"],"ages":["(3-13)","(14-64)","(65+)"],"formats":[{"format":"General","cssClass":null,"prices":[7.9900,12.2500,8.9900],"message":null},{"format":"3D","cssClass":null,"prices":[10.9900,15.2500,11.9900],"message":null},{"format":"UltraAVX","cssClass":null,"prices":[10.9900,15.2500,11.9900],"message":null},{"format":"UltraAVX 3D","cssClass":null,"prices":[12.9900,17.2500,13.9900],"message":null},{"format":"D-BOX UltraAVX","cssClass":null,"prices":[18.9900,23.2500,19.9900],"message":null},{"format":"D-BOX UltraAVX 3D","cssClass":null,"prices":[18.9900,23.2500,19.9900],"message":null}]},{"date":"2018-12-04T00:00:00","ageGroups":["Child","General","Senior"],"ages":["(3-13)","(14-64)","(65+)"],"formats":[{"format":"Tuesday","cssClass":null,"prices":[7.5000,7.5000,7.5000],"message":null},{"format":"Tuesday 3D","cssClass":null,"prices":[10.5000,10.5000,10.5000],"message":null},{"format":"Tuesday UltraAVX","cssClass":null,"prices":[10.5000,10.5000,10.5000],"message":null},{"format":"Tuesday UltraAVX 3D","cssClass":null,"prices":[12.5000,12.5000,12.5000],"message":null},{"format":"D-BOX UltraAVX Tuesday","cssClass":null,"prices":[18.5000,18.5000,18.5000],"message":null},{"format":"D-BOX UltraAVX 3D Tuesday","cssClass":null,"prices":[18.5000,18.5000,18.5000],"message":null}]},{"date":"2018-12-05T00:00:00","ageGroups":["Child","General","Senior"],"ages":["(3-13)","(14-64)","(65+)"],"formats":[{"format":"General","cssClass":null,"prices":[7.9900,12.2500,8.9900],"message":null},{"format":"3D","cssClass":null,"prices":[10.9900,15.2500,11.9900],"message":null},{"format":"UltraAVX","cssClass":null,"prices":[10.9900,15.2500,11.9900],"message":null},{"format":"UltraAVX 3D","cssClass":null,"prices":[12.9900,17.2500,13.9900],"message":null},{"format":"D-BOX UltraAVX","cssClass":null,"prices":[18.9900,23.2500,19.9900],"message":null},{"format":"D-BOX UltraAVX 3D","cssClass":null,"prices":[18.9900,23.2500,19.9900],"message":null}]},{"date":"2018-12-06T00:00:00","ageGroups":["Child","General","Senior"],"ages":["(3-13)","(14-64)","(65+)"],"formats":[{"format":"General","cssClass":null,"prices":[7.9900,12.2500,8.9900],"message":null},{"format":"3D","cssClass":null,"prices":[10.9900,15.2500,11.9900],"message":null},{"format":"UltraAVX","cssClass":null,"prices":[10.9900,15.2500,11.9900],"message":null},{"format":"UltraAVX 3D","cssClass":null,"prices":[12.9900,17.2500,13.9900],"message":null},{"format":"D-BOX UltraAVX","cssClass":null,"prices":[18.9900,23.2500,19.9900],"message":null},{"format":"D-BOX UltraAVX 3D","cssClass":null,"prices":[18.9900,23.2500,19.9900],"message":null}]}]}' language-code="en-us"></theatre-pricing-table>
+                    </div>
+                    <div class="col-sm-5 col-xs-12 margin-bot-sm">
+                        <p>Admission pricing for unusual release patterns or special titles and for all Cineplex Events varies by performance. Actual price will be noted at checkout.</p>
+<p>*A No Passes restriction may apply to select movies and events. You cannot redeem passes but you may use a Gift Card, Night Out, or Admit One coupon for admission.</p>
+<p>Not all films may be available with captioning and described services. Please check showtime information for services available.</p>
+                    </div>
+                </div>
+                                        <div class="row margin-bot-lg">
+                    <div class="col-xs-12">
+                        <h2>Amenities</h2>
+                    </div>
+
+
+                    <div class="col-xs-12">
+                                <span>
+                                    12 Screen(s)
+,                                 </span>
+                                <a class="inline-block" href="#" ng-click="$event.preventDefault();" popover-trigger="'click mouseenter'" uib-popover-html='&quot;Reserve a seat that moves in concert with the action on-screen, vibrating and moving up, down, forward, and backwars&quot;| safeHtml'>
+                                    1 DBOX Screen(s),                                 </a>
+                                <a class="inline-block" href="#" ng-click="$event.preventDefault();" popover-trigger="'click mouseenter'" uib-popover-html='&quot;The next level of cinema with reserved seats, a giant screen, crystal clear digital projection and Dolby immersive digital surround sound&quot;| safeHtml'>
+                                    1 UltraAVX Screen(s),                                 </a>
+                                <span>
+                                    7 (3D) Screen(s)
+,                                 </span>
+                                <a class="inline-block" href="#" ng-click="$event.preventDefault();" popover-trigger="'click mouseenter'" uib-popover-html='&quot;Stars and Strollers&quot;| safeHtml'>
+                                    Stars and Strollers,                                 </a>
+                                <a class="inline-block" href="#" ng-click="$event.preventDefault();" popover-trigger="'click mouseenter'" uib-popover-html='&quot;Sensory Friendly&quot;| safeHtml'>
+                                    Sensory Friendly,                                 </a>
+                                <span>
+                                    2 Party Rooms
+,                                 </span>
+                                <span>
+                                    Scotiabank ATM
+                                </span>
+                    </div>
+
+                </div>
+                            <div class="margin-bot-md">
+                    <h2>Food &amp; Drinks</h2>
+                    <div class="rbo-wrapper clearfix">
+
+                            <div class="rbo-item">
+                                <a class="border-light block pull-left margin-bot-sm" href="https://www.cineplex.com/Theatres/FoodAndDrink/hot-dogs-by-outtakes" uib-popover="Hot Dogs by Outtakes" popover-trigger="'mouseenter focus'">
+                                    <img class="img-responsive" alt="Hot Dogs by Outtakes" src="/Services/thumbnailgenerator.ashx?img=https://mediafiles.cineplex.com/Central/RBO/47_EN_Hot_Dogs_by_Outtakes.jpg,157,103,1" onerror="this.onerror=null;this.src ='/Services/thumbnailgenerator.ashx?img=https://mediafiles.cineplex.com/Cineplex2013/postermissing_230x341.jpg,157,103,1' ;">
+                                </a>
+                            </div>
+                            <div class="rbo-item">
+                                <a class="border-light block pull-left margin-bot-sm" href="http://www.cineplex.com/Theatres/FoodAndDrink/yoyos-yogurt-cafe" uib-popover="YoYo’s Yogurt Cafe" popover-trigger="'mouseenter focus'">
+                                    <img class="img-responsive" alt="YoYo’s Yogurt Cafe" src="/Services/thumbnailgenerator.ashx?img=https://mediafiles.cineplex.com/Central/RBO/36_EN_yoyos_655x250_new_en.jpg,157,103,1" onerror="this.onerror=null;this.src ='/Services/thumbnailgenerator.ashx?img=https://mediafiles.cineplex.com/Cineplex2013/postermissing_230x341.jpg,157,103,1' ;">
+                                </a>
+                            </div>
+                            <div class="rbo-item">
+                                <a class="border-light block pull-left margin-bot-sm" href="http://www.cineplex.com/Theatres/FoodAndDrink/Licensed-Bar" uib-popover="Licensed Bar" popover-trigger="'mouseenter focus'">
+                                    <img class="img-responsive" alt="Licensed Bar" src="/Services/thumbnailgenerator.ashx?img=https://mediafiles.cineplex.com/Central/RBO/15_EN_licensed_bar.jpg,157,103,1" onerror="this.onerror=null;this.src ='/Services/thumbnailgenerator.ashx?img=https://mediafiles.cineplex.com/Cineplex2013/postermissing_230x341.jpg,157,103,1' ;">
+                                </a>
+                            </div>
+                            <div class="rbo-item">
+                                <a class="border-light block pull-left margin-bot-sm" href="http://www.cineplex.com/Theatres/FoodAndDrink/Starbucks" uib-popover="Starbucks" popover-trigger="'mouseenter focus'">
+                                    <img class="img-responsive" alt="Starbucks" src="/Services/thumbnailgenerator.ashx?img=https://mediafiles.cineplex.com/Central/RBO/18_EN_Starbucks-Logo1.jpg,157,103,1" onerror="this.onerror=null;this.src ='/Services/thumbnailgenerator.ashx?img=https://mediafiles.cineplex.com/Cineplex2013/postermissing_230x341.jpg,157,103,1' ;">
+                                </a>
+                            </div>
+                            <div class="rbo-item">
+                                <a class="border-light block pull-left margin-bot-sm" href="http://www.cineplex.com/Theatres/FoodAndDrink/Minimelts" uib-popover="MiniMelts" popover-trigger="'mouseenter focus'">
+                                    <img class="img-responsive" alt="MiniMelts" src="/Services/thumbnailgenerator.ashx?img=https://mediafiles.cineplex.com/Central/RBO/27_EN_minimelts_655x250_en.jpg,157,103,1" onerror="this.onerror=null;this.src ='/Services/thumbnailgenerator.ashx?img=https://mediafiles.cineplex.com/Cineplex2013/postermissing_230x341.jpg,157,103,1' ;">
+                                </a>
+                            </div>
+                            <div class="rbo-item">
+                                <a class="border-light block pull-left margin-bot-sm" href="http://www.cineplex.com/Theatres/FoodAndDrink/Pretzel-Maker" uib-popover="Pretzel Maker" popover-trigger="'mouseenter focus'">
+                                    <img class="img-responsive" alt="Pretzel Maker" src="/Services/thumbnailgenerator.ashx?img=https://mediafiles.cineplex.com/Central/RBO/29_EN_pretzelmaker.jpg,157,103,1" onerror="this.onerror=null;this.src ='/Services/thumbnailgenerator.ashx?img=https://mediafiles.cineplex.com/Cineplex2013/postermissing_230x341.jpg,157,103,1' ;">
+                                </a>
+                            </div>
+                    </div>
+                </div>
+            <div class="row margin-bot-md">
+                <div class="col-sm-6 col-xs-12 margin-bot-sm">
+                    <h2>Corporate Rentals</h2>
+<p>Want to make a really big impact? Hold your next meeting or event at a Cineplex Entertainment theatre. With your audience comfortably seated, your brand resonating on a screen up to six stories high and your message being broadcast in dynamic surround sound, those in attendance are sure to sit up and take notice.</p>
+<a class="cta-primary" href="/CorporateSales">LEARN MORE <i class="fa fa-angle-right"></i></a>
+                </div>
+                <div class="col-sm-6 col-xs-12 margin-bot-sm">
+                    <h2>Cineplex Careers</h2>
+<p>Movie magic. Movie stars. It all comes to life at Cineplex Entertainment. We're one of the largest Motion Picture Exhibitors in North America and now we're getting even bigger! If you love movies and want to work in the exciting entertainment industry, come join us. You'll see why we have the whole industry talking.</p>
+                    <a href="http://careers.cineplex.com/jobs/search/?q=Cineplex Odeon Devonshire Mall Cinemas" class="cta-primary">JOBS IN THIS THEATRE<i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="margin-bot-md">Showtimes In This Theatre</h2>
+                        <theatre-showtimes-table theatre-id="7257" available-dates-json='["2018-11-29T00:00:00","2018-11-30T00:00:00","2018-12-01T00:00:00","2018-12-02T00:00:00","2018-12-03T00:00:00","2018-12-04T00:00:00","2018-12-05T00:00:00","2018-12-06T00:00:00","2018-12-08T00:00:00","2018-12-15T00:00:00","2018-12-22T00:00:00"]' today-text="Today" tomorrow-text="Tomorrow" recliner-text="Recliner Seats" runtime-text="Running Time:" trailer-text="trailer" sold-out-text="SOLD OUT" no-showtimes-text="No Showtimes Found" language-code="en-us" advertisement-content="Advertisement" player-elem-id="theatre-showtime-grid-trailer" bright-cove-account="823022174001" player-id="0de3ded5-8290-49c7-b25d-fcddec46dfb3" agility-common-buy-tickets="Buy Tickets" showtime-not-available="Tickets are available in-theatre at Box Office" json-data='[{"filmId":23045,"filmName":"Fantastic Beasts: The Crimes Of Grindelwald","filmRuntime":134,"duration":"2h 14m","smallPosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/23045_130_193.jpg","mediumPosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/23045_320_470.jpg","largePosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/23045_768_1024.jpg","brightcoveVideoId":"5839864876001","theatricalReleaseDate":"2018-11-16T00:00:00","marketLanguageCode":"EN","filmUrl":"fantastic-beasts-the-crimes-of-grindelwald","showTimeDetails":[{"filmId":23045,"locationId":7257,"experienceType":"[UltraAVX],[RECLINER],[DS],[D-BOX],[CC],[ATMOS]","areaCode":"0000000004","presentationType":"(CC/DS)","movieExperienceImageClass":"dbox_ultraavx_recl_atmos","hasPassRestriction":true,"noPassText":"No passes","noPassDescription":"\u0027No passes\u0027 means that Cineplex \u0027Be Our Guest\u0027 passes and any Free Admission Coupons will not be accepted towards Cineplex admission tickets. This does not include Gift Cards or any pre-paid corporate products such as Cineplex \u0027Night Out\u0027 or \u0027Admit One\u0027 vouchers, which will be accepted for admission.","movieExperienceTitle":"atmos,dbox,recliner,ultraavx","order":25,"presentationTypeTitle":"Closed Captions for the hearing impaired and  Descriptive Service for the visually impaired","isCcEnabled":true,"isDsEnabled":true,"showtimes":[{"showStartDateTimeUtc":"2018-11-29T15:50:00Z","vistaSessionId":224567,"showStartDateTime":"2018-11-29T15:50:00","showStartDateTimeWithTimeZone":"2018-11-29T20:50:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":true,"areaDescription":"D-BOX","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224567\u0026VISTAHOAreaCategoryCode=0000000004\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224567\u0026VISTAHOCategoryCode=0000000004","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224567_t:7257_a:0000000004","auditorium":"Aud 01"}]},{"filmId":23045,"locationId":7257,"experienceType":"[UltraAVX],[RECLINER],[DS],[CC],[ATMOS]","areaCode":"0000000001","presentationType":"(CC/DS)","movieExperienceImageClass":"ultraavx_recl_atmos","hasPassRestriction":true,"noPassText":"No passes","noPassDescription":"\u0027No passes\u0027 means that Cineplex \u0027Be Our Guest\u0027 passes and any Free Admission Coupons will not be accepted towards Cineplex admission tickets. This does not include Gift Cards or any pre-paid corporate products such as Cineplex \u0027Night Out\u0027 or \u0027Admit One\u0027 vouchers, which will be accepted for admission.","movieExperienceTitle":"atmos,recliner,ultraavx","order":26,"presentationTypeTitle":"Closed Captions for the hearing impaired and  Descriptive Service for the visually impaired","isCcEnabled":true,"isDsEnabled":true,"showtimes":[{"showStartDateTimeUtc":"2018-11-29T15:50:00Z","vistaSessionId":224567,"showStartDateTime":"2018-11-29T15:50:00","showStartDateTimeWithTimeZone":"2018-11-29T20:50:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":true,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224567\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224567\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224567_t:7257_a:0000000001","auditorium":"Aud 01"}]},{"filmId":23045,"locationId":7257,"experienceType":"[UltraAVX],[RECLINER],[DS],[D-BOX],[CC],[ATMOS],[3D]","areaCode":"0000000004","presentationType":"(CC/DS)","movieExperienceImageClass":"dbox_ultraavx_recl_3d_atmos","hasPassRestriction":true,"noPassText":"No passes","noPassDescription":"\u0027No passes\u0027 means that Cineplex \u0027Be Our Guest\u0027 passes and any Free Admission Coupons will not be accepted towards Cineplex admission tickets. This does not include Gift Cards or any pre-paid corporate products such as Cineplex \u0027Night Out\u0027 or \u0027Admit One\u0027 vouchers, which will be accepted for admission.","movieExperienceTitle":"3d,atmos,dbox,recliner,ultraavx","order":27,"presentationTypeTitle":"Closed Captions for the hearing impaired and  Descriptive Service for the visually impaired","isCcEnabled":true,"isDsEnabled":true,"showtimes":[{"showStartDateTimeUtc":"2018-11-29T19:00:00Z","vistaSessionId":224568,"showStartDateTime":"2018-11-29T19:00:00","showStartDateTimeWithTimeZone":"2018-11-30T00:00:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":false,"areaDescription":"D-BOX","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224568\u0026VISTAHOAreaCategoryCode=0000000004\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224568\u0026VISTAHOCategoryCode=0000000004","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224568_t:7257_a:0000000004","auditorium":"Aud 01"},{"showStartDateTimeUtc":"2018-11-29T22:10:00Z","vistaSessionId":224569,"showStartDateTime":"2018-11-29T22:10:00","showStartDateTimeWithTimeZone":"2018-11-30T03:10:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":false,"areaDescription":"D-BOX","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224569\u0026VISTAHOAreaCategoryCode=0000000004\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224569\u0026VISTAHOCategoryCode=0000000004","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224569_t:7257_a:0000000004","auditorium":"Aud 01"}]},{"filmId":23045,"locationId":7257,"experienceType":"[UltraAVX],[RECLINER],[DS],[CC],[ATMOS],[3D]","areaCode":"0000000001","presentationType":"(CC/DS)","movieExperienceImageClass":"ultraavx_recl_3d_atmos","hasPassRestriction":true,"noPassText":"No passes","noPassDescription":"\u0027No passes\u0027 means that Cineplex \u0027Be Our Guest\u0027 passes and any Free Admission Coupons will not be accepted towards Cineplex admission tickets. This does not include Gift Cards or any pre-paid corporate products such as Cineplex \u0027Night Out\u0027 or \u0027Admit One\u0027 vouchers, which will be accepted for admission.","movieExperienceTitle":"3d,atmos,recliner,ultraavx","order":29,"presentationTypeTitle":"Closed Captions for the hearing impaired and  Descriptive Service for the visually impaired","isCcEnabled":true,"isDsEnabled":true,"showtimes":[{"showStartDateTimeUtc":"2018-11-29T19:00:00Z","vistaSessionId":224568,"showStartDateTime":"2018-11-29T19:00:00","showStartDateTimeWithTimeZone":"2018-11-30T00:00:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":false,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224568\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224568\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224568_t:7257_a:0000000001","auditorium":"Aud 01"},{"showStartDateTimeUtc":"2018-11-29T22:10:00Z","vistaSessionId":224569,"showStartDateTime":"2018-11-29T22:10:00","showStartDateTimeWithTimeZone":"2018-11-30T03:10:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":false,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224569\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224569\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224569_t:7257_a:0000000001","auditorium":"Aud 01"}]},{"filmId":23045,"locationId":7257,"experienceType":"[RECLINER],[DS],[CC],[3D]","areaCode":"0000000001","presentationType":"(CC/DS)","movieExperienceImageClass":"badge_full_recliner_seating_3d","hasPassRestriction":true,"noPassText":"No passes","noPassDescription":"\u0027No passes\u0027 means that Cineplex \u0027Be Our Guest\u0027 passes and any Free Admission Coupons will not be accepted towards Cineplex admission tickets. This does not include Gift Cards or any pre-paid corporate products such as Cineplex \u0027Night Out\u0027 or \u0027Admit One\u0027 vouchers, which will be accepted for admission.","movieExperienceTitle":"3d,recliner","order":54,"presentationTypeTitle":"Closed Captions for the hearing impaired and  Descriptive Service for the visually impaired","isCcEnabled":true,"isDsEnabled":true,"showtimes":[{"showStartDateTimeUtc":"2018-11-29T15:20:00Z","vistaSessionId":224597,"showStartDateTime":"2018-11-29T15:20:00","showStartDateTimeWithTimeZone":"2018-11-29T20:20:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":true,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224597\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224597\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224597_t:7257_a:0000000001","auditorium":"Aud 11"},{"showStartDateTimeUtc":"2018-11-29T18:30:00Z","vistaSessionId":224598,"showStartDateTime":"2018-11-29T18:30:00","showStartDateTimeWithTimeZone":"2018-11-29T23:30:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":true,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224598\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224598\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224598_t:7257_a:0000000001","auditorium":"Aud 11"}]},{"filmId":23045,"locationId":7257,"experienceType":"[RECLINER],[DS],[CC]","areaCode":"0000000001","presentationType":"(CC/DS)","movieExperienceImageClass":"badge_full_recliner_seating","hasPassRestriction":true,"noPassText":"No passes","noPassDescription":"\u0027No passes\u0027 means that Cineplex \u0027Be Our Guest\u0027 passes and any Free Admission Coupons will not be accepted towards Cineplex admission tickets. This does not include Gift Cards or any pre-paid corporate products such as Cineplex \u0027Night Out\u0027 or \u0027Admit One\u0027 vouchers, which will be accepted for admission.","movieExperienceTitle":"recliner","order":56,"presentationTypeTitle":"Closed Captions for the hearing impaired and  Descriptive Service for the visually impaired","isCcEnabled":true,"isDsEnabled":true,"showtimes":[{"showStartDateTimeUtc":"2018-11-29T21:40:00Z","vistaSessionId":224599,"showStartDateTime":"2018-11-29T21:40:00","showStartDateTimeWithTimeZone":"2018-11-30T02:40:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":false,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224599\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224599\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224599_t:7257_a:0000000001","auditorium":"Aud 11"}]}]},{"filmId":22374,"filmName":"Dr. Seuss\u0027 The Grinch","filmRuntime":86,"duration":"1h 26m","smallPosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/22374_130_193.jpg","mediumPosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/22374_320_470.jpg","largePosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/22374_768_1024.jpg","brightcoveVideoId":"5837222199001","theatricalReleaseDate":"2018-11-09T00:00:00","marketLanguageCode":"EN","filmUrl":"dr-seuss-the-grinch","showTimeDetails":[{"filmId":22374,"locationId":7257,"experienceType":"[RECLINER],[DS],[CC],[3D]","areaCode":"0000000001","presentationType":"(CC/DS)","movieExperienceImageClass":"badge_full_recliner_seating_3d","hasPassRestriction":false,"noPassText":"No passes","noPassDescription":"\u0027No passes\u0027 means that Cineplex \u0027Be Our Guest\u0027 passes and any Free Admission Coupons will not be accepted towards Cineplex admission tickets. This does not include Gift Cards or any pre-paid corporate products such as Cineplex \u0027Night Out\u0027 or \u0027Admit One\u0027 vouchers, which will be accepted for admission.","movieExperienceTitle":"3d,recliner","order":54,"presentationTypeTitle":"Closed Captions for the hearing impaired and  Descriptive Service for the visually impaired","isCcEnabled":true,"isDsEnabled":true,"showtimes":[{"showStartDateTimeUtc":"2018-11-29T16:00:00Z","vistaSessionId":224570,"showStartDateTime":"2018-11-29T16:00:00","showStartDateTimeWithTimeZone":"2018-11-29T21:00:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":true,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224570\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224570\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224570_t:7257_a:0000000001","auditorium":"Aud 2"},{"showStartDateTimeUtc":"2018-11-29T18:30:00Z","vistaSessionId":224571,"showStartDateTime":"2018-11-29T18:30:00","showStartDateTimeWithTimeZone":"2018-11-29T23:30:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":true,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224571\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224571\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224571_t:7257_a:0000000001","auditorium":"Aud 2"},{"showStartDateTimeUtc":"2018-11-29T20:15:00Z","vistaSessionId":224583,"showStartDateTime":"2018-11-29T20:15:00","showStartDateTimeWithTimeZone":"2018-11-30T01:15:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":false,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224583\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224583\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224583_t:7257_a:0000000001","auditorium":"Aud 6"},{"showStartDateTimeUtc":"2018-11-29T21:20:00Z","vistaSessionId":224572,"showStartDateTime":"2018-11-29T21:20:00","showStartDateTimeWithTimeZone":"2018-11-30T02:20:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":false,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224572\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224572\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224572_t:7257_a:0000000001","auditorium":"Aud 2"}]},{"filmId":22374,"locationId":7257,"experienceType":"[RECLINER],[DS],[CC]","areaCode":"0000000001","presentationType":"(CC/DS)","movieExperienceImageClass":"badge_full_recliner_seating","hasPassRestriction":false,"noPassText":"No passes","noPassDescription":"\u0027No passes\u0027 means that Cineplex \u0027Be Our Guest\u0027 passes and any Free Admission Coupons will not be accepted towards Cineplex admission tickets. This does not include Gift Cards or any pre-paid corporate products such as Cineplex \u0027Night Out\u0027 or \u0027Admit One\u0027 vouchers, which will be accepted for admission.","movieExperienceTitle":"recliner","order":56,"presentationTypeTitle":"Closed Captions for the hearing impaired and  Descriptive Service for the visually impaired","isCcEnabled":true,"isDsEnabled":true,"showtimes":[{"showStartDateTimeUtc":"2018-11-29T17:45:00Z","vistaSessionId":224582,"showStartDateTime":"2018-11-29T17:45:00","showStartDateTimeWithTimeZone":"2018-11-29T22:45:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":true,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224582\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224582\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224582_t:7257_a:0000000001","auditorium":"Aud 6"}]}]},{"filmId":21676,"filmName":"Ralph Breaks The Internet","filmRuntime":114,"duration":"1h 54m","smallPosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/21676_130_193.jpg","mediumPosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/21676_320_470.jpg","largePosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/21676_768_1024.jpg","brightcoveVideoId":"5837613583001","theatricalReleaseDate":"2018-11-21T00:00:00","marketLanguageCode":"EN","filmUrl":"ralph-breaks-the-internet-2018","showTimeDetails":[{"filmId":21676,"locationId":7257,"experienceType":"[RECLINER],[DS],[CC],[3D]","areaCode":"0000000001","presentationType":"(CC/DS)","movieExperienceImageClass":"badge_full_recliner_seating_3d","hasPassRestriction":true,"noPassText":"No passes","noPassDescription":"\u0027No passes\u0027 means that Cineplex \u0027Be Our Guest\u0027 passes and any Free Admission Coupons will not be accepted towards Cineplex admission tickets. This does not include Gift Cards or any pre-paid corporate products such as Cineplex \u0027Night Out\u0027 or \u0027Admit One\u0027 vouchers, which will be accepted for admission.","movieExperienceTitle":"3d,recliner","order":54,"presentationTypeTitle":"Closed Captions for the hearing impaired and  Descriptive Service for the visually impaired","isCcEnabled":true,"isDsEnabled":true,"showtimes":[{"showStartDateTimeUtc":"2018-11-29T16:50:00Z","vistaSessionId":224585,"showStartDateTime":"2018-11-29T16:50:00","showStartDateTimeWithTimeZone":"2018-11-29T21:50:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":true,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224585\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224585\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224585_t:7257_a:0000000001","auditorium":"Aud 07"},{"showStartDateTimeUtc":"2018-11-29T19:30:00Z","vistaSessionId":224586,"showStartDateTime":"2018-11-29T19:30:00","showStartDateTimeWithTimeZone":"2018-11-30T00:30:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":false,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224586\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224586\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224586_t:7257_a:0000000001","auditorium":"Aud 07"},{"showStartDateTimeUtc":"2018-11-29T20:00:00Z","vistaSessionId":224601,"showStartDateTime":"2018-11-29T20:00:00","showStartDateTimeWithTimeZone":"2018-11-30T01:00:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":false,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224601\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224601\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224601_t:7257_a:0000000001","auditorium":"Aud 12"},{"showStartDateTimeUtc":"2018-11-29T22:40:00Z","vistaSessionId":224602,"showStartDateTime":"2018-11-29T22:40:00","showStartDateTimeWithTimeZone":"2018-11-30T03:40:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":false,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224602\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224602\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224602_t:7257_a:0000000001","auditorium":"Aud 12"}]},{"filmId":21676,"locationId":7257,"experienceType":"[RECLINER],[DS],[CC]","areaCode":"0000000001","presentationType":"(CC/DS)","movieExperienceImageClass":"badge_full_recliner_seating","hasPassRestriction":true,"noPassText":"No passes","noPassDescription":"\u0027No passes\u0027 means that Cineplex \u0027Be Our Guest\u0027 passes and any Free Admission Coupons will not be accepted towards Cineplex admission tickets. This does not include Gift Cards or any pre-paid corporate products such as Cineplex \u0027Night Out\u0027 or \u0027Admit One\u0027 vouchers, which will be accepted for admission.","movieExperienceTitle":"recliner","order":56,"presentationTypeTitle":"Closed Captions for the hearing impaired and  Descriptive Service for the visually impaired","isCcEnabled":true,"isDsEnabled":true,"showtimes":[{"showStartDateTimeUtc":"2018-11-29T17:20:00Z","vistaSessionId":224600,"showStartDateTime":"2018-11-29T17:20:00","showStartDateTimeWithTimeZone":"2018-11-29T22:20:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":true,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224600\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224600\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224600_t:7257_a:0000000001","auditorium":"Aud 12"},{"showStartDateTimeUtc":"2018-11-29T22:15:00Z","vistaSessionId":224587,"showStartDateTime":"2018-11-29T22:15:00","showStartDateTimeWithTimeZone":"2018-11-30T03:15:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":false,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224587\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224587\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224587_t:7257_a:0000000001","auditorium":"Aud 07"}]}]},{"filmId":27411,"filmName":"Bohemian Rhapsody","filmRuntime":135,"duration":"2h 15m","smallPosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/27411_130_193.jpg","mediumPosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/27411_320_470.jpg","largePosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/27411_768_1024.jpg","brightcoveVideoId":"5810312224001","theatricalReleaseDate":"2018-11-02T00:00:00","marketLanguageCode":"EN","filmUrl":"bohemian-rhapsody","showTimeDetails":[{"filmId":27411,"locationId":7257,"experienceType":"[RECLINER],[DS],[CC]","areaCode":"0000000001","presentationType":"(CC/DS)","movieExperienceImageClass":"badge_full_recliner_seating","hasPassRestriction":false,"noPassText":"No passes","noPassDescription":"\u0027No passes\u0027 means that Cineplex \u0027Be Our Guest\u0027 passes and any Free Admission Coupons will not be accepted towards Cineplex admission tickets. This does not include Gift Cards or any pre-paid corporate products such as Cineplex \u0027Night Out\u0027 or \u0027Admit One\u0027 vouchers, which will be accepted for admission.","movieExperienceTitle":"recliner","order":56,"presentationTypeTitle":"Closed Captions for the hearing impaired and  Descriptive Service for the visually impaired","isCcEnabled":true,"isDsEnabled":true,"showtimes":[{"showStartDateTimeUtc":"2018-11-29T15:25:00Z","vistaSessionId":224591,"showStartDateTime":"2018-11-29T15:25:00","showStartDateTimeWithTimeZone":"2018-11-29T20:25:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":true,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224591\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224591\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224591_t:7257_a:0000000001","auditorium":"Aud 09"},{"showStartDateTimeUtc":"2018-11-29T18:35:00Z","vistaSessionId":224592,"showStartDateTime":"2018-11-29T18:35:00","showStartDateTimeWithTimeZone":"2018-11-29T23:35:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":true,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224592\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224592\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224592_t:7257_a:0000000001","auditorium":"Aud 09"},{"showStartDateTimeUtc":"2018-11-29T21:35:00Z","vistaSessionId":224593,"showStartDateTime":"2018-11-29T21:35:00","showStartDateTimeWithTimeZone":"2018-11-30T02:35:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":false,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224593\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224593\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224593_t:7257_a:0000000001","auditorium":"Aud 09"}]}]},{"filmId":27414,"filmName":"Widows","filmRuntime":130,"duration":"2h 10m","smallPosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/27414_130_193.jpg","mediumPosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/27414_320_470.jpg","largePosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/27414_768_1024.jpg","brightcoveVideoId":"5822570098001","theatricalReleaseDate":"2018-11-16T00:00:00","marketLanguageCode":"EN","filmUrl":"widows-2018","showTimeDetails":[{"filmId":27414,"locationId":7257,"experienceType":"[RECLINER],[DS],[CC]","areaCode":"0000000001","presentationType":"(CC/DS)","movieExperienceImageClass":"badge_full_recliner_seating","hasPassRestriction":false,"noPassText":"No passes","noPassDescription":"\u0027No passes\u0027 means that Cineplex \u0027Be Our Guest\u0027 passes and any Free Admission Coupons will not be accepted towards Cineplex admission tickets. This does not include Gift Cards or any pre-paid corporate products such as Cineplex \u0027Night Out\u0027 or \u0027Admit One\u0027 vouchers, which will be accepted for admission.","movieExperienceTitle":"recliner","order":56,"presentationTypeTitle":"Closed Captions for the hearing impaired and  Descriptive Service for the visually impaired","isCcEnabled":true,"isDsEnabled":true,"showtimes":[{"showStartDateTimeUtc":"2018-11-29T15:30:00Z","vistaSessionId":224576,"showStartDateTime":"2018-11-29T15:30:00","showStartDateTimeWithTimeZone":"2018-11-29T20:30:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":true,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224576\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224576\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224576_t:7257_a:0000000001","auditorium":"Aud 04"},{"showStartDateTimeUtc":"2018-11-29T18:40:00Z","vistaSessionId":224577,"showStartDateTime":"2018-11-29T18:40:00","showStartDateTimeWithTimeZone":"2018-11-29T23:40:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":true,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224577\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224577\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224577_t:7257_a:0000000001","auditorium":"Aud 04"},{"showStartDateTimeUtc":"2018-11-29T21:50:00Z","vistaSessionId":224578,"showStartDateTime":"2018-11-29T21:50:00","showStartDateTimeWithTimeZone":"2018-11-30T02:50:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":false,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224578\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224578\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224578_t:7257_a:0000000001","auditorium":"Aud 04"}]}]},{"filmId":26818,"filmName":"A Star Is Born","filmRuntime":136,"duration":"2h 16m","smallPosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/26818_130_193.jpg","mediumPosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/26818_320_470.jpg","largePosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/26818_768_1024.jpg","brightcoveVideoId":"5794347722001","theatricalReleaseDate":"2018-10-05T00:00:00","marketLanguageCode":"EN","filmUrl":"a-star-is-born-2018","showTimeDetails":[{"filmId":26818,"locationId":7257,"experienceType":"[RECLINER],[DS],[CC]","areaCode":"0000000001","presentationType":"(CC/DS)","movieExperienceImageClass":"badge_full_recliner_seating","hasPassRestriction":false,"noPassText":"No passes","noPassDescription":"\u0027No passes\u0027 means that Cineplex \u0027Be Our Guest\u0027 passes and any Free Admission Coupons will not be accepted towards Cineplex admission tickets. This does not include Gift Cards or any pre-paid corporate products such as Cineplex \u0027Night Out\u0027 or \u0027Admit One\u0027 vouchers, which will be accepted for admission.","movieExperienceTitle":"recliner","order":56,"presentationTypeTitle":"Closed Captions for the hearing impaired and  Descriptive Service for the visually impaired","isCcEnabled":true,"isDsEnabled":true,"showtimes":[{"showStartDateTimeUtc":"2018-11-29T15:35:00Z","vistaSessionId":224573,"showStartDateTime":"2018-11-29T15:35:00","showStartDateTimeWithTimeZone":"2018-11-29T20:35:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":true,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224573\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224573\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224573_t:7257_a:0000000001","auditorium":"Aud 03"},{"showStartDateTimeUtc":"2018-11-29T21:15:00Z","vistaSessionId":224575,"showStartDateTime":"2018-11-29T21:15:00","showStartDateTimeWithTimeZone":"2018-11-30T02:15:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":false,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224575\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224575\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224575_t:7257_a:0000000001","auditorium":"Aud 03"}]}]},{"filmId":29207,"filmName":"Creed 2","filmRuntime":130,"duration":"2h 10m","smallPosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/29207_130_193.jpg","mediumPosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/29207_320_470.jpg","largePosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/29207_768_1024.jpg","brightcoveVideoId":"5840516741001","theatricalReleaseDate":"2018-11-21T00:00:00","marketLanguageCode":"EN","filmUrl":"creed-2","showTimeDetails":[{"filmId":29207,"locationId":7257,"experienceType":"[RECLINER],[DS],[CC]","areaCode":"0000000001","presentationType":"(CC/DS)","movieExperienceImageClass":"badge_full_recliner_seating","hasPassRestriction":true,"noPassText":"No passes","noPassDescription":"\u0027No passes\u0027 means that Cineplex \u0027Be Our Guest\u0027 passes and any Free Admission Coupons will not be accepted towards Cineplex admission tickets. This does not include Gift Cards or any pre-paid corporate products such as Cineplex \u0027Night Out\u0027 or \u0027Admit One\u0027 vouchers, which will be accepted for admission.","movieExperienceTitle":"recliner","order":56,"presentationTypeTitle":"Closed Captions for the hearing impaired and  Descriptive Service for the visually impaired","isCcEnabled":true,"isDsEnabled":true,"showtimes":[{"showStartDateTimeUtc":"2018-11-29T15:45:00Z","vistaSessionId":224579,"showStartDateTime":"2018-11-29T15:45:00","showStartDateTimeWithTimeZone":"2018-11-29T20:45:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":true,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224579\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224579\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224579_t:7257_a:0000000001","auditorium":"Aud 05"},{"showStartDateTimeUtc":"2018-11-29T18:50:00Z","vistaSessionId":224580,"showStartDateTime":"2018-11-29T18:50:00","showStartDateTimeWithTimeZone":"2018-11-29T23:50:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":true,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224580\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224580\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224580_t:7257_a:0000000001","auditorium":"Aud 05"},{"showStartDateTimeUtc":"2018-11-29T21:55:00Z","vistaSessionId":224581,"showStartDateTime":"2018-11-29T21:55:00","showStartDateTimeWithTimeZone":"2018-11-30T02:55:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":false,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224581\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224581\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224581_t:7257_a:0000000001","auditorium":"Aud 05"}]}]},{"filmId":26829,"filmName":"Robin Hood","filmRuntime":116,"duration":"1h 56m","smallPosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/26829_130_193.jpg","mediumPosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/26829_320_470.jpg","largePosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/26829_768_1024.jpg","brightcoveVideoId":"5845017013001","theatricalReleaseDate":"2018-11-21T00:00:00","marketLanguageCode":"EN","filmUrl":"robin-hood-2018","showTimeDetails":[{"filmId":26829,"locationId":7257,"experienceType":"[RECLINER],[DS],[CC]","areaCode":"0000000001","presentationType":"(CC/DS)","movieExperienceImageClass":"badge_full_recliner_seating","hasPassRestriction":true,"noPassText":"No passes","noPassDescription":"\u0027No passes\u0027 means that Cineplex \u0027Be Our Guest\u0027 passes and any Free Admission Coupons will not be accepted towards Cineplex admission tickets. This does not include Gift Cards or any pre-paid corporate products such as Cineplex \u0027Night Out\u0027 or \u0027Admit One\u0027 vouchers, which will be accepted for admission.","movieExperienceTitle":"recliner","order":56,"presentationTypeTitle":"Closed Captions for the hearing impaired and  Descriptive Service for the visually impaired","isCcEnabled":true,"isDsEnabled":true,"showtimes":[{"showStartDateTimeUtc":"2018-11-29T16:05:00Z","vistaSessionId":224588,"showStartDateTime":"2018-11-29T16:05:00","showStartDateTimeWithTimeZone":"2018-11-29T21:05:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":true,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224588\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224588\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224588_t:7257_a:0000000001","auditorium":"Aud 08"},{"showStartDateTimeUtc":"2018-11-29T18:55:00Z","vistaSessionId":224589,"showStartDateTime":"2018-11-29T18:55:00","showStartDateTimeWithTimeZone":"2018-11-29T23:55:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":false,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224589\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224589\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224589_t:7257_a:0000000001","auditorium":"Aud 08"},{"showStartDateTimeUtc":"2018-11-29T21:45:00Z","vistaSessionId":224590,"showStartDateTime":"2018-11-29T21:45:00","showStartDateTimeWithTimeZone":"2018-11-30T02:45:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":false,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224590\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224590\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224590_t:7257_a:0000000001","auditorium":"Aud 08"}]}]},{"filmId":28410,"filmName":"Instant Family","filmRuntime":118,"duration":"1h 58m","smallPosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/28410_130_193.jpg","mediumPosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/28410_320_470.jpg","largePosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/28410_768_1024.jpg","brightcoveVideoId":"5831198613001","theatricalReleaseDate":"2018-11-16T00:00:00","marketLanguageCode":"EN","filmUrl":"instant-family","showTimeDetails":[{"filmId":28410,"locationId":7257,"experienceType":"[RECLINER],[DS],[CC]","areaCode":"0000000001","presentationType":"(CC/DS)","movieExperienceImageClass":"badge_full_recliner_seating","hasPassRestriction":false,"noPassText":"No passes","noPassDescription":"\u0027No passes\u0027 means that Cineplex \u0027Be Our Guest\u0027 passes and any Free Admission Coupons will not be accepted towards Cineplex admission tickets. This does not include Gift Cards or any pre-paid corporate products such as Cineplex \u0027Night Out\u0027 or \u0027Admit One\u0027 vouchers, which will be accepted for admission.","movieExperienceTitle":"recliner","order":56,"presentationTypeTitle":"Closed Captions for the hearing impaired and  Descriptive Service for the visually impaired","isCcEnabled":true,"isDsEnabled":true,"showtimes":[{"showStartDateTimeUtc":"2018-11-29T16:20:00Z","vistaSessionId":224594,"showStartDateTime":"2018-11-29T16:20:00","showStartDateTimeWithTimeZone":"2018-11-29T21:20:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":true,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224594\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224594\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224594_t:7257_a:0000000001","auditorium":"Aud 10"},{"showStartDateTimeUtc":"2018-11-29T19:10:00Z","vistaSessionId":224595,"showStartDateTime":"2018-11-29T19:10:00","showStartDateTimeWithTimeZone":"2018-11-30T00:10:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":false,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224595\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224595\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224595_t:7257_a:0000000001","auditorium":"Aud 10"},{"showStartDateTimeUtc":"2018-11-29T22:00:00Z","vistaSessionId":224596,"showStartDateTime":"2018-11-29T22:00:00","showStartDateTimeWithTimeZone":"2018-11-30T03:00:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":false,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224596\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224596\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224596_t:7257_a:0000000001","auditorium":"Aud 10"}]}]},{"filmId":27736,"filmName":"The Nutcracker And The Four Realms","filmRuntime":99,"duration":"1h 39m","smallPosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/27736_130_193.jpg","mediumPosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/27736_320_470.jpg","largePosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/27736_768_1024.jpg","brightcoveVideoId":"5834893515001","theatricalReleaseDate":"2018-11-02T00:00:00","marketLanguageCode":"EN","filmUrl":"the-nutcracker-and-the-four-realms","showTimeDetails":[{"filmId":27736,"locationId":7257,"experienceType":"[RECLINER],[DS],[CC]","areaCode":"0000000001","presentationType":"(CC/DS)","movieExperienceImageClass":"badge_full_recliner_seating","hasPassRestriction":false,"noPassText":"No passes","noPassDescription":"\u0027No passes\u0027 means that Cineplex \u0027Be Our Guest\u0027 passes and any Free Admission Coupons will not be accepted towards Cineplex admission tickets. This does not include Gift Cards or any pre-paid corporate products such as Cineplex \u0027Night Out\u0027 or \u0027Admit One\u0027 vouchers, which will be accepted for admission.","movieExperienceTitle":"recliner","order":56,"presentationTypeTitle":"Closed Captions for the hearing impaired and  Descriptive Service for the visually impaired","isCcEnabled":true,"isDsEnabled":true,"showtimes":[{"showStartDateTimeUtc":"2018-11-29T18:45:00Z","vistaSessionId":224574,"showStartDateTime":"2018-11-29T18:45:00","showStartDateTimeWithTimeZone":"2018-11-29T23:45:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":true,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224574\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224574\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224574_t:7257_a:0000000001","auditorium":"Aud 03"}]}]},{"filmId":27217,"filmName":"The Girl In The Spider\u0027s Web","filmRuntime":115,"duration":"1h 55m","smallPosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/27217_130_193.jpg","mediumPosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/27217_320_470.jpg","largePosterImageUrl":"https://mediafiles.cineplex.com/Central/Film/Posters/27217_768_1024.jpg","brightcoveVideoId":"5849592167001","theatricalReleaseDate":"2018-11-09T00:00:00","marketLanguageCode":"EN","filmUrl":"the-girl-in-the-spiders-web","showTimeDetails":[{"filmId":27217,"locationId":7257,"experienceType":"[RECLINER],[DS],[CC]","areaCode":"0000000001","presentationType":"(CC/DS)","movieExperienceImageClass":"badge_full_recliner_seating","hasPassRestriction":false,"noPassText":"No passes","noPassDescription":"\u0027No passes\u0027 means that Cineplex \u0027Be Our Guest\u0027 passes and any Free Admission Coupons will not be accepted towards Cineplex admission tickets. This does not include Gift Cards or any pre-paid corporate products such as Cineplex \u0027Night Out\u0027 or \u0027Admit One\u0027 vouchers, which will be accepted for admission.","movieExperienceTitle":"recliner","order":56,"presentationTypeTitle":"Closed Captions for the hearing impaired and  Descriptive Service for the visually impaired","isCcEnabled":true,"isDsEnabled":true,"showtimes":[{"showStartDateTimeUtc":"2018-11-29T22:30:00Z","vistaSessionId":224584,"showStartDateTime":"2018-11-29T22:30:00","showStartDateTimeWithTimeZone":"2018-11-30T03:30:00Z","timeZoneOffset":0.00,"isReservedSeating":true,"isSoldOut":false,"isShowtimeEnabled":true,"inThePast":false,"areaDescription":"Standard","seatMapTicketingLink":"https://onlineticketing.cineplex.com/SeatMap.aspx?locationId=7257\u0026vistaSessionId=224584\u0026VISTAHOAreaCategoryCode=0000000001\u0026isExternal=True","ticketingUrl":"https://www.cineplex.com/Services/OnlineTicketing.ashx?LocationId=7257\u0026VistaSessionId=224584\u0026VISTAHOCategoryCode=0000000001","isOnlineTicketingAvailable":true,"showtimeShareKey":"v:224584_t:7257_a:0000000001","auditorium":"Aud 6"}]}]}]' is-missing-attr-enabled="true"></theatre-showtimes-table>
+                    </div>
+                </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+                <!-- /7226/cplx.com_Theatres_eng/300x250 -->
+                <div id='div-gpt-ad-300x250' class='center-block' style='height:250px; width:300px;'>
+                    <script>
+                        googletag.cmd.push(function () { googletag.display('div-gpt-ad-300x250'); });
+                    </script>
+                </div>
+                    <!-- /7226/cplx.com_Theatres_eng/160x600 -->
+                <div id='div-gpt-ad-160x600' class="center-block margin-top-lg margin-bot-sm" style='height:600px; width:160px;'>
+                    <script>
+                        googletag.cmd.push(function () { googletag.display('div-gpt-ad-160x600'); });
+                    </script>
+                </div>
+            <div class="visible-md visible-lg">
+
+<div class="store-recommendations clearfix">
+    <h2 class="store-recommendations-heading">
+        Staying home tonight?
+    </h2>
+    <div class="grid">
+            <div class="grid__item one-whole clearfix recommended-movie">
+                <div class="grid row margin-bot-md">
+                    <div class="grid__item two-fifths recommended-movie-image col-xs-4">
+                        <a class="img-wrapper movie-img-hover-wrapper" href="https://store.cineplex.com/Product/mission-impossible-fallout?ex=20181121_CPX_Homepage_RecoInStore_Film_MissionImpossibleFallout_-_KeyArt_-_PDP">
+                            <img class="image-fill img-responsive" alt="Mission: Impossible Fallout" src="https://mediafiles.cineplex.com/Attachments/NewItems/missionimpossible_20181121163659_0.jpg" />
+                            <div class="img-overlay movie-img-hover-text absolute-align-center">
+                                <i class="fa fa-chevron-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid__item three-fifths recommended-movie-info col-xs-4 no-pad-left">
+                        <a class="recommendation-title block margin-bot-sm no-text-decoration" href="https://store.cineplex.com/Product/mission-impossible-fallout?ex=20181121_CPX_Homepage_RecoInStore_Film_MissionImpossibleFallout_-_KeyArt_-_PDP"><strong>Mission: Impossible Fallout</strong></a>
+                        <a class="rent-or-buy-btn btn btn-sm btn-primary btn-default" href="https://store.cineplex.com/Product/mission-impossible-fallout?ex=20181121_CPX_Homepage_RecoInStore_Film_MissionImpossibleFallout_-_KeyArt_-_PDP">Watch Now</a>
+                    </div> 
+                </div>
+            </div>
+            <div class="grid__item one-whole clearfix recommended-movie">
+                <div class="grid row margin-bot-md">
+                    <div class="grid__item two-fifths recommended-movie-image col-xs-4">
+                        <a class="img-wrapper movie-img-hover-wrapper" href="https://store.cineplex.com/Product/the-equalizer-2?ex=20181113_CPX_Homepage_RecoInStore_Film_TheEqualizer2_-_KeyArt_-_PDP">
+                            <img class="image-fill img-responsive" alt="The Equalizer 2" src="https://mediafiles.cineplex.com/Attachments/NewItems/theeqaulizer2_20181113170843_0.jpg" />
+                            <div class="img-overlay movie-img-hover-text absolute-align-center">
+                                <i class="fa fa-chevron-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid__item three-fifths recommended-movie-info col-xs-4 no-pad-left">
+                        <a class="recommendation-title block margin-bot-sm no-text-decoration" href="https://store.cineplex.com/Product/the-equalizer-2?ex=20181113_CPX_Homepage_RecoInStore_Film_TheEqualizer2_-_KeyArt_-_PDP"><strong>The Equalizer 2</strong></a>
+                        <a class="rent-or-buy-btn btn btn-sm btn-primary btn-default" href="https://store.cineplex.com/Product/the-equalizer-2?ex=20181113_CPX_Homepage_RecoInStore_Film_TheEqualizer2_-_KeyArt_-_PDP">Watch Now</a>
+                    </div> 
+                </div>
+            </div>
+            <div class="grid__item one-whole clearfix recommended-movie">
+                <div class="grid row margin-bot-md">
+                    <div class="grid__item two-fifths recommended-movie-image col-xs-4">
+                        <a class="img-wrapper movie-img-hover-wrapper" href="https://store.cineplex.com/Product/crazy-rich-asians?ex=20181106_CPX_Homepage_RecoInStore_Film_CrazyRichAsians_KeyArt_-_PDP">
+                            <img class="image-fill img-responsive" alt="Crazy Rich Asians" src="https://mediafiles.cineplex.com/Attachments/NewItems/crazyrichasiansposter_20181106175633_0.jpg" />
+                            <div class="img-overlay movie-img-hover-text absolute-align-center">
+                                <i class="fa fa-chevron-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid__item three-fifths recommended-movie-info col-xs-4 no-pad-left">
+                        <a class="recommendation-title block margin-bot-sm no-text-decoration" href="https://store.cineplex.com/Product/crazy-rich-asians?ex=20181106_CPX_Homepage_RecoInStore_Film_CrazyRichAsians_KeyArt_-_PDP"><strong>Crazy Rich Asians</strong></a>
+                        <a class="rent-or-buy-btn btn btn-sm btn-primary btn-default" href="https://store.cineplex.com/Product/crazy-rich-asians?ex=20181106_CPX_Homepage_RecoInStore_Film_CrazyRichAsians_KeyArt_-_PDP">Watch Now</a>
+                    </div> 
+                </div>
+            </div>
+            <div class="grid__item one-whole clearfix recommended-movie">
+                <div class="grid row margin-bot-md">
+                    <div class="grid__item two-fifths recommended-movie-image col-xs-4">
+                        <a class="img-wrapper movie-img-hover-wrapper" href="https://store.cineplex.com/Product/the-meg?ex=20181030_CPX_Homepage_RecoInStore_Film_TheMeg_ESTRelease_KeyArt_-_PDP">
+                            <img class="image-fill img-responsive" alt="The Meg" src="https://mediafiles.cineplex.com/Attachments/NewItems/themegposter_20181030150604_0.jpg" />
+                            <div class="img-overlay movie-img-hover-text absolute-align-center">
+                                <i class="fa fa-chevron-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid__item three-fifths recommended-movie-info col-xs-4 no-pad-left">
+                        <a class="recommendation-title block margin-bot-sm no-text-decoration" href="https://store.cineplex.com/Product/the-meg?ex=20181030_CPX_Homepage_RecoInStore_Film_TheMeg_ESTRelease_KeyArt_-_PDP"><strong>The Meg</strong></a>
+                        <a class="rent-or-buy-btn btn btn-sm btn-primary btn-default" href="https://store.cineplex.com/Product/the-meg?ex=20181030_CPX_Homepage_RecoInStore_Film_TheMeg_ESTRelease_KeyArt_-_PDP">Watch Now</a>
+                    </div> 
+                </div>
+            </div>
+            <div class="grid__item one-whole clearfix recommended-movie">
+                <div class="grid row margin-bot-md">
+                    <div class="grid__item two-fifths recommended-movie-image col-xs-4">
+                        <a class="img-wrapper movie-img-hover-wrapper" href="https://store.cineplex.com/Product/the-house-with-a-clock-in-its-walls?ex=20181127_CPX_Homepage_RecoInStore_Film_TheHouseWithAClockInItsWalls_-_KeyArt_-_PDP">
+                            <img class="image-fill img-responsive" alt="The House With A Clock In Its Walls" src="https://mediafiles.cineplex.com/Attachments/NewItems/thehouse_20181127151341_0.jpg" />
+                            <div class="img-overlay movie-img-hover-text absolute-align-center">
+                                <i class="fa fa-chevron-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid__item three-fifths recommended-movie-info col-xs-4 no-pad-left">
+                        <a class="recommendation-title block margin-bot-sm no-text-decoration" href="https://store.cineplex.com/Product/the-house-with-a-clock-in-its-walls?ex=20181127_CPX_Homepage_RecoInStore_Film_TheHouseWithAClockInItsWalls_-_KeyArt_-_PDP"><strong>The House With A Clock In Its Walls</strong></a>
+                        <a class="rent-or-buy-btn btn btn-sm btn-primary btn-default" href="https://store.cineplex.com/Product/the-house-with-a-clock-in-its-walls?ex=20181127_CPX_Homepage_RecoInStore_Film_TheHouseWithAClockInItsWalls_-_KeyArt_-_PDP">Watch Now</a>
+                    </div> 
+                </div>
+            </div>
+    </div>
+    <a class="see-more-link cta-primary" href="https://store.cineplex.com/default">
+        <strong>VISIT STORE</strong><i class="fa fa-angle-right"></i>
+    </a>
+</div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <nav class="footer-menus clearfix" role="navigation" aria-labelledby="footer-nav-label">
+                <h2 class="sr-only" id="footer-nav-label">Footer Navigation</h2>
+                    <div class="col-xs-12 col-md-3 footer-dropdown">
+                        <a href="#MoreAtCineplex" class="footer-heading collapsed" data-toggle="collapse" data-target="#MoreAtCineplex">
+                            <h3>
+                                More At Cineplex <span class="fa fa-angle-down visible-xs-inline visible-sm-inline pull-right"></span> <span class="fa fa-angle-up visible-xs-inline visible-sm-inline pull-right"></span>
+                            </h3>
+                        </a>
+                        <ul class="collapse nav pad-bot-md" id="MoreAtCineplex">
+                                <li>
+                                    <a href="https://cineplex.zendesk.com">Help Centre</a>
+                                </li>
+                                <li>
+                                    <a href="http://careers.cineplex.com/">Careers at Cineplex</a>
+                                </li>
+                                <li>
+                                    <a href="/App">Cineplex Mobile</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.winwithp1ag.com/">Player One Amusement Group</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.cineplexdigitalmedia.com/">Cineplex Digital Media</a>
+                                </li>
+                                <li>
+                                    <a href="http://media.cineplex.com">Advertising Opportunities</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.cineplex.com/Promos/eGiftCard">E-Gift Cards</a>
+                                </li>
+                                <li>
+                                    <a href="/Magazine">Cineplex Magazine</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:Cineplex.Connect.OpenCommunicationCentre(1, false, &#39;&#39;);">Email Newsletter Sign-Up</a>
+                                </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-md-3 footer-dropdown">
+                        <a href="#CorporateInformation" class="footer-heading collapsed" data-toggle="collapse" data-target="#CorporateInformation">
+                            <h3>
+                                Corporate Information <span class="fa fa-angle-down visible-xs-inline visible-sm-inline pull-right"></span> <span class="fa fa-angle-up visible-xs-inline visible-sm-inline pull-right"></span>
+                            </h3>
+                        </a>
+                        <ul class="collapse nav pad-bot-md" id="CorporateInformation">
+                                <li>
+                                    <a href="/CorporateSales">Corporate Sales &amp; Rentals</a>
+                                </li>
+                                <li>
+                                    <a href="/Corporate/Information">Corporate Information</a>
+                                </li>
+                                <li>
+                                    <a href="/Corporate/PressRoom">Press Room</a>
+                                </li>
+                                <li>
+                                    <a href="http://ir.cineplex.com">Investor Relations</a>
+                                </li>
+                                <li>
+                                    <a href="https://store.cineplex.com/corporate/">Bulk Certificate Purchases</a>
+                                </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-md-3 footer-dropdown">
+                        <a href="#TheatreInformation" class="footer-heading collapsed" data-toggle="collapse" data-target="#TheatreInformation">
+                            <h3>
+                                Theatre Information <span class="fa fa-angle-down visible-xs-inline visible-sm-inline pull-right"></span> <span class="fa fa-angle-up visible-xs-inline visible-sm-inline pull-right"></span>
+                            </h3>
+                        </a>
+                        <ul class="collapse nav pad-bot-md" id="TheatreInformation">
+                                <li>
+                                    <a href="/Theatres/TheatreListings">Find a Theatre</a>
+                                </li>
+                                <li>
+                                    <a href="/Theatres/FoodAndDrink">Food and Drink</a>
+                                </li>
+                                <li>
+                                    <a href="/Theatres/Birthdays">Book a party</a>
+                                </li>
+                                <li>
+                                    <a href="/Theatres/StarsAndStrollers">Stars and Strollers</a>
+                                </li>
+                                <li>
+                                    <a href="/Theatres/AccessibilityPolicy">Accessibility Policy</a>
+                                </li>
+                                <li>
+                                    <a href="/Theatres/Access2Entertainment">Access 2 Program</a>
+                                </li>
+                                <li>
+                                    <a href="/CorporateSales/CorporateEvents">Corporate Meetings &amp; Screenings</a>
+                                </li>
+                                <li>
+                                    <a href="/CorporateSales/GroupScreenings">School Events &amp; Screenings</a>
+                                </li>
+                                <li>
+                                    <a href="https://mediafiles.cineplex.com/Footer/en/Guest_Code_of_Conduct_Cineplex_October2018.pdf">Guest Code of Conduct</a>
+                                </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-md-3 footer-dropdown">
+                        <a href="#TopMoviesandEvents" class="footer-heading collapsed" data-toggle="collapse" data-target="#TopMoviesandEvents">
+                            <h3>
+                                Top Movies and Events <span class="fa fa-angle-down visible-xs-inline visible-sm-inline pull-right"></span> <span class="fa fa-angle-up visible-xs-inline visible-sm-inline pull-right"></span>
+                            </h3>
+                        </a>
+                        <ul class="collapse nav pad-bot-md" id="TopMoviesandEvents">
+                                <li>
+                                    <a href="/Movie/ralph-brise-linternet-version-francaise">Ralph brise l&#39;internet (Version fran&#231;aise)</a>
+                                </li>
+                                <li>
+                                    <a href="/Movie/ralph-breaks-the-internet-2018">Ralph Breaks The Internet</a>
+                                </li>
+                                <li>
+                                    <a href="/Movie/dr-seuss-le-grincheux-version-francaise">Dr. Seuss : le Grincheux (Version fran&#231;aise)</a>
+                                </li>
+                                <li>
+                                    <a href="/Movie/dr-seuss-the-grinch">Dr. Seuss&#39; The Grinch</a>
+                                </li>
+                                <li>
+                                    <a href="/Movie/les-animaux-fantastiques-les-crimes-de-grindelwald">Les animaux fantastiques : les crimes de Grindelwald</a>
+                                </li>
+                                <li>
+                                    <a href="/Movie/fantastic-beasts-the-crimes-of-grindelwald">Fantastic Beasts: The Crimes Of Grindelwald</a>
+                                </li>
+                                <li>
+                                    <a href="/Movie/creed-2-version-francaise">Creed 2 (Version fran&#231;aise)</a>
+                                </li>
+                                <li>
+                                    <a href="/Movie/creed-2">Creed 2</a>
+                                </li>
+                                <li>
+                                    <a href="/Movie/la-possession-de-hannah-grace-version-francaise">La possession de Hannah Grace (Version fran&#231;aise)</a>
+                                </li>
+                                <li>
+                                    <a href="/Movie/the-possession-of-hannah-grace">The Possession Of Hannah Grace</a>
+                                </li>
+                        </ul>
+                    </div>
+            </nav>
+        </div>
+    </div>
+    
+
+    <div class="footer-divider middle-divider">
+    </div>
+    <div class="container middle-footer-area">
+        <div class="row">
+            <div class="col-xs-12 pad-vertical-xs">
+                <a class="inline-block footer-logo" href="/">
+                    <img class="footer-icon" alt="Cineplex Logo" src="https://mediafiles.cineplex.com/Logos/Cineplex_Logo_EN_White_Small.png" />
+                </a>
+
+                    <ul role="navigation" class="no-list-style bottom-footer-nav">
+                            <li>
+                                <a href="http://investorrelations.cineplex.com?cmpid=FooterEN_tsx-cgx">TSX:CGX</a>
+                            </li>
+                            <li>
+                                <a href="/Global/PrivacyPolicy?cmpid=FooterEN_privacy-policy">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="/Global/TermsOfUse?cmpid=FooterEN_terms-of-use">Terms of Use</a>
+                            </li>
+                    </ul>
+
+                        <a class="inline-block visible-md-inline-block visible-lg-inline-block" href="/essential-accessibility">
+                            <img class="footer-icon" src="https://mediafiles.cineplex.com/Attachments/NewItems/accessibility-logo_167x66_enxfr_20170202191419_0.png" alt="Accessibility" />
+                        </a>
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+    <div class="footer-ad-area">
+<div class="footer-divider"></div>
+<div class="container bottom-footer-area">
+<div class="row">
+<div class="col-xs-12 text-center">
+<div class="footer-ad-area inline-block">
+<div class="max-width-fill overflow-hidden visible-sm visible-lg visible-md">
+<div id="div-gpt-ad-970x90_bottom">
+<script>// <![CDATA[
+googletag.cmd.push(function () { googletag.display('div-gpt-ad-970x90_bottom'); });
+// ]]></script>
+</div>
+</div>
+<div class="max-width-fill overflow-hidden visible-xs">
+<div id="div-gpt-ad-640x100_bottom">
+<script>// <![CDATA[
+googletag.cmd.push(function () { googletag.display('div-gpt-ad-640x100_bottom'); });
+// ]]></script>
+</div>
+</div>
+<div class="row visible-xs">
+<div id="div-gpt-ad-320x50_bottom">
+<script>// <![CDATA[
+googletag.cmd.push(function () { googletag.display('div-gpt-ad-320x50_bottom'); });
+// ]]></script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <div class="cineplex_connect_modal" tabindex="-1"></div>
+    <div class="remodal" tabindex="-1" data-remodal-id="seatmap" data-remodal-options="hashTracking: false">
+        <header>
+            <h3>Seat Information</h3>
+        </header>
+        <div class="nopadding remodal-body">
+            <iframe class="seatMapWindowUrl" src=""></iframe>
+        </div>
+    </div>
+
+    
+    <script id="trailer" src="//players.brightcove.net/823022174001/0de3ded5-8290-49c7-b25d-fcddec46dfb3_default/index.js"></script>
+    <script type="text/javascript">brightCoveAccountFR = "1049394751001"</script>
+    <script type="text/javascript">brightCoveAccountEN = "823022174001"</script>
+    <script type="text/javascript">brightCovePlayerIdFR = "B1ltW9ame"</script>
+    <script type="text/javascript">brightCovePlayerIdEN = "0de3ded5-8290-49c7-b25d-fcddec46dfb3"</script>
+    <script src="/js/vendor/brightcove-1.1.4/videojs-overlay.min.js"></script>
+    <script src="https://connect.cineplex.com/Account/scripts/Cineplex.Connect.js"></script>
+    <script src="/Scripts/libs/CINEPLEX/CINEPLEX.GeneralFunctions.js"></script>
+<script src="/Scripts/libs/CINEPLEX/CINEPLEX.ErrorReporting.js"></script>
+<script src="/Scripts/libs/CINEPLEX/CINEPLEX.Tracking.js"></script>
+<script src="/Scripts/libs/CINEPLEX/CINEPLEX.ShowtimesV2.js"></script>
+<script src="/Scripts/libs/CINEPLEX/CINEPLEX.LocationData.js"></script>
+<script src="/Scripts/libs/CINEPLEX/CINEPLEX_location_only.js"></script>
+<script src="/Scripts/libs/CINEPLEX/CINEPLEX.MovioServices.js"></script>
+<script src="/Scripts/libs/bootstrap-3.3.7/bootstrap.mod.js"></script>
+<script src="/Scripts/libs/momentjs/moment-with-locales.js"></script>
+<script src="/Scripts/libs/royalslider/royalslider.js"></script>
+<script src="/Scripts/libs/sayt/sayt-2.0.212.js"></script>
+<script src="/Scripts/libs/images-loaded-4.1.0/imagesLoaded.js"></script>
+<script src="/Scripts/search/autocompleteTemplate.js"></script>
+<script src="/Scripts/search/productTemplate.js"></script>
+<script src="/Scripts/search/autocompleteTemplateFr.js"></script>
+<script src="/Scripts/search/productTemplateFr.js"></script>
+<script src="/JavascriptResourceHandler.ashx"></script>
+
+    <script src="/Scripts/libs/angular-1.6.1/angular.js"></script>
+<script src="/Scripts/app/cineplexApp.module.js"></script>
+<script src="/Scripts/app/shared/constants/cineplexApp.constants.js"></script>
+<script src="/Scripts/app/shared/libs/ui-bootstrap-tpls-2.4.0.js"></script>
+<script src="/Scripts/app/shared/libs/ng-scrollbar.js"></script>
+<script src="/Scripts/app/shared/filters/string-limit.filter.js"></script>
+<script src="/Scripts/app/shared/filters/safe-html.filter.js"></script>
+<script src="/Scripts/app/shared/services/movies.service.js"></script>
+<script src="/Scripts/app/shared/services/moviesStore.service.js"></script>
+<script src="/Scripts/app/shared/services/theatres.service.js"></script>
+<script src="/Scripts/app/shared/services/showtimes.service.js"></script>
+<script src="/Scripts/app/shared/services/connect.service.js"></script>
+<script src="/Scripts/app/shared/services/promo.service.js"></script>
+<script src="/Scripts/app/shared/services/showtimes-functions.service.js"></script>
+<script src="/Scripts/app/shared/factories/theatre-functions.factory.js"></script>
+<script src="/Scripts/app/shared/factories/loadMoreGrid.factory.js"></script>
+<script src="/Scripts/app/shared/factories/encoder.factory.js"></script>
+<script src="/Scripts/app/shared/factories/connectFunctions.factory.js"></script>
+<script src="/Scripts/app/shared/components/trailer-modal.component.js"></script>
+<script src="/Scripts/app/shared/components/royal-slider.component.js"></script>
+<script src="/Scripts/app/shared/components/royal-slider-modal.component.js"></script>
+<script src="/Scripts/app/shared/components/selectize-input.component.js"></script>
+<script src="/Scripts/app/shared/components/modal-window.component.js"></script>
+<script src="/Scripts/app/shared/components/conditionally-show-items.component.js"></script>
+<script src="/Scripts/app/shared/components/scroll-to.directive.js"></script>
+<script src="/Scripts/app/search-box/search-box.directive.js"></script>
+<script src="/Scripts/app/shared/controllers/popover.controller.js"></script>
+<script src="/Scripts/app/promotions/NFL/nflPromo.component.js"></script>
+
+    <script src="/Scripts/libs/selectize/selectize.QuickTicketMod.js"></script>
+<script src="/Scripts/app/quick-tickets/quick-tickets.component.js"></script>
+
+    <script src="/Scripts/app/movies-grid/movies-grid-controller-base.js"></script>
+<script src="/Scripts/app/movies-grid/movies-grid-controls.component.js"></script>
+<script src="/Scripts/app/movies-grid/movies-grid.component.js"></script>
+<script src="/Scripts/app/movies-grid/store-movies-grid.component.js"></script>
+
+    <script src="/Scripts/app/favourite-theatre-button/add-theatre-to-favourites-button.component.js"></script>
+<script src="/Scripts/app/theatre-pricing-table/theatrePricingTable.component.js"></script>
+<script src="/Scripts/app/theatre-showtimes-table/theatre-showtimes-table.component.js"></script>
+
+    <script src="/Scripts/app/blogs/blogs.component.js"></script>
+
+    <script src="/Scripts/app/movie-ratings-and-warnings/movie-ratings-and-warnings.component.js"></script>
+
+    
+    <script src="/Scripts/app/movie-cash/movie-cash.component.js"></script>
+
+    <script src="/Scripts/app/movie-showtimes-table/movie-showtimes-table.component.js"></script>
+
+    <script src="/Scripts/app/promotions/general-mills/general-mills-coupon.component.js"></script>
+<script src="/Scripts/app/promotions/general-mills/general-mills-coupon-modal.component.js"></script>
+
+
+    
+    <script type='text/javascript'>
+        window.Muscula = {
+            settings: {
+                logId: "tj2CH4D-JQlaJ", suppressErrors: false
+            }
+        };
+        (function () {
+            var m = document.createElement('script'); m.type = 'text/javascript'; m.async = true;
+            m.src = (window.location.protocol == 'https:' ? 'https:' : 'http:') +
+                '//musculahq.appspot.com/Muscula7.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(m, s);
+            window.Muscula.run = function () { var a; eval(arguments[0]); window.Muscula.run = function () { }; };
+            window.Muscula.errors = []; window.onerror = function () {
+                window.Muscula.errors.push(arguments);
+                return window.Muscula.settings.suppressErrors === undefined;
+            }
+        })();
+    </script>
+
+        <script src="/Scripts/libs/smart-app-banner/smart-app-banner.js"></script>
+        <script src="/Scripts/libs/smart-app-banner/smart-app-banner.equivalent.js"></script>
+
+    <script type="text/javascript">
+        //FUNCTION REQUIRED TO PREVENT CROSS ORIGIN REQUEST ERROR FOR SHOWTIMES SELECTION
+        //TODO: REWRITE SHOWTIMESJS FILE TO USE window.postmessage
+        $(function () {
+            document.domain = "cineplex.com";
+        });
+        $(document).ready(function () {
+            var connectInitCallback = function () {
+                if (typeof (window.connectInitializedCallback) == "function") {
+                    window.connectInitializedCallback();
+                    if ('' !== '') {
+                        Cineplex.Connect.OpenConnectPage(1);
+                    }
+                }
+            };
+            Cineplex.Connect.Settings.ServiceUrl = 'https://connect.cineplex.com/Account';
+            Cineplex.Connect.Initialize(connectInitCallback);
+        });
+
+    </script>
+
+    
+
+
+    
+<script type="text/javascript">_satellite.pageBottom();</script>
+
+
+    
+    <!-- WEBLIVEIIS4 -->
+
+    <div id="div-gpt-ad-outofpage">
+<script>// <![CDATA[
+googletag.cmd.push(function () { googletag.display('div-gpt-ad-outofpage'); });
+// ]]></script>
+</div>
+<script type="text/javascript" async="async" src="/__zenedge/assets/f.js?v=1541158593"></script><script>(function () { var v = 1543536436 * 3.1415926535898; v = Math.floor(v); document.cookie = "__zjc5642="+v+"; expires=Fri, 30 Nov 2018 00:08:16 UTC; path=/"; })()</script></body>
+</html>

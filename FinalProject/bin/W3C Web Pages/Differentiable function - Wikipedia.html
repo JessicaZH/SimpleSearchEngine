@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Differentiable function - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Differentiable_function","wgTitle":"Differentiable function","wgCurRevisionId":863053984,"wgRevisionId":863053984,"wgArticleId":330206,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Differential calculus","Multivariable calculus","Smooth functions"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Differentiable_function","wgRelevantArticleId":330206,"wgRequestId":"W-8TqApAMFkAAEwovdoAAAAW","wgCSPNonce":false,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikiEditorEnabledModules":[],"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsShouldSendModuleToUser":true,"wgPopupsConflictsWithNavPopupGadget":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":true,"usePageDescriptions":true},"wgMFExpandAllSectionsUserOption":true,"wgMFEnableFontChanger":true,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgWMESchemaEditAttemptStepOversample":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgWikibaseItemId":"Q783507","wgScoreNoteLanguages":{"arabic":"العربية","catalan":"català","deutsch":"Deutsch","english":"English","espanol":"español","italiano":"italiano","nederlands":"Nederlands","norsk":"norsk","portugues":"português","suomi":"suomi","svenska":"svenska","vlaams":"West-Vlams"},"wgScoreDefaultNoteLanguage":"nederlands","wgCentralAuthMobileDomain":false,"wgCodeMirrorEnabled":true,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":true});mw.loader.state({"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.math.styles":"ready","ext.cite.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});RLPAGEMODULES=["ext.math.scripts","ext.cite.a11y","site","mediawiki.page.startup","mediawiki.user","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.compactlinks","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"];mw.loader.load(RLPAGEMODULES);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.3d.styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.33.0-wmf.4"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Polynomialdeg3.svg/1200px-Polynomialdeg3.svg.png"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Differentiable_function"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Differentiable_function&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Differentiable_function&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Differentiable_function"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Differentiable_function rootpage-Differentiable_function skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div><div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">Differentiable function</h1>			<div id="bodyContent" class="mw-body-content">
+				<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>				<div id="contentSub"></div>
+				<div id="jump-to-nav"></div>				<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+				<a class="mw-jump-link" href="#p-search">Jump to search</a>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="thumb tright"><div class="thumbinner" style="width:222px;"><a href="/wiki/File:Polynomialdeg3.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Polynomialdeg3.svg/220px-Polynomialdeg3.svg.png" width="220" height="220" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Polynomialdeg3.svg/330px-Polynomialdeg3.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Polynomialdeg3.svg/440px-Polynomialdeg3.svg.png 2x" data-file-width="400" data-file-height="400" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Polynomialdeg3.svg" class="internal" title="Enlarge"></a></div>A differentiable function</div></div></div>
+<p>In <a href="/wiki/Calculus" title="Calculus">calculus</a> (a branch of <a href="/wiki/Mathematics" title="Mathematics">mathematics</a>), a <b>differentiable function</b> of one <a href="/wiki/Real_number" title="Real number">real</a> variable is a function whose <a href="/wiki/Derivative" title="Derivative">derivative</a> exists at each point in its <a href="/wiki/Domain_of_a_function" title="Domain of a function">domain</a>. As a result, the <a href="/wiki/Graph_of_a_function" title="Graph of a function">graph</a> of a differentiable function must have a (non-<a href="/wiki/Vertical_tangent" title="Vertical tangent">vertical</a>) <a href="/wiki/Tangent_line" class="mw-redirect" title="Tangent line">tangent line</a> at each point in its domain, be relatively smooth, and cannot contain any breaks, bends, or <a href="/wiki/Cusp_(singularity)" title="Cusp (singularity)">cusps</a>.
+</p><p>More generally, if <i>x</i><sub>0</sub> is a point in the domain of a function <i>f</i>, then <i>f</i> is said to be <i>differentiable at </i>x<i><sub>0</sub></i> if the derivative <i>f</i> ′(<i>x</i><sub>0</sub>) exists.  This means that the graph of <i>f</i> has a non-vertical tangent line at the point (<i>x</i><sub>0</sub>,&#160;<i>f</i>(<i>x</i><sub>0</sub>)).  The function <i>f</i> may also be called <i>locally linear</i> at <i>x</i><sub>0</sub>, as it can be well approximated by a <a href="/wiki/Linear_function" title="Linear function">linear function</a> near this point.
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Differentiability_of_real_functions_of_one_variable"><span class="tocnumber">1</span> <span class="toctext">Differentiability of real functions of one variable</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Differentiability_and_continuity"><span class="tocnumber">2</span> <span class="toctext">Differentiability and continuity</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Differentiability_classes"><span class="tocnumber">3</span> <span class="toctext">Differentiability classes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Differentiability_in_higher_dimensions"><span class="tocnumber">4</span> <span class="toctext">Differentiability in higher dimensions</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Differentiability_in_complex_analysis"><span class="tocnumber">5</span> <span class="toctext">Differentiability in complex analysis</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Differentiable_functions_on_manifolds"><span class="tocnumber">6</span> <span class="toctext">Differentiable functions on manifolds</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Differentiability_of_real_functions_of_one_variable">Differentiability of real functions of one variable</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Differentiable_function&amp;action=edit&amp;section=1" title="Edit section: Differentiability of real functions of one variable">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f:U\subset \mathbb {R} \to \mathbb {R} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>:</mo>
+        <mi>U</mi>
+        <mo>&#x2282;<!-- ⊂ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">R</mi>
+        </mrow>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">R</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f:U\subset \mathbb {R} \to \mathbb {R} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2a93caf68dd167f784313323a135b80ac11f803c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:15.067ex; height:2.509ex;" alt="{\displaystyle f:U\subset \mathbb {R} \to \mathbb {R} }"/></span>, defined on an open set <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle U}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>U</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle U}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/458a728f53b9a0274f059cd695e067c430956025" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.783ex; height:2.176ex;" alt="U"/></span>, is said to be differentiable at <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle a\in U}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <mi>U</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a\in U}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cd1991ea9cb2ab076462a5538242321f0d0ee991" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.853ex; height:2.176ex;" alt="{\displaystyle a\in U}"/></span> if any of the following equivalent conditions is satisfied:
+</p>
+<ul><li>The derivative <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f'(a)=\lim _{h\to 0}{\frac {f(a+h)-f(a)}{h}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>f</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>h</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mn>0</mn>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>a</mi>
+              <mo>+</mo>
+              <mi>h</mi>
+              <mo stretchy="false">)</mo>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>a</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mi>h</mi>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f'(a)=\lim _{h\to 0}{\frac {f(a+h)-f(a)}{h}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1adc2b0246d757c7ef52ecc58a356937537f5975" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:28.433ex; height:5.843ex;" alt="{\displaystyle f&#039;(a)=\lim _{h\to 0}{\frac {f(a+h)-f(a)}{h}}}"/></span> exists.</li>
+<li>There exists a real number <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle L}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>L</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle L}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/103168b86f781fe6e9a4a87b8ea1cebe0ad4ede8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.583ex; height:2.176ex;" alt="L"/></span> such that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \lim _{h\to 0}{\frac {f(a+h)-f(a)-Lh}{h}}=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>h</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mn>0</mn>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>a</mi>
+              <mo>+</mo>
+              <mi>h</mi>
+              <mo stretchy="false">)</mo>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>a</mi>
+              <mo stretchy="false">)</mo>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>L</mi>
+              <mi>h</mi>
+            </mrow>
+            <mi>h</mi>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lim _{h\to 0}{\frac {f(a+h)-f(a)-Lh}{h}}=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7e18f50075420ca23ebcc8a06b72f21000142a4a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:30.313ex; height:5.843ex;" alt="{\displaystyle \lim _{h\to 0}{\frac {f(a+h)-f(a)-Lh}{h}}=0}"/></span>. The number <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle L}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>L</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle L}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/103168b86f781fe6e9a4a87b8ea1cebe0ad4ede8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.583ex; height:2.176ex;" alt="L"/></span>, when it exists, is equal to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f'(a)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>f</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f'(a)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d98c61769b4906b6c0bd72f9de874410c7bf0d3f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.044ex; height:3.009ex;" alt="f&#039;(a)"/></span>.</li>
+<li>There exists a function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle g:U\subset \mathbb {R} \to \mathbb {R} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>g</mi>
+        <mo>:</mo>
+        <mi>U</mi>
+        <mo>&#x2282;<!-- ⊂ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">R</mi>
+        </mrow>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">R</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle g:U\subset \mathbb {R} \to \mathbb {R} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2b1c0ec5914d3f713b6c17d24a8cadeb07cfc1c0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:14.904ex; height:2.509ex;" alt="{\displaystyle g:U\subset \mathbb {R} \to \mathbb {R} }"/></span> such that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(a+h)=f(a)+f'(a)h+g(h)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>+</mo>
+        <mi>h</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <msup>
+          <mi>f</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+        <mi>h</mi>
+        <mo>+</mo>
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mi>h</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(a+h)=f(a)+f'(a)h+g(h)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/edb14638513f31fbc98c7b73d40ff899ee75b2f7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:32.242ex; height:3.009ex;" alt="{\displaystyle f(a+h)=f(a)+f&#039;(a)h+g(h)}"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \lim _{h\to 0}{\frac {g(h)}{h}}=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>h</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mn>0</mn>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>g</mi>
+              <mo stretchy="false">(</mo>
+              <mi>h</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mi>h</mi>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lim _{h\to 0}{\frac {g(h)}{h}}=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/50a5a708316ccc55f7d9cae795700cc8f5693967" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:13.16ex; height:5.843ex;" alt="{\displaystyle \lim _{h\to 0}{\frac {g(h)}{h}}=0}"/></span>.</li></ul>
+<h2><span class="mw-headline" id="Differentiability_and_continuity">Differentiability and continuity</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Differentiable_function&amp;action=edit&amp;section=2" title="Edit section: Differentiability and continuity">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote navigation-not-searchable">See also: <a href="/wiki/Continuous_function" title="Continuous function">Continuous function</a></div>
+<div class="thumb tleft"><div class="thumbinner" style="width:222px;"><a href="/wiki/File:Absolute_value.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Absolute_value.svg/220px-Absolute_value.svg.png" width="220" height="147" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Absolute_value.svg/330px-Absolute_value.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Absolute_value.svg/440px-Absolute_value.svg.png 2x" data-file-width="600" data-file-height="400" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Absolute_value.svg" class="internal" title="Enlarge"></a></div>The <a href="/wiki/Absolute_value" title="Absolute value">absolute value</a> function is continuous (i.e. it has no gaps). It is differentiable everywhere <i>except</i> at the point <span class="texhtml"><i>x</i></span> = 0, where it makes a sharp turn as it crosses the <span class="texhtml"><i>y</i></span>-axis.</div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:222px;"><a href="/wiki/File:Cuspide.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/58/Cuspide.svg/220px-Cuspide.svg.png" width="220" height="110" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/58/Cuspide.svg/330px-Cuspide.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/58/Cuspide.svg/440px-Cuspide.svg.png 2x" data-file-width="1000" data-file-height="500" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Cuspide.svg" class="internal" title="Enlarge"></a></div>A <a href="/wiki/Cusp_(singularity)" title="Cusp (singularity)">cusp</a> on the graph of a continuous function. At zero, the function is continuous but not differentiable.</div></div></div>
+<p>If <span class="texhtml"><i>f</i></span> is differentiable at a point <span class="texhtml"><i>x</i><sub>0</sub></span>, then <span class="texhtml"><i>f</i></span> must also be <a href="/wiki/Continuous_function" title="Continuous function">continuous</a> at <span class="texhtml"><i>x</i><sub>0</sub></span>.  In particular, any differentiable function must be continuous at every point in its domain. <i>The converse does not hold</i>: a continuous function need not be differentiable. For example, a function with a bend, <a href="/wiki/Cusp_(singularity)" title="Cusp (singularity)">cusp</a>, or <a href="/wiki/Vertical_tangent" title="Vertical tangent">vertical tangent</a> may be continuous, but fails to be differentiable at the location of the anomaly.
+</p><p>Most functions that occur in practice have derivatives at all points or at <a href="/wiki/Almost_everywhere" title="Almost everywhere">almost every</a> point. However, a result of <a href="/wiki/Stefan_Banach" title="Stefan Banach">Stefan Banach</a> states that the set of functions that have a derivative at some point is a <a href="/wiki/Meager_set" class="mw-redirect" title="Meager set">meager set</a> in the space of all continuous functions.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup> Informally, this means that differentiable functions are very atypical among continuous functions.  The first known example of a function that is continuous everywhere but differentiable nowhere is the <a href="/wiki/Weierstrass_function" title="Weierstrass function">Weierstrass function</a>.
+</p>
+<div style="clear:both;"></div>
+<h2><span class="mw-headline" id="Differentiability_classes">Differentiability classes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Differentiable_function&amp;action=edit&amp;section=3" title="Edit section: Differentiability classes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Smoothness" title="Smoothness">Smoothness</a></div>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/File:Approximation_of_cos_with_linear_functions_without_numbers.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Approximation_of_cos_with_linear_functions_without_numbers.svg/300px-Approximation_of_cos_with_linear_functions_without_numbers.svg.png" width="300" height="269" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Approximation_of_cos_with_linear_functions_without_numbers.svg/450px-Approximation_of_cos_with_linear_functions_without_numbers.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Approximation_of_cos_with_linear_functions_without_numbers.svg/600px-Approximation_of_cos_with_linear_functions_without_numbers.svg.png 2x" data-file-width="942" data-file-height="846" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Approximation_of_cos_with_linear_functions_without_numbers.svg" class="internal" title="Enlarge"></a></div>Differentiable functions can be locally approximated by linear functions.</div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/File:The_function_x%5E2*sin(1_over_x).svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6b/The_function_x%5E2%2Asin%281_over_x%29.svg/300px-The_function_x%5E2%2Asin%281_over_x%29.svg.png" width="300" height="225" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6b/The_function_x%5E2%2Asin%281_over_x%29.svg/450px-The_function_x%5E2%2Asin%281_over_x%29.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/6b/The_function_x%5E2%2Asin%281_over_x%29.svg/600px-The_function_x%5E2%2Asin%281_over_x%29.svg.png 2x" data-file-width="575" data-file-height="431" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:The_function_x%5E2*sin(1_over_x).svg" class="internal" title="Enlarge"></a></div>The function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f:\mathbb {R} \to \mathbb {R} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>:</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">R</mi>
+        </mrow>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">R</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f:\mathbb {R} \to \mathbb {R} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1e3a10a3ad05781f5cf9c2d875a02227e21a8448" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:10.186ex; height:2.509ex;" alt="f:\mathbb{R} \to \mathbb{R} "/></span> with <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(x)=x^{2}\sin \left({\tfrac {1}{x}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mi>sin</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mn>1</mn>
+                <mi>x</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(x)=x^{2}\sin \left({\tfrac {1}{x}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e209a5d5035edb04438db4c2c31570ab38095d21" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:17.049ex; height:3.343ex;" alt="{\displaystyle f(x)=x^{2}\sin \left({\tfrac {1}{x}}\right)}"/></span> for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle x\neq 0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+        <mo>&#x2260;<!-- ≠ --></mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x\neq 0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/35a455db7b2aab1b0e72ccbc7385e4424e2372e5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.591ex; height:2.676ex;" alt="x\neq 0"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(0)=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(0)=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8d308c32c9894b88115262081194321ae7d9bbf3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.511ex; height:2.843ex;" alt="f(0)=0"/></span> is differentiable. However, this function is not continuously differentiable.</div></div></div>
+<p>A function <i>f</i>  is said to be <i>continuously differentiable</i> if the derivative <i>f<span class="nowrap" style="padding-left:0.15em;">′</span></i>(<i>x</i>) exists and is itself a continuous function. Although the derivative of a differentiable function never has a <a href="/wiki/Jump_discontinuity" class="mw-redirect" title="Jump discontinuity">jump discontinuity</a>, it is possible for the derivative to have an essential discontinuity. For example, the function
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(x)\;=\;{\begin{cases}x^{2}\sin(1/x)&amp;{\text{if }}x\neq 0\\0&amp;{\text{if }}x=0\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thickmathspace" />
+        <mo>=</mo>
+        <mspace width="thickmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <msup>
+                    <mi>x</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msup>
+                  <mi>sin</mi>
+                  <mo>&#x2061;<!-- ⁡ --></mo>
+                  <mo stretchy="false">(</mo>
+                  <mn>1</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>/</mo>
+                  </mrow>
+                  <mi>x</mi>
+                  <mo stretchy="false">)</mo>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>if&#xA0;</mtext>
+                  </mrow>
+                  <mi>x</mi>
+                  <mo>&#x2260;<!-- ≠ --></mo>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>if&#xA0;</mtext>
+                  </mrow>
+                  <mi>x</mi>
+                  <mo>=</mo>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(x)\;=\;{\begin{cases}x^{2}\sin(1/x)&amp;{\text{if }}x\neq 0\\0&amp;{\text{if }}x=0\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/eab72c7fdae2904b2c51af40342256259c6bac96" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:32.244ex; height:6.176ex;" alt="f(x)\;=\;{\begin{cases}x^{2}\sin(1/x)&amp;{\text{if }}x\neq 0\\0&amp;{\text{if }}x=0\end{cases}}"/></span></dd></dl>
+<p>is differentiable at 0, since
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f'(0)=\lim _{\epsilon \to 0}\left({\frac {\epsilon ^{2}\sin(1/\epsilon )-0}{\epsilon }}\right)=0,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>f</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03F5;<!-- ϵ --></mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mn>0</mn>
+          </mrow>
+        </munder>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <msup>
+                  <mi>&#x03F5;<!-- ϵ --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mi>sin</mi>
+                <mo>&#x2061;<!-- ⁡ --></mo>
+                <mo stretchy="false">(</mo>
+                <mn>1</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo>/</mo>
+                </mrow>
+                <mi>&#x03F5;<!-- ϵ --></mi>
+                <mo stretchy="false">)</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>0</mn>
+              </mrow>
+              <mi>&#x03F5;<!-- ϵ --></mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f'(0)=\lim _{\epsilon \to 0}\left({\frac {\epsilon ^{2}\sin(1/\epsilon )-0}{\epsilon }}\right)=0,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5421302646ee82da5ccd84375386b51840054d6c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:35.44ex; height:7.509ex;" alt="f&#039;(0)=\lim _{\epsilon \to 0}\left({\frac {\epsilon ^{2}\sin(1/\epsilon )-0}{\epsilon }}\right)=0,"/></span></dd></dl>
+<p>exists.  However, for <i>x</i> ≠ 0, <a href="/wiki/Differentiation_rules" title="Differentiation rules">differentiation rules</a> imply
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f'(x)=2x\sin(1/x)-\cos(1/x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>f</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>2</mn>
+        <mi>x</mi>
+        <mi>sin</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>cos</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f'(x)=2x\sin(1/x)-\cos(1/x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2f32d60bc020c5025c81ebe0be7d06c851d0ce7b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:30.857ex; height:3.009ex;" alt="f&#039;(x)=2x\sin(1/x)-\cos(1/x)"/></span></dd></dl>
+<p>which has no limit as <i>x</i>&#160;→&#160;0. Nevertheless, <a href="/wiki/Darboux%27s_theorem_(analysis)" title="Darboux&#39;s theorem (analysis)">Darboux's theorem</a> implies that the derivative of any function satisfies the conclusion of the <a href="/wiki/Intermediate_value_theorem" title="Intermediate value theorem">intermediate value theorem</a>.
+</p><p>Continuously differentiable functions are sometimes said to be of <i>class</i>&#160;C<sup>1</sup>. A function is of <i>class</i>&#160;C<sup>2</sup> if the first and <a href="/wiki/Second_derivative" title="Second derivative">second derivative</a> of the function both exist and are continuous. More generally, a function is said to be of <i>class</i>&#160;C<sup><i>k</i></sup> if the first <i>k</i> derivatives <i>f<span class="nowrap" style="padding-left:0.15em;">′</span></i>(<i>x</i>), <i>f<span class="nowrap" style="padding-left:0.15em;">′</span><span class="nowrap" style="padding-left:0.1em;">′</span></i>(<i>x</i>), ..., <i>f</i><sup>&#160;(<i>k</i>)</sup>(<i>x</i>) all exist and are continuous. If derivatives <i>f</i><sup>&#160;(<i>n</i>)</sup> exist for all positive integers <i>n</i>, the function is <a href="/wiki/Smooth_function" class="mw-redirect" title="Smooth function">smooth</a> or equivalently, of <i>class</i>&#160;C<sup>∞</sup>.
+</p>
+<div style="clear:both;"></div>
+<h2><span class="mw-headline" id="Differentiability_in_higher_dimensions">Differentiability in higher dimensions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Differentiable_function&amp;action=edit&amp;section=4" title="Edit section: Differentiability in higher dimensions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote navigation-not-searchable">See also: <a href="/wiki/Multivariable_calculus" title="Multivariable calculus">Multivariable calculus</a></div>
+<p>A <a href="/wiki/Function_of_several_real_variables" title="Function of several real variables">function of several real variables</a> <span class="texhtml"><b>f</b>: <b>R</b><sup><i>m</i></sup> → <b>R</b><sup><i>n</i></sup></span> is said to be differentiable at a point <span class="texhtml"><b>x<sub>0</sub></b></span> if <a href="/wiki/There_exists" class="mw-redirect" title="There exists">there exists</a> a <a href="/wiki/Linear_map" title="Linear map">linear map</a> <span class="texhtml"><b>J</b>: <b>R</b><sup><i>m</i></sup> → <b>R</b><sup><i>n</i></sup></span> such that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \lim _{\mathbf {h} \to \mathbf {0} }{\frac {\|\mathbf {f} (\mathbf {x_{0}} +\mathbf {h} )-\mathbf {f} (\mathbf {x_{0}} )-\mathbf {J} \mathbf {(h)} \|_{\mathbf {R} ^{n}}}{\|\mathbf {h} \|_{\mathbf {R} ^{m}}}}=0.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="bold">h</mi>
+            </mrow>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn mathvariant="bold">0</mn>
+            </mrow>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">f</mi>
+              </mrow>
+              <mo stretchy="false">(</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <msub>
+                  <mi mathvariant="bold">x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn mathvariant="bold">0</mn>
+                  </mrow>
+                </msub>
+              </mrow>
+              <mo>+</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">h</mi>
+              </mrow>
+              <mo stretchy="false">)</mo>
+              <mo>&#x2212;<!-- − --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">f</mi>
+              </mrow>
+              <mo stretchy="false">(</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <msub>
+                  <mi mathvariant="bold">x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn mathvariant="bold">0</mn>
+                  </mrow>
+                </msub>
+              </mrow>
+              <mo stretchy="false">)</mo>
+              <mo>&#x2212;<!-- − --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">J</mi>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo mathvariant="bold" stretchy="false">(</mo>
+                <mi mathvariant="bold">h</mi>
+                <mo mathvariant="bold" stretchy="false">)</mo>
+              </mrow>
+              <msub>
+                <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <msup>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi mathvariant="bold">R</mi>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                  </msup>
+                </mrow>
+              </msub>
+            </mrow>
+            <mrow>
+              <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">h</mi>
+              </mrow>
+              <msub>
+                <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <msup>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi mathvariant="bold">R</mi>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>m</mi>
+                    </mrow>
+                  </msup>
+                </mrow>
+              </msub>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>0.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lim _{\mathbf {h} \to \mathbf {0} }{\frac {\|\mathbf {f} (\mathbf {x_{0}} +\mathbf {h} )-\mathbf {f} (\mathbf {x_{0}} )-\mathbf {J} \mathbf {(h)} \|_{\mathbf {R} ^{n}}}{\|\mathbf {h} \|_{\mathbf {R} ^{m}}}}=0.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/268352e5f56cde57bf51a8965dda4e9c3203644c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:40.561ex; height:6.509ex;" alt="\lim _{\mathbf {h} \to \mathbf {0} }{\frac {\|\mathbf {f} (\mathbf {x_{0}} +\mathbf {h} )-\mathbf {f} (\mathbf {x_{0}} )-\mathbf {J} \mathbf {(h)} \|_{\mathbf {R} ^{n}}}{\|\mathbf {h} \|_{\mathbf {R} ^{m}}}}=0."/></span></dd></dl>
+<p>If a function is differentiable at <span class="texhtml"><b>x<sub>0</sub></b></span>, then all of the <a href="/wiki/Partial_derivative" title="Partial derivative">partial derivatives</a> exist at <span class="texhtml"><b>x<sub>0</sub></b></span>, and the linear map <span class="texhtml"><b>J</b></span> is given by the <a href="/wiki/Jacobian_matrix" class="mw-redirect" title="Jacobian matrix">Jacobian matrix</a>. A similar formulation of the higher-dimensional derivative is provided by the <a href="/wiki/Fundamental_increment_lemma" title="Fundamental increment lemma">fundamental increment lemma</a> found in single-variable calculus.
+</p><p>If all the partial derivatives of a function exist in a <a href="/wiki/Neighbourhood_(mathematics)" title="Neighbourhood (mathematics)">neighborhood</a> of a point <span class="texhtml"><b>x<sub>0</sub></b></span> and are continuous at the point <span class="texhtml"><b>x<sub>0</sub></b></span>, then the function is differentiable at that point <span class="texhtml"><b>x<sub>0</sub></b></span>.
+</p><p>However, the existence of the partial derivatives (or even of all the <a href="/wiki/Directional_derivative" title="Directional derivative">directional derivatives</a>) does not in general guarantee that a function is differentiable at a point. For example, the function <span class="texhtml"><i>f</i>: <b>R</b><sup>2</sup> → <b>R</b></span> defined by
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(x,y)={\begin{cases}x&amp;{\text{if }}y\neq x^{2}\\0&amp;{\text{if }}y=x^{2}\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mi>x</mi>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>if&#xA0;</mtext>
+                  </mrow>
+                  <mi>y</mi>
+                  <mo>&#x2260;<!-- ≠ --></mo>
+                  <msup>
+                    <mi>x</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msup>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>if&#xA0;</mtext>
+                  </mrow>
+                  <mi>y</mi>
+                  <mo>=</mo>
+                  <msup>
+                    <mi>x</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msup>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(x,y)={\begin{cases}x&amp;{\text{if }}y\neq x^{2}\\0&amp;{\text{if }}y=x^{2}\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/05d18396ce5271d3240afe60ee67b22ccf5b33c4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:24.43ex; height:6.176ex;" alt="f(x,y)={\begin{cases}x&amp;{\text{if }}y\neq x^{2}\\0&amp;{\text{if }}y=x^{2}\end{cases}}"/></span></dd></dl>
+<p>is not differentiable at <span class="texhtml">(0, 0)</span>, but all of the partial derivatives and directional derivatives exist at this point.  For a continuous example, the function
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(x,y)={\begin{cases}y^{3}/(x^{2}+y^{2})&amp;{\text{if }}(x,y)\neq (0,0)\\0&amp;{\text{if }}(x,y)=(0,0)\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <msup>
+                    <mi>y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>3</mn>
+                    </mrow>
+                  </msup>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>/</mo>
+                  </mrow>
+                  <mo stretchy="false">(</mo>
+                  <msup>
+                    <mi>x</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msup>
+                  <mo>+</mo>
+                  <msup>
+                    <mi>y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msup>
+                  <mo stretchy="false">)</mo>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>if&#xA0;</mtext>
+                  </mrow>
+                  <mo stretchy="false">(</mo>
+                  <mi>x</mi>
+                  <mo>,</mo>
+                  <mi>y</mi>
+                  <mo stretchy="false">)</mo>
+                  <mo>&#x2260;<!-- ≠ --></mo>
+                  <mo stretchy="false">(</mo>
+                  <mn>0</mn>
+                  <mo>,</mo>
+                  <mn>0</mn>
+                  <mo stretchy="false">)</mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>if&#xA0;</mtext>
+                  </mrow>
+                  <mo stretchy="false">(</mo>
+                  <mi>x</mi>
+                  <mo>,</mo>
+                  <mi>y</mi>
+                  <mo stretchy="false">)</mo>
+                  <mo>=</mo>
+                  <mo stretchy="false">(</mo>
+                  <mn>0</mn>
+                  <mo>,</mo>
+                  <mn>0</mn>
+                  <mo stretchy="false">)</mo>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(x,y)={\begin{cases}y^{3}/(x^{2}+y^{2})&amp;{\text{if }}(x,y)\neq (0,0)\\0&amp;{\text{if }}(x,y)=(0,0)\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ba3df8cc6421be6baf3602e6a87836917d2d4f77" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:42.683ex; height:6.176ex;" alt="f(x,y)={\begin{cases}y^{3}/(x^{2}+y^{2})&amp;{\text{if }}(x,y)\neq (0,0)\\0&amp;{\text{if }}(x,y)=(0,0)\end{cases}}"/></span></dd></dl>
+<p>is not differentiable at <span class="texhtml">(0, 0)</span>, but again all of the partial derivatives and directional derivatives exist.
+</p>
+<h2><span class="mw-headline" id="Differentiability_in_complex_analysis">Differentiability in complex analysis</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Differentiable_function&amp;action=edit&amp;section=5" title="Edit section: Differentiability in complex analysis">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Holomorphic_function" title="Holomorphic function">Holomorphic function</a></div>
+<p>In <a href="/wiki/Complex_analysis" title="Complex analysis">complex analysis</a>, complex-differentiability is defined using the same definition as single-variable real functions. This is allowed by the possibility of dividing complex numbers. So, a function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f:\mathbb {C} \to \mathbb {C} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>:</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">C</mi>
+        </mrow>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">C</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f:\mathbb {C} \to \mathbb {C} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/61c4e3a3b342f10ee3f8556c374a36eafa559d0f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:10.186ex; height:2.509ex;" alt="{\displaystyle f:\mathbb {C} \to \mathbb {C} }"/></span> is said to be differentiable at <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle x=a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+        <mo>=</mo>
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x=a}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/aaae23950e96a955ab5b07015a168fd931d4d82b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.658ex; height:1.676ex;" alt="x=a"/></span> when
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f'(a)=\lim _{h\to 0}{\frac {f(a+h)-f(a)}{h}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>f</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>h</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mn>0</mn>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>a</mi>
+              <mo>+</mo>
+              <mi>h</mi>
+              <mo stretchy="false">)</mo>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>a</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mi>h</mi>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f'(a)=\lim _{h\to 0}{\frac {f(a+h)-f(a)}{h}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9315f1516ee5847107808697e43693d91abfc6e8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:29.08ex; height:5.843ex;" alt="f&#039;(a)=\lim _{h\to 0}{\frac {f(a+h)-f(a)}{h}}."/></span></dd></dl>
+<p>Although this definition looks similar to the differentiability of single-variable real functions, it is however a more restrictive condition. A function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f:\mathbb {C} \to \mathbb {C} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>:</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">C</mi>
+        </mrow>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">C</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f:\mathbb {C} \to \mathbb {C} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/61c4e3a3b342f10ee3f8556c374a36eafa559d0f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:10.186ex; height:2.509ex;" alt="{\displaystyle f:\mathbb {C} \to \mathbb {C} }"/></span>, that is complex-differentiable at a point <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle x=a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+        <mo>=</mo>
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x=a}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/aaae23950e96a955ab5b07015a168fd931d4d82b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.658ex; height:1.676ex;" alt="x=a"/></span> is automatically differentiable at that point, when viewed as a function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f:\mathbb {R} ^{2}\to \mathbb {R} ^{2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>:</mo>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">R</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">R</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f:\mathbb {R} ^{2}\to \mathbb {R} ^{2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/25c44be73c93794e647a2a66e3fc18f527395064" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:12.294ex; height:3.009ex;" alt="{\displaystyle f:\mathbb {R} ^{2}\to \mathbb {R} ^{2}}"/></span>. This is because the complex-differentiability implies that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \lim _{h\to 0}{\frac {|f(a+h)-f(a)-f'(a)h|}{|h|}}=0.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>h</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mn>0</mn>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>a</mi>
+              <mo>+</mo>
+              <mi>h</mi>
+              <mo stretchy="false">)</mo>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>a</mi>
+              <mo stretchy="false">)</mo>
+              <mo>&#x2212;<!-- − --></mo>
+              <msup>
+                <mi>f</mi>
+                <mo>&#x2032;</mo>
+              </msup>
+              <mo stretchy="false">(</mo>
+              <mi>a</mi>
+              <mo stretchy="false">)</mo>
+              <mi>h</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+              <mi>h</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>0.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lim _{h\to 0}{\frac {|f(a+h)-f(a)-f'(a)h|}{|h|}}=0.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e1187692ed964b89f75263b87b13aa5d8c6b17c4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:35.715ex; height:6.509ex;" alt="{\displaystyle \lim _{h\to 0}{\frac {|f(a+h)-f(a)-f&#039;(a)h|}{|h|}}=0.}"/></span></dd></dl>
+<p>However, a function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f:\mathbb {C} \to \mathbb {C} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>:</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">C</mi>
+        </mrow>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">C</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f:\mathbb {C} \to \mathbb {C} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/61c4e3a3b342f10ee3f8556c374a36eafa559d0f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:10.186ex; height:2.509ex;" alt="{\displaystyle f:\mathbb {C} \to \mathbb {C} }"/></span> can be differentiable as a multi-variable function, while not being complex-differentiable. For example, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(z)={\frac {z+{\overline {z}}}{2}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>z</mi>
+              <mo>+</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mover>
+                  <mi>z</mi>
+                  <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                </mover>
+              </mrow>
+            </mrow>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(z)={\frac {z+{\overline {z}}}{2}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0d2aa2cf99fd9c9e4052ed8b119064f688609784" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:13.247ex; height:5.509ex;" alt="{\displaystyle f(z)={\frac {z+{\overline {z}}}{2}}}"/></span> is differentiable at every point, viewed as the 2-variable real function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(x,y)=x}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>x</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(x,y)=x}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c6bec423b26f491e42ada1e0cface4f4f396471d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.035ex; height:2.843ex;" alt="f(x,y)=x"/></span>, but it is not complex-differentiable at any point.
+</p><p>Any function that is complex-differentiable in a neighborhood of a point is called <a href="/wiki/Holomorphic_function" title="Holomorphic function">holomorphic</a> at that point. Such a function is necessarily infinitely differentiable, and in fact <a href="/wiki/Analytic_function" title="Analytic function">analytic</a>.
+</p>
+<h2><span class="mw-headline" id="Differentiable_functions_on_manifolds">Differentiable functions on manifolds</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Differentiable_function&amp;action=edit&amp;section=6" title="Edit section: Differentiable functions on manifolds">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote navigation-not-searchable">See also: <a href="/wiki/Differentiable_manifold#Differentiable_functions" title="Differentiable manifold">Differentiable manifold §&#160;Differentiable functions</a></div>
+<p>If <i>M</i> is a <a href="/wiki/Differentiable_manifold" title="Differentiable manifold">differentiable manifold</a>, a real or complex-valued function <i>f</i> on <i>M</i> is said to be differentiable at a point <i>p</i> if it is differentiable with respect to some (or any) coordinate chart defined around <i>p</i>.  More generally, if <i>M</i> and <i>N</i> are differentiable manifolds, a function <i>f</i>:&#160;<i>M</i>&#160;→&#160;<i>N</i> is said to be differentiable at a point <i>p</i> if it is differentiable with respect to some (or any) coordinate charts defined around <i>p</i> and <i>f</i>(<i>p</i>).
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Differentiable_function&amp;action=edit&amp;section=7" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Generalizations_of_the_derivative" title="Generalizations of the derivative">Generalizations of the derivative</a></li>
+<li><a href="/wiki/Semi-differentiability" title="Semi-differentiability">Semi-differentiability</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Differentiable_function&amp;action=edit&amp;section=8" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation journal">Banach, S. (1931). "Über die Baire'sche Kategorie gewisser Funktionenmengen". <i><a href="/wiki/Studia_Mathematica" title="Studia Mathematica">Studia. Math.</a></i> <b>3</b> (1): 174–179.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Studia.+Math.&amp;rft.atitle=%C3%9Cber+die+Baire%27sche+Kategorie+gewisser+Funktionenmengen&amp;rft.volume=3&amp;rft.issue=1&amp;rft.pages=174-179&amp;rft.date=1931&amp;rft.aulast=Banach&amp;rft.aufirst=S.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADifferentiable+function" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r861714446">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output q{quotes:"\"""\"""'""'"}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-lock-limited a,.mw-parser-output .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style>.  Cited by <cite class="citation book">Hewitt, E; Stromberg, K (1963). <i>Real and abstract analysis</i>. Springer-Verlag. Theorem 17.8.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Real+and+abstract+analysis&amp;rft.pages=Theorem+17.8&amp;rft.pub=Springer-Verlag&amp;rft.date=1963&amp;rft.au=Hewitt%2C+E&amp;rft.au=Stromberg%2C+K&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADifferentiable+function" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r861714446"/></span>
+</li>
+</ol></div></div>
+
+<!-- 
+NewPP limit report
+Parsed by mw1289
+Cached time: 20181128061932
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.196 seconds
+Real time usage: 0.293 seconds
+Preprocessor visited node count: 1152/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 5023/2097152 bytes
+Template argument size: 564/2097152 bytes
+Highest expansion depth: 7/40
+Expensive parser function count: 0/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 5672/5000000 bytes
+Number of Wikibase entities loaded: 0/400
+Lua time usage: 0.066/10.000 seconds
+Lua memory usage: 1.94 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  177.009      1 -total
+ 53.74%   95.121      1 Template:Reflist
+ 42.46%   75.165      1 Template:Cite_journal
+ 22.79%   40.340      3 Template:See_also
+ 12.18%   21.565      4 Template:Prime
+  7.71%   13.656      4 Template:Italics_correction/calc
+  4.16%    7.362      1 Template:Cite_book
+  4.16%    7.360      2 Template:Main
+  3.19%    5.653      2 Template:-
+  2.08%    3.688     18 Template:Math
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:330206-0!canonical!math=5 and timestamp 20181128061931 and revision id 863053984
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Differentiable_function&amp;oldid=863053984">https://en.wikipedia.org/w/index.php?title=Differentiable_function&amp;oldid=863053984</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Differential_calculus" title="Category:Differential calculus">Differential calculus</a></li><li><a href="/wiki/Category:Multivariable_calculus" title="Category:Multivariable calculus">Multivariable calculus</a></li><li><a href="/wiki/Category:Smooth_functions" title="Category:Smooth functions">Smooth functions</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Differentiable+function" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Differentiable+function" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Differentiable_function" title="View the content page [c]" accesskey="c">Article</a></span></li><li id="ca-talk"><span><a href="/wiki/Talk:Differentiable_function" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Differentiable_function">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Differentiable_function&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Differentiable_function&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Differentiable_function" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Differentiable_function" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Differentiable_function&amp;oldid=863053984" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Differentiable_function&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q783507" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Differentiable_function&amp;id=863053984" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Differentiable+function">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Differentiable+function&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Differentiable_function&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">Languages</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Funci%C3%B3_derivable" title="Funció derivable – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Diferencovatelnost" title="Diferencovatelnost – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Differenzierbarkeit" title="Differenzierbarkeit – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Funci%C3%B3n_diferenciable" title="Función diferenciable – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D8%AA%D8%A7%D8%A8%D8%B9_%D9%85%D8%B4%D8%AA%D9%82%E2%80%8C%D9%BE%D8%B0%DB%8C%D8%B1" title="تابع مشتق‌پذیر – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/D%C3%A9rivabilit%C3%A9" title="Dérivabilité – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EB%AF%B8%EB%B6%84_%EA%B0%80%EB%8A%A5_%ED%95%A8%EC%88%98" title="미분 가능 함수 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-id"><a href="https://id.wikipedia.org/wiki/Fungsi_yang_dapat_diturunkan" title="Fungsi yang dapat diturunkan – Indonesian" lang="id" hreflang="id" class="interlanguage-link-target">Bahasa Indonesia</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Funzione_differenziabile" title="Funzione differenziabile – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%94_%D7%93%D7%99%D7%A4%D7%A8%D7%A0%D7%A6%D7%99%D7%90%D7%91%D7%99%D7%9C%D7%99%D7%AA" title="פונקציה דיפרנציאבילית – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-la"><a href="https://la.wikipedia.org/wiki/Functio_differentiabilis" title="Functio differentiabilis – Latin" lang="la" hreflang="la" class="interlanguage-link-target">Latina</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Differentieerbaarheid" title="Differentieerbaarheid – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E5%BE%AE%E5%88%86%E5%8F%AF%E8%83%BD%E9%96%A2%E6%95%B0" title="微分可能関数 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Funkcja_r%C3%B3%C5%BCniczkowalna" title="Funkcja różniczkowalna – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%94%D0%B8%D1%84%D1%84%D0%B5%D1%80%D0%B5%D0%BD%D1%86%D0%B8%D1%80%D1%83%D0%B5%D0%BC%D0%B0%D1%8F_%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F" title="Дифференцируемая функция – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Differentierbarhet" title="Differentierbarhet – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-ta"><a href="https://ta.wikipedia.org/wiki/%E0%AE%B5%E0%AE%95%E0%AF%88%E0%AE%AF%E0%AE%BF%E0%AE%9F%E0%AE%A4%E0%AF%8D%E0%AE%A4%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%9A%E0%AF%8D_%E0%AE%9A%E0%AE%BE%E0%AE%B0%E0%AF%8D%E0%AE%AA%E0%AF%81" title="வகையிடத்தக்கச் சார்பு – Tamil" lang="ta" hreflang="ta" class="interlanguage-link-target">தமிழ்</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%94%D0%B8%D1%84%D0%B5%D1%80%D0%B5%D0%BD%D1%86%D1%96%D0%B9%D0%BE%D0%B2%D0%BD%D0%B0_%D1%84%D1%83%D0%BD%D0%BA%D1%86%D1%96%D1%8F" title="Диференційовна функція – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-vi"><a href="https://vi.wikipedia.org/wiki/H%C3%A0m_s%E1%BB%91_kh%E1%BA%A3_vi" title="Hàm số khả vi – Vietnamese" lang="vi" hreflang="vi" class="interlanguage-link-target">Tiếng Việt</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E5%8F%AF%E5%BE%AE%E5%87%BD%E6%95%B0" title="可微函数 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q783507#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 8 October 2018, at 12:13<span class="anonymous-show">&#160;(UTC)</span>.</li>
+								<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Differentiable_function&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.196","walltime":"0.293","ppvisitednodes":{"value":1152,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":5023,"limit":2097152},"templateargumentsize":{"value":564,"limit":2097152},"expansiondepth":{"value":7,"limit":40},"expensivefunctioncount":{"value":0,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":5672,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  177.009      1 -total"," 53.74%   95.121      1 Template:Reflist"," 42.46%   75.165      1 Template:Cite_journal"," 22.79%   40.340      3 Template:See_also"," 12.18%   21.565      4 Template:Prime","  7.71%   13.656      4 Template:Italics_correction/calc","  4.16%    7.362      1 Template:Cite_book","  4.16%    7.360      2 Template:Main","  3.19%    5.653      2 Template:-","  2.08%    3.688     18 Template:Math"]},"scribunto":{"limitreport-timeusage":{"value":"0.066","limit":"10.000"},"limitreport-memusage":{"value":2033356,"limit":52428800}},"cachereport":{"origin":"mw1289","timestamp":"20181128061932","ttl":1900800,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":86,"wgHostname":"mw1254"});});</script>
+	</body>
+</html>

@@ -1,0 +1,1025 @@
+<!DOCTYPE html SYSTEM "http://pubs.rsc.org/Content/dtd/custom.dtd">
+<!--[if IE 8 ]><html class="ie ie8" lang="en"><![endif]-->
+<!--[if !(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--<![endif]-->
+<head id="Head1">
+    <title>
+        
+    Back cover - Nanoscale (RSC Publishing)
+
+    </title>
+    <meta charset="utf-8"><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"eec2473e72","applicationID":"13881625","transactionName":"ZFUBZhEEDUQEBhBbDl0fLmQgSiBYCxEBXBVwXw1GEQoPWwAXS1MTR1kAXgYJAlkBDApV","queueTime":1,"applicationTime":480,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQYFWF9aDBABV1laBgcFUw=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(21),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{l?l-=1:o(s||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:c.now();i("err",[t,n])}var i=t("handle"),a=t(22),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,p="nr@seenError",l=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(13),t(12),"addEventListener"in window&&t(6),c.xhrWrappable&&t(14),d=!0)}s.on("fn-start",function(t,e,n){d&&(l+=1)}),s.on("fn-err",function(t,e,n){d&&!n[p]&&(f(n,p,function(){return!0}),this.thrown=!0,o(n))}),s.on("fn-end",function(){d&&!this.thrown&&l>0&&(l-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){M++,N=y.hash,this[u]=g.now()}function o(){M--,y.hash!==N&&i(0,!0);var t=g.now();this[h]=~~this[h]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+y,e])}function a(t,e){t.on(e,function(){this[e]=g.now()})}var s="-start",c="-end",f="-body",u="fn"+s,d="fn"+c,p="cb"+s,l="cb"+c,h="jsTime",m="fetch",v="addEventListener",w=window,y=w.location,g=t("loader");if(w[v]&&g.xhrWrappable){var b=t(10),x=t(11),E=t(8),O=t(6),P=t(13),R=t(7),T=t(14),L=t(9),j=t("ee"),S=j.get("tracer");t(15),g.features.spa=!0;var N,M=0;j.on(u,r),j.on(p,r),j.on(d,o),j.on(l,o),j.buffer([u,d,"xhr-done","xhr-resolved"]),O.buffer([u]),P.buffer(["setTimeout"+c,"clearTimeout"+s,u]),T.buffer([u,"new-xhr","send-xhr"+s]),R.buffer([m+s,m+"-done",m+f+s,m+f+c]),E.buffer(["newURL"]),b.buffer([u]),x.buffer(["propagate",p,l,"executor-err","resolve"+s]),S.buffer([u,"no-"+u]),L.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(T,"send-xhr"+s),a(j,"xhr-resolved"),a(j,"xhr-done"),a(R,m+s),a(R,m+"-done"),a(L,"new-jsonp"),a(L,"jsonp-end"),a(L,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,!0),w[v]("load",i,!0),w[v]("popstate",function(){i(0,M>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(13),s=t(12),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",p="resource",l="-start",h="-end",m="fn"+l,v="fn"+h,w="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(8);var b=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof b&&(this.bstStart=g.now())}),o.on(v,function(t,e){var n=t[0];n instanceof b&&i("bst",[n,e,this.bstStart,g.now()])}),a.on(m,function(t,e,n){this.bstStart=g.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(v,function(t,e){i(w,[e,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+l,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(24)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=r.apply(this,arguments);return o.emit(n+"start",arguments,t),t.then(function(e){return o.emit(n+"end",[null,e],t),e},function(e){throw o.emit(n+"end",[e],t),e})})}var o=t("ee").get("fetch"),i=t(21);e.exports=o;var a=window,s="fetch-",c=s+"body-",f=["arrayBuffer","blob","json","text","formData"],u=a.Request,d=a.Response,p=a.fetch,l="prototype";u&&d&&p&&(i(f,function(t,e){r(u[l],e,c),r(d[l],e,c)}),r(a,"fetch",s),o.on(s+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(s+"done",[null,e],n)}else o.emit(s+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t(24)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){function r(t){function e(){c.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}function n(){c.emit("jsonp-error",[],p),c.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var u=s(a),d="function"==typeof u.parent[u.key];if(d){var p={};f.inPlace(u.parent,[u.key],"cb-",p),t.addEventListener("load",e,!1),t.addEventListener("error",n,!1),c.emit("new-jsonp",[t.src],p)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(u);return e?e[1]:null}function a(t,e){var n=t.match(p),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function s(t){var e=t.match(d);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var c=t("ee").get("jsonp"),f=t(24)(c);if(e.exports=c,o()){var u=/[?&](?:callback|cb)=([^&#]+)/,d=/(.*)\.([^.]+)/,p=/^(\w+)(\.|$)(.*)$/,l=["appendChild","insertBefore","replaceChild"];f.inPlace(HTMLElement.prototype,l,"dom-"),f.inPlace(HTMLHeadElement.prototype,l,"dom-"),f.inPlace(HTMLBodyElement.prototype,l,"dom-"),c.on("dom-start",function(t){r(t[0])})}},{}],10:[function(t,e,n){var r=t("ee").get("mutation"),o=t(24)(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],11:[function(t,e,n){function r(t){var e=a.context(),n=s(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}function o(t,e){return e}var i=t(24),a=t("ee").get("promise"),s=i(a),c=t(21),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o],i),o=o||!t}}var o=!1;c(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),s=f.resolve(i);return s}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),c(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on("executor-start",function(t){t[0]=s(t[0],"resolve-",this),t[1]=s(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),s.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=s(t[0],"cb-",this),t[1]=s(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],12:[function(t,e,n){var r=t("ee").get("raf"),o=t(24)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],13:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(24)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],14:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):v?v(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t(24)(u),p=NREUM.o,l=p.XHR,h=p.MO,m=p.PR,v=p.SI,w="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];e.exports=u;var b=window.XMLHttpRequest=function(t){var e=new l(t);try{u.emit("new-xhr",[e],e),e.addEventListener(w,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(l,b),b.prototype=l.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!v&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],15:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=a.now()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(e.cat=c.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=c(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(16),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,p=t("id"),l=t(19),h=t(18),m=window.XMLHttpRequest;a.features.xhr=!0,t(14),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,l&&(l>34||l<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var s=0;s<d;s++)e.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)})}},{}],16:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],17:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(s(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(21),s=t(22),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){u[e]=o(p+e,!0,"api")}),u.addPageAction=o(p+"addPageAction",!0),u.setCurrentRouteName=o(p+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[f.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],18:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],19:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],20:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}e.exports={agent:o,version:i,match:r}},{}],21:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],22:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],23:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],24:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(22),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(f){p([f,"",[r,a,o],s])}u(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],s),d}finally{u(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<e.length;c++)s=e[c],a=t[s],r(a)||(t[s]=n(a,f?s+o:o,i,s))}function u(n,r,o){if(!c||e){var i=c;c=!0;try{t.emit(n,r,o,e)}catch(a){p([a,n,r,o])}c=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){p([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function p(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function n(n,r,o,i){if(!p.aborted||i){t&&t(n,r,o);for(var a=e(o),s=m(n),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[g[n]];return d&&d.push([b,n,r,a]),a}}function l(t,e){y[t]=m(t).concat(e)}function h(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return y[t]||[]}function v(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",g[n]=e,e in u||(u[e]=[])})}var y={},g={},b={on:l,addEventListener:l,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(u.api||u.feature)&&(p.aborted=!0,u=p.backlog={})}var s="nr@context",c=t("gos"),f=t(21),u={},d={},p=e.exports=o();p.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!E++){var t=x.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(g,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()+x.offset],null,"api");var n=l.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-x.offset}var s=(new Date).getTime(),c=t("handle"),f=t(21),u=t("ee"),d=t(20),p=window,l=p.document,h="addEventListener",m="attachEvent",v=p.XMLHttpRequest,w=v&&v.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:v,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var y=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1099.min.js"},b=v&&w&&w[h]&&!/CriOS/.test(navigator.userAgent),x=e.exports={offset:s,now:a,origin:y,features:{},xhrWrappable:b,userAgent:d};t(17),l[h]?(l[h]("DOMContentLoaded",i,!1),p[h]("load",r,!1)):(l[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,O=t(23)},{}]},{},["loader",2,15,5,3,4]);</script>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" href="//www.rsc-cdn.org/oxygen/core/images/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="57x57" href="//www.rsc-cdn.org/oxygen/core/images/favicons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="//www.rsc-cdn.org/oxygen/core/images/favicons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="//www.rsc-cdn.org/oxygen/core/images/favicons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="//www.rsc-cdn.org/oxygen/core/images/favicons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="288x288" href="//www.rsc-cdn.org/oxygen/core/images/favicons/apple-touch-icon-288x288.png" />
+    <link rel="apple-touch-icon" href="//www.rsc-cdn.org/oxygen/core/images/favicons/apple-touch-icon-288x288.png">
+    <!--[if lt IE 9 ]>
+      <script type="text/javascript">
+      document.createElement('header');
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('article');
+      document.createElement('aside');
+      document.createElement('footer');
+      </script>
+    <![endif]-->
+    
+    
+    <link href="https://www.rsc-cdn.org/oxygen/core/webfonts/museo.css" rel="stylesheet" type="text/css" />
+    <link href="https://www.rsc-cdn.org/pubs-core/2018.0.530/content/stylesheets/footer.css" rel="stylesheet" type="text/css" />
+
+    <link href="https://www.rsc-cdn.org/pubs-core/2018.0.530/content/stylesheets/pubs-ui.min.css" rel="stylesheet" type="text/css"/>
+
+    <script type="text/javascript">
+        //<![CDATA[
+        var externalIpAddress = '';
+        var varSuccess = 'Success'
+        var themeJournalName = "";
+        var isContentAvailable = "";
+        var articleSubmissionUrl = "";
+        var issueID_pn = '';
+        var issnPrint_pn = '';
+        var issnOnline_pn = '';
+        var doiList = '';
+        var url = '';
+        var MostReadCleanupDuration = '';
+        //]]>
+    </script>
+
+    <script src="https://www.rsc-cdn.org/pubs-core/2018.0.530/content/Scripts/pubs-ui-initial.min.js" type="text/javascript"></script>
+    <script src="https://www.rsc-cdn.org/pubs-core/2018.0.530/content/Scripts/pubs-ui.min.js" type="text/javascript"></script>
+
+    
+
+
+
+<meta name="dc.domain" content="pdf" />
+
+<script src="https://www.rsc-cdn.org/pubs-core/2018.0.530/content/Scripts/Address.js" type="text/javascript"></script>
+
+<link rel="canonical" href="https://pubs.rsc.org/en/content/articlelanding/2016/nr/c6nr90083f" />
+<meta name="DC.title" content="Back cover" />
+<meta name="DC.publisher" content="The Royal Society of Chemistry" />
+
+<meta name="DC.issued" content="2016/04/14" />
+<meta name="DC.Identifier" scheme="doi" content="10.1039/C6NR90083F" />
+<meta name="DC.Language" content="en" />
+<meta name="PPL.DocType" content="journals" />
+<meta name="description" content="
+    " />
+
+<meta content="2040-3372" name="citation_issn" />
+<meta content="Back cover" name="citation_title" />
+
+<meta content="2016/04/14" name="citation_publication_date" />
+<meta content="Nanoscale" name="citation_journal_title" />
+<meta content="8" name="citation_volume" />
+<meta content="15" name="citation_issue" />
+<meta content="8392" name="citation_firstpage" />
+<meta content="8392" name="citation_lastpage" />
+<meta content="10.1039/C6NR90083F" name="citation_doi" />
+<meta content="https://pubs.rsc.org/en/content/articlepdf/2016/nr/c6nr90083f" name="citation_pdf_url" />
+<meta content="https://pubs.rsc.org/en/content/articlelanding/2016/nr/c6nr90083f" name="citation_abstract_html_url" />
+<meta content="https://pubs.rsc.org/en/content/articlehtml/2016/nr/c6nr90083f" name="citation_fulltext_html_url" />
+<meta content="Nanoscale" name="citation_journal_abbrev" />
+<meta name="keywords" content="" />
+<meta content="A graphical abstract is available for this content" name="citation_abstract" />
+
+<meta name="fragment" content="!" />
+
+
+    <script type="text/javascript">
+        //variables used by alpTabHistory.js
+        var Model = {
+            IsEnableRelatedContentTab: true,
+            ForwardLinkUrl: '/en/content/forwardlinks?doi=10.1039%2Fc6nr90083f',
+            SimilarArticlesUrl: '/en/content/relatedarticleschapters/c6nr90083f?title=back%20cover&journalname=Nanoscale&doctype=Cover&journalthemesCount=0',
+            ArticleTitleNoMarkup: 'back cover - 10.1039/c6nr90083f - nr',
+            DOCType: 'Cover',
+            ReferenceArticlesUrl: '/en/content/referencearticles',
+            IsPrintArticle: true,
+            DownloadOptionAsync: '/en/content/checkaccess?msid=c6nr90083f&type=article&pubyear=2016&sercode=nr&publicationdate=2016-04-14&pubstatus=prt&doi=10.1039%2Fc6nr90083f&ispdfexist=True&title=back%20cover&fulltext=pdf&checkFullText=True&totalPages=1',
+            ArticleTitleFull: 'back cover - c6nr90083f - sercode=nr',
+            PubStatus: 'PRT',
+            JournalCode: 'NR',
+            LastIssueId: 'NR010046',
+            IssueId: 'NR008015',
+            MsId: 'C6NR90083F',
+            SameAuthorUrl: '/en/content/bythesameauthor',
+            EAlertMedium: '',
+            EAlertSearchID: '',
+            DoiExists: true,
+            LoadDownloadContents: true
+        };
+
+        $(function() {
+
+            $(".btn-icon--loading").on("click", function (e) {
+                e.preventDefault();
+            });
+
+                
+                    $("#DownloadOption").load(Model.DownloadOptionAsync);
+                
+
+        });
+    </script>
+    <script src="https://www.rsc-cdn.org/pubs-core/2018.0.530/content/Scripts/alpTabHistory.js" type="text/javascript"></script>
+
+
+    <script type="text/javascript">
+        //<![CDATA[
+
+        //YearRangeattribute client side implementation, which validate year between 1841 and till year
+        function YearRange(value, element, params) {
+            return (value > params.minYear && value <= params.maxYear);
+        }
+
+        jQuery.fn.reset = function () {
+            $(this).each(function () { this.reset(); });
+        }
+
+        function customAlertsTracker(medium, campaign) {
+            _gaq.push(['utm_source', 'saved-search']);
+            _gaq.push(['utm_medium', medium]);
+            _gaq.push(['utm_campaign', campaign]);
+        }
+
+        $.ajax({
+            url: '/en/home/branding_New',
+            cache: false,
+            success: function (data) {
+                $(document).ready(function () {
+                    $("#divWelcomeUser").html(data);
+                });
+            },
+            error: function (data) {
+                $(document).ready(function () {
+                    $("#divWelcomeUser").html(data);
+                });
+            },
+            dataType: "html"
+        });
+
+        var _gaq = _gaq || [];
+
+        _gaq.push(
+            ['_setAccount', 'UA-20361743-1'],
+            ['_setDomainName', '.rsc.org'],
+            ['_setAllowLinker', true]
+        );
+
+        //]]>
+    </script>
+
+        <!-- Google Tag Manager -->
+        <script>
+            //<![CDATA[
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || []; w[l].push({
+                    'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+                }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-56FZ7G');
+            //]]>
+        </script>
+        <!-- End Google Tag Manager -->
+
+
+</head>
+
+<body id="pagetop" class="body_new 
+    oxy-ui pubs-ui alp-page
+">
+
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-56FZ7G"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+
+    <div class="oxy-ui pubs-ui">
+
+            <div data-id="pnlAccSkipLinks" class="skipto-control">
+                <a href="#maincontent" class="skipto__link">
+                    <div class="viewport r-gutter">
+                        Jump to main content <img src="https://www.rsc-cdn.org/pubs-core/2018.0.530/content/Oxygen/images/icons/arrow-right-o-light.png" width="24" class="ver-m" alt="">
+                    </div>
+                </a>
+                <a href="#SearchText" class="skipto__link">
+                    <div class="viewport r-gutter">
+                        Jump to site search <img src="https://www.rsc-cdn.org/pubs-core/2018.0.530/content/Oxygen/images/icons/arrow-right-o-light.png" width="24" class="ver-m" alt="">
+                    </div>
+                </a>
+            </div>
+
+        <div data-id="pnlGlobalHeader" class="pubs-header">
+            <div class="viewport">
+                <div class="pubs-header__wrapper">
+                    <div class="pubs-header__cell pubs-header__cell--menu">
+                        <a href="#" class="pubs-header__btn pubs-header__btn--open" aria-label="Go to site menu"><img src="https://www.rsc-cdn.org/pubs-core/2018.0.530/content/Oxygen/images/icons/menu-light.png" width="24" alt=""></a>
+                    </div>
+
+                    <div class="pubs-header__cell pubs-header__cell--home">
+                        <a href="/" class="pubs-header__link pubs-header__link--home" title="Publishing home page" aria-label="Publishing home page">Publishing</a>
+                    </div>
+
+
+
+
+
+<div class="pubs-header__cell pubs-header__cell--nav">
+    <nav class="pubs-header__nav">
+        <ul>
+                    <li class="pubs-header__nav-item"><a href="/en/journals?key=title&amp;value=current" class="pubs-header__link" aria-label="Journals" target="_self">Journals</a></li>
+                    <li class="pubs-header__nav-item"><a href="/en/ebooks?key=title&amp;value=newtitle" class="pubs-header__link" aria-label="Books" target="_self">Books</a></li>
+                    <li class="pubs-header__nav-item"><a href="http://www.rsc.org/journals-books-databases/databases-literature-updates/" class="pubs-header__link" aria-label="Databases" target="_blank">Databases</a></li>
+        </ul>
+    </nav>
+</div>
+
+
+
+
+<div class="pubs-header__cell pubs-header__cell--search">
+    <div class="pubs-search-control">
+<form action="/en/results" id="SimpleSearch-form" method="post">            <input autocomplete="off" class="pubs-search__input" id="SearchText" name="SearchText" type="text" value="" />
+            <div class="pubs-search__actions">
+                <button class="input__search-submit" type="submit" aria-label="Search" id="btnNavSearchInput"><img src="https://www.rsc-cdn.org/pubs-core/2018.0.530/content/Oxygen/images/icons/arrow-right.png" width="32" alt=""></button>
+                <a class="pubs-search__adv-link" href="/en/search/AdvancedSearch" aria-label="Advanced search" id="advancedLink">Advanced</a>
+            </div>
+                <span class="pubs-search__icon"></span>
+</form>    </div>
+</div>
+
+
+<script>
+    var $fullText = 'Full Text';
+    var urll = 'http://pubs.rsc.org/suggestions/live-15.x-suggestions/getfreetextsuggestions_json.xqy?q=';
+    function checkArrayForJQueryJSONFail(aArray) {
+
+        if (aArray.length > 0 && aArray[0].length == 1) {
+            var i;
+            for (i = 0; i < aArray.length; i++) {
+                //alert(aArray[i]);
+                if (aArray[i].length > 1) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        else {
+            return false;
+        }
+        return true;
+    }
+
+    $(document).ready(function () {
+
+        $("#SimpleSearch-form").on("submit", function () {
+            var serachterm = $("#SearchText").val();
+            serachterm = jQuery.trim(serachterm);
+
+            if (serachterm.indexOf("'") != -1) {
+                serachterm.replace("'", "\'");
+            }
+            if (serachterm == "") {
+                alert("Please specify search criteria");
+                $("#SearchText").focus();
+                return false;
+            }
+        });
+
+        $("#advancedLink").on("click", function () {
+            var strQuery = "";
+            var freetextVal = escape($("#SearchText").val());
+            if (freetextVal != "") {
+                var title = ":";
+                strQuery = "?keywords=" + title + encodeURI(unescape(freetextVal));
+            }
+            this.href = this.href + strQuery;
+
+            return true;
+        });
+
+    });
+</script>
+
+
+                    <div class="pubs-header__cell pubs-header__cell--login">
+                            <a href="/en/account/logon" class="pubs-header__btn" aria-label="Log in or register"><img src="https://www.rsc-cdn.org/pubs-core/2018.0.530/content/Oxygen/images/icons/user-light.png" width="24" alt="" id="userIcon"></a>
+                    </div>
+
+
+<div class="pubs-header__cell pubs-header__cell--trolley">
+    <a href="https://www.rsc.org/basket/shoppingcart/orderitems?returnurl=https://pubs.rsc.org/en/content/articlelanding/2016/nr/c6nr90083f" class="pubs-header__btn" aria-label="View your basket"><img src="https://www.rsc-cdn.org/pubs-core/2018.0.530/content/Oxygen/images/icons/trolley-light.png" width="24" alt="" id="trolleyIcon"></a>
+    <span class="badge badge--count" style="display:none"></span>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        GetOrderItemCount();
+    });
+    function SetOrderItemCount(data) {
+        var basketCount = parseInt(data);
+        if (basketCount < 0) {
+            basketCount = 0;
+        }
+        if (basketCount != null && basketCount != undefined && basketCount > 0) {
+            $(".badge--count").show();
+            $(".badge--count").html(data);
+        }
+        else
+        {
+            $(".badge--count").hide();
+        }
+    }
+    function GetOrderItemCount() {
+        var ec_ot = getCookie("BasketCookieGuid");
+        var mg_s_t = '', getCountUrl = '';
+        var userDetails;
+        userDetails = getCookie("ud");
+        if (typeof ec_ot === 'undefined') {
+        }
+        else {
+            $.ajax({
+                type: "GET",
+                url: "https://www.rsc.org/basket/shoppingcart/getorderitemcount",
+                data: "orderToken=" + ec_ot + "&isAjaxCall=True&registeredurl=",
+                cache: false,
+                async: false,
+                crossDomain: true,
+                dataType: 'jsonp',
+                success: function (html) {
+                    SetOrderItemCount(html);
+                }
+            });
+        }
+    }
+    function getCookie(c_name) {
+        var c_value = document.cookie;
+        var c_start = c_value.indexOf(" " + c_name + "=");
+        if (c_start == -1) {
+            c_start = c_value.indexOf(c_name + "=");
+        }
+        if (c_start == -1) {
+            c_value = null;
+        }
+        else {
+            c_start = c_value.indexOf("=", c_start) + 1;
+            var c_end = c_value.indexOf(";", c_start);
+            if (c_end == -1) {
+                c_end = c_value.length;
+            }
+            c_value = unescape(c_value.substring(c_start, c_end));
+        }
+        return c_value;
+    }
+</script>
+
+                    <div class="pubs-header__cell pubs-header__cell--logo">
+                        <a href="http://www.rsc.org" class=""><img src="https://www.rsc-cdn.org/pubs-core/2018.0.530/content/NewImages/rsc-online-logo-trans.png" height="40" alt="Royal Society of Chemistry homepage"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+<div class="pubs-nav-drawer">
+    <nav class="pubs-nav-control">
+        <div class="pubs-nav__header">
+            <a href="#" class="pubs-header__btn pubs-nav__close" tabindex="-1" aria-label="You are in the site menu. (Click to close)"><img src="https://www.rsc-cdn.org/pubs-core/2018.0.530/content/Oxygen/images/icons/cross-light.png" width="24" alt=""></a>
+            <a href="/" class="pubs-header__link--home pubs-nav__title" tabindex="-1" title="Publishing home page" aria-label="Publishing home page">Publishing</a>
+        </div>
+        <div class="pubs-nav__body scrollbar--slim">
+                    <div class="pubs-nav__list autopad--h">
+                        <div class="pubs-nav__item">
+                            <a href="/en/journals?key=title&amp;value=current" class="pubs-nav__link" target="_self" tabindex="-1">Journals</a>
+                        </div>
+                                <div class="pubs-nav__item pubs-nav__indent">
+                                        <a target="_self" href="/en/journals?key=title&amp;value=current" class="pubs-nav__link" tabindex="-1">Current Journals</a>
+                                </div>
+                                <div class="pubs-nav__item pubs-nav__indent">
+                                        <a target="_self" href="/en/journals?key=title&amp;value=archive" class="pubs-nav__link" tabindex="-1">Archive Journals</a>
+                                </div>
+                                <div class="pubs-nav__item pubs-nav__indent">
+                                        <a target="_self" href="/en/journals?key=title&amp;value=all" class="pubs-nav__link" tabindex="-1">All Journals</a>
+                                </div>
+
+                    </div>
+                    <div class="pubs-nav__list autopad--h">
+                        <div class="pubs-nav__item">
+                            <a href="/en/ebooks?key=title&amp;value=newtitle" class="pubs-nav__link" target="_self" tabindex="-1">Books</a>
+                        </div>
+                                <div class="pubs-nav__item pubs-nav__indent">
+                                        <a target="_self" href="/en/ebooks?key=title&amp;value=newtitle" class="pubs-nav__link" tabindex="-1">New Titles</a>
+                                </div>
+                                <div class="pubs-nav__item pubs-nav__indent">
+                                        <a target="_self" href="/en/ebooks?key=title&amp;value=all" class="pubs-nav__link" tabindex="-1">All</a>
+                                </div>
+                                <div class="pubs-nav__item pubs-nav__indent">
+                                        <a target="_blank" href="http://pubs.rsc.org/bookshop/" class="pubs-nav__link" tabindex="-1">Bookshop</a>
+                                </div>
+                                <div class="pubs-nav__item pubs-nav__indent">
+                                        <a target="_self" href="/en/pickandchoose/login" class="pubs-nav__link" tabindex="-1">Pick and Choose</a>
+                                </div>
+
+                    </div>
+                    <div class="pubs-nav__list autopad--h">
+                        <div class="pubs-nav__item">
+                            <a href="http://www.rsc.org/journals-books-databases/databases-literature-updates/" class="pubs-nav__link" target="_blank" tabindex="-1">Databases</a>
+                        </div>
+                                <div class="pubs-nav__item pubs-nav__indent">
+                                        <a target="_blank" href="http://www.rsc.org/journals-books-databases/databases-literature-updates/" class="pubs-nav__link" tabindex="-1">Literature Updates</a>
+                                </div>
+                                <div class="pubs-nav__item pubs-nav__indent">
+                                        <a target="_blank" href="http://www.chemspider.com/" class="pubs-nav__link" tabindex="-1">ChemSpider</a>
+                                </div>
+                                <div class="pubs-nav__item pubs-nav__indent">
+                                        <a target="_blank" href="https://www.rsc.org/merck-index" class="pubs-nav__link" tabindex="-1">The Merck Index*</a>
+                                </div>
+                                <div class="pubs-nav__item pubs-nav__indent">
+                                        <a target="_blank" href="http://pubs.rsc.org/marinlit/" class="pubs-nav__link" tabindex="-1">MarinLit</a>
+                                </div>
+
+                    </div>
+                    <div class="pubs-nav__list autopad--h">
+                        <div class="pubs-nav__item">
+                            <a href="#" class="pubs-nav__link" target="_self" tabindex="-1">More</a>
+                        </div>
+                                <div class="pubs-nav__item pubs-nav__indent">
+                                        <a target="_blank" href="http://www.rsc.org/resources-tools/research-tools/#access" class="pubs-nav__link" tabindex="-1">For Members</a>
+                                </div>
+                                <div class="pubs-nav__item pubs-nav__indent">
+                                        <a target="_self" href="/en/librarian/home" class="pubs-nav__link" tabindex="-1">For Librarians</a>
+                                </div>
+                                <div class="pubs-nav__item pubs-nav__indent">
+                                        <a target="_blank" href="http://www.rsc.org/Publishing/Journals/forms/V5profile.asp" class="pubs-nav__link" tabindex="-1">Subscribe</a>
+                                </div>
+                                <div class="pubs-nav__item pubs-nav__indent">
+                                        <a target="_self" href="/en/ealerts/rssfeed" class="pubs-nav__link" tabindex="-1">RSS Feeds</a>
+                                </div>
+                                <div class="pubs-nav__item pubs-nav__indent">
+                                        <a target="_blank" href="http://blogs.rsc.org/" class="pubs-nav__link" tabindex="-1">Blogs</a>
+                                </div>
+                                <div class="pubs-nav__item pubs-nav__indent">
+                                        <a target="_blank" href="https://www.chemistryworld.com/" class="pubs-nav__link" tabindex="-1">Chemistry World</a>
+                                </div>
+                                <div class="pubs-nav__item pubs-nav__indent">
+                                        <a target="_blank" href="https://eic.rsc.org/" class="pubs-nav__link" tabindex="-1">Education in Chemistry</a>
+                                </div>
+                                <div class="pubs-nav__item pubs-nav__indent">
+                                        <a target="_blank" href="http://www.rsc.org/journals-books-databases/open-access/" class="pubs-nav__link" tabindex="-1">Open Access</a>
+                                </div>
+                                <div class="pubs-nav__item pubs-nav__indent">
+                                        <a target="_blank" href="http://pubs.rsc.org/historical-collection" class="pubs-nav__link" tabindex="-1">Historical Collection</a>
+                                </div>
+
+                    </div>
+
+        </div>
+    </nav>
+</div>
+
+
+        <div class="auth-header" data-id="pnlAuthHeader">
+            <div data-id="pnlSignIn"></div>
+            <div class="viewport">
+                <div class="auth-header__institute-access">
+                    <div class="auth-header__institute-messaging">
+                        <span id="divWelcomeUser"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+    
+
+    <div >
+        <div >
+            <noscript>
+                <div class="viewport autopad--h fixpadb--m">
+                    <div class="plate plate--warning">
+                        You do not have JavaScript enabled. Please enable JavaScript
+                        to access the full features of the site or access our
+                        <a href="/en/home/nonjavascriptversion">non-JavaScript page</a>.
+                    </div>
+                </div>
+            </noscript>
+            <div id="maincontent">
+                
+
+
+
+
+<script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+<script>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+</script>
+<script>
+    googletag.cmd.push(function () {
+        googletag.defineSlot('/97414310/pubs_journal_nr_mpu_1', [300, 250], 'div-dfp-ad-1').addService(googletag.pubads());
+        googletag.defineSlot('/97414310/pubs_journal_nr_mpu_2', [300, 250], 'div-dfp-ad-2').addService(googletag.pubads());
+        googletag.defineSlot('/97414310/pubs_journal_nr_mpu_3', [300, 250], 'div-dfp-ad-3').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="clicked_GetPatents" value="false" />
+<input id="pageNumberTab" type="hidden" />
+<input id="CitedByPN" type="hidden" />
+
+<br>
+<div class="viewport">
+
+    <div class="layout-control">
+        <div class="layout__panel layout__panel--primary layout__panel--60 layout__panel--filled">
+            <section class="layout__content layout__content--padded">
+
+                <div class="article-nav">
+
+                        <div class="article-nav__issue autopad--h">
+                            <a href="/en/journals/journal/nr?issueid=nr008015&amp;type=current&amp;issnprint=2040-3364" aria-label="From Issue Issue 15, 2016. Click to view all articles in this issue." title="Issue 15, 2016">Issue 15, 2016</a>
+                        </div>
+
+                        <div class="article-nav__bar">
+                            <a href="/en/Content/ArticleLanding/NR/2016/C6NR90082H">Previous <span class="v-mobile-hide--inline">Article</span></a>
+                            <a class="link--disabled">Next <span class="v-mobile-hide--inline">Article</span></a>
+                        </div>
+
+                    <div class="list-control">
+                        <ul class="list__collection--image">
+                            <li class="list__item">
+                                <a href="/en/journals/journal/nr" class="list__item-link">
+                                    <span class="list__image-col">
+                                        <img src="/en/Image/Get?imageInfo.ImageType=CoverIssue&amp;imageInfo.ImageIdentifier.SerCode=NR&amp;imageInfo.ImageIdentifier.IssueId=NR008015" id="imgLoader" title="Journal cover: Nanoscale" alt="" class="list__item-img" height="88">
+                                    </span>
+                                    <span class="list__text-col">
+                                        <span class="list__item-label">
+                                            <span class="page-head__context">From the journal:</span>
+                                            <h3 class="h--heading3 no-heading">Nanoscale</h3>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <br>
+                </div>
+
+                <article class="article-control" aria-label="Article abstract">
+                    <div class="article__title">
+                        <h2 class="capsule__title fixpadv--m">Back cover </h2>
+
+                    </div>
+                    <div class="article__authors" aria-label="List of authors">
+
+                    </div>
+
+                    <h3 class="h--heading3">Abstract</h3>
+                    <div class="capsule__column-wrapper">
+
+
+        <div class="capsule__text">
+            <p xmlns="http://www.rsc.org/schema/rscart38">A graphical abstract is available for this content</p>
+        </div>
+            <div class="capsule__article-image fixpadv--s">
+                <img title="Graphical abstract" alt="Graphical abstract: Back cover"
+                     src="/en/Image/Get?imageInfo.ImageType=GA&amp;imageInfo.ImageIdentifier.ManuscriptID=C6NR90083F" />
+            </div>
+
+                    </div>
+                    <p></p>
+
+
+
+
+                </article>
+
+            </section>
+
+        </div>
+        <div class="layout__panel layout__panel--secondary layout__panel--40 layout__panel--filled">
+
+            <section class="layout__content">
+
+                <input id="HidALPSelectIndex" name="HidALPSelectIndex" type="hidden" value="" />
+                <input id="contentType" name="contentType" type="hidden" value="" />
+
+                <div class="tab-control">
+
+                    <nav class="tab__nav" role="tablist">
+                        <div class="tab__item"><a href="#pnlAbstract" class="tab__btn selected" id="btnAbstract" aria-selected="true" aria-label="About tab: More information about this article including download and purchase options.">About</a></div>
+                        <div class="tab__item"><a href="#pnlCitation" class="tab__btn" id="btnCitation" aria-selected="false" aria-label="Cited by tab: A list of other articles that have cited this article.">Cited by</a></div>
+                            <div class="tab__item"><a href="#pnlRelatedContent" class="tab__btn" id="btnRelatedContent" aria-selected="false" aria-label="Related tab: A list of related articles.">Related</a></div>
+                    </nav>
+
+                    
+                    <div class="tab__panel open" id="pnlAbstract" aria-hidden="false" aria-labelledby="btnAbstract" data-loaded="false">
+                        <div class="fixpadv--m">
+                            <a href="#btnAbstract" class="acc__link" aria-label="You are in the 'About' tab: Press Enter to return to tab navigation.">Back to tab navigation</a>
+
+                            <div id="divAbout">
+                                    <div id="DownloadOption" class="autopad--h fixpadv--l" style="min-height: 150px;">
+                                        <div class="text--centered">
+                                            <a href="#" class="btn btn--cta btn--disabled btn--block btn--stack btn-icon btn-icon--loading">
+                                                Download options <span class="btn-info">Please wait...</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                
+
+                                <div class="autopad--h">
+                                    <!-- Deferred Altmetric -->
+<div class="pos--right fixpadv--xs">
+    <script type="text/javascript">
+        function downloadJSAtOnload() {
+            var element = document.createElement("script");
+            element.src = "https://d1bxh8uas1mnw7.cloudfront.net/assets/altmetric_badges-8f271adb184c21cc5169a7f67f7fe5ab.js";
+            element.id = "altmetric-embed-js";
+            document.body.appendChild(element);
+        }
+        if (window.addEventListener) {
+            window.addEventListener("load", downloadJSAtOnload, false);
+        }
+        else if (window.attachEvent) {
+            window.attachEvent("onload", downloadJSAtOnload);
+        }
+        else {
+            window.onload = downloadJSAtOnload;
+        }
+    </script>
+    <div data-badge-type="2" data-doi="10.1039/C6NR90083F" data-condensed="true" class="altmetric-embed"></div>
+</div>                                                                        <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ba6280dc0b59c001766ece2&product=inline-share-buttons" async="async"></script>
+<div style="display: table; width: 100%; margin-bottom: 1.5em;">
+    <div class="sharethis-inline-share-buttons"></div>
+</div>
+                                                                    </div>
+                                <br />
+                                <div class="list-control">
+                                    <div class="list__collection--columnised">
+                                        <div class="list__item--dashed">
+                                            <span class="list__item-label">Article type:</span>
+                                            <span class="list__item-data">Cover</span>
+                                        </div>
+                                        <div class="list__item--dashed">
+                                                <span class="list__item-label">DOI:</span>
+                                                <span class="list__item-data">10.1039/C6NR90083F</span>
+                                        </div>
+                                        <div class="list__item--dashed">
+                                            <span class="list__item-label">Citation:</span>
+                                                <span class="list__item-data" aria-label="&lt;i&gt;&lt;strong&gt;Nanoscale&lt;/strong&gt;&lt;/i&gt;, 2016,&lt;span style=&#39;padding-right:2px&#39;&gt;&lt;/span&gt;&lt;strong&gt;8&lt;/strong&gt;, 8392-8392">
+                                                    <i><strong>Nanoscale</strong></i>, 2016,<span style='padding-right:2px'></span><strong>8</strong>, 8392-8392
+                                                    <br>
+<form action="/en/content/getformatedresult/c6nr90083f?downloadtype=article" method="post">                                                        <div class="select-basic">
+                                                            <span>
+                                                                <select aria-labelledby="ResultAbstractFormat_Label" class="select-field" id="ResultAbstractFormat" name="ResultAbstractFormat"><option>BibTex</option>
+<option>EndNote</option>
+<option>MEDLINE</option>
+<option>ProCite</option>
+<option>ReferenceManager</option>
+<option>RefWorks</option>
+<option>RIS</option>
+</select>
+
+                                                            </span>
+                                                            <span>
+                                                                    <input type="submit" name="go" id="Submit1" value="Go" class="btn btn--tiny" onclick="gaTrack()"
+                                                                           aria-labelledby="ResultAbstractFormat_Label" />
+                                                            </span>
+                                                        </div>
+</form>                                                </span>
+                                        </div>
+                                    </div>
+                                    <ul class="list__collection--columnised">
+                                        <li class="list__item">
+
+
+
+
+<li class="list__item--dashed">
+    
+    
+    <span class="list__item-label">&nbsp;</span>
+
+    
+    <span class="alp-request-permissions">
+
+        
+        <a class="alp-request-permissions__open-btn btn btn--tiny btn--std text--caption a--noline" id="requestPermission" 
+           rel="license" href="#" target="_blank" aria-label="Request permissions: Click to open.">
+            Request permissions
+        </a>
+
+        
+        <div class="alp-request-permissions__content scrollbar--slim">
+            
+            <a href="#" class="alp-request-permissions__close-btn btn__enter-popup"
+               aria-label="You are in the 'Request permissions' pop up window. Click enter to close, or tab to continue.">
+                <img src="https://www.rsc-cdn.org/pubs-core/2018.0.530/content/Oxygen/images/icons/cross.png" class="icon" width="24" alt="">
+            </a>
+            
+            <h3 class="h--heading3">
+                Back cover
+            </h3>
+
+            <div>
+
+
+                <i>Nanoscale</i>, 2016,&nbsp;<strong>8</strong>, 8392
+
+                    <div>
+                        <strong>DOI: </strong> 10.1039/C6NR90083F
+                    </div>
+
+            </div>
+
+<div class="popup_mid_content">
+    <p class="padT10L0">
+        If you are not the author of this article and you wish to reproduce material from
+        it in a third party non-RSC publication you must <a href="http://www.copyright.com/openurl.do?issn=2040-3372&amp;amp;WT.mc.id=Royal%20Society%20of%20Chemistry">
+            formally request permission</a> using Copyright Clearance Center.
+        Go to our <a href="http://www.rsc.org/AboutUs/Copyright/instructions-for-using-RightsLink.asp" id="rightsLinkInstruction" class="request_new_popup">
+            Instructions for using Copyright Clearance Center page</a> for details.
+    </p>
+    <p class="padB10">
+        Authors contributing to RSC publications (journal articles, books or book chapters)
+        do not need to formally request permission to reproduce material contained in this
+        article provided that the correct acknowledgement is given with the reproduced material.
+    </p>
+    <p class="padB10">
+        Reproduced material should be attributed as follows:
+    </p>
+    <div class="req_popup">
+        <ul>
+            <li>
+                For reproduction of material from NJC:
+                <br />
+                Reproduced from Ref. XX with permission from the Centre National de la Recherche
+                Scientifique (CNRS) and The Royal Society of Chemistry.
+            </li>
+            <li>
+                For reproduction of material from PCCP:
+                <br />
+                Reproduced from Ref. XX with permission from the PCCP Owner Societies.
+            </li>
+            <li>
+                For reproduction of material from PPS:
+                <br />
+                Reproduced from Ref. XX with permission from the European Society for Photobiology,
+                the European Photochemistry Association, and The Royal Society of Chemistry.
+            </li>
+            <li>
+                For reproduction of material from all other RSC journals and books:
+                <br />
+                Reproduced from Ref. XX with permission from The Royal Society of Chemistry.
+
+            </li>
+        </ul>
+    </div>
+    <p class="padB10">
+        If the material has been adapted instead of reproduced from the original RSC publication
+        "Reproduced from" can be substituted with "Adapted from".
+    </p>
+    <p class="padB10">
+        In all cases the Ref. XX is the XXth reference in the list of references.
+    </p>
+    <p class="padB10">
+        If you are the author of this article you do not need to formally request permission
+        to reproduce figures, diagrams etc. contained in this article in third party publications
+        or in a thesis or dissertation provided that the correct acknowledgement is given
+        with the reproduced material.
+    </p>
+    <p class="padB10">
+        Reproduced material should be attributed as follows:
+    </p>
+    <div class="req_popup">
+        <ul>
+            <li>
+                For reproduction of material from NJC:
+                <br />
+                [Original citation] - Reproduced by permission of The Royal Society of Chemistry (RSC) on behalf of the
+                Centre National de la Recherche Scientifique (CNRS) and the RSC
+            </li>
+            <li>
+                For reproduction of material from PCCP:
+                <br />
+                [Original citation] - Reproduced by permission of the PCCP Owner Societies
+            </li>
+            <li>
+                For reproduction of material from PPS:
+                <br />
+                [Original citation] - Reproduced by permission of The Royal Society of Chemistry (RSC) on behalf of the
+                European Society for Photobiology, the European Photochemistry Association, and
+                RSC
+            </li>
+            <li>
+                For reproduction of material from all other RSC journals:
+                <br />
+                [Original citation] - Reproduced by permission of The Royal Society of Chemistry
+            </li>
+        </ul>
+    </div>
+    <p class="padB10">
+        If you are the author of this article you still need to obtain permission to reproduce
+        the whole article in a third party publication with the exception of reproduction
+        of the whole article in a thesis or dissertation.
+    </p>
+    <p class="padB10">
+        Information about reproducing material from RSC articles with different licences
+        is available on our <a href="http://www.rsc.org/AboutUs/Copyright/Permissionrequests.asp" id="PermissionRequest" class="request_new_popup">Permission Requests page</a>.
+    </p>
+</div>
+
+            <a href="#" class="alp-request-permissions__close-btn btn__exit-popup" aria-label="You are at the end of the 'Request permissions' pop up window. Click enter to close, or tab to continue."><img src="https://www.rsc-cdn.org/pubs-core/2018.0.530/content/Oxygen/images/icons/cross.png" class="icon" width="24" alt=""></a>
+
+        </div>
+
+    </span>
+
+</li>                                        </li>
+                                            <li class="list__item--dashed">
+
+                                                    <span class="list__item-label">
+                                                        Open URL:
+                                                    </span>
+                                                    <span class="list__item-data">
+                                                        <a href="http://primo.uwindsor.ca/openurl/UWINDSOR/UWINDSOR_SERVICES??url_ver=Z39.88-2004&amp;url_ctx_fmt=info%3aofi%2ffmt%3akev%3amtx%3actx&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3asid%2frsc.org%3axlink&amp;sid=rsc%3axlink&amp;rft_id=info:doi/10.1039%2fC6NR90083F&amp;id=doi:10.1039%2fC6NR90083F&amp;id=pmid:&amp;id=bibcode:2016NANOH0008A8392&amp;id=oai:oai%3arsc.org%3a10.1039%2fC6NR90083F&amp;rft_val_fmt=info%3aofi%2ffmt%3akev%3amtx%3ajournal&amp;rft.genre=article&amp;rft.aulast=&amp;rft.aufirst=&amp;rft.volume=8&amp;rft.issue=15&amp;rft.date=2016-04-14&amp;rft.stitle=Nanoscale&amp;rft.atitle=Back+cover&amp;rft.spage=8392&amp;rft.epage=8392&amp;rft.jtitle=Nanoscale&amp;rft.issn=2040-3364&amp;rft.eissn=2040-3372&amp;rft.doi=10.1039%2fC6NR90083F&amp;rft.title=Nanoscale&amp;rft.coden=NANOHL&amp;rft.pages=8392-8392&amp;genre=article&amp;aulast=&amp;aufirst=&amp;volume=8&amp;issue=15&amp;date=2016-04-14&amp;stitle=Nanoscale&amp;atitle=Back+cover&amp;spage=8392&amp;epage=8392&amp;jtitle=Nanoscale&amp;issn=2040-3364&amp;eissn=2040-3372&amp;doi=10.1039%2fC6NR90083F&amp;pmid=&amp;title=Nanoscale&amp;coden=NANOHL&amp;pages=8392-8392&amp;oai=oai%3arsc.org%3a10.1039%2fC6NR90083F&amp;bibcode=2016NANOH0008A8392" id="openUrl" target="_blank">
+                                                            <img alt="Open URL" id="imgOpenURL" style="max-width:180px" width="100%" src="/en/content/openurlimage/50003237" />
+                                                        </a>
+                                                    </span>
+                                            </li>
+                                    </ul>
+                                </div>
+
+
+                                <input id="authors" name="authors" type="hidden" value="AAEAAAD/////AQAAAAAAAAAMAgAAAGNSU0NwdWJzLmVQbGF0Zm9ybS5TZXJ2aWNlLkRhdGFDb250cmFjdHMsIFZlcnNpb249MjAxOC4wLjUzMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwEAQAAAMMBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuTGlzdGAxW1tSU0NwdWJzLmVQbGF0Zm9ybS5TZXJ2aWNlLkRhdGFDb250cmFjdHMuU2VhcmNoLkF1dGhvckluZm8sIFJTQ3B1YnMuZVBsYXRmb3JtLlNlcnZpY2UuRGF0YUNvbnRyYWN0cywgVmVyc2lvbj0yMDE4LjAuNTMwLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbF1dAwAAAAZfaXRlbXMFX3NpemUIX3ZlcnNpb24EAAA7UlNDcHVicy5lUGxhdGZvcm0uU2VydmljZS5EYXRhQ29udHJhY3RzLlNlYXJjaC5BdXRob3JJbmZvW10CAAAACAgJAwAAAAAAAAAAAAAABwMAAAAAAQAAAAAAAAAEOVJTQ3B1YnMuZVBsYXRmb3JtLlNlcnZpY2UuRGF0YUNvbnRyYWN0cy5TZWFyY2guQXV0aG9ySW5mbwIAAAAL" />
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div class="tab__panel" id="pnlCitation" aria-hidden="true" aria-labelledby="btnCitation" data-loaded="false">
+                        <div class="autopad--h fixpadv--m">
+                            <a href="#btnCitation" class="acc__link" aria-label="You are in the 'Cited by' tab: Press Enter to return to tab navigation.">Back to tab navigation</a>
+                                    <div id="divCitation">
+                                        <p>
+                                            <img src="https://www.rsc-cdn.org/pubs-core/2018.0.530/content/NewImages/Ajax-GA-Loader.gif" alt="" style="float:left" />
+                                            Fetching data from CrossRef.<br />
+                                            This may take some time to load.
+                                        </p>
+                                    </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                        <div class="tab__panel" id="pnlRelatedContent" aria-hidden="true" aria-labelledby="btnRelatedContent" data-loaded="false">
+                            <div class="autopad--h fixpadv--m">
+                                <a href="#btnRelatedContent" class="acc__link" aria-label="You are in the 'Related' tab: Press Enter to return to tab navigation.">Back to tab navigation</a>
+                                <div id="divRelatedContent">
+                                    <p>
+                                        <img src="https://www.rsc-cdn.org/pubs-core/2018.0.530/content/NewImages/Ajax-GA-Loader.gif" alt="Loading related content" />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+
+            </section>
+<section class="layout__content layout__content--padded text--centered">
+    <h3 class="h--heading4">Spotlight</h3>
+    <div id='div-dfp-ad-1' class="dfp-ad__slot--mpu">
+        <script>googletag.cmd.push(function() { googletag.display('div-dfp-ad-1'); });</script>
+    </div>
+    <h3 class="h--heading4">Advertisements</h3>
+    <div id='div-dfp-ad-2' class="dfp-ad__slot--mpu">
+        <script>googletag.cmd.push(function() { googletag.display('div-dfp-ad-2'); });</script>
+    </div>
+    <div id='div-dfp-ad-3' class="dfp-ad__slot--mpu">
+        <script>googletag.cmd.push(function() { googletag.display('div-dfp-ad-3'); });</script>
+    </div>
+</section>
+        </div>
+    </div>
+
+</div>
+
+            </div>
+        </div>
+    </div>
+
+    <div data-id="pnlGlobalFooter">
+        <div class="rsc-ui">
+            <!-- start oxygen footer -->
+            <footer class="rsc-footer">
+                <div class="breadcrumbs">
+                    <div class="viewport">
+                        <ul>
+                            <li class="extra"><a href="http://www.rsc.org">rsc.org</a></li>
+                            <li>
+                                <img src="https://www.rsc-cdn.org/pubs-core/2018.0.530/content/NewImages/chevron-right.png" width="8" height="8" alt="" />
+                                <a href="/" class="selected">Journals, books &amp; databases</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class='nav' id='pnlSiteMap'>
+                    <div class='viewport'>
+                        <div class='rsc-logo'>
+                            <img src='https://www.rsc-cdn.org/oxygen/v2/logo/rsc-logo-rev.png' width='180' height='120' alt='Royal Society of Chemistry homepage'>
+                        </div>
+                        <div class='qa-logo'>
+                            <img src='https://www.rsc-cdn.org/oxygen/v2/images/queens-award-ftr.png' width='100' height='160' alt=''>
+                        </div>
+                        <div class='links'>
+                            <ul>
+                                <li><a href='http://www.rsc.org/'>Home</a></li>
+                                <li><a href='http://www.rsc.org/about-us/'>About us</a></li>
+                                <li><a href='http://www.rsc.org/membership-and-community/'>Membership &#38; professional community</a></li>
+                                <li><a href='http://www.rsc.org/campaigning-outreach/'>Campaigning &#38; outreach</a></li>
+                                <li><a href='http://www.rsc.org/journals-books-databases/'>Journals, books &#38; databases</a></li>
+                                <li><a href='http://www.rsc.org/resources-tools/'>Resources &#38; tools</a></li>
+                                <li><a href='http://www.rsc.org/news-events/'>News&#160;&#38; events</a></li>
+                                <li><a href='http://www.rsc.org/locations-contacts/'>Locations &#38; contacts</a></li>
+                                <li><a href='http://www.rsc.org/careers/'>Careers</a></li>
+                                <li><a href='http://www.rsc.org/awards-funding/'>Awards &#38; funding</a></li>
+                                <li><a href='http://www.rsc.org/advertise/'>Advertise</a></li>
+                                <li><a href='http://www.rsc.org/help-legal/'>Help &#38; legal</a></li>
+                                <li><a href='http://www.rsc.org/help-legal/'>Privacy policy</a></li>
+                                <li><a href='http://www.rsc.org/help-legal/'>Terms &#38; conditions</a></li>
+                            </ul>
+                        </div>
+                        <hr class='clear'>
+                    </div>
+                </div>
+                <div class='baseline'>
+                    <div class='viewport'>
+                        <div class='social-icons'>
+                            <a href='https://www.facebook.com/RoyalSocietyofChemistry' class='facebook'><span>Facebook</span><img src='https://www.rsc-cdn.org/oxygen/v2/images/icons/facebook.png' height='32' width='32' alt=''></a>
+                            <a href='https://twitter.com/RoySocChem' class='twitter'><span>Twitter</span><img src='https://www.rsc-cdn.org/oxygen/v2/images/icons/twitter.png' height='32' width='32' alt=''></a>
+                            <a href='https://www.linkedin.com/company/23105' class='linkedin'><span>LinkedIn</span><img src='https://www.rsc-cdn.org/oxygen/v2/images/icons/linkedin.png' height='32' width='32' alt=''></a>
+                            <a href='https://www.youtube.com/user/wwwRSCorg' class='youtube'><span>Youtube</span><img src='https://www.rsc-cdn.org/oxygen/v2/images/icons/youtube.png' height='32' width='32' alt=''></a>
+                            <a href='https://plus.google.com/113399675911040898889' class='googleplus'><span>Google Plus</span><img src='https://www.rsc-cdn.org/oxygen/v2/images/icons/googleplus.png' height='32' width='32' alt=''></a>
+                        </div>
+                        <div class='copyright'>
+                            &#169; Royal Society of Chemistry 2018<br>Registered charity number: 207890
+                        </div>
+                    </div>
+                </div>
+                <hr class='clear'>
+            </footer>
+            <!-- end oxygen footer -->
+        </div>
+    </div>
+
+    <div class="modal__canvas modal__canvas--clickclose">
+    </div>
+
+    <script type="text/javascript">
+        //<![CDATA[
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.setAttribute("defer", "defer");
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+        //]]>
+    </script>
+
+    
+</body>
+</html>

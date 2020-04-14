@@ -1,0 +1,162 @@
+<html>
+<!--[if IE 7]>
+<html class="ie ie7 " lang="en-CA">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8 " lang="en-CA">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html class="" lang="en-CA">
+<!--<![endif]--> 
+<head>
+  <meta charset="utf-8">
+  <title>Passport York Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="/albacommon/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/albacommon/css/apptemplate.css" rel="stylesheet">
+  <link href="/albacommon/css/ppylogout.css" rel="stylesheet">
+  <!-- javascript -->
+  <script src="/albacommon/css/jquery.min.js"></script>
+  <script src="/albacommon/css/bootstrap.min.js"></script>
+  <link href="/albacommon/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+
+  <body role="document">
+  
+<div id="yapp-outer">
+      <div class="yapp-logo-container container" id="yapp-logo-container">
+        <a href="index.html">
+           <img id="york-logo" src="/albacommon/images/YorkULogo.svg" border="0" alt="York University">
+        </a>
+        
+          <div class="la_buttons">
+          </div>
+      </div>
+    </div>
+    
+    <div class="app-title-bar">
+  <div class="container"><h1>Passport York Login</h1>
+  </div>
+</div>
+
+    <script src="/ppylogin/css/ppylogin.js"></script>
+  <script language="javascript">
+function badSafarip()
+{
+  var divstyle = getStyleObject("toplayer");
+  var ua = navigator.userAgent;
+
+  if (ua.match('.*Safari/4.*')) {
+      divstyle.display = 'block';
+ }
+}
+
+  function getStyleObject(objectId) {
+    // cross-browser function to get an object's style object given its
+    if(document.getElementById && document.getElementById(objectId)) {
+	// W3C DOM
+	return document.getElementById(objectId).style;
+    } else if (document.all && document.all(objectId)) {
+	// MSIE 4 DOM
+	return document.all(objectId).style;
+    } else if (document.layers && document.layers[objectId]) {
+	// NN 4 DOM.. note: this won't find nested layers
+	return document.layers[objectId];
+    } else {
+	return false;
+    }
+}
+</script>
+<style type="text/css">
+
+#closewindow {
+display: block;
+text-align: right;
+float: right;
+}
+
+#toplayer {
+  display: none;
+  }
+
+    </style>
+
+<div class="container page-content" role="main">
+<div id="toplayer">
+  <div id="closewindow"><a href="#" onClick="document.getElementById('toplayer').style.display='none';">[close window]</a></div>
+  <div class="alert alert-warning" role="alert">
+    <strong>Compatibility Warning:</strong> It appears you are running <strong>Safari</strong> under <strong>MacOS X 10.4</strong>.  Unfortunately, due to a problem with the way this browser handles cookies, it <strong>does not work</strong> with most Passport York protected pages.<br /><br />If you are redirected back to the login page after you authenticate successfully then <strong>please use an alternate browser.</strong>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="page-header">
+      <p><img src="/albacommon/images/PYLogo.svg" style="margin-right:15px;width:120px;" align="left" alt="Passport York logo"><strong>Passport York</strong> authenticates you as a member of the York community and gives you access to a wide range of computing resources and services.</p>
+    </div>
+    <p>&nbsp;</p>
+    <form name="loginform" method="POST" action="/ppylogin/ppylogin"><div class="row">
+      <div class="col-md-4">
+        <p><label for="mli">Username:</label></p>
+      </div>
+      <div class="col-md-8">
+        <p><input type="text" id="mli" maxlength="9" name="mli" /></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <p><label for="password">Password:</label></p>
+      </div>
+      <div class="col-md-8">
+        <p><input type="password" id="password" maxlength="128" name="password" /></p>
+        <p><input type="submit" class="btn btn-lg btn-primary" name="dologin" value="Login" /></p>
+      </div>
+    </div>
+    <p>&nbsp;</p>
+    <div class="row">
+      <div class="col-md-12">
+        <label for="passchangewanted" class="checkbox-inline small">
+          <input type="checkbox" id="passchangewanted" name="passchangewanted" value="yes" />&nbsp;Click this box before logging in to change your Passport York password.
+        </label>
+      </div>
+    </div>
+    <div><input type="hidden" name="__albform__" value="eJyzuvX7dgmnvu60jqZDcWe23VPWVilsYKotZNQI5ShILC4uzy9KKWTyZghlzs3JLGQGMthT8nPy
+0zPzClm8mUIFQGqSMxLz0lPLE/NKUlMKWb0ZSvUAoV4eug==
+" /></div>
+<div><input type="hidden" name="__albstate__" value="eJzzFXW9qF7y7W6dC9dhpnfbcycJG+s2MNUWMmqEcsTHFySmp8bHFzKFsubkp2fmFTKHckIEi4Gi
+LLGFrKV6ACFPFs0=
+" /></div>
+<div><input type="hidden" name="__pybpp__" value="lAbOVQ18klL6AY9jt8oyh82vFZsw"></div></form></div>
+  <div class="col-sm-6">
+    <div class="page-header">
+      <strong>New to Passport York?</strong>
+    </div>
+     <ul>
+      <li><a href="ppylogin?signup=1">New Student Sign Up</a></li>
+      <li><a href="ppylogin?empsignup=1">Employee Sign Up</a><br></li>
+      <li><a href="http://computing.yorku.ca/faculty-staff/passwords-passport-york-access/passport-york/">Faculty and Staff </a></li>
+      <li><a href="http://computing.yorku.ca/students/home/passwords-passport-york-access/forgotppyd_alumni/">Alumni</a></li>
+    </ul>
+    <div class="page-header">
+      <strong>Forgot your Password or Username?</strong>
+    </div>
+    <ul>
+      <li><a href="http://computing.yorku.ca/students/reset-passport-york-password/">Students</a></li>
+      <li><a href="http://computing.yorku.ca/faculty-staff/passwords-passport-york-access/password-reset/reset-passport-york-password/">Faculty and Staff</a></li>
+      <li><a href="http://computing.yorku.ca/students/reset-passport-york-password/">Alumni</a></li>
+    </ul>
+  </div>
+</div>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <div class="alert alert-info" role="alert"><p class="small">There will be a scheduled maintenance outage every Wednesday morning between 5:00 a.m. and 7:00 a.m.</p>
+  </div>
+  <footer class="footer">
+      <div class="container">
+        <p class="small">Comments and problems regarding this site can be sent to us using our <a href="http://ithelp.yorku.ca">Problem Report</a> page.</p>
+      </div>
+  </footer>
+</div>
+</div> <!-- /container -->
+
+</body></html>

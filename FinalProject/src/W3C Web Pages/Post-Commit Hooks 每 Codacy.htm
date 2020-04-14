@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <!-- v15004 -->
+
+  <title>Post-Commit Hooks &ndash; Codacy</title>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="sbfyqlBJhPm0O59nx8nLDjXstJbJ782TYH8zQo7Mtrr+iaxrFzel9Ag2stK1y9AflcacHnRDDp8J8Dt4TbdBRg==" />
+  <meta name="description" content="Codacy regularly pulls repositories for new updates (commits and pull requests). For faster analysis, turn on post-commit hooks. There..." /><meta property="og:image" content="https://theme.zdassets.com/theme_assets/960438/4d9c0481488bfa7cbd9d1310f74c45332319e109.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Codacy" />
+<meta property="og:title" content="Post-Commit Hooks" />
+<meta property="og:description" content="Codacy regularly pulls repositories for new updates (commits and pull requests).
+For faster analysis, turn on post-commit hooks.
+There are two ways to do it: automatically or manually
+
+
+
+
+
+
+
+
+Autom..." />
+<meta property="og:url" content="http://support.codacy.com/hc/en-us/articles/214085885-Post-Commit-Hooks" />
+<link rel="canonical" href="https://support.codacy.com/hc/en-us/articles/214085885-Post-Commit-Hooks" />
+<link rel="alternate" hreflang="en" href="https://support.codacy.com/hc/en-us/articles/214085885-Post-Commit-Hooks" />
+
+  <!-- Entypo pictograms by Daniel Bruce — www.entypo.com -->
+  <link rel="stylesheet" media="all" href="//static.zdassets.com/hc/assets/application-6229f1ebd2f90b23df13e8c12bfd8ab1.css" id="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="//p14.zdassets.com/hc/theming_assets/960438/549689/style.css?digest=360167271433" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="//theme.zdassets.com/theme_assets/960438/2e07cdfe7a03d1240bd75b27afd9c5f934d0025b.png" />
+
+  <!--[if lt IE 9]>
+  <script>
+    //Enable HTML5 elements for <IE9
+    'abbr article aside audio bdi canvas data datalist details dialog \
+    figcaption figure footer header hgroup main mark meter nav output \
+    progress section summary template time video'.replace(/\w+/g,function(n){document.createElement(n)});
+  </script>
+<![endif]-->
+
+  <script src="//static.zdassets.com/hc/assets/jquery-b60ddb79ff2563b75442a6bac88b00b5.js"></script>
+  
+  
+  
+
+  <!-- add code here that should appear in the document head -->
+
+  <script type="text/javascript" src="//p14.zdassets.com/hc/theming_assets/960438/549689/script.js?digest=360167271433"></script>
+</head>
+<body class="">
+  
+  
+
+
+  
+
+
+  <header class="header">
+  <div class="header-inner">
+    <div class="logo">
+      <a title="Home" href="/hc/en-us">
+        <img src="//theme.zdassets.com/theme_assets/960438/4d9c0481488bfa7cbd9d1310f74c45332319e109.png" alt="Logo">
+      </a>
+    </div>
+    <nav class="user-nav">
+      
+      <a class="submit-a-request" href="/hc/en-us/requests/new">Submit a request</a>
+        <a class="login" data-auth-action="signin" role="button" href="/hc/en-us/signin?return_to=https%3A%2F%2Fsupport.codacy.com%2Fhc%2Fen-us%2Farticles%2F214085885-Post-Commit-Hooks&amp;locale=en-us">Sign in</a>
+
+    </nav>
+  </div>
+</header>
+
+
+  <main role="main">
+    <nav class="sub-nav">
+  <ol class="breadcrumbs">
+  
+    <li title="Codacy">
+      
+        <a href="/hc/en-us">Codacy</a>
+      
+    </li>
+  
+    <li title="General">
+      
+        <a href="/hc/en-us/categories/200907335-General">General</a>
+      
+    </li>
+  
+    <li title="Working with my repository">
+      
+        <a href="/hc/en-us/sections/201760779-Working-with-my-repository">Working with my repository</a>
+      
+    </li>
+  
+</ol>
+
+  <form role="search" class="search" data-search="" action="/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" /><input type="search" name="query" id="query" placeholder="Search" aria-label="Search" />
+<input type="submit" name="commit" value="Search" /></form>
+</nav>
+
+<article class="main-column">
+
+  <header class="article-header">
+    <h1>
+      
+      Post-Commit Hooks
+    </h1>
+    <div class="article-info">
+      <div class="article-avatar">
+        <img src="https://support.codacy.com/system/photos/3602/4339/2313/WsR0OEAZ_400x400.jpg" alt="Avatar"/>
+      </div>
+      <div class="article-meta">
+        <strong class="article-author" title="Codacy Team">
+          
+            Codacy Team
+          
+        </strong>
+        <div class="article-updated meta"><time datetime="2018-09-29T03:16:53Z" title="2018-09-29T03:16:53Z" data-datetime="calendar">September 29, 2018 03:16</time></div>
+      </div>
+      <div><a class="article-subscribe" title="Opens a sign-in dialog" rel="nofollow" role="button" data-auth-action="signin" aria-selected="false" href="/hc/en-us/articles/214085885-Post-Commit-Hooks/subscription">Follow</a></div>
+    </div>
+  </header>
+
+  <div class="content-body article-body">
+    <div class="docs-header"><hr></div>
+<div class="docs-body">
+<div class="content block-content ready">
+<div class="blocks-parent">
+<div class="">
+<div>
+<div class="ng-scope">
+<div class="ng-isolate-scope">
+<p>Codacy regularly pulls repositories for new updates (commits and pull requests).</p>
+<p>For faster analysis, turn on post-commit hooks.</p>
+<p>There are two ways to do it: <strong>automatically</strong> or <strong>manually</strong></p>
+</div>
+</div>
+</div>
+</div>
+<div class="">
+<div>
+<div class="ng-scope">
+<div class="block-api-header block-display-api-header ng-isolate-scope ng-pristine ng-valid">
+<h2 id="automatic-setup-of-post-commit-hook" class="ng-binding">Automatic setup of Post-Commit Hook</h2>
+<hr></div>
+</div>
+</div>
+</div>
+<div class="">
+<div>
+<div class="ng-scope">
+<div class="ng-isolate-scope">
+<p>If you are using GitHub or Bitbucket you may let Codacy configure the hook for you. Just go to your <strong>project settings</strong> and click in the tab <strong>Integrations</strong>. It should have a switch button for automatic setup of post-commit hooks.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="">
+<div class="ng-scope">
+<div class="block-callout block-show-callout  type-warning block-show-callout  type-warning">
+<h3><span class="ng-binding">Missing hook automatic setup switch button</span></h3>
+<div class="ng-isolate-scope">
+<p>It is possible that the switch is not visible to you.<br>If that is your case just go to the <strong>Integrations</strong> tab and add GitHub/Bitbucket.<br><strong>Make sure you also enable it. </strong></p>
+</div>
+</div>
+<p><img src="/hc/article_attachments/115005410673/Screen_Shot_.png" alt="Screen_Shot_.png"></p>
+</div>
+</div>
+<div class="">
+<div>
+<div class="ng-scope">
+<div class="block-api-header block-display-api-header ng-isolate-scope ng-pristine ng-valid">
+<h2 id="manual-setup-of-post-commit-hook" class="ng-binding">Manual setup of Post-Commit Hook</h2>
+<hr></div>
+</div>
+</div>
+</div>
+<div class="">
+<div>
+<div class="ng-scope">
+<div class="ng-isolate-scope">
+<p>To turn on post-commit hooks for Github:</p>
+<ol>
+<li>Copy the Hook URL to your Clipboard.</li>
+<li>Go to <a class="github-url" href="https://github.com/johnaabotelho/test/settings/hooks/new" target="_blank" rel="noopener noreferrer">Webhooks &amp; Services</a> under your repository settings</li>
+<li>Paste the Hook URL into the "Payload URL" field</li>
+<li>Select "application/json" in the "Content Type" field</li>
+<li>Click "Add Webhook"</li>
+</ol>
+<p>Here's an example of how to configure your hooks on Github:</p>
+</div>
+</div>
+</div>
+</div>
+<div class="">
+<div class="ng-scope">
+<div class="block-image block-display-image ng-isolate-scope ng-pristine ng-valid">
+<img src="/hc/en-us/article_attachments/115000853845/YmJy6PV8ge_2.gif" alt="">
+<p class="wysiwyg-text-align-left"><strong><span class="wysiwyg-font-size-large">Permissions to create Post-Commit Hooks</span></strong></p>
+<p class="wysiwyg-text-align-left"><span class="wysiwyg-font-size-medium">If you get an error when turning on the Post-Commit hook make sure you have Admin rights on the GitHub project.</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+  </div>
+
+  <div class="article-attachments">
+    <ul class="attachments">
+      
+    </ul>
+  </div>
+
+  <footer class="article-footer">
+    
+      <div class="article-vote">
+        <span class="article-vote-question">Was this article helpful?</span>
+        <div class="article-vote-controls">
+          <a role="button" rel="nofollow" class="article-vote-up" title="Yes" aria-selected="false" data-auth-action="signin" href="/hc/en-us/signin?return_to=https%3A%2F%2Fsupport.codacy.com%2Fhc%2Fen-us%2Farticles%2F214085885-Post-Commit-Hooks"></a>
+          <a role="button" rel="nofollow" class="article-vote-down" title="No" aria-selected="false" data-auth-action="signin" href="/hc/en-us/signin?return_to=https%3A%2F%2Fsupport.codacy.com%2Fhc%2Fen-us%2Farticles%2F214085885-Post-Commit-Hooks"></a>
+        </div>
+        <small class="article-vote-count">
+          <span class="article-vote-label">0 out of 0 found this helpful</span>
+        </small>
+      </div>
+    
+    <ul class="share">
+  <li><a href="https://www.facebook.com/share.php?title=Post-Commit+Hooks&u=https%3A%2F%2Fsupport.codacy.com%2Fhc%2Fen-us%2Farticles%2F214085885-Post-Commit-Hooks" class="share-facebook">Facebook</a></li>
+  <li><a href="https://twitter.com/share?lang=en&text=Post-Commit+Hooks&url=https%3A%2F%2Fsupport.codacy.com%2Fhc%2Fen-us%2Farticles%2F214085885-Post-Commit-Hooks" class="share-twitter">Twitter</a></li>
+  <li><a href="https://www.linkedin.com/shareArticle?mini=true&source=Codacy&title=Post-Commit+Hooks&url=https%3A%2F%2Fsupport.codacy.com%2Fhc%2Fen-us%2Farticles%2F214085885-Post-Commit-Hooks" class="share-linkedin">LinkedIn</a></li>
+  <li><a href="https://plus.google.com/share?hl=en-us&url=https%3A%2F%2Fsupport.codacy.com%2Fhc%2Fen-us%2Farticles%2F214085885-Post-Commit-Hooks" class="share-googleplus">Google+</a></li>
+</ul>
+
+  </footer>
+
+  <div class="article-more-questions">
+    Have more questions? <a href="/hc/en-us/requests/new">Submit a request</a>
+  </div>
+
+  <section class="article-comments">
+    <div class="comment-list-header">
+      <h4>2 Comments</h4>
+      <div class="comment-sorter">
+      
+        <a aria-selected="true" href="/hc/en-us/articles/214085885-Post-Commit-Hooks?sort_by=created_at">Date</a>
+      
+        <a aria-selected="false" href="/hc/en-us/articles/214085885-Post-Commit-Hooks?sort_by=votes">Votes</a>
+      
+      </div>
+    </div>
+    
+      <ul id="comments" class="comment-list">
+        
+          <li id="comment_115000127909" class="comment">
+            <div class="comment-vote vote">
+              <a rel="nofollow" class="vote-up" title="Yes" aria-selected="false" data-auth-action="signin" href="/hc/en-us/signin?return_to=https%3A%2F%2Fsupport.codacy.com%2Fhc%2Fen-us%2Farticles%2F214085885%2Fcomments%2F115000127909"></a>
+              <span class="vote-sum">0</span>
+              <a rel="nofollow" class="vote-down" title="No" aria-selected="false" data-auth-action="signin" href="/hc/en-us/signin?return_to=https%3A%2F%2Fsupport.codacy.com%2Fhc%2Fen-us%2Farticles%2F214085885%2Fcomments%2F115000127909"></a>
+            </div>
+            <div class="comment-avatar ">
+              <img src="https://support.codacy.com/system/photos/0001/4692/2749/profile_image_10482114005_960438.png" alt="Avatar">
+            </div>
+            <div class="comment-container">
+              <header class="comment-header">
+                <strong class="comment-author" title="Григорий Кислин">
+                  
+                    Григорий Кислин
+                  
+                </strong>
+                <span class="comment-published"><time datetime="2017-04-18T12:59:04Z" title="2017-04-18T12:59:04Z" data-datetime="calendar">April 18, 2017 12:59</time></span>
+                
+              </header>
+              <div class="content-body comment-body"><p>My Post-Commit Hook is switch on, but nothing happened after commit</p>
+<p><img src="/hc/user_images/hGEfVNIvdXBS-jfpGGwOfA.png"><img src="/hc/user_images/HvcQ6YVPov_p2f68nx2thQ.png"><br><br><br></p></div>
+              
+              <footer class="comment-footer">
+                <span class="comment-actions">
+                  
+                  
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.codacy.com/hc/en-us/articles/214085885/comments/115000127909">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                </span>
+              </footer>
+            </div>
+          </li>
+        
+          <li id="comment_115000142765" class="comment">
+            <div class="comment-vote vote">
+              <a rel="nofollow" class="vote-up" title="Yes" aria-selected="false" data-auth-action="signin" href="/hc/en-us/signin?return_to=https%3A%2F%2Fsupport.codacy.com%2Fhc%2Fen-us%2Farticles%2F214085885%2Fcomments%2F115000142765"></a>
+              <span class="vote-sum">0</span>
+              <a rel="nofollow" class="vote-down" title="No" aria-selected="false" data-auth-action="signin" href="/hc/en-us/signin?return_to=https%3A%2F%2Fsupport.codacy.com%2Fhc%2Fen-us%2Farticles%2F214085885%2Fcomments%2F115000142765"></a>
+            </div>
+            <div class="comment-avatar  comment-avatar-agent ">
+              <img src="https://support.codacy.com/system/photos/3602/4339/2313/WsR0OEAZ_400x400.jpg" alt="Avatar">
+            </div>
+            <div class="comment-container">
+              <header class="comment-header">
+                <strong class="comment-author" title="Codacy Team">
+                  
+                    Codacy Team
+                  
+                </strong>
+                <span class="comment-published"><time datetime="2017-04-27T16:04:35Z" title="2017-04-27T16:04:35Z" data-datetime="calendar">April 27, 2017 16:04</time></span>
+                
+              </header>
+              <div class="content-body comment-body"><p>Hi! We sent you an email, so we can take a better look into this. Thank you.</p></div>
+              
+              <footer class="comment-footer">
+                <span class="comment-actions">
+                  
+                  
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.codacy.com/hc/en-us/articles/214085885/comments/115000142765">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                </span>
+              </footer>
+            </div>
+          </li>
+        
+      </ul>
+    
+
+    
+
+    <div>Article is closed for comments.</div>
+
+    
+  </section>
+
+</article>
+
+<aside class="article-sidebar side-column">
+  <div data-recent-articles></div>
+  
+  <section class="related-articles">
+    <h3>Related articles</h3>
+    <ul>
+      
+        <li>
+          <a href="/hc/en-us/related/click?data=BAh7CjobZGVzdGluYXRpb25fYXJ0aWNsZV9pZGkEyb9lDDoYcmVmZXJyZXJfYXJ0aWNsZV9pZGkE%2FbDCDDoLbG9jYWxlSSIKZW4tdXMGOgZFVDoIdXJsSSJLL2hjL2VuLXVzL2FydGljbGVzLzIwNzk5NDgyNS1Ib3ctZG8tSS1tYW51YWxseS1mb3JjZS1hLXByb2plY3QtdXBkYXRlLQY7CFQ6CXJhbmtpBg%3D%3D--12fccb57d90d37af29deac002f396dc059071157">How do I manually force a project update?</a>
+        </li>
+      
+        <li>
+          <a href="/hc/en-us/related/click?data=BAh7CjobZGVzdGluYXRpb25fYXJ0aWNsZV9pZGkEM79lDDoYcmVmZXJyZXJfYXJ0aWNsZV9pZGkE%2FbDCDDoLbG9jYWxlSSIKZW4tdXMGOgZFVDoIdXJsSSItL2hjL2VuLXVzL2FydGljbGVzLzIwNzk5NDY3NS1Qcm9qZWN0LUFQSQY7CFQ6CXJhbmtpBw%3D%3D--aaf40f6a2d6e6ea842098afc3d20fbe3e3f7a4bb">Project API</a>
+        </li>
+      
+        <li>
+          <a href="/hc/en-us/related/click?data=BAh7CjobZGVzdGluYXRpb25fYXJ0aWNsZV9pZGkEy9ZaDDoYcmVmZXJyZXJfYXJ0aWNsZV9pZGkE%2FbDCDDoLbG9jYWxlSSIKZW4tdXMGOgZFVDoIdXJsSSIqL2hjL2VuLXVzL2FydGljbGVzLzIwNzI3OTgxOS1Db3ZlcmFnZQY7CFQ6CXJhbmtpCA%3D%3D--db9ba9fa12b0e23cd2d0efb05506db67eeacc5b0">Coverage</a>
+        </li>
+      
+        <li>
+          <a href="/hc/en-us/related/click?data=BAh7CjobZGVzdGluYXRpb25fYXJ0aWNsZV9pZGkEafK%2BDDoYcmVmZXJyZXJfYXJ0aWNsZV9pZGkE%2FbDCDDoLbG9jYWxlSSIKZW4tdXMGOgZFVDoIdXJsSSJAL2hjL2VuLXVzL2FydGljbGVzLzIxMzg0MDQ4OS1Ib3ctZG8tSS1yZWFuYWx5emUtbXktcHJvamVjdC0GOwhUOglyYW5raQk%3D--d7b05ed728eefd9c7ef05881990ae70f45f3fb08">How do I reanalyze my project?</a>
+        </li>
+      
+        <li>
+          <a href="/hc/en-us/related/click?data=BAh7CjobZGVzdGluYXRpb25fYXJ0aWNsZV9pZGkEqbxlDDoYcmVmZXJyZXJfYXJ0aWNsZV9pZGkE%2FbDCDDoLbG9jYWxlSSIKZW4tdXMGOgZFVDoIdXJsSSIpL2hjL2VuLXVzL2FydGljbGVzLzIwNzk5NDAyNS1Db21taXRzBjsIVDoJcmFua2kK--8c4ac8859fd2a4ee3406c6f410d738b27ce5fc81">Commits</a>
+        </li>
+      
+    </ul>
+  </section>
+
+
+</aside>
+
+  </main>
+
+  <footer class="footer">
+  <div class="footer-inner">
+    <!-- Footer content -->
+  </div>
+</footer>
+
+
+
+  <!-- / -->
+
+  <script type="text/javascript" src="//static.zdassets.com/hc/assets/locales/en-us-3d4abef49badc2dd07cfd08d524a66c3.js"></script>
+  <script src="https://codacy.zendesk.com/auth/v2/host.js" data-brand-id="549689" data-return-to="https://support.codacy.com/hc/en-us/articles/214085885-Post-Commit-Hooks" data-theme="hc" data-locale="en-us" data-auth-origin="549689,true,true"></script>
+  
+
+  <script type="text/javascript">
+  /*
+
+    Greetings sourcecode lurker!
+
+    This is for internal Zendesk and legacy usage,
+    we don't support or guarantee any of these values
+    so please don't build stuff on top of them.
+
+  */
+
+  HelpCenter = {};
+  HelpCenter.account = {"subdomain":"codacy","environment":"production","name":"Codacy"};
+  HelpCenter.user = {"identifier":"da39a3ee5e6b4b0d3255bfef95601890afd80709","email":null,"name":null,"role":"anonymous","avatar_url":"https://assets.zendesk.com/hc/assets/default_avatar.png","is_admin":false,"organizations":[],"groups":[]};
+  HelpCenter.internal = {"asset_url":"//static.zdassets.com/hc/assets/","web_widget_asset_composer_url":"https://static.zdassets.com/ekr/snippet.js","current_session":{"locale":"en-us","csrf_token":"gcGmG0pgE3Ji8myMKLcaBCOmc4Pf3lGBYE7xqG/w7ELO//jaDR4yf97/QTlatQEVg4xbC2Jyko0JwfmSrIsbvg==","shared_csrf_token":null},"settings":{"zopim_enabled":true,"spam_filter_enabled":true},"current_record_id":"214085885","current_record_url":"/hc/en-us/articles/214085885-Post-Commit-Hooks","current_record_title":"Post-Commit Hooks","search_results_count":null,"current_text_direction":"ltr","current_brand_url":"https://codacy.zendesk.com","current_host_mapping":"support.codacy.com","current_path":"/hc/en-us/articles/214085885-Post-Commit-Hooks","authentication_domain":"https://codacy.zendesk.com","show_autocomplete_breadcrumbs":true,"rollbar_config":{"enabled":true,"endpoint":"https://rollbar-us.zendesk.com/api/1/item/","accessToken":"731a5a953e9a4b7ab6cac9623f50c732","captureUncaught":true,"captureUnhandledRejections":true,"payload":{"environment":"production","client":{"javascript":{"source_map_enabled":true,"code_version":"9bccbfe3511d7053aa01a2bc94b71ee68687c5df","guess_uncaught_frames":true}}}},"user_info_changing_enabled":false,"has_user_profiles_enabled":false,"has_anonymous_kb_voting":false,"has_professional_upsell":false,"has_multi_language_help_center":true,"mobile_device":false,"mobile_site_enabled":true,"show_at_mentions":false,"has_copied_content":false,"embeddables_config":{"embeddables_web_widget":false,"embeddables_connect_ipms":false},"base_domain":"zendesk.com","answer_bot_subdomain":"static","plans_url":"https://support.codacy.com/hc/admin/plan?locale=en-us","manage_content_url":"https://support.codacy.com/hc/en-us","arrange_content_url":"https://support.codacy.com/hc/admin/arrange_contents?locale=en-us","general_settings_url":"https://support.codacy.com/hc/admin/general_settings?locale=en-us","user_segments_url":"https://codacy.zendesk.com/knowledge/user_segments?brand_id=549689","import_articles_url":"https://support.codacy.com/hc/admin/import_articles?locale=en-us","has_community_enabled":false,"has_groups":true,"has_internal_sections":true,"has_organizations":true,"has_tag_restrictions":true,"has_answer_bot_web_form_enabled":false,"has_close_the_loop_enabled":false,"billing_url":"/access/return_to?return_to=https://codacy.zendesk.com/agent/admin/subscription","has_answer_bot":true,"has_block_answer_bot_embeddable":false,"has_guide_docs_importer":true,"has_guide_permission_groups":true,"answer_bot_management_url":"https://support.codacy.com/hc/admin/answer_bot?locale=en-us","is_account_owner":false,"has_theming_templates":true,"theming_center_url":"https://support.codacy.com/theming","theming_cookie_key":"hc-da39a3ee5e6b4b0d3255bfef95601890afd80709-preview","is_preview":false,"permission_groups_url":"https://codacy.zendesk.com/knowledge/permissions?brand_id=549689","has_guide_user_segments_search":false,"has_guide_user_segments_v2":true,"has_alternate_templates":false,"has_guide_arrange_articles":false,"arrange_articles_url":"https://codacy.zendesk.com/knowledge/arrange?brand_id=549689"};
+</script>
+
+  <script src="//static.zdassets.com/hc/assets/hc_enduser-2bf0cc3d29dc97ba2105767a10689dfd.js"></script>
+
+  <script type="text/javascript">
+    (function() {
+  var Tracker = {};
+
+  Tracker.track = function(eventName, data) {
+    var url = "https://support.codacy.com/hc/tracking/events?locale=en-us";
+
+    var payload = {
+      "event": eventName,
+      "data": data,
+      "referrer": document.referrer
+    };
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+    xhr.send(JSON.stringify(payload));
+  };
+
+    Tracker.track("article_viewed", "BAh7CDoLbG9jYWxlSSIKZW4tdXMGOgZFVDoPYXJ0aWNsZV9pZGkE/bDCDDoKX21ldGF7CzoPYWNjb3VudF9pZGkDtqcOOhNoZWxwX2NlbnRlcl9pZGkEZyvuCzoNYnJhbmRfaWRpAzljCDoMdXNlcl9pZDA6DnVzZXJfcm9sZUkiDmFub255bW91cwY7BlQ7AEkiCmVuLXVzBjsGVA==--c9953d9c7168e0413a443d07766f261e67e1c8c6");
+})();
+
+  </script>
+</body>
+</html>

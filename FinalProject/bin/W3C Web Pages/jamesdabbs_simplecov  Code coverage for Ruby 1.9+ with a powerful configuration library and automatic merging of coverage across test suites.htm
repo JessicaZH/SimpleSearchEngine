@@ -1,0 +1,1957 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://assets-cdn.github.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-lLo2nlsdl+bHLu6PGvC2j3wfP45RnK4wKQLiPnCDcuXfU38AiD+JCdMywnF3WbJC1jaxe3lAI6AM4uJuMFBLEw==" rel="stylesheet" href="https://assets-cdn.github.com/assets/frameworks-08fc49d3bd2694c870ea23d0906f3610.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-4kfWSrzu4OShEnC5m0lqUCfKkZfG7JH0ff4wnEtubTUTZqV5pS5oUMTOvWE2DDL7ttjZ9FpnZInl/0TLO3EIiA==" rel="stylesheet" href="https://assets-cdn.github.com/assets/github-6c1d4c04bb55a87b9cb81ffdbd683662.css" />
+  
+  
+  
+  
+  
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>jamesdabbs/simplecov: Code coverage for Ruby 1.9+ with a powerful configuration library and automatic merging of coverage across test suites</title>
+    <meta name="description" content="Code coverage for Ruby 1.9+ with a powerful configuration library and automatic merging of coverage across test suites - jamesdabbs/simplecov">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    
+    <meta property="og:image" content="https://avatars0.githubusercontent.com/u/1079270?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="jamesdabbs/simplecov" /><meta property="og:url" content="https://github.com/jamesdabbs/simplecov" /><meta property="og:description" content="Code coverage for Ruby 1.9+ with a powerful configuration library and automatic merging of coverage across test suites - jamesdabbs/simplecov" />
+
+  <link rel="assets" href="https://assets-cdn.github.com/">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MzQ2MDMzMDUxOjJiZjBmMDE0ZDVjYzBiZjJlZTU2OGQ3OTUwMzczYjQ4MWNmYTEwNTBjYWE3OTQ3MjhkNDU4ZTk3Yjg4YzRjODU=--4207e5b724ed189252904d54d6e6fd3c989e22ca">
+  <meta name="pjax-timeout" content="1000">
+  <link rel="sudo-modal" href="/sessions/sudo_modal">
+  <meta name="request-id" content="AA48:728F:565770:A37A43:5C007BF2" data-pjax-transient>
+
+
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+      <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+    <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+
+  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="AA48:728F:565770:A37A43:5C007BF2" /><meta name="octolytics-dimension-region_edge" content="iad" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-actor-id" content="25092706" /><meta name="octolytics-actor-login" content="Bricking" /><meta name="octolytics-actor-hash" content="8ec6e72539ade3a49fd66abbf7931903ca6f907527d740c43d8076517d128dea" />
+<meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;" data-pjax-transient="true" />
+
+
+
+    <meta name="google-analytics" content="UA-3769691-2">
+
+  <meta class="js-ga-set" name="userId" content="55d65b47a423cec232f276df0255fc07" %>
+
+<meta class="js-ga-set" name="dimension1" content="Logged In">
+
+
+
+  
+
+      <meta name="hostname" content="github.com">
+    <meta name="user-login" content="Bricking">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="NzBjYzEwOGFkZTdjMDg2ZjQ5M2Y4MGYzNjM2ZGQwODBlODBkMjYwYWRkZTYxZjhkY2ZhMjczOGRhMmYyMzdhNnx7InJlbW90ZV9hZGRyZXNzIjoiMTM3LjIwNy4yMzIuMjMyIiwicmVxdWVzdF9pZCI6IkFBNDg6NzI4Rjo1NjU3NzA6QTM3QTQzOjVDMDA3QkYyIiwidGltZXN0YW1wIjoxNTQzNTM1NjA4LCJob3N0IjoiZ2l0aHViLmNvbSJ9">
+
+    <meta name="enabled-features" content="DASHBOARD_V2_LAYOUT_OPT_IN,EXPLORE_DISCOVER_REPOSITORIES,UNIVERSE_BANNER,MARKETPLACE_PLAN_RESTRICTION_EDITOR,NOTIFY_ON_BLOCK,TIMELINE_COMMENT_UPDATES,SUGGESTED_CHANGES_UX_TEST,SUGGESTED_CHANGES_BATCH,RELATED_ISSUES,MARKETPLACE_INSIGHTS_V2">
+
+  <meta name="html-safe-nonce" content="64cb9566d920e66e975ef5256fa9401d3518238e">
+
+  <meta http-equiv="x-pjax-version" content="71b3017655dead13c3da41e7b7ddf052">
+  
+
+      <link href="https://github.com/jamesdabbs/simplecov/commits/master.atom" rel="alternate" title="Recent Commits to simplecov:master" type="application/atom+xml">
+
+  <meta name="go-import" content="github.com/jamesdabbs/simplecov git https://github.com/jamesdabbs/simplecov.git">
+
+  <meta name="octolytics-dimension-user_id" content="1079270" /><meta name="octolytics-dimension-user_login" content="jamesdabbs" /><meta name="octolytics-dimension-repository_id" content="9990800" /><meta name="octolytics-dimension-repository_nwo" content="jamesdabbs/simplecov" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="true" /><meta name="octolytics-dimension-repository_parent_id" content="839336" /><meta name="octolytics-dimension-repository_parent_nwo" content="colszowka/simplecov" /><meta name="octolytics-dimension-repository_network_root_id" content="839336" /><meta name="octolytics-dimension-repository_network_root_nwo" content="colszowka/simplecov" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
+
+
+    <link rel="canonical" href="https://github.com/jamesdabbs/simplecov" data-pjax-transient>
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+
+  <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
+
+  </head>
+
+  <body class="logged-in env-production">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="p-3 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+
+    
+    
+    
+
+
+        
+<header class="Header  f5" role="banner">
+  <div class="d-flex flex-justify-between px-3 container-lg">
+    <div class="d-flex flex-justify-between ">
+      <div class="">
+        <a class="header-logo-invertocat" href="https://github.com/" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
+  <svg height="32" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+
+      </div>
+
+    </div>
+
+    <div class="HeaderMenu d-flex flex-justify-between flex-auto">
+      <nav class="d-flex" aria-label="Global">
+            <div class="">
+              <div class="header-search scoped-search site-scoped-search js-site-search position-relative js-jump-to"
+  role="combobox"
+  aria-owns="jump-to-results"
+  aria-label="Search or jump to"
+  aria-haspopup="listbox"
+  aria-expanded="false"
+>
+  <div class="position-relative">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" data-scope-type="Repository" data-scope-id="9990800" data-scoped-search-url="/jamesdabbs/simplecov/search" data-unscoped-search-url="/search" action="/jamesdabbs/simplecov/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+      <label class="form-control header-search-wrapper header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center js-chromeless-input-container">
+        <input type="text"
+          class="form-control header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+          data-hotkey="s,/"
+          name="q"
+          value=""
+          placeholder="Search or jump to…"
+          data-unscoped-placeholder="Search or jump to…"
+          data-scoped-placeholder="Search or jump to…"
+          autocapitalize="off"
+          aria-autocomplete="list"
+          aria-controls="jump-to-results"
+          aria-label="Search or jump to…"
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=MXFm9c2dklRnHXWkUAPmf7H7mLsF9sFTsSr3y/bpPbRVP4jmh0RU/g72/blnEps7Ad5mHMvc34BvI3VEe89p7g=="
+          spellcheck="false"
+          autocomplete="off"
+          >
+          <input type="hidden" class="js-site-search-type-field" name="type" >
+            <img src="https://assets-cdn.github.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
+
+            <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">
+              
+<ul class="d-none js-jump-to-suggestions-template-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-suggestion" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+</ul>
+
+<ul class="d-none js-jump-to-no-results-template-container">
+  <li class="d-flex flex-justify-center flex-items-center f5 d-none js-jump-to-suggestion p-2">
+    <span class="text-gray">No suggested jump to results</span>
+  </li>
+</ul>
+
+<ul id="jump-to-results" role="listbox" class="p-0 m-0 js-navigation-container jump-to-suggestions-results-container js-jump-to-suggestions-results-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-scoped-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-global-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+
+    <li class="d-flex flex-justify-center flex-items-center p-0 f5 js-jump-to-suggestion">
+      <img src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" alt="Octocat Spinner Icon" class="m-2" width="28">
+    </li>
+</ul>
+
+            </div>
+      </label>
+</form>  </div>
+</div>
+
+            </div>
+
+          <ul class="d-flex pl-2 flex-items-center text-bold list-style-none">
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-hotkey="g p" data-ga-click="Header, click, Nav menu - item:pulls context:user" aria-label="Pull requests you created" data-selected-links="/pulls /pulls/assigned /pulls/mentioned /pulls" href="/pulls">
+                Pull requests
+</a>            </li>
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-hotkey="g i" data-ga-click="Header, click, Nav menu - item:issues context:user" aria-label="Issues you created" data-selected-links="/issues /issues/assigned /issues/mentioned /issues" href="/issues">
+                Issues
+</a>            </li>
+              <li class="position-relative">
+                <a class="js-selected-navigation-item HeaderNavlink px-2" data-ga-click="Header, click, Nav menu - item:marketplace context:user" data-octo-click="marketplace_click" data-octo-dimensions="location:nav_bar" data-selected-links=" /marketplace" href="/marketplace">
+                   Marketplace
+</a>                  
+              </li>
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore" href="/explore">
+                Explore
+</a>            </li>
+          </ul>
+      </nav>
+
+      <div class="d-flex">
+        
+<ul class="user-nav d-flex flex-items-center list-style-none" id="user-links">
+  <li class="dropdown">
+    <span class="d-inline-block  px-2">
+      
+    <a aria-label="You have no unread notifications" class="notification-indicator tooltipped tooltipped-s  js-socket-channel js-notification-indicator" data-hotkey="g n" data-ga-click="Header, go to notifications, icon:read" data-channel="notification-changed:25092706" href="/notifications">
+        <span class="mail-status "></span>
+        <svg class="octicon octicon-bell" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 12v1H0v-1l.73-.58c.77-.77.81-2.55 1.19-4.42C2.69 3.23 6 2 6 2c0-.55.45-1 1-1s1 .45 1 1c0 0 3.39 1.23 4.16 5 .38 1.88.42 3.66 1.19 4.42l.66.58H14zm-7 4c1.11 0 2-.89 2-2H5c0 1.11.89 2 2 2z"/></svg>
+</a>
+    </span>
+  </li>
+
+  <li class="dropdown">
+    <details class="details-overlay details-reset d-flex px-2 flex-items-center">
+      <summary class="HeaderNavlink"
+         aria-label="Create new…"
+         data-ga-click="Header, create new, icon:add">
+        <svg class="octicon octicon-plus float-left mr-1 mt-1" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"/></svg>
+        <span class="dropdown-caret mt-1"></span>
+      </summary>
+      <details-menu class="dropdown-menu dropdown-menu-sw">
+        
+<a role="menuitem" class="dropdown-item" href="/new" data-ga-click="Header, create new repository">
+  New repository
+</a>
+
+  <a role="menuitem" class="dropdown-item" href="/new/import" data-ga-click="Header, import a repository">
+    Import repository
+  </a>
+
+<a role="menuitem" class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, create new gist">
+  New gist
+</a>
+
+  <a role="menuitem" class="dropdown-item" href="/organizations/new" data-ga-click="Header, create new organization">
+    New organization
+  </a>
+
+
+
+
+      </details-menu>
+    </details>
+  </li>
+
+  <li class="dropdown">
+
+    <details class="details-overlay details-reset d-flex pl-2 flex-items-center">
+      <summary class="HeaderNavlink name mt-1"
+        aria-label="View profile and more"
+        data-ga-click="Header, show menu, icon:avatar">
+        <img alt="@Bricking" class="avatar float-left mr-1" src="https://avatars3.githubusercontent.com/u/25092706?s=40&amp;v=4" height="20" width="20">
+        <span class="dropdown-caret"></span>
+      </summary>
+      <details-menu class="dropdown-menu dropdown-menu-sw">
+        <ul>
+          <li class="header-nav-current-user css-truncate"><a role="menuitem" class="no-underline user-profile-link px-3 pt-2 pb-2 mb-n2 mt-n1 d-block" href="/Bricking" data-ga-click="Header, go to profile, text:Signed in as">Signed in as <strong class="css-truncate-target">Bricking</strong></a></li>
+          <li class="dropdown-divider"></li>
+          <li><a role="menuitem" class="dropdown-item" href="/Bricking" data-ga-click="Header, go to profile, text:your profile">Your profile</a></li>
+          <li><a role="menuitem" class="dropdown-item" href="/Bricking?tab=repositories" data-ga-click="Header, go to repositories, text:your repositories">Your repositories</a></li>
+
+
+          <li><a role="menuitem" class="dropdown-item" href="/Bricking?tab=stars" data-ga-click="Header, go to starred repos, text:your stars">Your stars</a></li>
+            <li><a role="menuitem" class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, your gists, text:your gists">Your gists</a></li>
+          <li class="dropdown-divider"></li>
+          <li><a role="menuitem" class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">Help</a></li>
+          <li><a role="menuitem" class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">Settings</a></li>
+          <li>
+            <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="J4waI04RMnDLb5CFHefTiSjlxrk/mtgX+pf1c0XQeSQPNqwMztVnl6EHVBXzKc0QCFMgtPF8yZsqWv+vtdRIhA==" />
+              <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout" role="menuitem">
+                Sign out
+              </button>
+</form>          </li>
+        </ul>
+      </details-menu>
+    </details>
+  </li>
+</ul>
+
+
+
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="sr-only right-0" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="I9/PYX6PKBlKM4SaS5CLgvDQ6PRJwPIcfJEBjJDIMcMLZXlO/kt9/iBbQAqlXpUb0GYO+Ycm45CsXAtQYMwAYw==" />
+          <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
+            Sign out
+          </button>
+</form>      </div>
+    </div>
+  </div>
+</header>
+
+      
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+    <div id="js-flash-container">
+
+
+</div>
+
+
+
+  <div role="main" class="application-main " >
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <div id="js-repo-pjax-container" data-pjax-container >
+      
+
+
+
+
+
+  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav  ">
+    <div class="repohead-details-container clearfix container">
+
+      <ul class="pagehead-actions">
+  <li>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="m7nhdoOaXkKZ79UgNRooWy39EYRtUhDC4ru7mUqkqQf5SI920H9S8hfDLKrromPRfVdhc+SDTNM01EdMFUUavg==" />      <input type="hidden" name="repository_id" id="repository_id" value="9990800" class="form-control" />
+
+      <details class="details-reset details-overlay select-menu float-left">
+        <summary class="btn btn-sm btn-with-count select-menu-button" data-ga-click="Repository, click Watch settings, action:files#disambiguate">
+          <span data-menu-button>
+              <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+              Watch
+          </span>
+        </summary>
+        <details-menu class="select-menu-modal position-absolute mt-5" style="z-index: 99;">
+          <div class="select-menu-header">
+            <span class="select-menu-title">Notifications</span>
+          </div>
+          <div class="select-menu-list">
+            <button type="submit" name="do" value="included" class="select-menu-item width-full" aria-checked="true" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Not watching</span>
+                <span class="description">Be notified only when participating or @mentioned.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents>
+                  <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                  Watch
+                </span>
+              </div>
+            </button>
+
+              <button type="submit" name="do" value="release_only" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
+                <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                <div class="select-menu-item-text">
+                  <span class="select-menu-item-heading">Releases only</span>
+                  <span class="description">Be notified of new releases, and when participating or @mentioned.</span>
+                  <span class="hidden-select-button-text" data-menu-button-contents>
+                    <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                    Unwatch releases
+                  </span>
+                </div>
+              </button>
+
+            <button type="submit" name="do" value="subscribed" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Watching</span>
+                <span class="description">Be notified of all conversations.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents>
+                  <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                  Unwatch
+                </span>
+              </div>
+            </button>
+
+            <button type="submit" name="do" value="ignore" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Ignoring</span>
+                <span class="description">Never be notified.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents>
+                  <svg class="octicon octicon-mute v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 2.81v10.38c0 .67-.81 1-1.28.53L3 10H1c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h2l3.72-3.72C7.19 1.81 8 2.14 8 2.81zm7.53 3.22l-1.06-1.06-1.97 1.97-1.97-1.97-1.06 1.06L11.44 8 9.47 9.97l1.06 1.06 1.97-1.97 1.97 1.97 1.06-1.06L13.56 8l1.97-1.97z"/></svg>
+                  Stop ignoring
+                </span>
+              </div>
+            </button>
+          </div>
+        </details-menu>
+      </details>
+      <a class="social-count js-social-count"
+        href="/jamesdabbs/simplecov/watchers"
+        aria-label="1 user is watching this repository">
+        1
+      </a>
+</form>
+  </li>
+
+  <li>
+    
+  <div class="js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/jamesdabbs/simplecov/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="oTJ6IhswpfnRejTDG8tPRkifHktEZfFxFIUIf+1t5y9p03LMBEEazXk/Hc/sqCP/7j4Cm5sXgZuL5gl28wbL3g==" />
+      <input type="hidden" name="context" value="repository"></input>
+      <button
+        type="submit"
+        class="btn btn-sm btn-with-count js-toggler-target"
+        aria-label="Unstar this repository" title="Unstar jamesdabbs/simplecov"
+        data-ga-click="Repository, click unstar button, action:files#disambiguate; text:Unstar">
+        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+        Unstar
+      </button>
+        <a class="social-count js-social-count" href="/jamesdabbs/simplecov/stargazers"
+           aria-label="0 users starred this repository">
+          0
+        </a>
+</form>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/jamesdabbs/simplecov/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="rpINVPM81tBGQEFcH/4SW5K3A6+0Lon/m1+ySbK8k47kXMlxvG0zCyjf6V46D9Yl7RxX5aNaODQLW5M6Z2Hzfg==" />
+      <input type="hidden" name="context" value="repository"></input>
+      <button
+        type="submit"
+        class="btn btn-sm btn-with-count js-toggler-target"
+        aria-label="Star this repository" title="Star jamesdabbs/simplecov"
+        data-ga-click="Repository, click star button, action:files#disambiguate; text:Star">
+        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+        Star
+      </button>
+        <a class="social-count js-social-count" href="/jamesdabbs/simplecov/stargazers"
+           aria-label="0 users starred this repository">
+          0
+        </a>
+</form>  </div>
+
+  </li>
+
+  <li>
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="btn-with-count" action="/jamesdabbs/simplecov/fork" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="fMwj5dtju3SICipbpuO01mshDDF15yaddpApBbFyPXTOLXo+cyNturhobXIYgSdCITzRSKsG/75drpCiyUVJ5w==" />
+            <button
+                type="submit"
+                class="btn btn-sm btn-with-count"
+                data-ga-click="Repository, show fork modal, action:files#disambiguate; text:Fork"
+                title="Fork your own copy of jamesdabbs/simplecov to your account"
+                aria-label="Fork your own copy of jamesdabbs/simplecov to your account">
+              <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+              Fork
+            </button>
+</form>
+    <a href="/jamesdabbs/simplecov/network/members" class="social-count"
+       aria-label="402 users forked this repository">
+      402
+    </a>
+  </li>
+</ul>
+
+      <h1 class="public ">
+  <svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+  <span class="author" itemprop="author"><a class="url fn" rel="author" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=1079270" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/jamesdabbs">jamesdabbs</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a data-pjax="#js-repo-pjax-container" href="/jamesdabbs/simplecov">simplecov</a></strong>
+
+    <span class="fork-flag">
+      <span class="text">forked from <a href="/colszowka/simplecov">colszowka/simplecov</a></span>
+    </span>
+</h1>
+
+    </div>
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax container"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+    aria-label="Repository"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a class="js-selected-navigation-item selected reponav-item" itemprop="url" data-hotkey="g c" aria-current="page" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /jamesdabbs/simplecov" href="/jamesdabbs/simplecov">
+      <svg class="octicon octicon-code" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a data-hotkey="g p" itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /jamesdabbs/simplecov/pulls" href="/jamesdabbs/simplecov/pulls">
+      <svg class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">0</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+
+    <a data-hotkey="g b" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /jamesdabbs/simplecov/projects" href="/jamesdabbs/simplecov/projects">
+      <svg class="octicon octicon-project" viewBox="0 0 15 16" version="1.1" width="15" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      Projects
+      <span class="Counter" >0</span>
+</a>
+
+
+  <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse alerts security /jamesdabbs/simplecov/pulse" href="/jamesdabbs/simplecov/pulse">
+    <svg class="octicon octicon-graph" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
+    Insights
+</a>
+
+</nav>
+
+
+  </div>
+
+<div class="container new-discussion-timeline experiment-repo-nav  ">
+  <div class="repository-content ">
+
+    
+  
+
+    <div class="mb-3">  <div class="f4">
+        <span class="text-gray-dark mr-2" itemprop="about">
+          Code coverage for Ruby 1.9+ with a powerful configuration library and automatic merging of coverage across test suites
+        </span>
+        <span itemprop="url"><a rel="nofollow" href="https://www.ruby-toolbox.com/projects/simplecov">https://www.ruby-toolbox.com/projects…</a></span>
+  </div>
+</div>
+
+
+
+
+  <div class="overall-summary ">
+    <div class="stats-switcher-viewport js-stats-switcher-viewport">
+      <div class="stats-switcher-wrapper">
+      <ul class="numbers-summary">
+        <li class="commits">
+          <a data-pjax href="/jamesdabbs/simplecov/commits/master">
+              <svg class="octicon octicon-history" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 13H6V6h5v2H8v5zM7 1C4.81 1 2.87 2.02 1.59 3.59L0 2v4h4L2.5 4.5C3.55 3.17 5.17 2.3 7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-.34.03-.67.09-1H.08C.03 7.33 0 7.66 0 8c0 3.86 3.14 7 7 7s7-3.14 7-7-3.14-7-7-7z"/></svg>
+              <span class="num text-emphasized">
+                456
+              </span>
+              commits
+          </a>
+        </li>
+        <li>
+          <a data-pjax href="/jamesdabbs/simplecov/branches">
+            <svg class="octicon octicon-git-branch" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+            <span class="num text-emphasized">
+              2
+            </span>
+            branches
+          </a>
+        </li>
+
+        <li>
+          <a href="/jamesdabbs/simplecov/releases">
+            <svg class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+            <span class="num text-emphasized">
+              28
+            </span>
+            releases
+          </a>
+        </li>
+
+
+        <li>
+            <include-fragment src="/jamesdabbs/simplecov/contributors_size">
+              <a href="/jamesdabbs/simplecov/graphs/contributors">
+                <svg class="octicon octicon-organization" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 12.999c0 .439-.45 1-1 1H7.995c-.539 0-.994-.447-.995-.999H1c-.54 0-1-.561-1-1 0-2.634 3-4 3-4s.229-.409 0-1c-.841-.621-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.442.58 2.5 3c.058 2.41-.159 2.379-1 3-.229.59 0 1 0 1s1.549.711 2.42 2.088C9.196 9.369 10 8.999 10 8.999s.229-.409 0-1c-.841-.62-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.437.581 2.495 3c.059 2.41-.158 2.38-1 3-.229.59 0 1 0 1s3.005 1.366 3.005 4z"/></svg>
+                <span class="num text-emphasized"></span>
+                Fetching contributors
+              </a>
+</include-fragment>        </li>
+          <li>
+            <a href="/jamesdabbs/simplecov/blob/master/MIT-LICENSE">
+              <svg class="octicon octicon-law" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>
+                MIT
+            </a>
+          </li>
+      </ul>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <div class="mt-2">
+      <include-fragment src="/jamesdabbs/simplecov/show_partial?partial=tree%2Frecently_touched_branches_list"></include-fragment>
+    </div>
+
+  <div class="file-navigation in-mid-page d-flex flex-items-start">
+  
+<div class="select-menu branch-select-menu js-menu-container js-select-menu float-left">
+  <button class=" btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    
+    type="button" aria-label="Switch branches or tags" aria-expanded="false" aria-haspopup="true">
+      <i>Branch:</i>
+      <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax>
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg class="octicon octicon-x js-menu-close" role="img" aria-label="Close" viewBox="0 0 12 16" version="1.1" width="12" height="16"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs" role="tablist">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/jamesdabbs/simplecov/tree/gh-pages"
+               data-name="gh-pages"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                gh-pages
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/jamesdabbs/simplecov/tree/master"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                master
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/jamesdabbs/simplecov/tree/v0.8.0.pre"
+              data-name="v0.8.0.pre"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.8.0.pre">
+                v0.8.0.pre
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/jamesdabbs/simplecov/tree/v0.7.1"
+              data-name="v0.7.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.7.1">
+                v0.7.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/jamesdabbs/simplecov/tree/v0.7.0"
+              data-name="v0.7.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.7.0">
+                v0.7.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/jamesdabbs/simplecov/tree/v0.6.4"
+              data-name="v0.6.4"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.6.4">
+                v0.6.4
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/jamesdabbs/simplecov/tree/v0.6.3"
+              data-name="v0.6.3"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.6.3">
+                v0.6.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/jamesdabbs/simplecov/tree/v0.6.2"
+              data-name="v0.6.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.6.2">
+                v0.6.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/jamesdabbs/simplecov/tree/v0.6.1"
+              data-name="v0.6.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.6.1">
+                v0.6.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/jamesdabbs/simplecov/tree/v0.6.0"
+              data-name="v0.6.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.6.0">
+                v0.6.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/jamesdabbs/simplecov/tree/v0.5.4"
+              data-name="v0.5.4"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.5.4">
+                v0.5.4
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/jamesdabbs/simplecov/tree/v0.5.3"
+              data-name="v0.5.3"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.5.3">
+                v0.5.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/jamesdabbs/simplecov/tree/v0.5.2"
+              data-name="v0.5.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.5.2">
+                v0.5.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/jamesdabbs/simplecov/tree/v0.5.1"
+              data-name="v0.5.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.5.1">
+                v0.5.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/jamesdabbs/simplecov/tree/v0.5.0"
+              data-name="v0.5.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.5.0">
+                v0.5.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/jamesdabbs/simplecov/tree/v0.4.2"
+              data-name="v0.4.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.4.2">
+                v0.4.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/jamesdabbs/simplecov/tree/v0.4.1"
+              data-name="v0.4.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.4.1">
+                v0.4.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/jamesdabbs/simplecov/tree/v0.4.0"
+              data-name="v0.4.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.4.0">
+                v0.4.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/jamesdabbs/simplecov/tree/v0.3.9"
+              data-name="v0.3.9"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.3.9">
+                v0.3.9
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/jamesdabbs/simplecov/tree/v0.3.8"
+              data-name="v0.3.8"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.3.8">
+                v0.3.8
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/jamesdabbs/simplecov/tree/v0.3.7"
+              data-name="v0.3.7"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.3.7">
+                v0.3.7
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/jamesdabbs/simplecov/tree/v0.3.6"
+              data-name="v0.3.6"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.3.6">
+                v0.3.6
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/jamesdabbs/simplecov/tree/v0.3.5"
+              data-name="v0.3.5"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.3.5">
+                v0.3.5
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/jamesdabbs/simplecov/tree/v0.3.3"
+              data-name="v0.3.3"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.3.3">
+                v0.3.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/jamesdabbs/simplecov/tree/v0.3.2"
+              data-name="v0.3.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.3.2">
+                v0.3.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/jamesdabbs/simplecov/tree/v0.3.1"
+              data-name="v0.3.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.3.1">
+                v0.3.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/jamesdabbs/simplecov/tree/v0.1.2"
+              data-name="v0.1.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.1.2">
+                v0.1.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/jamesdabbs/simplecov/tree/v0.1.1"
+              data-name="v0.1.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.1.1">
+                v0.1.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/jamesdabbs/simplecov/tree/v0.1.0"
+              data-name="v0.1.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.1.0">
+                v0.1.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/jamesdabbs/simplecov/tree/v0.0.2"
+              data-name="v0.0.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.0.2">
+                v0.0.2
+              </span>
+            </a>
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+        <a href="/jamesdabbs/simplecov/pull/new/master" class="btn btn-sm new-pull-request-btn" data-pjax data-ga-click="Repository, new pull request, location:repo overview">
+          New pull request
+        </a>
+
+  <div class="breadcrumb flex-auto">
+    
+  </div>
+
+  <div class="BtnGroup">
+      
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="BtnGroup-form" action="/jamesdabbs/simplecov/new/master" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="IPNRaOomt5tFfpudSh1k8vpU6er2lYaD8g7/xyk0LjMcO7f2G5JhCLXCFSYWUnqsU6CS8I3VT9o3sucofNaDmw==" />
+    <button class="btn btn-sm BtnGroup-item" type="submit" data-disable-with="Creating file…">
+      Create new file
+    </button>
+</form>
+
+      
+  <a href="/jamesdabbs/simplecov/upload/master" class="btn btn-sm BtnGroup-item">
+    Upload files
+  </a>
+
+
+    <a href="/jamesdabbs/simplecov/find/master"
+      class="btn btn-sm empty-icon float-right BtnGroup-item"
+      data-pjax
+      data-hotkey="t"
+      data-ga-click="Repository, find file, location:repo overview">
+      Find file
+    </a>
+  </div>
+  
+
+    <details class="get-repo-select-menu js-get-repo-select-menu position-relative details-overlay details-reset">
+  <summary class="btn btn-sm btn-primary">
+    Clone or download
+    <span class="dropdown-caret"></span>
+  </summary>
+  <div class="position-relative">
+    <div class="get-repo-modal dropdown-menu dropdown-menu-sw pb-0 js-toggler-container  js-get-repo-modal">
+
+      <div class="get-repo-modal-options">
+          <div class="clone-options https-clone-options">
+              <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" action="/users/set_protocol?protocol_selector=ssh&amp;protocol_type=clone" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="y+/AXrx+LmyaaqeI857CoiOGuni60BXv/F4M7dDEHFxF+8CtdhOMW9mDCwc2Jj5sR3sATwmBqVXVp7EX/6917w==" /><button type="submit" class="btn-link btn-change-protocol js-toggler-target float-right">Use SSH</button></form>
+
+            <h4 class="mb-1">
+              Clone with HTTPS
+              <a class="muted-link" href="https://help.github.com/articles/which-remote-url-should-i-use" target="_blank" title="Which remote URL should I use?">
+                <svg class="octicon octicon-question" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 10h2v2H6v-2zm4-3.5C10 8.64 8 9 8 9H6c0-.55.45-1 1-1h.5c.28 0 .5-.22.5-.5v-1c0-.28-.22-.5-.5-.5h-1c-.28 0-.5.22-.5.5V7H4c0-1.5 1.5-3 3-3s3 1 3 2.5zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"/></svg>
+              </a>
+            </h4>
+            <p class="mb-2 get-repo-decription-text">
+              Use Git or checkout with SVN using the web URL.
+            </p>
+
+            <div class="input-group">
+  <input type="text" class="form-control input-monospace input-sm" data-autoselect value="https://github.com/jamesdabbs/simplecov.git" aria-label="Clone this repository at https://github.com/jamesdabbs/simplecov.git" readonly>
+  <div class="input-group-button">
+    <clipboard-copy value="https://github.com/jamesdabbs/simplecov.git" aria-label="Copy to clipboard" class="btn btn-sm">
+      <svg class="octicon octicon-clippy" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 13h4v1H2v-1zm5-6H2v1h5V7zm2 3V8l-3 3 3 3v-2h5v-2H9zM4.5 9H2v1h2.5V9zM2 12h2.5v-1H2v1zm9 1h1v2c-.02.28-.11.52-.3.7-.19.18-.42.28-.7.3H1c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1h3c0-1.11.89-2 2-2 1.11 0 2 .89 2 2h3c.55 0 1 .45 1 1v5h-1V6H1v9h10v-2zM2 5h8c0-.55-.45-1-1-1H8c-.55 0-1-.45-1-1s-.45-1-1-1-1 .45-1 1-.45 1-1 1H3c-.55 0-1 .45-1 1z"/></svg>
+    </clipboard-copy>
+  </div>
+</div>
+
+          </div>
+
+          <div class="clone-options ssh-clone-options">
+              <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" action="/users/set_protocol?protocol_selector=https&amp;protocol_type=clone" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="EuDXFzyPqe0lVwNVgRlize8O+G50F+4NFP29fbmn0iuc9Nfk9uIL2ma+r9pEoZ4Di/NCWcdGUrc9BACHlsy7mA==" /><button type="submit" class="btn-link btn-change-protocol js-toggler-target float-right">Use HTTPS</button></form>
+
+              <h4 class="mb-1">
+                Clone with SSH
+                <a class="muted-link" href="https://help.github.com/articles/which-remote-url-should-i-use" target="_blank" title="Which remote URL should I use?">
+                  <svg class="octicon octicon-question" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 10h2v2H6v-2zm4-3.5C10 8.64 8 9 8 9H6c0-.55.45-1 1-1h.5c.28 0 .5-.22.5-.5v-1c0-.28-.22-.5-.5-.5h-1c-.28 0-.5.22-.5.5V7H4c0-1.5 1.5-3 3-3s3 1 3 2.5zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"/></svg>
+                </a>
+              </h4>
+              <p class="mb-2 get-repo-decription-text">
+                Use an SSH key and passphrase from account.
+              </p>
+
+              <div class="input-group">
+  <input type="text" class="form-control input-monospace input-sm" data-autoselect value="git@github.com:jamesdabbs/simplecov.git" aria-label="Clone this repository at git@github.com:jamesdabbs/simplecov.git" readonly>
+  <div class="input-group-button">
+    <clipboard-copy value="git@github.com:jamesdabbs/simplecov.git" aria-label="Copy to clipboard" class="btn btn-sm">
+      <svg class="octicon octicon-clippy" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 13h4v1H2v-1zm5-6H2v1h5V7zm2 3V8l-3 3 3 3v-2h5v-2H9zM4.5 9H2v1h2.5V9zM2 12h2.5v-1H2v1zm9 1h1v2c-.02.28-.11.52-.3.7-.19.18-.42.28-.7.3H1c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1h3c0-1.11.89-2 2-2 1.11 0 2 .89 2 2h3c.55 0 1 .45 1 1v5h-1V6H1v9h10v-2zM2 5h8c0-.55-.45-1-1-1H8c-.55 0-1-.45-1-1s-.45-1-1-1-1 .45-1 1-.45 1-1 1H3c-.55 0-1 .45-1 1z"/></svg>
+    </clipboard-copy>
+  </div>
+</div>
+
+          </div>
+        <div class="mt-2">
+            <a href="https://desktop.github.com" class="btn btn-outline get-repo-btn tooltipped tooltipped-s tooltipped-multiline js-get-repo" data-open-app="windows" aria-label="Clone jamesdabbs/simplecov to your computer and use it in GitHub Desktop.">
+    Open in Desktop
+  </a>
+
+<a href="/jamesdabbs/simplecov/archive/master.zip"
+   class="btn btn-outline get-repo-btn
+"
+   rel="nofollow"
+   data-ga-click="Repository, download zip, location:repo overview">
+  Download ZIP
+</a>
+
+        </div>
+      </div>
+
+      <div class="js-modal-download-mac py-2 px-3 d-none">
+        <h4 class="lh-condensed mb-3">Launching GitHub Desktop<span class="animated-ellipsis-container"><span class="animated-ellipsis">...</span></span></h4>
+        <p class="text-gray">If nothing happens, <a href="https://desktop.github.com/">download GitHub Desktop</a> and try again.</p>
+        <p><button class="btn-link js-get-repo-modal-download-back">Go back</button></p>
+      </div>
+
+      <div class="js-modal-download-windows py-2 px-3 d-none">
+        <h4 class="lh-condensed mb-3">Launching GitHub Desktop<span class="animated-ellipsis-container"><span class="animated-ellipsis">...</span></span></h4>
+        <p class="text-gray">If nothing happens, <a href="https://desktop.github.com/">download GitHub Desktop</a> and try again.</p>
+        <p><button class="btn-link js-get-repo-modal-download-back">Go back</button></p>
+      </div>
+
+      <div class="js-modal-download-xcode py-2 px-3 d-none">
+        <h4 class="lh-condensed mb-3">Launching Xcode<span class="animated-ellipsis-container"><span class="animated-ellipsis">...</span></span></h4>
+        <p class="text-gray">If nothing happens, <a href="https://developer.apple.com/xcode/">download Xcode</a> and try again.</p>
+        <p><button class="btn-link js-get-repo-modal-download-back">Go back</button></p>
+      </div>
+
+      <div class="js-modal-download-visual-studio py-2 px-3 d-none">
+        <h4 class="lh-condensed mb-3">Launching Visual Studio<span class="animated-ellipsis-container"><span class="animated-ellipsis">...</span></span></h4>
+        <p class="text-gray">If nothing happens, <a href="https://visualstudio.github.com/">download the GitHub extension for Visual Studio</a> and try again.</p>
+        <p><button class="btn-link js-get-repo-modal-download-back">Go back</button></p>
+      </div>
+
+    </div>
+  </div>
+</details>
+
+</div>
+
+
+  
+  <div class="branch-infobar">
+    <span class="float-right">
+        <a class="muted-link" href="/jamesdabbs/simplecov/pull/new/master">
+          <svg class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+          Pull request
+        </a>
+      <a class="muted-link" href="/jamesdabbs/simplecov/compare">
+        <svg class="octicon octicon-diff" viewBox="0 0 13 16" version="1.1" width="13" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 7h2v1H6v2H5V8H3V7h2V5h1v2zm-3 6h5v-1H3v1zM7.5 2L11 5.5V15c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h6.5zM10 6L7 3H1v12h9V6zM8.5 0H3v1h5l4 4v8h1V4.5L8.5 0z"/></svg>
+        Compare
+      </a>
+    </span>
+
+      This branch is 646 commits behind colszowka:master.
+  </div>
+
+<include-fragment src="/jamesdabbs/simplecov/tree-commit/a3387f7b25100939df6a5af339580cbe3055cdc6" class="commit-tease commit-loader">
+  <div class="blank loader-loading">
+      <img alt="" class="loader" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32-EAF2F5.gif" width="16" height="16" />
+      Fetching latest commit…
+  </div>
+  <div class="loader-error">
+    Cannot retrieve the latest commit at this time.
+  </div>
+</include-fragment>
+
+
+<include-fragment class="file-wrap" src="/jamesdabbs/simplecov/file-list/master">
+  <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/jamesdabbs/simplecov/tree/a3387f7b25100939df6a5af339580cbe3055cdc6">Permalink</a>
+
+  <table class="files js-navigation-container js-active-navigation-container" data-pjax>
+    <thead>
+      <tr>
+        <th><span class="sr-only">Type</span></th>
+        <th><span class="sr-only">Name</span></th>
+        <th><span class="sr-only">Latest commit message</span></th>
+        <th><span class="sr-only">Commit time</span></th>
+      </tr>
+    </thead>
+
+
+    <tbody>
+      <tr class="warning include-fragment-error">
+        <td class="icon"><svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg></td>
+        <td class="content" colspan="3">Failed to load latest commit information.</td>
+      </tr>
+
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="features" id="9f034b63948763d489f944319c2eb3de-8d0908bbefc52940a89e3304d4d17101152e61c1" href="/jamesdabbs/simplecov/tree/master/features">features</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="gemfiles" id="ac46a8b5a40536c4171a5ebee5aca2d4-d5cdf00fe52d625d38784518f1314545ef258522" href="/jamesdabbs/simplecov/tree/master/gemfiles">gemfiles</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="lib" id="e8acc63b1e238f3255c900eed37254b8-9e77148a670cea4d5181e8907b585b1f859028a0" href="/jamesdabbs/simplecov/tree/master/lib">lib</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="test" id="098f6bcd4621d373cade4e832627b4f6-f15fab619f9a4ddefac6d1ddefe89d0b947d04e4" href="/jamesdabbs/simplecov/tree/master/test">test</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title=".gitignore" id="a084b794bc0759e7a6b77810e01874f2-8f0fd85e43abe25324f04f56e4341c66a2fd9d16" href="/jamesdabbs/simplecov/blob/master/.gitignore">.gitignore</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title=".travis.yml" id="354f30a63fb0907d4ad57269548329e3-4b1cc38af62d7498bec93ccee89f420800f6b12f" href="/jamesdabbs/simplecov/blob/master/.travis.yml">.travis.yml</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title=".yardopts" id="5808b886486adcc2f1820a316cd5652d-0d8e899d60a0f2a92efffa78a6a3fdd34788e147" href="/jamesdabbs/simplecov/blob/master/.yardopts">.yardopts</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="Appraisals" id="3bb7346aca79d8142e16e61372bd04dc-cfe0ca2e40083b11191a535466d5e6d18a647b7b" href="/jamesdabbs/simplecov/blob/master/Appraisals">Appraisals</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="CHANGELOG.md" id="4ac32a78649ca5bdd8e0ba38b7006a1e-6127547fe64bef327e795d046cc4be88026857a6" href="/jamesdabbs/simplecov/blob/master/CHANGELOG.md">CHANGELOG.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="CONTRIBUTING.md" id="6a3371457528722a734f3c51d9238c13-3d8699fa14b989966e15a2dde615378e420b895a" href="/jamesdabbs/simplecov/blob/master/CONTRIBUTING.md">CONTRIBUTING.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="Gemfile" id="8b7db4d5cc4b8f6dc8feb7030baa2478-6317e8943bd387303fdb6b4bdc0e7606cbdcb6cb" href="/jamesdabbs/simplecov/blob/master/Gemfile">Gemfile</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="MIT-LICENSE" id="6d6f69ab160d70085563c5d6eb87b978-1ab61486039c13621ec18754704169e01663c96d" itemprop="license" href="/jamesdabbs/simplecov/blob/master/MIT-LICENSE">MIT-LICENSE</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="README.md" id="04c6e90faac2675aa89e2176d2eec7d8-2476f696a662cad749b2e307a57d27a28dcd6a13" href="/jamesdabbs/simplecov/blob/master/README.md">README.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="Rakefile" id="52c976fc38ed2b4e3b1192f8a8e24cff-e2cdd05d9c35f82bbf027e50a1ff35943b12dcb2" href="/jamesdabbs/simplecov/blob/master/Rakefile">Rakefile</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="cucumber.yml" id="60d77438370634c476a28027a52808e8-ee5ade501c432470493a994689ffc99e906b7cf5" href="/jamesdabbs/simplecov/blob/master/cucumber.yml">cucumber.yml</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="simplecov.gemspec" id="5070b78795beb7406b07da1a157e7fa4-728571677d53bd6cb6b08dac69fdafefb3cd8706" href="/jamesdabbs/simplecov/blob/master/simplecov.gemspec">simplecov.gemspec</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+</include-fragment>
+
+
+
+  <div id="readme" class="Box Box--condensed instapaper_body md">
+    <div class="Box-header px-2 clearfix">
+      <h3 class="Box-title pr-3">
+        <svg class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"/></svg>
+        README.md
+      </h3>
+    </div>
+      <div class="Box-body p-6">
+        <article class="markdown-body entry-content" itemprop="text"><h1><a id="user-content-simplecov---" class="anchor" aria-hidden="true" href="#simplecov---"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>SimpleCov <a href="http://travis-ci.org/colszowka/simplecov" title="SimpleCov is built around the clock by travis-ci.org" rel="nofollow"><img src="https://camo.githubusercontent.com/3c4dcf68e17a480877bd2f7b9e5a357da88f7e49/68747470733a2f2f7365637572652e7472617669732d63692e6f72672f636f6c737a6f776b612f73696d706c65636f762e706e67" alt="Build Status" data-canonical-src="https://secure.travis-ci.org/colszowka/simplecov.png" style="max-width:100%;"></a> <a href="https://gemnasium.com/colszowka/simplecov" title="SimpleCov dependencies on Gemnasium" rel="nofollow"><img src="https://camo.githubusercontent.com/ec3016da6474557789d388a0391eb7cec6949ee1/68747470733a2f2f67656d6e617369756d2e636f6d2f636f6c737a6f776b612f73696d706c65636f762e706e67" alt="Dependency Status" data-canonical-src="https://gemnasium.com/colszowka/simplecov.png" style="max-width:100%;"></a> <a href="https://codeclimate.com/github/colszowka/simplecov" rel="nofollow"><img src="https://camo.githubusercontent.com/bd3d4dbe82847a127667f5348ab46309ada49ad1/68747470733a2f2f636f6465636c696d6174652e636f6d2f6769746875622f636f6c737a6f776b612f73696d706c65636f762e706e67" alt="Code Climate" data-canonical-src="https://codeclimate.com/github/colszowka/simplecov.png" style="max-width:100%;"></a></h1>
+<p><strong>Code coverage for Ruby 1.9</strong></p>
+<ul>
+<li><a href="https://github.com/colszowka/simplecov" title="Source Code @ GitHub">Source Code</a></li>
+<li><a href="http://rubydoc.info/gems/simplecov/frames" title="RDoc API Documentation at Rubydoc.info" rel="nofollow">API documentation</a></li>
+<li><a href="https://github.com/colszowka/simplecov/blob/master/CHANGELOG.md" title="Project Changelog">Changelog</a></li>
+<li><a href="http://rubygems.org/gems/simplecov" title="SimpleCov @ rubygems.org" rel="nofollow">Rubygem</a></li>
+<li><a href="https://groups.google.com/forum/#!forum/simplecov" title="Open mailing list for discussion and announcements on Google Groups" rel="nofollow">Mailing List</a></li>
+<li><a href="http://travis-ci.org/colszowka/simplecov" title="SimpleCov is built around the clock by travis-ci.org" rel="nofollow">Continuous Integration</a></li>
+</ul>
+<p><a href="http://www.pledgie.com/campaigns/18379" rel="nofollow"><img src="https://camo.githubusercontent.com/5023497e726a501f515355976e4c47351fbb5376/687474703a2f2f7777772e706c65646769652e636f6d2f63616d706169676e732f31383337392e706e673f736b696e5f6e616d653d6368726f6d65" alt="You can support the development of SimpleCov via Pledgie - thanks for your help" data-canonical-src="http://www.pledgie.com/campaigns/18379.png?skin_name=chrome" style="max-width:100%;"></a></p>
+<p>SimpleCov is a code coverage analysis tool for Ruby 1.9. It uses <a href="http://www.ruby-doc.org/stdlib-1.9.3/libdoc/coverage/rdoc/Coverage.html" title="API doc for Ruby 1.9's Coverage library" rel="nofollow">1.9's built-in Coverage</a> library to gather code
+coverage data, but makes processing its results much easier by providing a clean API to filter, group, merge, format
+and display those results, thus giving you a complete code coverage suite that can be set up with just a couple lines of
+code.</p>
+<p>In most cases, you'll want overall coverage results for your projects, including all types of tests, cucumber features
+etc. SimpleCov automatically takes care of this by caching and then merging results when generating reports, so your
+report actually includes coverage across your test suites and thereby gives you a better picture of blank spots.</p>
+<p>The official formatter of SimpleCov is packaged as a separate gem called <a href="https://github.com/colszowka/simplecov-html" title="SimpleCov HTML Formatter Source Code @ GitHub">simplecov-html</a> but will be installed and configured
+automatically when you launch SimpleCov. If you're curious, you can find it <a href="https://github.com/colszowka/simplecov-html" title="SimpleCov HTML Formatter Source Code @ GitHub">on Github, too</a>.</p>
+<h2><a id="user-content-getting-started" class="anchor" aria-hidden="true" href="#getting-started"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Getting started</h2>
+<ol>
+<li>Add SimpleCov to your <code>Gemfile</code> and <code>bundle install</code>:</li>
+</ol>
+<div class="highlight highlight-source-ruby"><pre>gem <span class="pl-s"><span class="pl-pds">'</span>simplecov<span class="pl-pds">'</span></span>, <span class="pl-c1">:require</span> =&gt; <span class="pl-c1">false</span>, <span class="pl-c1">:group</span> =&gt; <span class="pl-c1">:test</span></pre></div>
+<ol start="2">
+<li>Load and launch SimpleCov <strong>at the very top</strong> of your <code>test/test_helper.rb</code> (<em>or <code>spec_helper.rb</code>, cucumber <code>env.rb</code>, or whatever
+your preferred test framework uses</em>):</li>
+</ol>
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">require</span> <span class="pl-s"><span class="pl-pds">'</span>simplecov<span class="pl-pds">'</span></span>
+<span class="pl-c1">SimpleCov</span>.start
+
+<span class="pl-c"><span class="pl-c">#</span> Previous content of test helper now starts here</span></pre></div>
+<p><strong>Note:</strong> If SimpleCov starts after your application code is already loaded (via <code>require</code>), it won't be able to
+track your files and their coverage! The <code>SimpleCov.start</code> <strong>must</strong> be issued <strong>before any of your application code
+is required!</strong></p>
+<p>SimpleCov must be running in the process that you want the code coverage analysis to happen on. When testing a server
+process (i.e. a JSON API endpoint) via a separate test process (i.e. when using Selenium) where you want to see all
+code executed by the <code>rails server</code>, and not just code executed in your actual test files, you'll want to add something
+like this to the top of <code>script/rails</code>:</p>
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">if</span> <span class="pl-c1">ENV</span>[<span class="pl-s"><span class="pl-pds">'</span>RAILS_ENV<span class="pl-pds">'</span></span>] <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">'</span>test<span class="pl-pds">'</span></span>
+  <span class="pl-k">require</span> <span class="pl-s"><span class="pl-pds">'</span>simplecov<span class="pl-pds">'</span></span>
+  <span class="pl-c1">SimpleCov</span>.start <span class="pl-s"><span class="pl-pds">'</span>rails<span class="pl-pds">'</span></span>
+  <span class="pl-c1">puts</span> <span class="pl-s"><span class="pl-pds">"</span>required simplecov<span class="pl-pds">"</span></span>
+<span class="pl-k">end</span></pre></div>
+<ol start="3">
+<li>
+<p>Run your tests, open up <code>coverage/index.html</code> in your browser and check out what you've missed so far.</p>
+</li>
+<li>
+<p>Add the following to your <code>.gitignore</code> file to ensure that coverage results are not tracked by Git (optional):</p>
+<p>coverage</p>
+</li>
+</ol>
+<p>If you're making a Rails application, SimpleCov comes with a built-in configurations (see below for information on profiles)
+which will get you started with groups for your Controllers, Views, Models and Helpers. To use it, the first two lines of
+your test_helper should be like this:</p>
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">require</span> <span class="pl-s"><span class="pl-pds">'</span>simplecov<span class="pl-pds">'</span></span>
+<span class="pl-c1">SimpleCov</span>.start <span class="pl-s"><span class="pl-pds">'</span>rails<span class="pl-pds">'</span></span></pre></div>
+<h2><a id="user-content-example-output" class="anchor" aria-hidden="true" href="#example-output"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example output</h2>
+<p><strong>Coverage results report, fully browsable locally with sorting and much more:</strong></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/5d9b874a778392ff6180d297faa362f0b32fcd62/687474703a2f2f636f6c737a6f776b612e6769746875622e636f6d2f73696d706c65636f762f6465766973655f726573756c742d302e352e332e706e67"><img src="https://camo.githubusercontent.com/5d9b874a778392ff6180d297faa362f0b32fcd62/687474703a2f2f636f6c737a6f776b612e6769746875622e636f6d2f73696d706c65636f762f6465766973655f726573756c742d302e352e332e706e67" alt="SimpleCov coverage report" data-canonical-src="http://colszowka.github.com/simplecov/devise_result-0.5.3.png" style="max-width:100%;"></a></p>
+<p><strong>Source file coverage details view:</strong></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/3cb7252450587d575bca65e27f20107b1986d67e/687474703a2f2f636f6c737a6f776b612e6769746875622e636f6d2f73696d706c65636f762f6465766973655f736f757263655f66696c652d302e352e332e706e67"><img src="https://camo.githubusercontent.com/3cb7252450587d575bca65e27f20107b1986d67e/687474703a2f2f636f6c737a6f776b612e6769746875622e636f6d2f73696d706c65636f762f6465766973655f736f757263655f66696c652d302e352e332e706e67" alt="SimpleCov source file detail view" data-canonical-src="http://colszowka.github.com/simplecov/devise_source_file-0.5.3.png" style="max-width:100%;"></a></p>
+<h2><a id="user-content-use-it-with-any-framework" class="anchor" aria-hidden="true" href="#use-it-with-any-framework"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Use it with any framework!</h2>
+<p>Similarily to the usage with Test::Unit described above, the only thing you have to do is to add the simplecov
+config to the very top of your Cucumber/RSpec/whatever setup file.</p>
+<p>Add the setup code to the <strong>top</strong> of <code>features/support/env.rb</code> (for Cucumber) or <code>spec/spec_helper.rb</code> (for RSpec).
+Other test frameworks should work accordingly, whatever their setup file may be:</p>
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">require</span> <span class="pl-s"><span class="pl-pds">'</span>simplecov<span class="pl-pds">'</span></span>
+<span class="pl-c1">SimpleCov</span>.start <span class="pl-s"><span class="pl-pds">'</span>rails<span class="pl-pds">'</span></span></pre></div>
+<p>You could even track what kind of code your UI testers are touching if you want to go overboard with things. SimpleCov does not
+care what kind of framework it is running in, it just looks at what code is being executed and generates a report about it.</p>
+<h3><a id="user-content-notes-on-specific-frameworks-and-test-utilities" class="anchor" aria-hidden="true" href="#notes-on-specific-frameworks-and-test-utilities"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Notes on specific frameworks and test utilities</h3>
+<p>For some frameworks and testing tools there are quirks and problems you might want to know about if you want
+to use SimpleCov with them. Here's an overview of the known ones:</p>
+<table>
+<tbody><tr><th>Framework</th><th>Notes</th><th>Issue #</th></tr>
+<tr>
+ <td>
+   <b>Test/Unit 2</b>
+ </td>
+ <td>
+  Test Unit 2 used to mess with ARGV, leading to failure to detect the test process name in SimpleCov.
+  <code>test-unit</code> releases 2.4.3+ (Dec 11th, 2011) should have this problem resolved.
+ </td>
+ <td>
+  <a href="https://github.com/colszowka/simplecov/issues/45">SimpleCov #45</a> &amp;
+  <a href="https://github.com/test-unit/test-unit/pull/12">Test/Unit #12</a>
+ </td>
+</tr>
+<tr>
+ <td>
+   <b>Spork</b>
+ </td>
+ <td>
+  Because of the how Spork works internally (using preforking) there used to be trouble when using SimpleCov
+  with it, but that apparently has been resolved with a specific configuration strategy. See
+  <a href="https://github.com/colszowka/simplecov/issues/42#issuecomment-4440284">this</a> comment.
+ </td>
+ <td>
+  <a href="https://github.com/colszowka/simplecov/issues/42#issuecomment-4440284">SimpleCov #42</a>
+ </td>
+</tr>
+<tr>
+ <td>
+   <b>parallel_tests</b>
+ </td>
+ <td>
+  SimpleCov does not detect parallel_test automatically yet but can be taught to do so
+  with a simple workaround explained at Issue #64.
+ </td>
+ <td>
+  <a href="https://github.com/colszowka/simplecov/issues/64">SimpleCov #64</a>
+ </td>
+</tr>
+<tr>
+ <td>
+   <b>Riot</b>
+ </td>
+ <td>
+  A user has reported problems with the coverage report using the riot framework. If you experience
+  similar trouble please follow up on the related Github issue.
+ </td>
+ <td>
+  <a href="https://github.com/colszowka/simplecov/issues/80">SimpleCov #80</a>
+ </td>
+</tr>
+<tr>
+ <td>
+   <b>RubyMine</b>
+ </td>
+ <td>
+  The <a href="https://www.jetbrains.com/ruby/" rel="nofollow">RubyMine IDE</a> has built-in support for SimpleCov's coverage reports,
+  though you might need to explicitly set the output root using `SimpleCov.root('foo/bar/baz')`
+ </td>
+ <td>
+  <a href="https://github.com/colszowka/simplecov/issues/95">SimpleCov #95</a>
+ </td>
+</tr>
+</tbody></table>
+<h2><a id="user-content-configuring-simplecov" class="anchor" aria-hidden="true" href="#configuring-simplecov"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configuring SimpleCov</h2>
+<p><a href="http://rubydoc.info/gems/simplecov/SimpleCov/Configuration" title="Configuration options API documentation" rel="nofollow">Configuration</a> settings can be applied in three formats, which are completely equivalent:</p>
+<ul>
+<li>The most common way is to configure it directly in your start block:</li>
+</ul>
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c1">SimpleCov</span>.start <span class="pl-k">do</span>
+  some_config_option <span class="pl-s"><span class="pl-pds">'</span>foo<span class="pl-pds">'</span></span>
+<span class="pl-k">end</span></pre></div>
+<ul>
+<li>You can also set all configuration options directly:</li>
+</ul>
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c1">SimpleCov</span>.some_config_option <span class="pl-s"><span class="pl-pds">'</span>foo<span class="pl-pds">'</span></span></pre></div>
+<ul>
+<li>If you do not want to start coverage immediately after launch or want to add additional configuration later on in a concise way, use:</li>
+</ul>
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c1">SimpleCov</span>.configure <span class="pl-k">do</span>
+  some_config_option <span class="pl-s"><span class="pl-pds">'</span>foo<span class="pl-pds">'</span></span>
+<span class="pl-k">end</span></pre></div>
+<p>Please check out the <a href="http://rubydoc.info/gems/simplecov/SimpleCov/Configuration" title="Configuration options API documentation" rel="nofollow">Configuration</a> API documentation to find out what you can customize.</p>
+<h2><a id="user-content-using-simplecov-for-centralized-config" class="anchor" aria-hidden="true" href="#using-simplecov-for-centralized-config"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Using .simplecov for centralized config</h2>
+<p>If you use SimpleCov to merge multiple test suite results (i.e. Test/Unit and Cucumber) into a single report, you'd normally have to
+set up all your config options twice, once in <code>test_helper.rb</code> and once in <code>env.rb</code>.</p>
+<p>To avoid this, you can place a file called <code>.simplecov</code> in your project root. You can then just leave the <code>require 'simplecov'</code> in each
+test setup helper and move the <code>SimpleCov.start</code> code with all your custom config options into <code>.simplecov</code>:</p>
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"><span class="pl-c">#</span> test/test_helper.rb</span>
+<span class="pl-k">require</span> <span class="pl-s"><span class="pl-pds">'</span>simplecov<span class="pl-pds">'</span></span>
+
+<span class="pl-c"><span class="pl-c">#</span> features/support/env.rb</span>
+<span class="pl-k">require</span> <span class="pl-s"><span class="pl-pds">'</span>simplecov<span class="pl-pds">'</span></span>
+
+<span class="pl-c"><span class="pl-c">#</span> .simplecov</span>
+<span class="pl-c1">SimpleCov</span>.start <span class="pl-s"><span class="pl-pds">'</span>rails<span class="pl-pds">'</span></span> <span class="pl-k">do</span>
+  <span class="pl-c"><span class="pl-c">#</span> any custom configs like groups and filters can be here at a central place</span>
+<span class="pl-k">end</span></pre></div>
+<h2><a id="user-content-filters" class="anchor" aria-hidden="true" href="#filters"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Filters</h2>
+<p>Filters can be used to remove selected files from your coverage data. By default, a filter is applied that removes all files
+OUTSIDE of your project's root directory - otherwise you'd end up with a billion of coverage reports for source files in the
+gems you are using.</p>
+<p>Of course you can define your own to remove things like configuration files, tests or whatever you don't need in your coverage
+report.</p>
+<h3><a id="user-content-defining-custom-filters" class="anchor" aria-hidden="true" href="#defining-custom-filters"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Defining custom filters</h3>
+<p>You can currently define a filter using either a String (that will then be Regexp-matched against each source file's path),
+a block or by passing in your own Filter class.</p>
+<h4><a id="user-content-string-filter" class="anchor" aria-hidden="true" href="#string-filter"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>String filter</h4>
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c1">SimpleCov</span>.start <span class="pl-k">do</span>
+  add_filter <span class="pl-s"><span class="pl-pds">"</span>/test/<span class="pl-pds">"</span></span>
+<span class="pl-k">end</span></pre></div>
+<p>This simple string filter will remove all files that match "/test/" in their path.</p>
+<h4><a id="user-content-block-filter" class="anchor" aria-hidden="true" href="#block-filter"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Block filter</h4>
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c1">SimpleCov</span>.start <span class="pl-k">do</span>
+  add_filter <span class="pl-k">do</span> |<span class="pl-smi">source_file</span>|
+    source_file.lines.count <span class="pl-k">&lt;</span> <span class="pl-c1">5</span>
+  <span class="pl-k">end</span>
+<span class="pl-k">end</span></pre></div>
+<p>Block filters receive a SimpleCov::SourceFile instance and expect your block to return either true (if the file is to be removed
+from the result) or false (if the result should be kept). Please check out the RDoc for SimpleCov::SourceFile to learn about the
+methods available to you. In the above example, the filter will remove all files that have less then 5 lines of code.</p>
+<h4><a id="user-content-custom-filter-class" class="anchor" aria-hidden="true" href="#custom-filter-class"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Custom filter class</h4>
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">LineFilter<span class="pl-e"> &lt; SimpleCov::Filter</span></span>
+  <span class="pl-k">def</span> <span class="pl-en">matches?</span>(<span class="pl-smi">source_file</span>)
+    source_file.lines.count <span class="pl-k">&lt;</span> filter_argument
+  <span class="pl-k">end</span>
+<span class="pl-k">end</span>
+
+<span class="pl-c1">SimpleCov</span>.add_filter <span class="pl-c1">LineFilter</span>.<span class="pl-k">new</span>(<span class="pl-c1">5</span>)</pre></div>
+<p>Defining your own filters is pretty easy: Just inherit from SimpleCov::Filter and define a method 'matches?(source_file)'. When running
+the filter, a true return value from this method will result in the removal of the given source_file. The filter_argument method
+is being set in the SimpleCov::Filter initialize method and thus is set to 5 in this example.</p>
+<h2><a id="user-content-groups" class="anchor" aria-hidden="true" href="#groups"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Groups</h2>
+<p>You can separate your source files into groups. For example, in a rails app, you'll want to have separate listings for
+Models, Controllers, Helpers, Libs and Plugins. Group definition works similar to Filters (and indeed also accepts custom
+filter classes), but source files end up in a group when the filter passes (returns true), as opposed to filtering results,
+which exclude files from results when the filter results in a true value.</p>
+<p>Add your groups with:</p>
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c1">SimpleCov</span>.start <span class="pl-k">do</span>
+  add_group <span class="pl-s"><span class="pl-pds">"</span>Models<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>app/models<span class="pl-pds">"</span></span>
+  add_group <span class="pl-s"><span class="pl-pds">"</span>Controllers<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>app/controllers<span class="pl-pds">"</span></span>
+  add_group <span class="pl-s"><span class="pl-pds">"</span>Long files<span class="pl-pds">"</span></span> <span class="pl-k">do</span> |<span class="pl-smi">src_file</span>|
+    src_file.lines.count <span class="pl-k">&gt;</span> <span class="pl-c1">100</span>
+  <span class="pl-k">end</span>
+  add_group <span class="pl-s"><span class="pl-pds">"</span>Short files<span class="pl-pds">"</span></span>, <span class="pl-c1">LineFilter</span>.<span class="pl-k">new</span>(<span class="pl-c1">5</span>) <span class="pl-c"><span class="pl-c">#</span> Using the LineFilter class defined in Filters section above</span>
+<span class="pl-k">end</span></pre></div>
+<h2><a id="user-content-merging-results" class="anchor" aria-hidden="true" href="#merging-results"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Merging results</h2>
+<p>Normally, you want to have your coverage analyzed across ALL of your test suites, right?</p>
+<p>Simplecov automatically caches coverage results in your (coverage_path)/.resultset.json. Those results will then
+be automatically merged when generating the result, so when coverage is set up properly for cucumber and your
+unit / functional / integration tests, all of those test suites will be taken into account when building the
+coverage report.</p>
+<p>There are two things to note here though:</p>
+<h3><a id="user-content-test-suite-names" class="anchor" aria-hidden="true" href="#test-suite-names"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Test suite names</h3>
+<p>Simplecov tries to guess the name of the currently running test suite based upon the shell command the tests are running
+on. This should work fine for Unit Tests, RSpec and Cucumber. If it fails, it will use the shell command
+that invoked the test suite as a command name.</p>
+<p>If you have some non-standard setup and still want nicely labeled test suites, you have to give Simplecov a cue what the
+name of the currently running test suite is. You can do so by specifying SimpleCov.command_name in one test file that is
+part of your specific suite.</p>
+<p>So, to customize the suite names on a Rails app (yeah, sorry for being Rails biased, but everyone knows what
+the structure of those projects is. You can apply this accordingly to the RSpecs in your Outlook-WebDAV-Calendar-Sync gem),
+you could do something like this:</p>
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"><span class="pl-c">#</span> test/unit/some_test.rb</span>
+<span class="pl-c1">SimpleCov</span>.command_name <span class="pl-s"><span class="pl-pds">'</span>test:units<span class="pl-pds">'</span></span>
+
+<span class="pl-c"><span class="pl-c">#</span> test/functionals/some_controller_test.rb</span>
+<span class="pl-c1">SimpleCov</span>.command_name <span class="pl-s"><span class="pl-pds">"</span>test:functionals<span class="pl-pds">"</span></span>
+
+<span class="pl-c"><span class="pl-c">#</span> test/integration/some_integration_test.rb</span>
+<span class="pl-c1">SimpleCov</span>.command_name <span class="pl-s"><span class="pl-pds">"</span>test:integration<span class="pl-pds">"</span></span>
+
+<span class="pl-c"><span class="pl-c">#</span> features/support/env.rb</span>
+<span class="pl-c1">SimpleCov</span>.command_name <span class="pl-s"><span class="pl-pds">"</span>features<span class="pl-pds">"</span></span></pre></div>
+<p>Note that this has only to be invoked ONCE PER TEST SUITE, so even if you have 200 unit test files, specifying it in
+some_test.rb is fair enough.</p>
+<p><a href="https://github.com/colszowka/simplecov-html" title="SimpleCov HTML Formatter Source Code @ GitHub">simplecov-html</a> prints the used test suites in the footer of the generated coverage report.</p>
+<h3><a id="user-content-timeout-for-merge" class="anchor" aria-hidden="true" href="#timeout-for-merge"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Timeout for merge</h3>
+<p>Of course, your cached coverage data is likely to become invalid at some point. Thus, result sets that are older than
+SimpleCov.merge_timeout will not be used any more. By default, the timeout is 600 seconds (10 minutes), and you can
+raise (or lower) it by specifying <code>SimpleCov.merge_timeout 3600</code> (1 hour), or, inside a configure/start block, with
+just "merge_timeout 3600".</p>
+<p>You can deactivate merging altogether with <code>SimpleCov.use_merging false</code>.</p>
+<h2><a id="user-content-running-coverage-only-on-demand" class="anchor" aria-hidden="true" href="#running-coverage-only-on-demand"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Running coverage only on demand</h2>
+<p>The Ruby STDLIB Coverage library that SimpleCov builds upon is <em>very</em> fast (i.e. on a ~10 min Rails test suite, the speed drop was
+only a couple seconds for me), and therefore it's SimpleCov's policy to just generate coverage every time you run your tests because
+it doesn't do your test speed any harm and you're always equipped with the latest and greatest coverage results.</p>
+<p>Because of this, SimpleCov has no explicit built-in mechanism to run coverage only on demand.</p>
+<p>However, you can still accomplish this very easily by introducing a ENV variable conditional into your SimpleCov setup block, like this:</p>
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c1">SimpleCov</span>.start <span class="pl-k">if</span> <span class="pl-c1">ENV</span>[<span class="pl-s"><span class="pl-pds">"</span>COVERAGE<span class="pl-pds">"</span></span>]</pre></div>
+<p>Then, SimpleCov will only run if you execute your tests like this:</p>
+<div class="highlight highlight-source-shell"><pre>COVERAGE=true rake <span class="pl-c1">test</span></pre></div>
+<h2><a id="user-content-profiles" class="anchor" aria-hidden="true" href="#profiles"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Profiles</h2>
+<p>By default, Simplecov's only config assumption is that you only want coverage reports for files inside your project
+root. To save you from repetitive configuration, you can use predefined blocks of configuration, called 'profiles',
+or define your own.</p>
+<p>You can then pass the name of the profile to be used as the first argument to SimpleCov.start. For example, simplecov
+comes bundled with a 'rails' profile. It looks somewhat like this:</p>
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c1">SimpleCov</span>.profiles.define <span class="pl-s"><span class="pl-pds">'</span>rails<span class="pl-pds">'</span></span> <span class="pl-k">do</span>
+  add_filter <span class="pl-s"><span class="pl-pds">'</span>/test/<span class="pl-pds">'</span></span>
+  add_filter <span class="pl-s"><span class="pl-pds">'</span>/config/<span class="pl-pds">'</span></span>
+
+  add_group <span class="pl-s"><span class="pl-pds">'</span>Controllers<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>app/controllers<span class="pl-pds">'</span></span>
+  add_group <span class="pl-s"><span class="pl-pds">'</span>Models<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>app/models<span class="pl-pds">'</span></span>
+  add_group <span class="pl-s"><span class="pl-pds">'</span>Helpers<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>app/helpers<span class="pl-pds">'</span></span>
+  add_group <span class="pl-s"><span class="pl-pds">'</span>Libraries<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>lib<span class="pl-pds">'</span></span>
+  add_group <span class="pl-s"><span class="pl-pds">'</span>Plugins<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>vendor/plugins<span class="pl-pds">'</span></span>
+<span class="pl-k">end</span></pre></div>
+<p>As you can see, it's just a SimpleCov.configure block. In your test_helper.rb, launch simplecov with:</p>
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c1">SimpleCov</span>.start <span class="pl-s"><span class="pl-pds">'</span>rails<span class="pl-pds">'</span></span></pre></div>
+<p><strong>OR</strong></p>
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c1">SimpleCov</span>.start <span class="pl-s"><span class="pl-pds">'</span>rails<span class="pl-pds">'</span></span> <span class="pl-k">do</span>
+  <span class="pl-c"><span class="pl-c">#</span> additional config here</span>
+<span class="pl-k">end</span></pre></div>
+<h3><a id="user-content-custom-profiles" class="anchor" aria-hidden="true" href="#custom-profiles"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Custom profiles</h3>
+<p>You can load additional profiles with the SimpleCov.load_profile('xyz') method. This allows you to build upon an existing
+profile and customize it so you can reuse it in unit tests and cucumber features, for example.</p>
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"><span class="pl-c">#</span> lib/simplecov_custom_profile.rb</span>
+<span class="pl-k">require</span> <span class="pl-s"><span class="pl-pds">'</span>simplecov<span class="pl-pds">'</span></span>
+<span class="pl-c1">SimpleCov</span>.profiles.define <span class="pl-s"><span class="pl-pds">'</span>myprofile<span class="pl-pds">'</span></span> <span class="pl-k">do</span>
+  load_profile <span class="pl-s"><span class="pl-pds">'</span>rails<span class="pl-pds">'</span></span>
+  add_filter <span class="pl-s"><span class="pl-pds">'</span>vendor<span class="pl-pds">'</span></span> <span class="pl-c"><span class="pl-c">#</span> Don't include vendored stuff</span>
+<span class="pl-k">end</span>
+
+<span class="pl-c"><span class="pl-c">#</span> features/support/env.rb</span>
+<span class="pl-k">require</span> <span class="pl-s"><span class="pl-pds">'</span>simplecov_custom_profile<span class="pl-pds">'</span></span>
+<span class="pl-c1">SimpleCov</span>.start <span class="pl-s"><span class="pl-pds">'</span>myprofile<span class="pl-pds">'</span></span>
+
+<span class="pl-c"><span class="pl-c">#</span> test/test_helper.rb</span>
+<span class="pl-k">require</span> <span class="pl-s"><span class="pl-pds">'</span>simplecov_custom_profile<span class="pl-pds">'</span></span>
+<span class="pl-c1">SimpleCov</span>.start <span class="pl-s"><span class="pl-pds">'</span>myprofile<span class="pl-pds">'</span></span></pre></div>
+<h2><a id="user-content-customizing-exit-behaviour" class="anchor" aria-hidden="true" href="#customizing-exit-behaviour"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Customizing exit behaviour</h2>
+<p>You can define what simplecov should do when your test suite finishes by customizing the at_exit hook:</p>
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c1">SimpleCov</span>.<span class="pl-c1">at_exit</span> <span class="pl-k">do</span>
+  <span class="pl-c1">SimpleCov</span>.result.format!
+<span class="pl-k">end</span></pre></div>
+<p>Above is the default behaviour. Do whatever you like instead!</p>
+<h3><a id="user-content-minimum-coverage" class="anchor" aria-hidden="true" href="#minimum-coverage"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Minimum coverage</h3>
+<p>You can define the minimum coverage percentage expected. SimpleCov will return non-zero if unmet.</p>
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c1">SimpleCov</span>.minimum_coverage <span class="pl-c1">90</span></pre></div>
+<h3><a id="user-content-maximum-coverage-drop" class="anchor" aria-hidden="true" href="#maximum-coverage-drop"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Maximum coverage drop</h3>
+<p>You can define the maximum coverage drop percentage at once. SimpleCov will return non-zero if exceeded.</p>
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c1">SimpleCov</span>.maximum_coverage_drop <span class="pl-c1">5</span></pre></div>
+<h3><a id="user-content-refuse-dropping-coverage" class="anchor" aria-hidden="true" href="#refuse-dropping-coverage"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Refuse dropping coverage</h3>
+<p>You can also entirely refuse dropping coverage between test runs:</p>
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c1">SimpleCov</span>.refuse_coverage_drop</pre></div>
+<h2><a id="user-content-using-your-own-formatter" class="anchor" aria-hidden="true" href="#using-your-own-formatter"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Using your own formatter</h2>
+<p>You can use your own formatter with:</p>
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c1">SimpleCov</span>.formatter <span class="pl-k">=</span> <span class="pl-c1">SimpleCov</span>::<span class="pl-c1">Formatter</span>::<span class="pl-c1">HTMLFormatter</span></pre></div>
+<p>When calling SimpleCov.result.format!, it will be invoked with SimpleCov::Formatter::YourFormatter.new.format(result), "result"
+being an instance of SimpleCov::Result. Do whatever your wish with that!</p>
+<h2><a id="user-content-using-multiple-formatters" class="anchor" aria-hidden="true" href="#using-multiple-formatters"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Using multiple formatters</h2>
+<p>If you want to use multiple result formats, as of SimpleCov 0.7.0 you can use the built-in MultiFormatter:</p>
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c1">SimpleCov</span>.formatter <span class="pl-k">=</span> <span class="pl-c1">SimpleCov</span>::<span class="pl-c1">Formatter</span>::<span class="pl-c1">MultiFormatter</span>[
+  <span class="pl-c1">SimpleCov</span>::<span class="pl-c1">Formatter</span>::<span class="pl-c1">HTMLFormatter</span>,
+  <span class="pl-c1">SimpleCov</span>::<span class="pl-c1">Formatter</span>::<span class="pl-c1">CSVFormatter</span>,
+]</pre></div>
+<h2><a id="user-content-available-formatters" class="anchor" aria-hidden="true" href="#available-formatters"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Available formatters</h2>
+<p>Apart from the direct companion <a href="https://github.com/colszowka/simplecov-html" title="SimpleCov HTML Formatter Source Code @ GitHub">simplecov-html</a>, there are other formatters
+available:</p>
+<h3><a id="user-content-simplecov-rcov" class="anchor" aria-hidden="true" href="#simplecov-rcov"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://github.com/fguillen/simplecov-rcov">simplecov-rcov</a></h3>
+<p><em>by Fernando Guillen</em></p>
+<p>"The target of this formatter is to cheat on Hudson so I can use the Ruby metrics plugin with SimpleCov."</p>
+<h4><a id="user-content-simplecov-csv" class="anchor" aria-hidden="true" href="#simplecov-csv"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://github.com/fguillen/simplecov-csv">simplecov-csv</a></h4>
+<p><em>by Fernando Guillen</em></p>
+<p>CSV formatter for SimpleCov code coverage tool for ruby 1.9+</p>
+<h4><a id="user-content-simplecov-vim" class="anchor" aria-hidden="true" href="#simplecov-vim"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://github.com/nyarly/Simplecov-Vim">simplecov-vim</a></h4>
+<p><em>by Judson Lester</em></p>
+<p>A formatter for Simplecov that emits a Vim script to mark up code files with coverage information.</p>
+<h4><a id="user-content-simplecov-single_file_reporter" class="anchor" aria-hidden="true" href="#simplecov-single_file_reporter"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://github.com/grosser/simplecov-single_file_reporter">simplecov-single_file_reporter</a></h4>
+<p><em>by <a href="http://grosser.it" rel="nofollow">Michael Grosser</a></em></p>
+<p>A formatter that prints the coverage of the file under test when you run a single test file.</p>
+<h2><a id="user-content-ruby-version-compatibility" class="anchor" aria-hidden="true" href="#ruby-version-compatibility"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Ruby version compatibility</h2>
+<p><a href="http://travis-ci.org/colszowka/simplecov" rel="nofollow"><img src="https://camo.githubusercontent.com/3c4dcf68e17a480877bd2f7b9e5a357da88f7e49/68747470733a2f2f7365637572652e7472617669732d63692e6f72672f636f6c737a6f776b612f73696d706c65636f762e706e67" alt="Build Status" data-canonical-src="https://secure.travis-ci.org/colszowka/simplecov.png" style="max-width:100%;"></a></p>
+<p>Only Ruby 1.9+ ships with the coverage library that SimpleCov depends upon. SimpleCov is built against various other Rubies,
+including Rubinius and JRuby, in <a href="http://travis-ci.org/colszowka/simplecov" title="SimpleCov is built around the clock by travis-ci.org" rel="nofollow">Continuous Integration</a>, but this happens only to ensure that SimpleCov does not make your
+test suite crash right now. Whether SimpleCov will support JRuby/Rubinius in the future depends solely on whether those Ruby
+interpreters add the coverage library.</p>
+<p>SimpleCov is built in <a href="http://travis-ci.org/colszowka/simplecov" title="SimpleCov is built around the clock by travis-ci.org" rel="nofollow">Continuous Integration</a> on 1.8.7, ree, 1.9.2, 1.9.3.</p>
+<h2><a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Contributing</h2>
+<p>See the <a href="https://github.com/colszowka/simplecov/blob/master/CONTRIBUTING.md">contributing guide</a>.</p>
+<h2><a id="user-content-kudos" class="anchor" aria-hidden="true" href="#kudos"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Kudos</h2>
+<p>Thanks to Aaron Patterson for the original idea for this!</p>
+<h2><a id="user-content-copyright" class="anchor" aria-hidden="true" href="#copyright"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Copyright</h2>
+<p>Copyright (c) 2010-2012 Christoph Olszowka. See MIT-LICENSE for details.</p>
+</article>
+      </div>
+  </div>
+
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+    </div>
+  </div>
+
+  </div>
+
+        
+<div class="footer container-lg px-3" role="contentinfo">
+  <div class="position-relative d-flex flex-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap ">
+      <li class="mr-3">&copy; 2018 <span title="0.65523s from unicorn-d89c854df-ns8n4">GitHub</span>, Inc.</li>
+        <li class="mr-3"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
+        <li class="mr-3"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
+        <li class="mr-3"><a href="/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li class="mr-3"><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a data-ga-click="Footer, go to help, text:help" href="https://help.github.com">Help</a></li>
+    </ul>
+
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon mr-lg-4" href="https://github.com">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+   <ul class="list-style-none d-flex flex-wrap ">
+        <li class="mr-3"><a data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a></li>
+        <li class="mr-3"><a href="https://github.com/pricing" data-ga-click="Footer, go to Pricing, text:Pricing">Pricing</a></li>
+      <li class="mr-3"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+        <li class="mr-3"><a href="https://blog.github.com" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
+
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+    </button>
+    You can’t perform that action at this time.
+  </div>
+
+
+    
+    <script crossorigin="anonymous" integrity="sha512-glXpCrOqxNGPFRZ0xGRWMgpYC4Xn/c/CL82vk2eeRostCZHF7Px1wBjxv6Wohcq9+xhM1Lt7DvrkWcSvF3j28w==" type="application/javascript" src="https://assets-cdn.github.com/assets/frameworks-7fcedd2a70cd3dde438cbad4c2d08128.js"></script>
+    
+    <script crossorigin="anonymous" async="async" integrity="sha512-EZ528KARbnAqnUH43fdCesMBiXpoLM1dygIYykVIqKfDJxMO2Xz2NbKAE3cy6SYsdQ2zkGUCIG65FweInktfpA==" type="application/javascript" src="https://assets-cdn.github.com/assets/github-b12f0c8742b82a12b329c237523f031a.js"></script>
+    
+    
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+    </button>
+  </div>
+</div>
+
+  <template id="site-details-dialog">
+  <details class="details-reset details-overlay details-overlay-dark lh-default text-gray-dark" open>
+    <summary aria-haspopup="dialog" aria-label="Close dialog"></summary>
+    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast">
+      <button class="Box-btn-octicon m-0 btn-octicon position-absolute right-0 top-0" type="button" aria-label="Close dialog" data-close-dialog>
+        <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+      </button>
+      <div class="octocat-spinner my-6 js-details-dialog-spinner"></div>
+    </details-dialog>
+  </details>
+</template>
+
+  <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
+  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
+  </div>
+</div>
+
+<div id="hovercard-aria-description" class="sr-only">
+  Press h to open a hovercard with more details.
+</div>
+
+
+  </body>
+</html>
+

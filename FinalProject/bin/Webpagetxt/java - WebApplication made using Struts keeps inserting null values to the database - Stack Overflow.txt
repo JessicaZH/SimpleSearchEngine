@@ -1,0 +1,424 @@
+java - WebApplication made using Struts keeps inserting null values to the database - Stack Overflow Stack Overflow Log In Sign Up current community Stack Overflow help chat Meta Stack Overflow your communities Sign up or log in to customize your list. more stack exchange communities company blog Tour Start here for a quick overview of the site Help Center Detailed answers to any questions you might have Meta Discuss the workings and policies of this site About Us Learn more about Stack Overflow the company Business Learn more about hiring developers or posting ads with us By using our site, you acknowledge that you have read and understand our Cookie Policy, Privacy Policy, and our Terms of Service. Home Public Stack Overflow Tags Users Jobs Teams+Slack Q&A for work Learn More WebApplication made using Struts keeps inserting null values to the database Ask Question up vote 0 down vote favorite I'm working on a sample user-based java web application. When I try to add a user via registration to my database. After capturing the data on the front end, the records get stored as null values i.e a row of my users table would contain the values (7, null, null, null, null) (using template id(primary-key), f_name, l_name, email, password). Below are the files I believe could cause possible problems User.java package com.ysg.data;
+
+import com.ysg.service.PasswordEncrypter;
+import java.io.Serializable;
+import java.util.Date;
+import java.util.Objects;
+
+public class User implements Serializable {
+    private String id;
+    private String password;
+    private String firstName;
+    private String lastName;
+    private String email;
+
+    public User(){
+        // default
+    }
+
+    public User( String password, boolean isEncrypted, String firstName, String 
+    lastName, String email){
+        this.password = isEncrypted ? password : encrypt(password);
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+    }  //getters and setters follow
+ UserRepository.java package com.ysg.repository;
+
+import com.ysg.data.User;
+import com.ysg.exception.DuplicateItemException;
+import com.ysg.exception.RepositoryException;
+import com.ysg.util.MySQLHelper;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+
+public class UserRepository implements RepositoryInt<User> {
+    private static final String INSERT = "INSERT INTO ysg.users (f_name, l_name, email, password) values (?, ?, ?, ?)";
+    private static final String USER_LOGIN = "SELECT * FROM ysg.users WHERE email=? and password=?";
+    private static final String USER_FETCH = "SELECT * FROM ysg.users WHERE email='";
+    private static final String FIRSTNAME = "f_name";
+    private static final String LASTNAME = "l_name";
+    private static final String EMAIL= "email";
+    private static final String PASSWORD = "password";
+
+    public UserRepository(){
+        // default
+    }
+
+    @Override
+    public User login(User obj){
+        User result = find(obj);
+        if (result != null) {
+            return result;
+        }
+        return null;
+    }
+    @Override
+
+
+    public User register(User obj){
+        if (obj != null && (find(obj) == null)) {
+            return add(obj);
+        }
+        return null;
+    }
+
+
+
+    private User add(User user){
+        Connection conn = null;
+        try {
+            conn = getConnection();
+            PreparedStatement stmt = conn.prepareStatement(INSERT);
+            stmt.setString(1, user.getFirstName());
+            stmt.setString(2, user.getLastName());
+            stmt.setString(3, user.getEmail());
+            stmt.setString(4, user.getPassword());
+            stmt.execute();
+            closeStatement(stmt);
+            return user;
+        }
+        catch (SQLException ex) {
+            if (ex.getMessage().contains("Duplicate")) {
+                System.out.println("Item with duplicate id already exists in repository");
+                throw new DuplicateItemException("Item with duplicate id already exists in repository");
+            }
+            else {
+                ex.printStackTrace();
+                System.out.println("Failed to add item to repository");
+                throw new RepositoryException(ex);
+            }
+        }
+        finally {
+            closeConnection(conn);
+        }
+    }
+
+    private User fetch(User user){
+        Connection conn = null;
+        try {
+            conn = getConnection();
+            Statement stmt = conn.createStatement();
+            stmt.execute(USER_FETCH + user.getEmail()+ "'");
+            ResultSet resultSet = stmt.getResultSet();
+            User result = marshall(resultSet);
+            closeStatement(stmt);
+            return result;
+        }
+        catch (SQLException ex) {
+            ex.printStackTrace();
+            System.out.println("Failed to fetch item from repository");
+            throw new RepositoryException(ex);
+        }
+        finally {
+            closeConnection(conn);
+        }
+    }
+
+    private User find(User user){
+        Connection conn = null;
+        try {
+            conn = getConnection();
+            PreparedStatement stmt = conn.prepareStatement(USER_LOGIN);
+            stmt.setString(1, user.getEmail());
+            stmt.setString(2, user.getPassword());
+            ResultSet resultSet = stmt.executeQuery();
+            User result = marshall(resultSet);
+            closeStatement(stmt);
+            return result;
+        }
+        catch (SQLException ex) {
+            ex.printStackTrace();
+            System.out.println("Failed to add item to repository");
+            throw new RepositoryException(ex);
+        }
+        finally {
+            closeConnection(conn);
+        }
+    }
+
+    private User marshall(ResultSet result) throws RepositoryException, SQLException{
+        if (result == null) {
+            return null;
+        }
+        User user = null;
+        if (result.next()) {
+           // String id = result.getString(ID);
+            String password = result.getString(PASSWORD);
+            String firstName = result.getString(FIRSTNAME);
+            String lastName = result.getString(LASTNAME);
+            String email = result.getString(EMAIL);
+            user = new User(password, true, firstName, lastName, email);
+        }
+        return user;
+    }
+
+    private Connection getConnection(){
+        return MySQLHelper.getConnection();
+    }
+
+    private static void closeStatement(Statement stmt){
+        if (stmt != null) {
+            try {
+                stmt.close();
+                //stmt = null;
+            }
+            catch (SQLException ex) {
+                ex.printStackTrace();
+            }
+        }
+    }
+
+    private void closeConnection(Connection conn){
+        if (conn != null) {
+            try {
+                conn.close();
+                conn = null;
+            }
+            catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+ MySQLHelper.java package com.ysg.util;
+
+import com.ysg.data.User;
+import com.ysg.exception.DuplicateItemException;
+import com.ysg.exception.RepositoryException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Timestamp;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+import javax.sql.DataSource;
+
+public class MySQLHelper {
+    private static final String INSERT_USER = "INSERT INTO  users(f_name, l_name, email, password) values (?, ?, ?, ?)";
+    private static final String USER_FETCH = "SELECT * FROM users WHERE id='";
+    private static final String FETCH_ALL = "SELECT * FROM users";
+    private static final String COUNT_ALL_USERS = "SELECT COUNT(*) FROM users";
+    private static final String DELETE_ALL = "DELETE FROM users";
+    private static final String ID = "id";
+    private static final String EMAIL = "email";
+    private static final String PASSWORD = "password";
+    private static final String FIRSTNAME = "f_name";
+    private static final String LASTNAME = "l_name";
+    private static final String DS_NAME = "jdbc/sen301DS";
+    private static Context envCtx;
+    private static DataSource ds;
+
+    static {
+        try {
+            Context ctx = new InitialContext();
+            envCtx = (Context) ctx.lookup("java:/comp/env");
+            System.out.println(envCtx);
+        }
+        catch (Exception ex) {
+            System.out.println("ConnectionPool will not be available - only direct connection can be used");
+        }
+    }
+
+    public static List<User> fetch() throws SQLException{
+        Connection conn = null;
+        try {
+            conn = getConnection();
+            Statement stmt = conn.createStatement();
+            stmt.execute(FETCH_ALL);
+            ResultSet resultSet = stmt.getResultSet();
+            List<User> result = marshall(resultSet);
+            closeStatement(stmt);
+            return result;
+        }
+        catch (SQLException ex) {
+            ex.printStackTrace();
+            throw ex;
+        }
+        finally {
+            closeConnection(conn);
+        }
+    }
+
+    public static User fetch(String id) throws SQLException{
+        Connection conn = null;
+        try {
+            conn = getConnection();
+            Statement stmt = conn.createStatement();
+            stmt.execute(USER_FETCH + id + "'");
+            ResultSet resultSet = stmt.getResultSet();
+            List<User> result = marshall(resultSet);
+            closeStatement(stmt);
+            return result.get(0);
+        }
+        catch (SQLException ex) {
+            ex.printStackTrace();
+            throw ex;
+        }
+        finally {
+            closeConnection(conn);
+        }
+    }
+
+    public static User add(User user){
+        Connection conn = null;
+        try {
+            conn = getConnection();
+            PreparedStatement stmt = conn.prepareStatement(INSERT_USER);
+            stmt.setString(1, user.getFirstName());
+            stmt.setString(2, user.getLastName());
+            stmt.setString(3, user.getEmail());
+            stmt.setString(4, user.getPassword());
+            stmt.execute();
+            closeStatement(stmt);
+            return user;
+        }
+        catch (SQLException ex) {
+            if (ex.getMessage().contains("Duplicate")) {
+                System.out.println("Item with duplicate id already exists in repository");
+                throw new DuplicateItemException("Item with duplicate id already exists in repository");
+            }
+            else {
+                ex.printStackTrace();
+                System.out.println("Failed to add item to repository");
+                throw new RepositoryException(ex);
+            }
+        }
+        finally {
+            closeConnection(conn);
+        }
+    }
+
+    public static int countusers() throws SQLException{
+        Connection conn = null;
+        try {
+            conn = getConnection();
+            Statement stmt = conn.createStatement();
+            stmt.execute(COUNT_ALL_USERS);
+            ResultSet resultSet = stmt.getResultSet();
+            int count = 0;
+            if (resultSet.next()) {
+                count = resultSet.getInt(1);
+            }
+            closeStatement(stmt);
+            return count;
+        }
+        catch (SQLException ex) {
+            ex.printStackTrace();
+            throw ex;
+        }
+        finally {
+            closeConnection(conn);
+        }
+    }
+
+    public static void reset() throws SQLException{
+        Connection conn = null;
+        try {
+            conn = getConnection();
+            Statement stmt = conn.createStatement();
+            stmt.executeUpdate(DELETE_ALL);
+            closeStatement(stmt);
+        }
+        catch (SQLException ex) {
+            ex.printStackTrace();
+            throw ex;
+        }
+        finally {
+            closeConnection(conn);
+        }
+    }
+
+    private static List<User> marshall(ResultSet result) throws SQLException{
+        List<User> list = new ArrayList<User>();
+        if (result == null) {
+            return list;
+        }
+        while (result.next()) {
+            String firstName = result.getString(FIRSTNAME);
+            String lastName = result.getString(LASTNAME);
+            String email = result.getString(EMAIL);
+            String passwd = result.getString(PASSWORD);
+            User user = new User(passwd, true, firstName, lastName, email);
+            list.add(user);
+        }
+        return list;
+    }
+
+    private static DataSource getDataSource(){
+        DataSource ds = null;
+        try {
+            ds = (DataSource) envCtx.lookup(DS_NAME);
+        }
+        catch (NamingException ex) {
+            ex.printStackTrace();
+            throw new RepositoryException("Failed to get DataSource");
+        }
+        return ds;
+    }
+
+    public static Connection getConnection(){
+        Connection con = null;
+        try {
+            con = getDataSource().getConnection();
+        }
+        catch (SQLException ex) {
+            ex.printStackTrace();
+            throw new RepositoryException("Failed to get connection to database server");
+        }
+        catch (Exception ex) {
+            con = getDirectConnection();
+        }
+        return con;
+    }
+
+    private static Connection getDirectConnection(){
+        try {
+            String conURL = "jdbc:mysql://localhost:3306/ysg?serverTimezone=UTC&useSSL=false&" + "user=sen301&password=sen301";
+            return DriverManager.getConnection(conURL);
+        }
+        catch (SQLException ex) {
+            ex.printStackTrace();
+            throw new RepositoryException("Failed to get direct connection to database server");
+        }
+        catch (Exception ex) {
+            ex.printStackTrace();
+            throw new RepositoryException(ex);
+        }
+    }
+
+    private static void closeStatement(Statement stmt){
+        if (stmt != null) {
+            try {
+                stmt.close();
+                stmt = null;
+            }
+            catch (SQLException ex) {
+                ex.printStackTrace();
+            }
+        }
+    }
+
+    private static void closeConnection(Connection conn){
+        if (conn != null) {
+            try {
+                conn.close();
+                conn = null;
+            }
+            catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+ java mysql jdbc struts2 share|improve this question asked 21 mins ago ITJ 379 Are you sure the user object is properly populated before inserting? Are you sure that values are being picked up correctly in the front end? – Justin 1 min ago add a comment | active oldest votes Know someone who can answer? Share a link to this question via email, Google+, Twitter, or Facebook. Your Answer Thanks for contributing an answer to Stack Overflow! Please be sure to answer the question. Provide details and share your research! But avoid … Asking for help, clarification, or responding to other answers. Making statements based on opinion; back them up with references or personal experience. To learn more, see our tips on writing great answers. Some of your past answers have not been well-received, and you're in danger of being blocked from answering. Please pay close attention to the following guidance: Please be sure to answer the question. Provide details and share your research! But avoid … Asking for help, clarification, or responding to other answers. Making statements based on opinion; back them up with references or personal experience. To learn more, see our tips on writing great answers. draft saved draft discarded Sign up or log in Sign up using Google Sign up using Facebook Sign up using Email and Password Post as a guest Name Email Required, but never shown Post as a guest Name Email Required, but never shown Post Your Answer Discard By clicking "Post Your Answer", you acknowledge that you have read our updated terms of service, privacy policy and cookie policy, and that your continued use of the website is subject to these policies. Browse other questions tagged java mysql jdbc struts2 or ask your own question. asked today viewed 6 times Related 0Java Servlet DB Query with Ajax - slow query time and querystring not always fully passed to the servlet 1unable to drop table in HSQLDB 0jdbc get generatedKeys along with other data efficieintly 3Slow sql execution under Oracle connection from Weblogic controlled data source 0how I can remove/handle this exception “java com.mchange.v2.c3p0.codegen.BeangenDataSourceGenerator <infile.xml> <OutputFile.java>” 3MySQL Query result is very slow 2DB2 AS/400 query via JDBC? 0I tried connecting mysql database to java but i got the exception as “com.mysql.jdbc.Driver” 0JSP Unhandled SQLException error despite try/catch block 1Multiple Oracle DB connections with OracleDataSource Hot Network Questions Does harmony have to be invented? < noclue > what does that mean? </ noclue > Adobe Illustrator: put a radial gradient over solid background Are there unphotographable, but scannable ID cards? Add keywords at the bottom of a document Why didn't Saruman break Gandalf's staff on Orthanc as Gandalf broke Saruman's? Should the name of a mythological creature be capitalized? How do attack rolls work with two-weapon fighting? Do two simultaneous castings of Guidance increase the likelihood of a better outcome? How to tell a colleague that I want to stop sharing the ride? Delete duplicate lines, with partial match How do I keep the government from detecting my flying car? What can I do to help the players remember the rules? Why don't commercial airplanes carry Earth observing instruments? What does the "DO NOT USE FOR NAVIGATION" indication mean? What are the main reasons for why negotiating a proper Brexit deal has been so hard? Math puzzle - sudoku like Electrical Current vs Power in layman's terms? OllyDbg vs x64dbg - Is there anything in OllyDbg that is not available in x64dbg? How can I help/encourage a wizard player with their bookkeeping? Why does Ramsay Snow engineer a sham escape? Invitation for a Manuscript Review Kernels and cokernels of multicomplex homomorphisms How to react professionally when a colleague comes to work with a black eye? more hot questions question feed default Stack Overflow Questions Jobs Developer Jobs Directory Salary Calculator Help Mobile Products Teams Talent Engagement Enterprise Company About Press Work Here Legal Privacy Policy Contact Us Stack Exchange Network Technology Life / Arts Culture / Recreation Science Other Stack Overflow Server Fault Super User Web Applications Ask Ubuntu Webmasters Game Development TeX - LaTeX Software Engineering Unix & Linux Ask Different (Apple) WordPress Development Geographic Information Systems Electrical Engineering Android Enthusiasts Information Security Database Administrators Drupal Answers SharePoint User Experience Mathematica Salesforce ExpressionEngine® Answers Stack Overflow em Português Blender Network Engineering Cryptography Code Review Magento Software Recommendations Signal Processing Emacs Raspberry Pi Stack Overflow на русском Programming Puzzles & Code Golf Stack Overflow en español Ethereum Data Science Arduino Bitcoin more (30) Photography Science Fiction & Fantasy Graphic Design Movies & TV Music: Practice & Theory Worldbuilding Seasoned Advice (cooking) Home Improvement Personal Finance & Money Academia Law more (15) English Language & Usage Skeptics Mi Yodeya (Judaism) Travel Christianity English Language Learners Japanese Language Arqade (gaming) Bicycles Role-playing Games Anime & Manga Puzzling Motor Vehicle Maintenance & Repair more (33) MathOverflow Mathematics Cross Validated (stats) Theoretical Computer Science Physics Chemistry Biology Computer Science Philosophy more (10) Meta Stack Exchange Stack Apps API Data Area 51 Blog Facebook Twitter LinkedIn site design / logo © 2018 Stack Exchange Inc; user contributions licensed under cc by-sa 3.0 with attribution required. rev 2018.11.29.32286 Stack Overflow works best with JavaScript enabled
